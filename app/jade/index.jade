@@ -1,0 +1,352 @@
+html
+    title Главная
+    include ./blocks/head.jade
+
+    body.main-page
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .banners
+                    .wrap
+                        a(href="#" style="background-image: url('../images/assets/banner.jpg')").banners--item
+                            span.title Мы покупаем ваши вещи
+                            span.description Подайте заявку на оценку и продажу ваших вещей
+                            span.btn.btn-white.link
+                                span.text Узнать подробнее
+                                svg(class="icon icon-arrow")
+                                    use(xlink:href="#icon-arrow")
+                        a(href="#" style="background-image: url('../images/assets/banner-green.jpg')").banners--item.text-white
+                            span.title Мы даем деньги под залог вещей
+                            span.description Не надо идти в ломбард, чтобы узнать сколько денег мы можем Вам предложить
+                            span.btn.btn-white.link
+                                span.text Узнать подробнее
+                                svg(class="icon icon-arrow")
+                                    use(xlink:href="#icon-arrow")
+
+                .percent-status
+                    .percent-status--item
+                        .percent
+                            span 5%
+                        .text Процент по займу на 7 календарных дней
+                    .percent-status--item
+                        .percent
+                            span 8%
+                        .text Процент по займу на 7 календарных дней
+                    .percent-status--item
+                        .percent
+                            span 10%
+                        .text Процент по займу на 7 календарных дней
+
+            .benefits-wrap
+                .container-block
+                    h2.text-center Почему нас выбирают?
+
+                    .benefits-list
+                        .benefits-list--item
+                            .number 01
+                            .text Бережно обращаемся с вашим имуществом
+                            .icon
+                                svg(class="icon-star-circle")
+                                    use(xlink:href="#icon-star-circle")
+                        .benefits-list--item
+                            .number 02
+                            .text Предлагаем за товар высокую цену
+                            .icon
+                                svg(class="icon-graph")
+                                    use(xlink:href="#icon-graph")
+                        .benefits-list--item
+                            .number 03
+                            .text Предлагаем очень выгодные условия постоянным клиентам
+                            .icon
+                                svg(class="icon-like")
+                                    use(xlink:href="#icon-like")
+                        .benefits-list--item
+                            .number 04
+                            .text Гарантируем полную конфиденциальность
+                            .icon
+                                svg(class="icon-lock")
+                                    use(xlink:href="#icon-lock")
+
+            .container-block
+                .row.mt-3.pt-3.mt-lg-5.pt-lg-5
+                    .col-12.col-lg-3
+                        form(action="#").form.search-block
+                            input(type="text" placeholder="Search").input
+                            button
+                                svg(class="icon icon-search")
+                                    use(xlink:href="#icon-search")
+
+                    .col-12.col-lg-9.mt-3.mt-lg-0
+                        .sort-block
+                            .row.align-items-center
+                                .col-12.col-sm-2.col-xl-4
+                                    .grid-type.d-flex
+                                        .grid-type--item(data-type="grid").active
+                                            svg(class="icon icon-grid")
+                                                use(xlink:href="#icon-grid")
+                                        .grid-type--item(data-type="list")
+                                            svg(class="icon icon-list")
+                                                use(xlink:href="#icon-list")
+                                .col-12.col-sm-3.col-xl-4.mt-3.mt-sm-0
+                                    .page-size
+                                        .label Show
+                                        select(placeholder="16").custom-select
+                                            option(value="16") 16
+                                            option(value="32") 32
+
+                                .col-12.col-sm-7.col-xl-4.mt-3.mt-sm-0
+                                    .sort.justify-content-start.justify-content-sm-end
+                                        .label Sort by
+                                        select(placeholder="Highter price").custom-select
+                                            option(value="Highter price") Highter price
+                                            option(value="Lower price") Lower price
+
+                .d-block.d-lg-none.mt-3
+                    .btn.btn-green.js-filters-modal.w-100(data-bs-toggle="modal" data-bs-target="#filters") Фильтры
+
+                .row.mt-3.pt-3
+                    .col-3.d-none.d-lg-block
+                        include ./blocks/filters.jade
+
+                    .col-12.col-lg-9
+                        .product-list
+                            form(action="#").product-item
+                                .marker IN GOOD CONDITION
+
+                                .image
+                                    img(src="../images/assets/product-item.jpg")
+                                .title JBL Xtreme 2
+
+                                .button-wrap.row.align-items-center
+                                    .col-6
+                                        .availabel.text-nowrap в магазине
+                                        .old-cost 120€
+                                    .col-6.position-relative
+                                        .cost 70€
+                                        button.buy-btn Add to cart
+                                .location
+                                    svg(class="icon icon-location-stroke")
+                                        use(xlink:href="#icon-location-stroke")
+                                    .text Põhja-Tallinn
+
+                            form(action="#").product-item
+                                .marker.purple IN PERFECT CONDITION
+
+                                .image
+                                    img(src="../images/assets/product-item.jpg")
+                                .title Samsung Galaxy J3 2016
+
+                                .button-wrap.row.align-items-center
+                                    .col-6
+                                        .availabel.text-nowrap в магазине
+                                        .old-cost 120€
+                                    .col-6.position-relative
+                                        .cost 70€
+                                        button.buy-btn Add to cart
+                                .location
+                                    svg(class="icon icon-location-stroke")
+                                        use(xlink:href="#icon-location-stroke")
+                                    .text Põhja-Tallinn
+
+                            form(action="#").product-item
+                                .marker.green NEW
+
+                                .image
+                                    img(src="../images/assets/product-item.jpg")
+                                .title Platinet wireless headset Sport PM1085
+
+                                .button-wrap.row.align-items-center
+                                    .col-6
+                                        .availabel.text-nowrap в магазине
+                                        .old-cost 120€
+                                    .col-6.position-relative
+                                        .cost 70€
+                                        button.buy-btn Add to cart
+                                .location
+                                    svg(class="icon icon-location-stroke")
+                                        use(xlink:href="#icon-location-stroke")
+                                    .text Põhja-Tallinn
+
+                            form(action="#").product-item
+                                .marker IN GOOD CONDITION
+
+                                .image
+                                    img(src="../images/assets/product-item.jpg")
+                                .title JBL Xtreme 2
+
+                                .button-wrap.row.align-items-center
+                                    .col-6
+                                        .availabel.text-nowrap в магазине
+                                        .old-cost 120€
+                                    .col-6.position-relative
+                                        .cost 70€
+                                        button.buy-btn Add to cart
+                                .location
+                                    svg(class="icon icon-location-stroke")
+                                        use(xlink:href="#icon-location-stroke")
+                                    .text Põhja-Tallinn
+
+                            form(action="#").product-item
+                                .marker.purple IN PERFECT CONDITION
+
+                                .image
+                                    img(src="../images/assets/product-item.jpg")
+                                .title Samsung Galaxy J3 2016
+
+                                .button-wrap.row.align-items-center
+                                    .col-6
+                                        .availabel.text-nowrap в магазине
+                                        .old-cost 120€
+                                    .col-6.position-relative
+                                        .cost 70€
+                                        button.buy-btn Add to cart
+                                .location
+                                    svg(class="icon icon-location-stroke")
+                                        use(xlink:href="#icon-location-stroke")
+                                    .text Põhja-Tallinn
+
+                            form(action="#").product-item
+                                .marker.green NEW
+
+                                .image
+                                    img(src="../images/assets/product-item.jpg")
+                                .title Platinet wireless headset Sport PM1085
+
+                                .button-wrap.row.align-items-center
+                                    .col-6
+                                        .availabel.text-nowrap в магазине
+                                        .old-cost 120€
+                                    .col-6.position-relative
+                                        .cost 70€
+                                        button.buy-btn Add to cart
+                                .location
+                                    svg(class="icon icon-location-stroke")
+                                        use(xlink:href="#icon-location-stroke")
+                                    .text Põhja-Tallinn
+
+                        .pagination
+                            a(href="#").pagination--item.prev
+                            a(href="#").pagination--item 1
+                            span.pagination--item.active 2
+                            a(href="#").pagination--item 3
+                            a(href="#").pagination--item 4
+                            a(href="#").pagination--item 5
+                            a(href="#").pagination--item 6
+                            a(href="#").pagination--item 7
+                            a(href="#").pagination--item 8
+                            a(href="#").pagination--item 9
+                            a(href="#").pagination--item 10
+                            a(href="#").pagination--item 11
+                            a(href="#").pagination--item 12
+                            a(href="#").pagination--item 13
+                            a(href="#").pagination--item 14
+                            a(href="#").pagination--item 15
+                            a(href="#").pagination--item 16
+                            a(href="#").pagination--item 17
+                            a(href="#").pagination--item 18
+                            a(href="#").pagination--item 19
+                            a(href="#").pagination--item.next
+
+                .banner(style="background-image: url('../images/assets/banner-purple.jpg')")
+                    .title Никто не узнает!
+                    .description We do not share collateral information with banks. And thus, it does not affect your credit history.
+
+                .faq-wrap
+                    .sup-title.text-center ОТВЕТЫ НА ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                    h2.title.text-center.mt-2 F.A.Q.
+
+                    .faq-list.spoiler
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Какие услуги предоставляет Lombard24.ee?
+                                .icon
+                            .faq-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Имеет ли значение моя банковская история?
+                                .icon
+                            .faq-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что можно сдать в залог?
+                                .icon
+                            .faq-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Банковские счета Lombard24.ee
+                                .icon
+                            .faq-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Какие документы требуются для получения денег?
+                                .icon
+                            .faq-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Как забрать залог?
+                                .icon
+                            .faq-list--item-body.spoiler--body Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            .info-block
+                .container-block
+                    .row.align-items-end.flex-column-reverse.flex-lg-row
+                        .col
+                            .image
+                                img(src="../images/info-block.png")
+                        .col
+                            .info
+                                .sup-title no problem!
+                                .mt-2.title Didn't you take your item?
+                                .mt-4.description We always meet halfway and offer extra time so as not to lose your thing.  If you do not buy the product back, then we put it up for sale and the loan will be considered repaid. Do not hesitate to contact us again, this does not affect the level of trust in you!
+
+            .container-block.mt-5
+                .blog-block-wrap
+                    .sup-title.text-center OUR SHOP
+                    h2.text-center Blog and news
+
+                    .blog-list.mt-4
+                        a(href="#").blog-item
+                            span.image
+                                img(src="../images/assets/blog-item.jpg")
+                                span.date 12.11.22
+                            span.info
+                                span.title Lorem ipsum dolor
+                                span.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                span.link
+                                    span.text Read more
+                                    svg(class="icon icon-arrow")
+                                        use(xlink:href="#icon-arrow")
+
+                        a(href="#").blog-item
+                            span.image
+                                img(src="../images/assets/blog-item.jpg")
+                                span.date 12.11.22
+                            span.info
+                                span.title Lorem ipsum dolor
+                                span.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                span.link
+                                    span.text Read more
+                                    svg(class="icon icon-arrow")
+                                        use(xlink:href="#icon-arrow")
+
+                        a(href="#").blog-item
+                            span.image
+                                img(src="../images/assets/blog-item.jpg")
+                                span.date 12.11.22
+                            span.info
+                                span.title Lorem ipsum dolor
+                                span.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                span.link
+                                    span.text Read more
+                                    svg(class="icon icon-arrow")
+                                        use(xlink:href="#icon-arrow")
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
+
+
+
+
+

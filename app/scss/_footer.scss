@@ -1,0 +1,185 @@
+.footer {
+    position: relative;
+    padding: 106px 0 0;
+    background: $black;
+    color: $white;
+
+    .logo {
+        display: inline-block;
+        padding: 22px 30px;
+        background: $blackSoft;
+        border-radius: 20px;
+    }
+
+    .title {
+        padding: 15px 0 0;
+        font-family: $font-base-extraBold;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+
+    .contact-block {
+        margin-top: 76px;
+
+        &--item {
+            margin-top: 30px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 14px;
+        }
+
+        .link {
+            font-family: $font-base-medium;
+            color: $white;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .social-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 110px 0 0 -20px;
+
+        &--item {
+            margin: 20px 0 0 20px;
+
+            &:hover {
+
+                svg {
+                    fill: $themeColor;
+                }
+            }
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+            fill: $white;
+            transition: .3s;
+        }
+    }
+
+    .footer-menu {
+        margin-top: 78px;
+
+        &--item {
+            margin-top: 19px;
+            font-family: $font-base-black;
+            font-size: 16px;
+            line-height: 20px;
+            color: $white;
+            text-transform: uppercase;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:hover {
+                color: $themeColor;
+            }
+        }
+    }
+
+    .bottom-panel {
+        margin-top: 70px;
+        padding: 29px 0 27px;
+        background: $blackDark;
+        font-family: $font-base-medium;
+        font-size: 11px;
+        line-height: 13px;
+
+        a {
+            color: $white;
+            border-bottom: 1px solid;
+
+            &:hover {
+                border-color: transparent;
+            }
+        }
+    }
+
+    .sitemaker {
+        color: $textGrayDark;
+
+        a {
+            color: $textGrayDark;
+        }
+    }
+}
+
+.map-footer {
+    display: block;
+    position: relative;
+    margin: 54px 0 0;
+    height: 257px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $black;
+        opacity: .3;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/*** Media ***/
+
+@media (max-width: 1601px) {
+
+}
+
+@media (max-width: 1281px) {
+
+}
+
+@media (max-width: 1025px) {
+
+    .footer {
+
+        .social-list,
+        .footer-menu,
+        .contact-block {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+
+}
+
+@media (max-width: 561px) {
+
+    .footer {
+
+        .bottom-panel {
+            margin-top: 40px;
+        }
+    }
+
+    .map-footer {
+        margin: 20px 0 0;
+    }
+}
