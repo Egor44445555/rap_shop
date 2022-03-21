@@ -6,19 +6,30 @@ header.header
 
             .location
                 .icon
-                .text Санкт-Петербург
+                    img(src="../images/icons/location.png")
+                .text Санкт- Петербург
                 .arrow
                     img(src="../images/icons/arrow-toggle-down.svg")
 
             .phones
-                .phones--item 8 800 250 46 00
-                .phones--item +7 (965) 25 58 16
+                .phones--item
+                    .text 8 800 250 46 00
+                .phones--item
+                    .text +7 (965) 25 58 16
                     .arrow
                         img(src="../images/icons/arrow-toggle-down.svg")
 
         .right-block
             .menu
-                a(href="#").menu--item О нас
+                .menu--item.dropdown-wrap
+                    .label
+                        .text О нас
+                        .icon
+                            img(src="../images/icons/arrow-toggle-down.svg")
+                    .dropdown
+                        a(href="#").dropdown--item Link
+                        a(href="#").dropdown--item Link 2
+
                 a(href="#").menu--item Франшиза
                 a(href="#").menu--item Аренда CRM
                 a(href="#").menu--item Контакты

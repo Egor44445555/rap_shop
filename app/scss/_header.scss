@@ -1,8 +1,110 @@
 .header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: $white;
+    padding: 70px 0 0;
     z-index: 100;
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1960px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .left-block,
+    .right-block {
+        display: flex;
+        align-items: center;
+    }
+
+    .location {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 80px;
+
+        .icon {
+            margin-right: 14px;
+        }
+
+        .text {
+            max-width: 80px;
+        }
+
+        .arrow {
+            margin: 0 0 5px 10px;
+        }
+    }
+
+    .phones {
+        margin-left: 80px;
+
+        &--item {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .arrow {
+            margin: 0 0 5px 10px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        &--item {
+            margin-left: 50px;
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+            color: $black;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .dropdown-wrap {
+
+            .label {
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                .icon {
+                    width: 12px;
+                    height: 7px;
+                    margin: 0 0 0 10px;
+                }
+            }
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+        }
+    }
+
+    .button-wrap {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+
+        .btn {
+            margin-left: 15px;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
 }
 
 /***/
@@ -32,6 +134,28 @@
 
 @media (max-width: 1601px) {
 
+    .header {
+
+        .wrap {
+            padding: 0 20px;
+        }
+
+        .location {
+            margin-left: 30px;
+        }
+
+        .phones {
+            margin-left: 30px;
+        }
+
+        .menu--item {
+            margin-left: 20px;
+        }
+
+        .button-wrap {
+            margin-left: 20px;
+        }
+    }
 }
 
 @media (max-width: 1441px) {

@@ -32,7 +32,7 @@ body {
 
 .container-block {
     width: 100%;
-    max-width: 1770px;
+    max-width: 1695px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -74,18 +74,8 @@ body {
     }
 }
 
-.btn-white {
-    background: $white;
-    font-family: $font-base-semiBold;
-    color: $black;
-
-    svg {
-        fill: $black;
-    }
-}
-
-.btn-green {
-    background: $green;
+.btn-blue {
+    background: $blue;
     color: $white;
 
     &:hover {
@@ -102,22 +92,12 @@ body {
     background: none;
     border: 2px solid;
 
-    &.btn-gray {
-        color: $textGray;
-        border-color: $textGray;
+    &.btn-blue {
+        color: $black;
+        border-color: $blue;
 
         &:hover {
-            background: $textGray;
-            color: $white;
-        }
-    }
-
-    &.btn-green {
-        color: $green;
-        border-color: $green;
-
-        &:hover {
-            background: $green;
+            background: $blue;
             color: $white;
         }
     }
@@ -309,7 +289,6 @@ a {
             margin: 13px 0 0 13px;
             padding: 15px;
             background: $grayLight;
-            font-family: $font-base-black;
             font-size: 18px;
             color: $black;
             text-align: center;
@@ -654,7 +633,6 @@ select {
     padding: 0 40px 0 16px;
     background: $white;
     color: $black;
-    font-family: $font-base-medium;
     font-size: 16px;
     line-height: 19px;
     white-space: nowrap;
@@ -779,13 +757,6 @@ select {
 
     .modal-dialog {
         max-width: 800px;
-    }
-}
-
-.small {
-
-    .modal-dialog {
-        max-width: 530px;
     }
 }
 
@@ -958,7 +929,6 @@ select {
         margin: 0 0 0 15px;
         padding: 4px 8px;
         background: $themeColor;
-        font-family: $font-base-black;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
