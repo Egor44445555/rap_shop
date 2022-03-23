@@ -271,62 +271,13 @@ $(document).ready(function() {
 
     /*** Sliders ***/
 
-    new Swiper('.js-slider-list', {
-        spaceBetween: 10,
+    new Swiper('.js-slider-car-select', {
         slidesPerGroup: 1,
         simulateTouch: true,
         navigation: {
-            nextEl: ".js-slider-list .swiper-button-next",
-            prevEl: ".js-slider-list .swiper-button-prev",
+            nextEl: ".js-slider-car-select .swiper-button-next",
+            prevEl: ".js-slider-car-select .swiper-button-prev",
         },
-        breakpoints: {
-            769: {
-                slidesPerView: 2,
-                slidesPerGroup: 1,
-                spaceBetween: 20,
-            },
-            1281: {
-                slidesPerView: 3,
-                slidesPerGroup: 1,
-                spaceBetween: 20,
-            },
-            1601: {
-              slidesPerView: 4,
-              slidesPerGroup: 4,
-              spaceBetween: 80,
-            }
-        }
-    });
-
-    let galleryPreview = new Swiper('.js-gallery-nav', {
-        slidesPerView: 3,
-        direction: "horizontal",
-        navigation: {
-            nextEl: ".gallery-nav-wrap .swiper-button-next",
-            prevEl: ".gallery-nav-wrap .swiper-button-prev",
-        },
-        breakpoints: {
-            561: {
-                slidesPerView: 3,
-                direction: "vertical",
-            },
-        }
-    });
-
-    new Swiper('.js-gallery', {
-        slidesPerView: 1,
-        direction: "horizontal",
-        simulateTouch: false,
-        allowTouchMove: true,
-        thumbs: {
-            swiper: galleryPreview,
-        },
-        breakpoints: {
-            561: {
-                direction: "vertical",
-                allowTouchMove: false,
-            },
-        }
     });
 
 

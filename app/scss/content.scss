@@ -2,15 +2,211 @@
 
 .hero-block {
     min-height: 1099px;
-    padding: 300px 40px 40px;
+    padding: 290px 40px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .info {
+        max-width: 610px;
+    }
+
+    .title {
+        font-family: $font-base-semiBold;
+        font-size: 61px;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-top: 35px;
+        font-size: 28px;
+        line-height: 35px;
+    }
 
     .btn {
         display: flex;
         align-items: center;
         max-width: 380px;
         height: 73px;
+        margin-top: 70px;
         border-radius: 50px;
         font-family: $font-base-semiBold;
         font-size: 23px;
     }
+
+    .info-text {
+        display: flex;
+        align-items: center;
+        max-width: 490px;
+        margin-top: 60px;
+
+        img {
+            flex: 1;
+            max-width: 130px;
+            margin-right: 30px;
+            object-fit: contain;
+        }
+
+        p {
+            flex: 1;
+            margin: 0;
+            font-size: 20px;
+            line-height: 24px;
+            opacity: .78;
+        }
+    }
 }
+
+
+/*** Car select ***/
+
+.car-select-block-wrap {
+    padding: 177px 0 250px;
+
+    .city-select {
+        margin-left: 40px;
+    }
+}
+
+.car-select-slider {
+    margin-top: 65px;
+
+    &--item {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .characteristics {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex: 1;
+        max-width: 360px;
+        margin: -30px 0 0 -40px;
+        padding-top: 100px;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            flex: 100%;
+            max-width: calc(50% - 40px);
+            margin: 30px 0 0 40px;
+            font-family: $font-base-light;
+            font-size: 18px;
+        }
+
+        .icon {
+            margin-right: 25px;
+        }
+    }
+
+    .image {
+        position: relative;
+        flex: 1;
+        padding: 0 40px;
+        text-align: center;
+
+        .title {
+            margin-bottom: 30px;
+            font-family: $font-base;
+        }
+    }
+
+    .price-list {
+        flex: 1;
+        max-width: 360px;
+        padding-top: 100px;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            margin-top: 13px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .label {
+            margin-right: 10px;
+            font-family: $font-base-semiBold;
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 33px;
+            color: $blueDark;
+
+            span {
+                padding-left: 5px;
+                font-family: $font-base-semiBold;
+                font-size: 20px;
+                color: $black;
+            }
+        }
+    }
+}
+
+.city-select {
+
+    &--head {
+        display: flex;
+        align-items: center;
+
+        .text {
+            font-size: 37px;
+            color: $blueText;
+            border-bottom: 1px solid $blueText;
+        }
+
+        .icon {
+            width: 20px;
+            height: 10px;
+            margin-left: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &--body {
+        display: none;
+    }
+}
+
+.car-type-list {
+    display: flex;
+    justify-content: center;
+    margin: 80px -10px 0;
+
+    &--item {
+        cursor: pointer;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked + span {
+        background: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        margin: 20px 10px;
+        padding: 10px 30px;
+        font-family: $font-base-semiBold;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, .48%);
+        border-radius: 50px;
+    }
+}
+
+/*** End Car select ***/

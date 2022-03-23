@@ -135,9 +135,14 @@
 @media (max-width: 1601px) {
 
     .header {
+        padding-top: 20px;
 
         .wrap {
             padding: 0 20px;
+        }
+
+        .logo {
+            max-width: 240px;
         }
 
         .location {

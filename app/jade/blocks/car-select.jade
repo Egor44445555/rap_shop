@@ -1,0 +1,93 @@
+.car-select-block-wrap
+    .container-block
+        .car-select-block
+            .d-flex
+                h2 Выберите автомобиль
+                .city-select
+                    .city-select--head
+                        .text в Санкт-Петербурге
+                        .icon
+                            img(src="../images/icons/arrow-toggle-down.svg")
+                    .city-select--body
+                        .city-select--item в Санкт-Петербурге
+                        .city-select--item в Москве
+
+            .car-type-list
+                label(for="type1").car-type-list--item
+                    input(type="radio" name="type" id="type1")
+                    span Эконом
+                label(for="type2").car-type-list--item
+                    input(type="radio" name="type" id="type2")
+                    span Стандарт
+                label(for="type3").car-type-list--item
+                    input(type="radio" name="type" id="type3")
+                    span Комфорт
+                label(for="type4").car-type-list--item
+                    input(type="radio" name="type" id="type4")
+                    span Бизнес-класс
+                label(for="type5").car-type-list--item
+                    input(type="radio" name="type" id="type5")
+                    span Внедорожники
+
+            .car-select-slider
+                .js-slider-car-select
+                    .swiper-wrapper
+                        .swiper-slide
+                            .car-select-slider--item
+                                .characteristics
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-user.png")
+                                        .text 5 мест
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-square.png")
+                                        .text 4 двери
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-automatic.png")
+                                        .text Автомат
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-conditioner.png")
+                                        .text Кондиционер
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-graph.png")
+                                        .text 123 л.с
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-list.png")
+                                        .text 6-7 л.\км.
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-check.png")
+                                        .text серебро
+                                    .characteristics--item
+                                        img.icon(src="../images/icons/characteristics-clock.png")
+                                        .text 2019
+
+                                .image
+                                    h3.title.text-center Hyundai Solaris 2021
+
+                                    .swiper-button-prev
+                                    img(src="../images/assets/car.jpg")
+                                    .swiper-button-next
+
+                                    .button-wrap
+                                        a(href="#").btn.btn-blue.btn-empty Подробнее о машине
+                                        a(href="#").btn.btn-blue
+                                            span.text Подробнее о машине
+                                            span.icon
+                                                img.icon(src="../images/icons/arrow-white.png")
+
+                                .price-list
+                                    .price-list--item
+                                        .label 1-3 дня:
+                                        .price 1.575 Р
+                                            span / сутки
+                                    .price-list--item
+                                        .label 3-5 дней:
+                                        .price 1.800 Р
+                                            span / сутки
+                                    .price-list--item
+                                        .label 5-10 дней:
+                                        .price 2.000 Р
+                                            span / сутки
+                                    .price-list--item
+                                        .label 10-15 дней:
+                                        .price 2.300 Р
+                                            span / сутки
