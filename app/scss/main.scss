@@ -44,15 +44,15 @@ body {
     display: inline-block;
     align-items: center;
     justify-content: center;
-    min-height: 50px;
+    min-height: 60px;
     width: auto;
-    padding: 15px 20px;
+    padding: 20px 50px 18px;
     font-family: $font-base-bold;
     font-size: 16px;
     line-height: normal;
     text-align: center;
     border: 0;
-    border-radius: 16px;
+    border-radius: 50px;
     transition: .3s;
     cursor: pointer;
 
@@ -106,6 +106,13 @@ body {
     &:hover {
         color: $white;
     }
+}
+
+.btn-small {
+    min-height: 40px;
+    padding: 10px 20px;
+    font-family: $font-base-semiBold;
+    font-size: 12px;
 }
 
 /*** End Buttons ***/
@@ -864,10 +871,6 @@ select {
 
 .swiper-container-initialized {
     position: relative;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
     overflow: hidden;
 }
 

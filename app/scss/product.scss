@@ -1,0 +1,127 @@
+@import '_var.scss';
+
+.product-item {
+    padding: 20px 35px 30px;
+    box-shadow: 0 0 27px rgba(229, 229, 229, .78);
+    border-radius: 5px;
+
+    .image {
+        height: 117px;
+        text-align: center;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    .title {
+        font-family: $font-base-semiBold;
+        font-size: 18px;
+        color: $black;
+    }
+
+    .characteristics {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+
+        &--item {
+            display: flex;
+            flex: 100%;
+            max-width: calc(50% - 10px);
+            margin-top: 10px;
+            padding-right: 10px;
+        }
+
+        .icon {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            margin-right: 20px;
+        }
+
+        .text {
+            font-family: $font-base-light;
+            font-size: 13px;
+            color: $black;
+        }
+    }
+
+    .price {
+        display: flex;
+        align-items: flex-end;
+        white-space: nowrap;
+        margin-top: 10px;
+
+        .label {
+            margin: 0 10px 5px 0;
+            font-family: $font-base-semiBold;
+            font-size: 13px;
+        }
+
+        .value {
+            font-size: 26px;
+            color: $blueDark;
+
+            span {
+                padding-left: 5px;
+                font-family: $font-base-semiBold;
+                font-size: 16px;
+                color: $black;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 25px;
+    }
+}
+
+.product-list-wrap {
+    padding: 125px 0 165px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -70px;
+
+    .product-item,
+    .more-btn {
+        flex: 100%;
+        max-width: calc(25% - 70px);
+        margin: 40px 0 0 70px;
+    }
+
+    .more-btn {
+        padding: 20px 35px 30px;
+        box-shadow: 0 0 27px rgba(229, 229, 229, .78);
+        border-radius: 5px;
+
+        .title {
+            font-family: $font-base-semiBold;
+            font-size: 26px;
+            line-height: 34px;
+            color: $black;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            margin-top: 20px;
+            background: $blue;
+            border-radius: 50%;
+
+            img {
+                width: 16px;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@
 
 .hero-block {
     min-height: 1099px;
+    margin-bottom: 77px;
     padding: 290px 40px 40px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +61,7 @@
 /*** Car select ***/
 
 .car-select-block-wrap {
-    padding: 177px 0 250px;
+    padding: 100px 0 125px;
 
     .city-select {
         margin-left: 40px;
@@ -103,12 +104,46 @@
     .image {
         position: relative;
         flex: 1;
-        padding: 0 40px;
+        padding: 0 80px;
         text-align: center;
 
         .title {
             margin-bottom: 30px;
             font-family: $font-base;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 16px;
+            height: 64px;
+            top: 50%;
+            right: 60px;
+            transform: translateY(-50%);
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 6px;
+                width: 4px;
+                height: 34px;
+                margin: 0;
+                background: $black;
+                border-radius: 4px;
+                transform: rotate(-20deg) translate(0, 0);
+            }
+
+            &:before {
+                top: auto;
+                bottom: 0;
+                transform: rotate(20deg);
+            }
+        }
+
+        .swiper-button-prev {
+            left: 60px;
+            transform: translateY(-50%) rotate(180deg);
         }
     }
 
@@ -143,6 +178,14 @@
                 font-size: 20px;
                 color: $black;
             }
+        }
+    }
+
+    .button-wrap {
+        margin: -26px 0 0 -26px;
+
+        .btn {
+            margin: 26px 0 0 26px;
         }
     }
 }
