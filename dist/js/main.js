@@ -56,7 +56,6 @@ $(document).ready(function() {
         mobileMenu.removeClass('open');
     });
 
-
     tooltip.tooltip({
         html: true,
         placement: 'bottom',
@@ -68,18 +67,6 @@ $(document).ready(function() {
         $(".js-custom-scroll-mobile").mCustomScrollbar();
     }
 
-    window.onresize = function() {
-        customScroll.mCustomScrollbar();
-        cartModalPosition();
-    };
-
-    $(document).on('click', function(e) {
-
-        if(!$(e.target).closest('.options-wrap').length) {
-            optionsWrap.removeClass('active');
-        }
-    });
-
     cartBtn.on("click", function(e) {
         e.preventDefault();
         cartModal.addClass('active');
@@ -87,14 +74,6 @@ $(document).ready(function() {
         overflow.addClass('cart-open');
         categoryItemBody.removeClass('active');
     });
-
-    function cartModalPosition() {
-        let rect = cartBtn[0].getBoundingClientRect();
-
-        cartModal.css('top', rect.top + 60);
-        cartModal.css('left', rect.left - cartModal.width() + 85);
-    }
-    cartModalPosition();
 
     overflow.on("click", function(e) {
         categoryItemBody.removeClass('active');
@@ -274,6 +253,10 @@ $(document).ready(function() {
     new Swiper('.js-slider-car-select', {
         slidesPerGroup: 1,
         simulateTouch: true,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
         navigation: {
             nextEl: ".js-slider-car-select .swiper-button-next",
             prevEl: ".js-slider-car-select .swiper-button-prev",

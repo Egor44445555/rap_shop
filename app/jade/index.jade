@@ -9,11 +9,12 @@ html
             .hero-block(style="background-image: url(../images/assets/hero-image.jpg)")
                 .container-block
                     .info
-                        h1.title Прокат автомобилей по всей России
+                        h1.title.text-uppercase Прокат автомобилей по всей России
                         p Мы предлагаем удобный сервис аренды автомобилей от эконом до премиум класса
                         a(href="#").btn.btn-blue
-                            .text Выбрать автомобиль
-                            img.icon(src="../images/icons/arrow-white.png")
+                            span.d-flex
+                                span.text Выбрать автомобиль
+                                img.icon(src="../images/icons/arrow-white.png")
 
                         .info-text
                             img(src="../images/assets/keys.png")
@@ -21,6 +22,136 @@ html
 
             include ./blocks/car-select.jade
             include ./blocks/product-list.jade
+
+            .advantages-block-wrap
+                .container-block
+                    .title-wrap
+                        h2 Росавтопрокат — удобный сервис проката автомобилей
+
+                        .info-block
+                            .image
+                                img(src="../images/passport.jpg")
+                            .text Для оформления договора
+                                | понадобится только паспорт
+                                | и водительское удостоверение
+
+                    .step-list
+                        .step-list--item
+                            .number 1
+                            .text Демократичные
+                                | цены на аренду
+                                | автомобилей
+                        .step-list--item
+                            .number 2
+                            .text Разные классы
+                                | автомобилей от эконом
+                                | до внедорожников
+                        .step-list--item
+                            .number 3
+                            .text Бонусная программа,
+                                | несколько типов
+                                | дисконтных  карт
+                        .step-list--item
+                            .number 4
+                            .text Без скрытых платежей.
+                                | Аренда авто по стоимости
+                                | указанной на сайте
+
+                    .more-block
+                        .image
+                            img(src="../images/car.jpg")
+                        .text
+                            .title Для владельцев автомобилей —
+                            p возможность сдать свой автомобиль в прокат и отслеживать до ход от аренды онлайн
+
+                        a(href="#").btn.btn-blue Узнать больше
+
+            .reviews-block-wrap
+                .container-block
+                    h2.title.text-uppercase ОТЗЫВЫ АРЕНДАТОРОВ
+
+                    .reviews-slider.js-reviews-slider
+                        .swiper-wrapper
+                            .swiper-slide
+                                .reviews-slider--item
+                                    .name-wrap
+                                        .quotes “
+                                        .text
+                                            .name Наталья Горбунцова
+                                            .rating(data-rating-count="2")
+                                                .rating--list
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+
+                                    .description Ставлю 5 звезд. Создали заявку через их приложение, отзвонились через 10 минут,
+                                        | забронировали авто. По приезду - авто чистый, документы оформили быстро.
+                                        | Со сдачей проблем не возникло, правда я немного поцарапала бампер.
+                                        | Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
+
+                                    .author Google Отзывы
+
+                                    a(href="#").btn.btn-blue
+                                        span.d-flex
+                                            span.text Смотреть все отзывы
+                                            img.icon(src="../images/icons/arrow-white.png")
+
+                            .swiper-slide
+                                .reviews-slider--item
+                                    .name-wrap
+                                        .quotes “
+                                        .text
+                                            .name Наталья Горбунцова
+                                            .rating(data-rating-count="2")
+                                                .rating--list
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+
+                                    .description Ставлю 5 звезд. Создали заявку через их приложение, отзвонились через 10 минут,
+                                        | забронировали авто. По приезду - авто чистый, документы оформили быстро.
+                                        | Со сдачей проблем не возникло, правда я немного поцарапала бампер.
+                                        | Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
+
+                                    .author Google Отзывы
+
+                                    a(href="#").btn.btn-blue
+                                        span.d-flex
+                                            span.text Смотреть все отзывы
+                                            img.icon(src="../images/icons/arrow-white.png")
+
+                            .swiper-slide
+                                .reviews-slider--item
+                                    .name-wrap
+                                        .quotes “
+                                        .text
+                                            .name Наталья Горбунцова
+                                            .rating(data-rating-count="2")
+                                                .rating--list
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+                                                    .icon.disabled
+
+                                    .description Ставлю 5 звезд. Создали заявку через их приложение, отзвонились через 10 минут,
+                                        | забронировали авто. По приезду - авто чистый, документы оформили быстро.
+                                        | Со сдачей проблем не возникло, правда я немного поцарапала бампер.
+                                        | Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
+
+                                    .author Google Отзывы
+
+                                    a(href="#").btn.btn-blue
+                                        span.d-flex
+                                            span.text Смотреть все отзывы
+                                            img.icon(src="../images/icons/arrow-white.png")
+
+                        .swiper-button-prev
+                        .swiper-button-next
 
 
         include ./blocks/footer.jade

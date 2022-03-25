@@ -263,6 +263,15 @@ $(document).ready(function() {
         },
     });
 
+    new Swiper('.js-reviews-slider', {
+        slidesPerGroup: 1,
+        simulateTouch: true,
+        spaceBetween: 330,
+        navigation: {
+            nextEl: ".js-reviews-slider .swiper-button-next",
+            prevEl: ".js-reviews-slider .swiper-button-prev",
+        },
+    });
 
     /*** Range slider ***/
 
@@ -336,6 +345,23 @@ $(document).ready(function() {
     }
     
     /*** End Sliders ***/
+
+
+    /*** Rating ***/
+
+    $('[data-rating-count]').each(function () {
+        let rating = $(this).data('rating-count');
+        let stars = $(this).find('.icon');
+
+        for (let i = 0; i < stars.length; i++) {
+
+            if (rating > i) {
+                stars[i].classList.remove('disabled');
+            }
+        }
+    });
+
+    /*** End Rating ***/
 
 
     /*** Modal ***/
@@ -442,6 +468,8 @@ $(document).ready(function() {
         $(this).parents('.custom-select').removeClass('opened');
         $(this).parents('.custom-select').find('.custom-select-trigger').html(template).addClass('added');
     });
+
+    /*** End Custom select ***/
 
     $('.fancybox').fancybox();
 });

@@ -253,3 +253,210 @@
 }
 
 /*** End Car select ***/
+
+
+/*** Advantages ***/
+
+.advantages-block-wrap {
+    padding: 140px 0 160px;
+
+    .title-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        h2,
+        h3,
+        h4 {
+            flex: 1;
+            max-width: 650px;
+        }
+    }
+
+    .info-block {
+        display: flex;
+        align-self: center;
+        flex: 1;
+        max-width: 550px;
+
+        .image {
+            width: 145px;
+            height: 145px;
+            min-width: 145px;
+            margin-right: 50px;
+        }
+
+        .text {
+            font-size: 21px;
+            line-height: 28px;
+        }
+    }
+
+    .more-block {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 100px;
+        font-family: $font-base-semiBold;
+
+        .image {
+            flex: 1;
+            max-width: 280px;
+            margin-right: 100px;
+        }
+
+        .text {
+            flex: 1;
+            max-width: 526px;
+            margin-right: 70px;
+        }
+
+        .title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        p {
+            font-size: 23px;
+            line-height: 30px;
+            opacity: .77;
+        }
+
+        .btn {
+            flex: 1;
+            max-width: 225px;
+        }
+    }
+}
+
+.step-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0 0 0;
+
+    &--item {
+        flex: 100%;
+        max-width: 25%;
+        padding: 40px 20px 0 0;
+    }
+
+    .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 45px;
+        background-color: $blueLight;
+        background-image: url(../images/step-num-bg.png);
+        background-size: cover;
+        font-family: $font-base-semiBold;
+        font-style: italic;
+        font-size: 42px;
+        color: $white;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .text {
+        max-width: 280px;
+        font-family: $font-base-semiBold;
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+/*** End Advantages ***/
+
+
+/*** Reviews ***/
+
+.reviews-block-wrap {
+    padding: 160px 0;
+    background-image: url('../images/reviews-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.reviews-slider {
+    max-width: 1116px;
+    margin: 160px auto 0;
+    padding: 0 116px;
+    overflow: visible;
+
+    .name-wrap {
+        display: flex;
+
+        .quotes  {
+            flex: 1;
+            max-width: 110px;
+            height: 80px;
+            margin-right: 80px;
+            font-size: 333px;
+            line-height: 250px;
+            color: $redBright;
+        }
+
+        .name {
+            font-family: $font-base-semiBold;
+            font-size: 27px;
+        }
+
+        .rating {
+            margin-top: 16px;
+        }
+    }
+
+    .description {
+        margin-top: 80px;
+        font-family: $font-base-semiBold;
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .author {
+        margin-top: 60px;
+        font-family: $font-base-semiBold;
+        font-size: 24px;
+        opacity: .7;
+    }
+
+    .btn {
+        margin-top: 100px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 16px;
+        height: 64px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 6px;
+            width: 4px;
+            height: 34px;
+            margin: 0;
+            background: $black;
+            border-radius: 4px;
+            transform: rotate(-20deg) translate(0, 0);
+        }
+
+        &:before {
+            top: auto;
+            bottom: 0;
+            transform: rotate(20deg);
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
+
+/*** End Reviews ***/
