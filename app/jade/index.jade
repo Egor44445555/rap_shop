@@ -6,7 +6,7 @@ html
         include ./blocks/header.jade
 
         .wrapper
-            .hero-block(style="background-image: url(../images/assets/hero-image.jpg)")
+            .hero-block(style="background-image: url(images/assets/hero-image.jpg)")
                 .container-block
                     .info
                         h1.title.text-uppercase Прокат автомобилей по всей России
@@ -14,10 +14,10 @@ html
                         a(href="#").btn.btn-blue
                             span.d-flex
                                 span.text Выбрать автомобиль
-                                img.icon(src="../images/icons/arrow-white.png")
+                                img.icon(src="images/icons/arrow-white.png")
 
                         .info-text
-                            img(src="../images/assets/keys.png")
+                            img(src="images/assets/keys.png")
                             p Подберите автомобиль в 2 клика и рассчитайте стоимость аренды онлайн
 
             include ./blocks/car-select.jade
@@ -30,7 +30,7 @@ html
 
                         .info-block
                             .image
-                                img(src="../images/passport.jpg")
+                                img(src="images/passport.jpg")
                             .text Для оформления договора
                                 | понадобится только паспорт
                                 | и водительское удостоверение
@@ -59,7 +59,7 @@ html
 
                     .more-block
                         .image
-                            img(src="../images/car.jpg")
+                            img(src="images/car.jpg")
                         .text
                             .title Для владельцев автомобилей —
                             p возможность сдать свой автомобиль в прокат и отслеживать до ход от аренды онлайн
@@ -96,7 +96,7 @@ html
                                     a(href="#").btn.btn-blue
                                         span.d-flex
                                             span.text Смотреть все отзывы
-                                            img.icon(src="../images/icons/arrow-white.png")
+                                            img.icon(src="images/icons/arrow-white.png")
 
                             .swiper-slide
                                 .reviews-slider--item
@@ -122,7 +122,7 @@ html
                                     a(href="#").btn.btn-blue
                                         span.d-flex
                                             span.text Смотреть все отзывы
-                                            img.icon(src="../images/icons/arrow-white.png")
+                                            img.icon(src="images/icons/arrow-white.png")
 
                             .swiper-slide
                                 .reviews-slider--item
@@ -148,11 +148,61 @@ html
                                     a(href="#").btn.btn-blue
                                         span.d-flex
                                             span.text Смотреть все отзывы
-                                            img.icon(src="../images/icons/arrow-white.png")
+                                            img.icon(src="images/icons/arrow-white.png")
 
                         .swiper-button-prev
                         .swiper-button-next
 
+            .app-block-wrap
+                .container-block
+                    .app-block
+                        .info
+                            .title Бронируйте авто
+                                | всего в 2 клика
+                                | через мобильное
+                                | приложение
+                            .description Теперь арендовать автомобиль
+                                | можно прямо с телефона,
+                                | из любого места, где
+                                | бы клиент ни находился
+
+                            .payment-list
+                                .payment-list--item
+                                    img(src="images/payment-google.png")
+                                .payment-list--item
+                                    img(src="images/payment-apple.png")
+
+                        .image
+                            img(src="images/mobile-app.png")
+
+            .about-block-wrap(style="background-image: url(images/about-block-bg.jpg);")
+                .container-block
+                    .about-block
+                        .info
+                            .title Откройте офис росавтопрокат в своем городе
+                            .description Мы поможем легко стартовать и принимать первые заказы
+
+                            .count-wrap
+                                .num 52
+                                .text города в нашей сети, присоединяйтесь
+                                a(href="#").btn.btn-blue Больше о франшизе
+
+                        .bottom-block
+                            ul
+                                li На выбор — несколько удобных пакетов франшизы
+                                li Предоставляем уже готовые материалы для вашей работы
+                                li Проводим обучение ведению бизнеса по прокату
+                            .car-list
+                                .car-list--item
+                                    .image
+                                    .info
+                                        .title Toyota Fortuner
+                                        .cost от 1500 руб./ сут.
+                                .car-list--item
+                                    .image
+                                    .info
+                                        .title Toyota Fortuner
+                                        .cost от 1500 руб./ сут.
 
         include ./blocks/footer.jade
         include ./blocks/modals.jade

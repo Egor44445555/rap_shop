@@ -370,7 +370,7 @@
 /*** Reviews ***/
 
 .reviews-block-wrap {
-    padding: 160px 0;
+    padding: 160px 0 60px;
     background-image: url('../images/reviews-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -382,6 +382,13 @@
     margin: 160px auto 0;
     padding: 0 116px;
     overflow: visible;
+
+    .swiper-slide-active {
+
+        .btn {
+            display: inline-block;
+        }
+    }
 
     .name-wrap {
         display: flex;
@@ -421,6 +428,7 @@
     }
 
     .btn {
+        display: none;
         margin-top: 100px;
     }
 
@@ -460,3 +468,90 @@
 }
 
 /*** End Reviews ***/
+
+
+/*** Mobile app ***/
+
+.app-block-wrap {
+    padding: 360px 0 160px;
+    background-image: url('../images/app-block-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.app-block {
+    display: flex;
+    align-items: center;
+
+    .info {
+        max-width: 580px;
+    }
+
+    .title {
+        font-family: $font-base-semiBold;
+        font-size: 58px;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .description {
+        position: relative;
+        max-width: 500px;
+        margin-top: 75px;
+        padding: 40px 0 0 65px;
+        font-size: 30px;
+        line-height: 40px;
+        color: $textGray;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 5px;
+            width: 16px;
+            height: 25px;
+            background: $redBright;
+            transform: skew(-40deg, 0);
+            border-radius: 2px;
+        }
+    }
+
+    .payment-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 145px 0 0 -15px;
+
+        &--item {
+            margin: 15px 0 0 15px;
+            box-shadow: 0 0 27px rgba(229, 229, 229, .78);
+        }
+
+        img {
+            border-radius: 2px;
+        }
+    }
+
+    .image {
+        position: relative;
+        left: calc(50vw - 800px);
+    }
+}
+
+/*** End Mobile app ***/
+
+
+/*** About block ***/
+
+.about-block-wrap {
+    padding: 200px;
+}
+
+.about-block {
+
+    .info {
+        padding: 0 0 0 500px;
+    }
+}
+
+/*** End About block ***/
