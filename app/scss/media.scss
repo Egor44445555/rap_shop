@@ -4,6 +4,12 @@
 
 @media (max-width: 1601px) {
 
+    h1,
+    .h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
     .benefits-list {
 
         &--item {
@@ -51,6 +57,59 @@
             margin-right: 15px;
             font-size: 16px;
             line-height: 20px;
+        }
+    }
+
+
+    .app-block .image {
+        left: calc(50vw - 600px);
+    }
+
+
+    .about-block-wrap {
+        padding: 100px 0;
+    }
+
+    .about-block {
+
+        .info {
+            padding-left: 35%;
+
+            .description {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .count-wrap {
+
+                .num {
+                    max-width: 140px;
+                    font-size: 110px;
+                    line-height: 80px;
+                }
+
+                .text {
+                    padding: 0 60px 0 20px;
+                }
+            }
+        }
+
+        ul {
+            max-width: calc(100% - 460px);
+
+            li {
+                padding-right: 40px;
+            }
+        }
+    }
+
+
+    .partners-block {
+        margin-left: -80px;
+
+        &--item {
+            max-width: calc(50% - 80px);
+            margin: 40px 0 0 80px;
         }
     }
 }

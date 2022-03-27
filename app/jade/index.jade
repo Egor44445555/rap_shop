@@ -12,9 +12,9 @@ html
                         h1.title.text-uppercase Прокат автомобилей по всей России
                         p Мы предлагаем удобный сервис аренды автомобилей от эконом до премиум класса
                         a(href="#").btn.btn-blue
-                            span.d-flex
+                            span.d-flex.align-items-center
                                 span.text Выбрать автомобиль
-                                img.icon(src="images/icons/arrow-white.png")
+                                .icon.arrow
 
                         .info-text
                             img(src="images/assets/keys.png")
@@ -66,7 +66,7 @@ html
 
                         a(href="#").btn.btn-blue Узнать больше
 
-            .reviews-block-wrap
+            .reviews-block-wrap(style="background-image: url(images/reviews-bg.jpg);")
                 .container-block
                     h2.title.text-uppercase ОТЗЫВЫ АРЕНДАТОРОВ
 
@@ -94,9 +94,9 @@ html
                                     .author Google Отзывы
 
                                     a(href="#").btn.btn-blue
-                                        span.d-flex
+                                        span.d-flex.align-items-center
                                             span.text Смотреть все отзывы
-                                            img.icon(src="images/icons/arrow-white.png")
+                                            .icon.arrow
 
                             .swiper-slide
                                 .reviews-slider--item
@@ -120,9 +120,9 @@ html
                                     .author Google Отзывы
 
                                     a(href="#").btn.btn-blue
-                                        span.d-flex
+                                        span.d-flex.align-items-center
                                             span.text Смотреть все отзывы
-                                            img.icon(src="images/icons/arrow-white.png")
+                                            .icon.arrow
 
                             .swiper-slide
                                 .reviews-slider--item
@@ -146,14 +146,14 @@ html
                                     .author Google Отзывы
 
                                     a(href="#").btn.btn-blue
-                                        span.d-flex
+                                        span.d-flex.align-items-center
                                             span.text Смотреть все отзывы
-                                            img.icon(src="images/icons/arrow-white.png")
+                                            .icon.arrow
 
                         .swiper-button-prev
                         .swiper-button-next
 
-            .app-block-wrap
+            .app-block-wrap(style="background-image: url(images/app-block-bg.jpg);")
                 .container-block
                     .app-block
                         .info
@@ -179,30 +179,119 @@ html
                 .container-block
                     .about-block
                         .info
-                            .title Откройте офис росавтопрокат в своем городе
+                            h2.h1.title.semibold.text-uppercase Откройте офис росавтопрокат в своем городе
                             .description Мы поможем легко стартовать и принимать первые заказы
 
                             .count-wrap
-                                .num 52
-                                .text города в нашей сети, присоединяйтесь
-                                a(href="#").btn.btn-blue Больше о франшизе
+                                .num.semibold 52
+                                .text.semibold города в нашей сети, присоединяйтесь
+                                a(href="#").btn.btn-blue.btn-medium Больше о франшизе
 
                         .bottom-block
                             ul
                                 li На выбор — несколько удобных пакетов франшизы
                                 li Предоставляем уже готовые материалы для вашей работы
                                 li Проводим обучение ведению бизнеса по прокату
-                            .car-list
-                                .car-list--item
-                                    .image
-                                    .info
-                                        .title Toyota Fortuner
-                                        .cost от 1500 руб./ сут.
-                                .car-list--item
-                                    .image
-                                    .info
-                                        .title Toyota Fortuner
-                                        .cost от 1500 руб./ сут.
+
+            .partners-block-wrap
+                .container-block
+                    h2.title.semibold.text-uppercase Сотрудничайте с нами
+
+                    .partners-block
+                        .partners-block--item
+                            .image
+                                img(src="images/partner-image.png")
+                            .info.semibold
+                                .title Для прокатных компаний —
+                                .description Тут расписать про црм систему заточенную под прокатные компании
+
+                                a(href="#").btn.btn-blue.btn-empty
+                                    span.d-flex.align-items-center
+                                        span.text Узнать больше
+                                        span.icon.arrow
+
+                        .partners-block--item
+                            .image
+                                img(src="images/partner-image-2.png")
+                            .info.semibold
+                                .title Для владельцев автомобилей —
+                                .description возможность сдать свой автомобиль в прокат и отслеживать доход от аренды онлайн
+
+                                a(href="#").btn.btn-blue.btn-empty
+                                    span.d-flex.align-items-center
+                                        span.text Условия субаренды
+                                        span.icon.arrow
+
+            .faq-block-wrap(style="background-image: url(images/faq-block-bg.jpg);")
+                .container-block
+                    .title-wrap.d-flex.align-items-center.justify-content-between
+                        h2.h1 ЧАСТЫЕ ВОПРОСЫ
+                        a(href="#").btn.btn-blue.btn-small Все вопросы
+
+                    .faq-list
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text В каком виде я должен вернуть автомобиль?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            .contact-block-wrap
+                .container-block
+                    .contact-block
+                        .title.semibold.text-center Задайте свой вопрос удобным способом
+
+                        .social-list
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-phone.png").icon
+                                span.text Звонок
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-whatsapp.png").icon
+                                span.text Whats App
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-telegram.png").icon
+                                span.text Тelegram
 
         include ./blocks/footer.jade
         include ./blocks/modals.jade
