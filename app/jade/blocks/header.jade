@@ -4,14 +4,14 @@ header.header
             a(href="#").logo
                 img(src="../images/logo.png")
 
-            .location
+            .location.d-none.d-xxl-flex
                 .icon
                     img(src="../images/icons/location.png")
                 .text Санкт- Петербург
                 .arrow
                     img(src="../images/icons/arrow-toggle-down.svg")
 
-            .phones
+            .phones.d-none.d-xxl-flex
                 .phones--item
                     .text 8 800 250 46 00
                 .phones--item
@@ -20,7 +20,7 @@ header.header
                         img(src="../images/icons/arrow-toggle-down.svg")
 
         .right-block
-            .menu
+            .menu.d-none.d-xxl-flex
                 .menu--item.dropdown-wrap
                     .label
                         .text О нас
@@ -34,6 +34,55 @@ header.header
                 a(href="#").menu--item Аренда CRM
                 a(href="#").menu--item Контакты
 
-            .button-wrap
+            .button-wrap.d-none.d-xxl-flex
                 a(href="#").btn.btn-blue Арендовать
                 a(href="#").btn.btn-blue.btn-empty Сдать в аренду
+
+            .d-block.d-xxl-none
+                .menu-btn.js-menu-btn
+                    span
+                    span
+                    span
+
+.modal-menu-wrap
+    .wrap
+        .phones
+            .phones--item
+                .text 8 800 250 46 00
+            .phones--item
+                .text +7 (965) 25 58 16
+
+        .social-list
+            a(href='#').social-list--item
+                img(src="images/icons/social-whatsapp.png").icon
+                span.text Whats App
+            a(href='#').social-list--item
+                img(src="images/icons/social-telegram.png").icon
+                span.text Тelegram
+
+        .modal-menu
+            a(href="#").modal-menu--item Каталог
+            a(href="#").modal-menu--item Сдать авто в аренду
+            a(href="#").modal-menu--item О нас
+            a(href="#").modal-menu--item Контакты
+            a(href="#").modal-menu--item Бонусная программа
+            a(href="#").modal-menu--item Дополнительные услуги
+            a(href="#").modal-menu--item Франшиза
+            a(href="#").modal-menu--item Аренда CRM
+            a(href="#").modal-menu--item Новости
+            a(href="#").modal-menu--item Блог
+
+        .social-list.small
+            a(href='#').social-list--item
+                img(src="images/icons/social-instagram-blue.png").icon
+                span.text Инстаграм
+            a(href='#').social-list--item
+                img(src="images/icons/social-vk-blue.png").icon
+                span.text Вконтакте
+            a(href='#').social-list--item.blue
+                img(src="images/icons/social-mobile-app-white.png").icon
+                span.text Мобильное приложение
+                    span.btn.btn-small IOS
+                    span.btn.btn-small ANDROID
+
+.overflow

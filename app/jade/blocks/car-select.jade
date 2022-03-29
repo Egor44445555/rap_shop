@@ -1,7 +1,7 @@
 .car-select-block-wrap
     .container-block
         .car-select-block
-            .d-flex
+            .d-block.d-xl-flex
                 h2.text-uppercase Выберите автомобиль
                 .city-select
                     .city-select--head
@@ -28,6 +28,13 @@
                 label(for="type5").car-type-list--item
                     input(type="radio" name="type" id="type5")
                     span Внедорожники
+
+            select(placeholder="Класс машины").custom-select
+                option(value="Эконом") Эконом
+                option(value="Стандарт") Стандарт
+                option(value="Комфорт") Комфорт
+                option(value="Бизнес-класс") Бизнес-класс
+                option(value="Внедорожники") Внедорожники
 
             .car-select-slider
                 .js-slider-car-select
@@ -67,7 +74,7 @@
                                     img(src="images/assets/car.jpg")
                                     .swiper-button-next
 
-                                    .button-wrap
+                                    .button-wrap.d-none.d-lg-flex
                                         a(href="#").btn.btn-blue.btn-empty Подробнее о машине
                                         a(href="#").btn.btn-blue
                                             span.text Выбрать
@@ -90,6 +97,12 @@
                                         .label 10-15 дней:
                                         .price 2.300 Р
                                             span / сутки
+
+                                .button-wrap.d-flex.d-lg-none
+                                    a(href="#").btn.btn-blue.btn-empty Подробнее о машине
+                                    a(href="#").btn.btn-blue
+                                        span.text Выбрать
+                                        img.icon(src="images/icons/arrow-white.png")
 
                         .swiper-slide
                             .car-select-slider--item
@@ -126,7 +139,7 @@
                                     img(src="images/assets/car.jpg")
                                     .swiper-button-next
 
-                                    .button-wrap
+                                    .button-wrap.d-none.d-lg-flex
                                         a(href="#").btn.btn-blue.btn-empty Подробнее о машине
                                         a(href="#").btn.btn-blue
                                             span.text Выбрать
@@ -149,3 +162,9 @@
                                         .label 10-15 дней:
                                         .price 2.300 Р
                                             span / сутки
+
+                                .button-wrap.d-flex.d-lg-none
+                                    a(href="#").btn.btn-blue.btn-empty Подробнее о машине
+                                    a(href="#").btn.btn-blue
+                                        span.text Выбрать
+                                        img.icon(src="images/icons/arrow-white.png")

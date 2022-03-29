@@ -3,7 +3,7 @@
 .hero-block {
     min-height: 1099px;
     margin-bottom: 77px;
-    padding: 290px 40px 40px;
+    padding: 290px 0 40px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -65,6 +65,10 @@
 
     .city-select {
         margin-left: 40px;
+    }
+
+    .custom-select-wrapper {
+        display: none;
     }
 }
 
@@ -221,6 +225,7 @@
 
 .car-type-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 80px -10px 0;
 
@@ -243,7 +248,7 @@
         align-items: center;
         justify-content: center;
         height: 40px;
-        margin: 20px 10px;
+        margin: 20px 10px 0;
         padding: 10px 30px;
         font-family: $font-base-semiBold;
         text-align: center;
@@ -592,6 +597,10 @@
 
     .bottom-block {
         margin-top: 120px;
+
+        .btn {
+            display: none;
+        }
     }
 
     ul {
@@ -761,7 +770,7 @@
 /*** Contact block ***/
 
 .contact-block-wrap {
-    padding: 48px 0 136px;
+    padding: 50px 0 136px;
 }
 
 .contact-block {

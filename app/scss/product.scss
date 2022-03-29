@@ -125,3 +125,45 @@
         }
     }
 }
+
+
+/*** Media ***/
+
+@media (max-width: 1441px) {
+
+    .product-list {
+        margin: -20px 0 0 -20px;
+
+        .product-item,
+        .more-btn {
+            max-width: calc(25% - 20px);
+            margin: 20px 0 0 20px;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .product-list-wrap {
+        padding: 40px 0;
+    }
+
+    .product-list {
+
+        .product-item,
+        .more-btn {
+            max-width: calc(33.333% - 20px);
+        }
+    }
+}
+
+@media (max-width: 769px) {
+
+    .product-list {
+
+        .product-item,
+        .more-btn {
+            max-width: calc(50% - 20px);
+        }
+    }
+}

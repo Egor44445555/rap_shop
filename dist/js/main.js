@@ -1,6 +1,7 @@
 $(document).ready(function() {
     let _html = $('html');
     let body = $('body');
+    let burgerBtn = $(".js-menu-btn");
     let customScroll = $(".js-custom-scroll");
     let tooltip = $('[data-toggle="tooltip"]');
     let optionsBtn = $('.options-btn');
@@ -11,16 +12,16 @@ $(document).ready(function() {
     let cartModal = $('.cart-modal');
     let cartBtn = $('.icon-list--item.cart');
     let mobileMenu = $('.mobile-menu-wrap');
-    let catalogBtn = $('.catalog-btn');
     let modalMenu = $('.modal-menu-wrap');
     let modalMenuClose = $('.modal-menu-wrap .close');
     let gridBtn = $('.grid-type--item');
 
-    catalogBtn.on('click', function (e) {
+    burgerBtn.on('click', function (e) {
         e.preventDefault();
 
         modalMenu.toggleClass('open');
         $(this).toggleClass('active');
+        overflow.addClass('active');
 
         if (_html.hasClass('noscroll')) {
             _html.addClass('noscroll');
@@ -38,22 +39,16 @@ $(document).ready(function() {
         mobileMenu.removeClass('open');
         _html.removeClass('noscroll');
         body.removeClass('noscroll');
+        overflow.removeClass('active');
 
         return false
     });
 
-    $('.js-mobile-menu-btn').on('click', function (e) {
-        e.preventDefault();
-
-        $('html, body').addClass('noscroll');
-        mobileMenu.addClass('open');
-    });
-
-    $('.mobile-menu-wrap .close, .mobile-menu-wrap .overflow').on('click', function (e) {
+    $('.mobile-menu-wrap .close, .overflow').on('click', function (e) {
         e.preventDefault();
 
         $('html, body').removeClass('noscroll');
-        mobileMenu.removeClass('open');
+        modalMenu.removeClass('open');
     });
 
     tooltip.tooltip({
