@@ -21,7 +21,7 @@ $(document).ready(function() {
 
         modalMenu.toggleClass('open');
         $(this).toggleClass('active');
-        overflow.addClass('active');
+        overflow.toggleClass('active');
 
         if (_html.hasClass('noscroll')) {
             _html.addClass('noscroll');

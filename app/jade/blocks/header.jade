@@ -45,12 +45,12 @@ header.header
                     span
 
 .modal-menu-wrap
-    .wrap
+    .wrap.js-custom-scroll
         .phones
-            .phones--item
-                .text 8 800 250 46 00
-            .phones--item
-                .text +7 (965) 25 58 16
+            a(href="tel:8 800 250 46 00").phones--item
+                span.text 8 800 250 46 00
+            a(href="tel:+7 (965) 25 58 16").phones--item
+                span.text +7 (965) 25 58 16
 
         .social-list
             a(href='#').social-list--item
@@ -79,10 +79,12 @@ header.header
             a(href='#').social-list--item
                 img(src="images/icons/social-vk-blue.png").icon
                 span.text Вконтакте
-            a(href='#').social-list--item.blue
-                img(src="images/icons/social-mobile-app-white.png").icon
-                span.text Мобильное приложение
-                    span.btn.btn-small IOS
-                    span.btn.btn-small ANDROID
+            .social-list--item.blue
+                img(src="images/icons/social-mobile-app-blue.png").icon
+                .text
+                    span Мобильное приложение
+                    .button-wrap
+                        a(href="#").btn.btn-blue.btn-small IOS
+                        a(href="#").btn.btn-blue.btn-small ANDROID
 
 .overflow

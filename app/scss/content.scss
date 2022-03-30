@@ -733,6 +733,11 @@
         color: $textGray;
         cursor: pointer;
 
+        .text {
+            max-height: 100%;
+            overflow: hidden;
+        }
+
         .icon {
             display: flex;
             align-items: center;
@@ -760,7 +765,7 @@
     }
 
     &--item-body {
-        padding: 0 40px 30px;
+        padding: 10px 40px 30px;
     }
 }
 

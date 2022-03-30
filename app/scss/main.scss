@@ -312,6 +312,32 @@ a {
 }
 
 
+.mCSB_scrollTools {
+    opacity: 1;
+
+    .mCSB_draggerRail {
+        background-color: $grayIcon;
+    }
+
+    .mCSB_dragger {
+
+        &:hover,
+        &:active,
+        &:focus,
+        &.mCSB_dragger_onDrag {
+
+            .mCSB_dragger_bar {
+                background: $blue;
+            }
+        }
+
+        .mCSB_dragger_bar {
+            background: $blue;
+        }
+    }
+}
+
+
 /*** Tabs ***/
 
 .tabs {
