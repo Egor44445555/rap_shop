@@ -1110,12 +1110,12 @@ select {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 35px 0 0 -30px;
+    margin: 35px 0 0 -15px;
 
     &--item {
         position: relative;
-        margin: 15px 0 0;
-        padding: 0 0 0 30px;
+        margin: 15px 0 0 15px;
+        padding: 0 0 0 15px;
         font-family: $font-base-semiBold;
         font-size: 14px;
         line-height: 20px;
@@ -1129,7 +1129,7 @@ select {
             content: '-';
             position: absolute;
             top: 50%;
-            left: 8px;
+            left: -2px;
             transform: translateY(-50%);
             font-family: $font-base-semiBold;
             font-size: 14px;

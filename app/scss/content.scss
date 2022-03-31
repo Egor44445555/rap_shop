@@ -809,3 +809,48 @@
 }
 
 /*** End Contact block ***/
+
+
+/*** Rent block ***/
+
+.rent-info-block-wrap {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rent-info-block {
+    display: flex;
+
+    .info {
+        padding: 90px 40px 90px 0;
+    }
+
+    .title {
+        font-size: 42px;
+        font-family: $font-base-semiBold;
+    }
+
+    p {
+        margin-top: 35px;
+        font-size: 35px;
+    }
+
+    .description {
+        position: relative;
+        padding: 40px 0 0 70px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 25px;
+            background: $redBright;
+            transform: skew(-40deg, 0);
+            border-radius: 2px;
+        }
+    }
+}
+
+/*** End Rent block ***/
