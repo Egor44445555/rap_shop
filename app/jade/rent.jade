@@ -20,12 +20,64 @@ html
                         .info
                             h2.title АРЕНДА CRM
                             p Нужен инструмент для приема заказов? У нас есть готовое решение.
-                            .description CRM «Росавтопрокат» — это готовая
-                                | многофункциональная система
-                                | учета заказов и приема заявок, полностью
-                                | адаптированая под прокатный бизнес
-                            a(href="#").btn.btn-blue Тестовый доступ
+                            .description
+                                p CRM «Росавтопрокат» — это готовая
+                                    | многофункциональная система
+                                    | учета заказов и приема заявок, полностью
+                                    | адаптированая под прокатный бизнес
+                                a(href="#").btn.btn-blue Тестовый доступ
                         img(src="images/rent-image.png").image
+
+            .advantages-list-wrap
+                .container-block
+                    .advantages-list
+                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Возможность отслеживать
+                            | все изменения в вашей компании
+                            | от расходов, до договоров
+                            | и автопарка
+                        .advantages-list--item(style="background-image: url(images/advantages-2.jpg);") Отслеживать местоположение
+                            | всех автомобилей по GPS
+                            | онлайн
+                        .advantages-list--item(style="background-image: url(images/advantages-3.jpg);") Возможность заносить
+                            | информацию по нескольким
+                            | городам или офисам в городе
+
+            .rent-info-list-wrap
+                .container-block
+                    .rent-info-list
+                        .rent-info-list--item
+                            .image
+                                img(src="images/assets/rent-info-image.jpg")
+                            .info
+                                ul
+                                    li Все клиенты собранные в одном месте,
+                                        | удобный поиск, перемещение
+                                        | по датам аренды
+                                    li Синхронизация с нашим сервисом
+                                        | и проверкой клиента
+                                        a(href="#") blacklistprokat.ru
+
+                        .rent-info-list--item
+                            .image
+                                img(src="images/assets/rent-info-image-2.jpg")
+                            .info
+                                ul
+                                    li Храните все документы и договора
+                                        | Формируйте новые договора
+                                        | прямо в программе
+                                    li Заносите в систему и отслеживайте
+                                        | отчеты по плановым ТО
+
+                    .d-flex.justify-content-center
+                        a(href="#").btn.btn-blue Тестовый доступ
+
+            .about-block-small-wrap(style="background-image: url(images/about-block-small-bg.jpg);")
+                .container-block
+                    .about-block-small
+                        .info
+                            h2.h1.title.semibold.text-uppercase Откройте офис росавтопрокат в своем городе
+                            .description Мы поможем легко стартовать и принимать первые заказы
+                            a(href="#").btn.btn-blue.btn-medium Больше о франшизе
 
 
         include ./blocks/footer.jade
