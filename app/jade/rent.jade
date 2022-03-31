@@ -1,0 +1,33 @@
+html
+    title Аренда
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Аренда CRM
+
+            .rent-info-block-wrap(style="background-image: url(images/rent-block-bg.jpg);")
+                .container-block
+                    .rent-info-block
+                        .info
+                            h2.title АРЕНДА CRM
+                            p Нужен инструмент для приема заказов? У нас есть готовое решение.
+                            .description CRM «Росавтопрокат» — это готовая
+                                | многофункциональная система
+                                | учета заказов и приема заявок, полностью
+                                | адаптированая под прокатный бизнес
+                            a(href="#").btn.btn-blue Тестовый доступ
+                        img(src="images/rent-image.png").image
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

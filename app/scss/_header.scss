@@ -1,9 +1,20 @@
+.main-page {
+
+    .header {
+        position: absolute;
+
+        .wrap {
+            border-bottom: 0;
+        }
+    }
+}
+
 .header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 70px 0 0;
+    padding: 0 40px;
     z-index: 99;
 
     .wrap {
@@ -12,7 +23,8 @@
         justify-content: space-between;
         max-width: 1960px;
         margin: 0 auto;
-        padding: 0 40px;
+        padding: 60px 0;
+        border-bottom: 1px solid $borderColor;
     }
 
     .left-block,
@@ -40,11 +52,13 @@
     }
 
     .phones {
+        flex-direction: column;
         margin-left: 80px;
 
         &--item {
             display: flex;
             align-items: flex-end;
+            width: 100%;
         }
 
         .arrow {
@@ -270,10 +284,10 @@
 @media (max-width: 1601px) {
 
     .header {
-        padding-top: 20px;
+        padding: 0 20px;
 
         .wrap {
-            padding: 0 20px;
+            padding: 20px 0;
         }
 
         .logo {
@@ -311,12 +325,14 @@
         height: 85px;
         display: flex;
         align-items: center;
-        padding: 20px 0;
+        padding: 20px;
         background: $white;
         box-shadow: 0 0 21px rgba(0, 0, 0, .41%);
 
         .wrap {
             width: 100%;
+            padding: 0;
+            border-bottom: 0;
         }
     }
 }
