@@ -657,7 +657,41 @@
     }
 }
 
+.about-block-small-wrap {
+    min-height: 677px;
+    background-size: cover;
+}
 
+.about-block-small {
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+        max-width: 1100px;
+        padding: 110px 20px 166px 548px;
+        background-image: url('../images/hand-keys-big.png');
+        background-repeat: no-repeat;
+        background-position: left -200px;
+    }
+
+    .description {
+        margin-top: 30px;
+        font-size: 34px;
+        color: $textGray;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 324px;
+        margin-top: 60px;
+    }
+
+    .image {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: -100px;
+    }
+}
 
 /*** End About block ***/
 
@@ -979,3 +1013,45 @@
 }
 
 /*** End Rent block ***/
+
+
+/*** rent out ***/
+
+.rent-out-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 128px 0 187px;
+
+    .info {
+        flex: 1;
+        max-width: 820px;
+        padding-left: 150px;
+    }
+
+    .image {
+        flex: 1;
+        max-width: 1200px;
+        margin-left: -50px;
+        padding-top: 193px;
+    }
+
+    .title {
+        max-width: 690px;
+    }
+
+    .description {
+        max-width: 470px;
+        margin-top: 40px;
+        font-size: 34px;
+        line-height: 40px;
+        color: $textGray;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 325px;
+        margin-top: 50px;
+    }
+}
+
+/*** End rent out ***/
