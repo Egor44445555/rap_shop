@@ -1021,6 +1021,9 @@
     display: flex;
     justify-content: space-between;
     padding: 128px 0 187px;
+    background: url(../images/lines-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
 
     .info {
         flex: 1;

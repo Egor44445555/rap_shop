@@ -245,6 +245,25 @@ $(document).ready(function() {
 
     /*** Sliders ***/
 
+    new Swiper('.js-slider-image', {
+        slidesPerGroup: 1,
+        simulateTouch: true,
+        breakpoints: {
+            769: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            1281: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+            },
+            1601: {
+                slidesPerView: 5,
+                slidesPerGroup: 5,
+            }
+        }
+    });
+
     new Swiper('.js-slider-car-select', {
         slidesPerGroup: 1,
         simulateTouch: true,

@@ -1,5 +1,91 @@
 .footer {
     position: relative;
+    padding: 0 40px 150px;
+
+    .wrap {
+        padding-top: 100px;
+        border-top: 1px solid $borderColorLight;
+    }
+
+    .contact-block {
+        padding: 70px 0 0 70px;
+
+        .footer-menu {
+            margin-top: 50px;
+        }
+    }
+
+    .phone-wrap {
+
+        .text {
+            max-width: 205px;
+            padding-top: 30px;
+            font-size: 14px;
+            line-height: 24px;
+            color: $textGrayLight;
+        }
+    }
+
+    .phone {
+        font-family: $font-base-semiBold;
+        font-size: 30px;
+        color: $black;
+    }
+
+    .social-list {
+        justify-content: flex-start;
+        margin: 50px 0 0 -30px;
+
+        &--item {
+            padding: 30px 0 0 30px;
+        }
+    }
+
+    .mobile-app {
+
+        .title {
+            font-family: $font-base-bold;
+            font-size: 26px;
+        }
+
+        .description {
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    .payment-list {
+        display: flex;
+        margin: 30px 0 0 -10px;
+
+        &--item {
+            flex: 100%;
+            max-width: calc(50% - 10px);
+            margin: 10px 0 0 10px;
+            box-shadow: 0 0 27px rgba(229, 229, 229, .78);
+        }
+    }
+}
+
+.footer-menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-menu {
+    flex: 50%;
+
+    &--item {
+        display: block;
+        margin-top: 30px;
+        font-size: 22px;
+        color: $black;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 }
 
 
