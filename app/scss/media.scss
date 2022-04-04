@@ -97,6 +97,70 @@
     .hero-block {
         padding-top: 160px;
     }
+
+    .rent-info-block .info {
+        padding: 60px 20px 45px 0;
+    }
+
+    .advantages-list-wrap {
+        padding: 45px 0;
+    }
+
+    .advantages-list {
+        margin: -20px 0 0 -20px;
+
+        &--item {
+            max-width: calc(33.333% - 20px);
+            margin: 20px 0 0 20px;
+            padding: 45px 70px 120px 35px;
+        }
+    }
+
+
+    .rent-info-list-wrap {
+        padding: 75px 0 70px;
+
+        .btn {
+            margin-top: 90px;
+        }
+    }
+
+    .rent-info-list--item {
+
+        &:nth-child(even) {
+
+            .image {
+                margin: 0 0 0 40px;
+            }
+
+            .info {
+                padding-left: 0;
+            }
+        }
+
+        .image {
+            margin-right: 40px;
+        }
+    }
+
+
+    .about-block-small {
+
+        .info {
+            max-width: 900px;
+            padding: 70px 20px 80px 350px;
+            background-position: -100px -190px;
+        }
+    }
+
+
+    .rent-out-block {
+        padding: 90px 0 100px;
+
+        .info {
+            padding-left: 40px;
+        }
+    }
 }
 
 /******************************************************************/
@@ -134,6 +198,10 @@
     h2, .h2 {
         font-size: 37px;
         line-height: 46px;
+    }
+
+    .breadcrumbs {
+        margin-top: 15px;
     }
 
     .rating--list {
@@ -504,6 +572,77 @@
             line-height: 30px;
         }
     }
+
+
+    .rent-info-block {
+
+        .title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        p {
+            font-size: 23px;
+            line-height: 32px;
+        }
+
+        .description {
+            margin-top: 60px;
+
+            p {
+                font-size: 25px;
+                line-height: 35px;
+            }
+
+            .btn {
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    .advantages-list {
+
+        &--item {
+            max-width: calc(50% - 20px);
+            padding: 20px 20px 110px 20px;
+        }
+    }
+
+    .about-block-small {
+        display: block;
+
+        .image {
+            justify-content: flex-end;
+            margin-bottom: 0;
+        }
+
+        .info {
+            padding: 80px 20px 60px 170px;
+            background-position: -18px 86px;
+            background-size: 180px;
+        }
+    }
+
+
+    .rent-out-block {
+        display: block;
+
+        .image {
+            margin-left: 0;
+            padding: 60px 35px 0;
+        }
+
+        .description {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .btn {
+            margin-top: 60px;
+            font-size: 20px;
+        }
+    }
 }
 
 /******************************************************************/
@@ -514,8 +653,59 @@
 
 /******************************************************************/
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
 
+    .rent-info-block {
+
+        .image {
+            margin-top: 50px;
+            max-height: 400px;
+        }
+
+        .info {
+            padding: 40px 0;
+        }
+    }
+
+    .rent-info-list-wrap {
+
+        .btn {
+            width: 100%;
+            max-width: 390px;
+        }
+    }
+
+    .rent-info-list {
+
+        &--item {
+            display: block;
+            margin-top: 70px;
+
+            &:nth-child(even) .image {
+                margin: 0 0 40px;
+            }
+        }
+
+        .image {
+            margin: 0 0 70px;
+        }
+
+        img {
+            max-height: 240px;
+        }
+    }
+
+
+    .about-block-small {
+
+        .image img {
+            max-height: 273px;
+        }
+
+        .btn {
+            max-width: 390px;
+        }
+    }
 }
 
 /******************************************************************/

@@ -246,20 +246,39 @@ $(document).ready(function() {
     /*** Sliders ***/
 
     new Swiper('.js-slider-image', {
-        slidesPerGroup: 1,
+        slidesPerGroup: 2,
         simulateTouch: true,
+        grid: {
+            rows: 3,
+        },
         breakpoints: {
-            769: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-            },
-            1281: {
+            320: {
                 slidesPerView: 4,
                 slidesPerGroup: 4,
+                grid: {
+                    rows: 3,
+                },
+            },
+            561: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                grid: {
+                    rows: 3,
+                },
+            },
+            1025: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                grid: {
+                    rows: 3,
+                },
             },
             1601: {
                 slidesPerView: 5,
                 slidesPerGroup: 5,
+                grid: {
+                    rows: 3,
+                },
             }
         }
     });
