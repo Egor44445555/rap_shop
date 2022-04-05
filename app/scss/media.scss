@@ -812,12 +812,16 @@
         }
     }
 
-    .reviews-slider--item {
-        display: flex;
-        flex-direction: column;
-    }
-    .reviews-slider .btn {
-        margin: 60px -68px 0;
+    .reviews-slider {
+
+        &--item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn {
+            margin: 60px -68px 0;
+        }
     }
 
 
@@ -909,6 +913,81 @@
                     margin-top: 0;
                 }
             }
+        }
+    }
+
+
+    .rent-info-block {
+
+        p {
+            max-width: 370px;
+            margin-top: 15px;
+        }
+
+        .description {
+            padding: 40px 0 0 40px;
+
+            .btn {
+                display: flex;
+                width: auto;
+                margin-left: -40px;
+            }
+        }
+    }
+
+    .rent-info-list {
+
+        ul li {
+            padding: 35px 0 0 35px;
+        }
+    }
+
+    .advantages-list--item {
+        max-width: calc(100% - 20px);
+    }
+
+
+    .about-block-small-wrap {
+        background: none !important;
+    }
+
+    .about-block-small {
+
+        .info {
+            padding: 70px 20px 60px;
+            background-position: -18px 217px;
+            background-size: 124px;
+        }
+
+        .description {
+            margin-top: 70px;
+            padding-left: 100px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .image {
+            margin-top: -40px;
+        }
+    }
+
+
+    .rent-out-block {
+
+        .info {
+            padding: 0 20px;
+        }
+
+        .title {
+            font-family: $font-base-semiBold;
+        }
+
+        .image {
+            padding: 60px 20px 0;
+        }
+
+        .btn {
+            max-width: 100%;
         }
     }
 }
@@ -1070,6 +1149,73 @@
 
     .contact-block-wrap {
         padding-bottom: 50px;
+    }
+
+
+    .rent-info-block {
+
+        .description {
+            padding: 40px 0 0;
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .btn {
+                margin: 40px 0 0 0;
+            }
+        }
+    }
+
+
+    .advantages-list--item {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .rent-info-list-wrap .btn {
+        margin-top: 40px;
+    }
+
+    .rent-info-list {
+
+        ul li {
+            margin-top: 40px;
+            padding-left: 0;
+            font-size: 22px;
+            line-height: 35px;
+        }
+    }
+
+
+    .about-block-small {
+
+        .info {
+            padding: 40px 20px 60px;
+            background-position: 0 205px;
+            background-size: 96px;
+        }
+
+        .description {
+            margin-top: 38px;
+            padding-left: 88px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .btn {
+            margin-top: 40px;
+        }
+    }
+
+    .rent-out-block {
+
+        .description {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 28px;
+        }
     }
 }
 

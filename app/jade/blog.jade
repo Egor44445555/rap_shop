@@ -1,0 +1,27 @@
+html
+    title Блог
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Блог
+
+            .blog-block-wrap(style="background-image: url(images/rent-block-bg.jpg);")
+                .container-block
+                    h2.title.semibold.text-uppercase Блог
+
+            include ./blocks/about-block-small
+            include ./blocks/rent-out-block
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

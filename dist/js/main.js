@@ -246,29 +246,14 @@ $(document).ready(function() {
     /*** Sliders ***/
 
     new Swiper('.js-slider-image', {
-        slidesPerGroup: 2,
+        slidesPerView: 2,
         simulateTouch: true,
         grid: {
             rows: 3,
         },
         breakpoints: {
-            320: {
-                slidesPerView: 4,
-                slidesPerGroup: 4,
-                grid: {
-                    rows: 3,
-                },
-            },
             561: {
                 slidesPerView: 4,
-                slidesPerGroup: 4,
-                grid: {
-                    rows: 3,
-                },
-            },
-            1025: {
-                slidesPerView: 4,
-                slidesPerGroup: 4,
                 grid: {
                     rows: 3,
                 },
