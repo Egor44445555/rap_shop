@@ -84,50 +84,62 @@
       <div style="background-image: url(images/rent-block-bg.jpg);" class="blog-block-wrap">
         <div class="container-block">
           <h2 class="title semibold text-uppercase">Блог</h2>
-          <div class="sort">
-            <div class="sort--item">
-              <label for="sort-1">
-                <input type="radio" value="За сегодня" id="sort-1" name="sort"/><span class="text">За сегодня</span>
-              </label>
+          <div class="sort-wrap">
+            <div class="d-none d-sm-block">
+              <div class="sort">
+                <div class="sort--item">
+                  <label for="sort-1">
+                    <input type="radio" value="За сегодня" id="sort-1" name="sort"/><span class="text">За сегодня</span>
+                  </label>
+                </div>
+                <div class="sort--item">
+                  <label for="sort-2">
+                    <input type="radio" value="За неделю" id="sort-2" name="sort" checked="checked"/><span class="text">За неделю</span>
+                  </label>
+                </div>
+                <div class="sort--item">
+                  <label for="sort-3">
+                    <input type="radio" value="За месяц" id="sort-3" name="sort"/><span class="text">За месяц</span>
+                  </label>
+                </div>
+                <div class="sort--item">
+                  <label for="sort-4">
+                    <input type="radio" value="За год" id="sort-4" name="sort"/><span class="text">За год</span>
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="sort--item">
-              <label for="sort-2">
-                <input type="radio" value="За неделю" id="sort-2" name="sort" checked="checked"/><span class="text">За неделю</span>
-              </label>
-            </div>
-            <div class="sort--item">
-              <label for="sort-3">
-                <input type="radio" value="За месяц" id="sort-3" name="sort"/><span class="text">За месяц</span>
-              </label>
-            </div>
-            <div class="sort--item">
-              <label for="sort-4">
-                <input type="radio" value="За год" id="sort-4" name="sort"/><span class="text">За год</span>
-              </label>
+            <div class="d-block d-sm-none mt-4">
+              <select placeholder="За сегодня" class="custom-select">
+                <option value="За сегодня" selected="selected">За сегодня</option>
+                <option value="За неделю">За неделю</option>
+                <option value="За месяц">За месяц</option>
+                <option value="За год">За год</option>
+              </select>
             </div>
           </div>
-          <div class="blog-list"><a href="#" class="blog-list--item"><span class="image"><img src="images/assets/blog-image.jpg"/></span><span class="info"><span class="title">Памятка водителю при аренде автомобиля</span><span class="bottom-panel d-flex justify-content-between"><span class="date">28 сентября 2020</span><span class="views-counter"><span class="icon"><img src="images/icons/eye.png"/></span><span class="text">287</span></span></span></span></a><a href="#" class="blog-list--item"><span class="image"><img src="images/assets/blog-image.jpg"/></span><span class="info"><span class="title">Памятка водителю при аренде автомобиля</span><span class="bottom-panel d-flex justify-content-between"><span class="date">28 сентября 2020</span><span class="views-counter"><span class="icon"><img src="images/icons/eye.png"/></span><span class="text">287</span></span></span></span></a></div>
+          <div class="blog-list"><a href="#" class="blog-list--item"><span class="image"><img src="images/assets/blog-image.jpg"/></span><span class="info"><span class="title">Памятка водителю при аренде автомобиля</span><span class="bottom-panel d-block d-sm-flex justify-content-between"><span class="date">28 сентября 2020</span><span class="views-counter d-block mt-2 mt-sm-0"><span class="icon"><img src="images/icons/eye.png"/></span><span class="text">287</span></span></span></span></a><a href="#" class="blog-list--item"><span class="image"><img src="images/assets/blog-image.jpg"/></span><span class="info"><span class="title">Памятка водителю при аренде автомобиля</span><span class="bottom-panel d-block d-sm-flex justify-content-between"><span class="date">28 сентября 2020</span><span class="views-counter d-block mt-2 mt-sm-0"><span class="icon"><img src="images/icons/eye.png"/></span><span class="text">287</span></span></span></span></a></div>
           <div class="pagination"><a href="#" class="pagination--item prev"><img src="images/icons/arrow-angle.png"/></a><a href="#" class="pagination--item">1</a><a href="#" class="pagination--item">2</a><span class="pagination--item active">3</span><a href="#" class="pagination--item">4</a><a href="#" class="pagination--item">5</a><a href="#" class="pagination--item">6</a><a href="#" class="pagination--item next"><img src="images/icons/arrow-angle.png"/></a></div>
-          <div class="d-block d-xl-flex">
-            <h2 class="text-uppercase semibold">Автомобили для аренды</h2>
-            <div class="city-select ps-4 pe-0">
-              <div class="city-select--head">
-                <div class="icon"><img src="images/icons/cupola.png"/></div>
-                <div class="text">в Санкт-Петербурге</div>
-                <div class="arrow"><img src="images/icons/arrow-toggle-down.svg"/></div>
-              </div>
-              <div class="city-select--body">
-                <div class="city-select--item">в Санкт-Петербурге</div>
-                <div class="city-select--item">в Москве</div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="product-slider-wrap">
           <div class="container-block">
+            <div class="d-block d-xl-flex">
+              <h2 class="text-uppercase semibold">Автомобили для аренды</h2>
+              <div class="city-select ps-0 ps-xl-4 pe-0 mt-3 mt-xl-0">
+                <div class="city-select--head">
+                  <div class="icon"><img src="images/icons/cupola.png"/></div>
+                  <div class="text">в Санкт-Петербурге</div>
+                  <div class="arrow"><img src="images/icons/arrow-toggle-down.svg"/></div>
+                </div>
+                <div class="city-select--body">
+                  <div class="city-select--item">в Санкт-Петербурге</div>
+                  <div class="city-select--item">в Москве</div>
+                </div>
+              </div>
+            </div>
             <div class="product-slider js-products-slider">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev big"></div>
+              <div class="swiper-button-next big"></div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="product-item"><a href="#" class="image"><img src="images/assets/product-preview.jpg"/></a>

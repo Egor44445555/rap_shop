@@ -945,7 +945,8 @@ select {
     }
 
     &.swiper-button-disabled {
-        display: none;
+        opacity: .5;
+        pointer-events: none;
     }
 }
 
@@ -955,6 +956,40 @@ select {
 
 .swiper-button-prev {
     left: -8px;
+}
+
+.swiper-button-prev.big,
+.swiper-button-next.big {
+    width: 16px;
+    height: 64px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 4px;
+        height: 34px;
+        margin: 0;
+        background: $black;
+        border-radius: 4px;
+        transform: rotate(-20deg) translate(0, 0);
+    }
+
+    &:before {
+        top: auto;
+        bottom: 0;
+        transform: rotate(20deg);
+    }
+}
+
+.swiper-button-prev.big {
+    left: 0;
+    transform: translateY(-50%) rotate(180deg);
 }
 
 /*** End Swiper ***/
@@ -1011,7 +1046,7 @@ select {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 140px 0 0 -10px;
+    margin: 140px -18px 0;
     
     &--item {
         display: flex;
@@ -1020,7 +1055,7 @@ select {
         width: 30px;
         height: 30px;
         min-width: 30px;
-        margin: 35px 0 0 35px;
+        margin: 35px 18px 0;
         font-family: $font-base-bold;
         font-size: 16px;
         line-height: 20px;
@@ -1040,12 +1075,15 @@ select {
         
         &.prev,
         &.next {
-            
-
+            background: none;
+            border: 2px solid $blue;
         }
     
-        &.next {
+        &.prev {
 
+            img {
+                transform: rotate(-180deg);
+            }
         }
     }
 }

@@ -291,6 +291,16 @@ $(document).ready(function() {
         },
     });
 
+    new Swiper('.js-products-slider', {
+        slidesPerView: 4,
+        spaceBetween: 70,
+        simulateTouch: true,
+        navigation: {
+            nextEl: ".js-products-slider .swiper-button-next",
+            prevEl: ".js-products-slider .swiper-button-prev",
+        },
+    });
+
     /*** Range slider ***/
 
     let $range = $(".js-range-slider"),

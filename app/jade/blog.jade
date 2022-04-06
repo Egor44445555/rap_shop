@@ -18,23 +18,32 @@ html
                 .container-block
                     h2.title.semibold.text-uppercase Блог
 
-                    .sort
-                        .sort--item
-                            label(for="sort-1")
-                                input(type="radio" value="За сегодня" id="sort-1" name="sort")
-                                span.text За сегодня
-                        .sort--item
-                            label(for="sort-2")
-                                input(type="radio" value="За неделю" id="sort-2" name="sort" checked)
-                                span.text За неделю
-                        .sort--item
-                            label(for="sort-3")
-                                input(type="radio" value="За месяц" id="sort-3" name="sort")
-                                span.text За месяц
-                        .sort--item
-                            label(for="sort-4")
-                                input(type="radio" value="За год" id="sort-4" name="sort")
-                                span.text За год
+                    .sort-wrap
+                        .d-none.d-sm-block
+                            .sort
+                                .sort--item
+                                    label(for="sort-1")
+                                        input(type="radio" value="За сегодня" id="sort-1" name="sort")
+                                        span.text За сегодня
+                                .sort--item
+                                    label(for="sort-2")
+                                        input(type="radio" value="За неделю" id="sort-2" name="sort" checked)
+                                        span.text За неделю
+                                .sort--item
+                                    label(for="sort-3")
+                                        input(type="radio" value="За месяц" id="sort-3" name="sort")
+                                        span.text За месяц
+                                .sort--item
+                                    label(for="sort-4")
+                                        input(type="radio" value="За год" id="sort-4" name="sort")
+                                        span.text За год
+
+                        .d-block.d-sm-none.mt-4
+                            select(placeholder="За сегодня").custom-select
+                                option(value="За сегодня" selected) За сегодня
+                                option(value="За неделю") За неделю
+                                option(value="За месяц") За месяц
+                                option(value="За год") За год
 
                     .blog-list
                         a(href="#").blog-list--item
@@ -42,9 +51,9 @@ html
                                 img(src="images/assets/blog-image.jpg")
                             span.info
                                 span.title Памятка водителю при аренде автомобиля
-                                span.bottom-panel.d-flex.justify-content-between
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
                                     span.date 28 сентября 2020
-                                    span.views-counter
+                                    span.views-counter.d-block.mt-2.mt-sm-0
                                         span.icon
                                             img(src="images/icons/eye.png")
                                         span.text 287
@@ -53,9 +62,9 @@ html
                                 img(src="images/assets/blog-image.jpg")
                             span.info
                                 span.title Памятка водителю при аренде автомобиля
-                                span.bottom-panel.d-flex.justify-content-between
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
                                     span.date 28 сентября 2020
-                                    span.views-counter
+                                    span.views-counter.d-block.mt-2.mt-sm-0
                                         span.icon
                                             img(src="images/icons/eye.png")
                                         span.text 287
@@ -71,20 +80,6 @@ html
                         a(href="#").pagination--item 6
                         a(href="#").pagination--item.next
                             img(src="images/icons/arrow-angle.png")
-
-
-                    .d-block.d-xl-flex
-                        h2.text-uppercase.semibold Автомобили для аренды
-                        .city-select.ps-4.pe-0
-                            .city-select--head
-                                .icon
-                                    img(src="images/icons/cupola.png")
-                                .text в Санкт-Петербурге
-                                .arrow
-                                    img(src="images/icons/arrow-toggle-down.svg")
-                            .city-select--body
-                                .city-select--item в Санкт-Петербурге
-                                .city-select--item в Москве
 
                 include ./blocks/products-slider
 

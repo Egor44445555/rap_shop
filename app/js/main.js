@@ -292,13 +292,27 @@ $(document).ready(function() {
     });
 
     new Swiper('.js-products-slider', {
-        slidesPerView: 4,
-        spaceBetween: 70,
+        slidesPerView: 1,
+        spaceBetween: 20,
         simulateTouch: true,
         navigation: {
             nextEl: ".js-products-slider .swiper-button-next",
             prevEl: ".js-products-slider .swiper-button-prev",
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 70,
+            }
+        }
     });
 
     /*** Range slider ***/
@@ -437,24 +451,14 @@ $(document).ready(function() {
     $('.custom-select').each(function () {
         let classes = $(this).attr('class');
         let template = '<div class="' + classes + '">';
-        template += '<span class="custom-select-trigger">' + $(this).attr('placeholder') + '</span>';
-        
+        template += '<span class="custom-select-trigger"><span>' + $(this).attr('placeholder') + '</span></span>';
+
         template += '<div class="custom-options">';
         $(this).find('option')
             .each(function () {
                 let data = $(this).attr("value");
-                let icon;
-                let title;
-                let templateCity = '';
-                let dataText = '';
 
-                template +=
-                    '<span class="custom-option">' +
-                        '<span class="wrap">' +
-                            templateCity +
-                            '<span class="text">' + data + '</span>' +
-                        '</span>' +
-                    '</span>'
+                template += '<span class="custom-option">' + '<span class="text">' + data + '</span>' +'</span>'
             });
         template += '</div></div>';
 
@@ -485,10 +489,7 @@ $(document).ready(function() {
         let valueSelect = $(this).find('.text').text();
         let template = '';
 
-        template +=
-            '<span class="wrap">' +
-                '<span class="text">' + valueSelect + '</span>' +
-            '</span>'
+        template += '<span>' + valueSelect + '</span>'
 
         $(this).parents('.custom-select-wrapper').find('select').val(valueSelect);
         $(this).parents('.custom-options').find('.custom-option').removeClass('selection');

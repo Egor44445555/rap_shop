@@ -57,13 +57,51 @@
     }
 }
 
+.sort-wrap {
+
+    .custom-select-trigger {
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 95px;
+        background: $white;
+        font-family: $font-base-semiBold;
+        font-size: 20px;
+        text-align: center;
+        border: 0;
+        box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+
+        &:before {
+            position: relative;
+            top: 0;
+            right: 0;
+            transform: translateY(0);
+            margin: 0 -40px 0 25px;
+        }
+    }
+
+    .custom-select {
+
+        .custom-options {
+            padding: 20px 10px;
+            border: 0;
+            box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+            z-index: 1;
+        }
+
+        .custom-option {
+            font-family: $font-base-semiBold;
+            font-size: 14px;
+        }
+    }
+}
+
 .sort {
     display: flex;
     flex-wrap: wrap;
-    margin: 38px 0 0 -28px;
+    margin: 54px 0 0 -28px;
 
     &--item {
-        margin: 28px 0 0 28px;
+        margin: 10px 0 0 28px;
     }
 
     label {
@@ -221,6 +259,7 @@
     }
 
     .button-wrap {
+        justify-content: center;
         margin: -26px 0 0 -26px;
 
         .btn {
@@ -498,40 +537,6 @@
         display: none;
         margin-top: 100px;
     }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: 16px;
-        height: 64px;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 6px;
-            width: 4px;
-            height: 34px;
-            margin: 0;
-            background: $black;
-            border-radius: 4px;
-            transform: rotate(-20deg) translate(0, 0);
-        }
-
-        &:before {
-            top: auto;
-            bottom: 0;
-            transform: rotate(20deg);
-        }
-    }
-
-    .swiper-button-prev {
-        left: 0;
-        transform: translateY(-50%) rotate(180deg);
-    }
 }
 
 /*** End Reviews ***/
@@ -698,6 +703,7 @@
 
 .about-block-small-wrap {
     min-height: 677px;
+    margin-top: 80px;
     background-size: cover;
 }
 

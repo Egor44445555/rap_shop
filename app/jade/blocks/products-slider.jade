@@ -1,8 +1,21 @@
 .product-slider-wrap
     .container-block
+        .d-block.d-xl-flex
+            h2.text-uppercase.semibold Автомобили для аренды
+            .city-select.ps-0.ps-xl-4.pe-0.mt-3.mt-xl-0
+                .city-select--head
+                    .icon
+                        img(src="images/icons/cupola.png")
+                    .text в Санкт-Петербурге
+                    .arrow
+                        img(src="images/icons/arrow-toggle-down.svg")
+                .city-select--body
+                    .city-select--item в Санкт-Петербурге
+                    .city-select--item в Москве
+
         .product-slider.js-products-slider
-            .swiper-button-prev
-            .swiper-button-next
+            .swiper-button-prev.big
+            .swiper-button-next.big
 
             .swiper-wrapper
                 .swiper-slide
