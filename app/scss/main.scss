@@ -1009,64 +1009,43 @@ select {
 
 .pagination {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 20px 0 0 -10px;
+    margin: 140px 0 0 -10px;
     
     &--item {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50px;
-        height: 50px;
-        min-width: 50px;
-        margin: 10px 0 0 10px;
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        margin: 35px 0 0 35px;
         font-family: $font-base-bold;
         font-size: 16px;
         line-height: 20px;
         color: $black;
         text-align: center;
-        border: 2px solid $borderColorLight;
-        border-radius: 8px;
+        border-radius: 50%;
         
         &:hover {
-            background: $black;
+            background: $blue;
             color: $white;
-            border-color: $black;
         }
         
         &.active {
-            background: $black;
+            background: $blue;
             color: $white;
-            border-color: $black;
         }
         
         &.prev,
         &.next {
-    
-            &:before {
-                content: '';
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 6px 6px 6px 0;
-                border-color: transparent $black transparent transparent;
-            }
             
-            &:hover:before {
-                border-right-color: $white;
-            }
+
         }
     
         &.next {
-            
-            &:before {
-                border-width: 6px 0 6px 6px;
-                border-color: transparent transparent transparent $black;
-            }
-    
-            &:hover:before {
-                border-left-color: $white;
-            }
+
         }
     }
 }

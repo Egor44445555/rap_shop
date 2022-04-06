@@ -18,6 +18,77 @@ html
                 .container-block
                     h2.title.semibold.text-uppercase Блог
 
+                    .sort
+                        .sort--item
+                            label(for="sort-1")
+                                input(type="radio" value="За сегодня" id="sort-1" name="sort")
+                                span.text За сегодня
+                        .sort--item
+                            label(for="sort-2")
+                                input(type="radio" value="За неделю" id="sort-2" name="sort" checked)
+                                span.text За неделю
+                        .sort--item
+                            label(for="sort-3")
+                                input(type="radio" value="За месяц" id="sort-3" name="sort")
+                                span.text За месяц
+                        .sort--item
+                            label(for="sort-4")
+                                input(type="radio" value="За год" id="sort-4" name="sort")
+                                span.text За год
+
+                    .blog-list
+                        a(href="#").blog-list--item
+                            span.image
+                                img(src="images/assets/blog-image.jpg")
+                            span.info
+                                span.title Памятка водителю при аренде автомобиля
+                                span.bottom-panel.d-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter
+                                        span.icon
+                                            img(src="images/icons/eye.png")
+                                        span.text 287
+                        a(href="#").blog-list--item
+                            span.image
+                                img(src="images/assets/blog-image.jpg")
+                            span.info
+                                span.title Памятка водителю при аренде автомобиля
+                                span.bottom-panel.d-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter
+                                        span.icon
+                                            img(src="images/icons/eye.png")
+                                        span.text 287
+
+                    .pagination
+                        a(href="#").pagination--item.prev
+                            img(src="images/icons/arrow-angle.png")
+                        a(href="#").pagination--item 1
+                        a(href="#").pagination--item 2
+                        span.pagination--item.active 3
+                        a(href="#").pagination--item 4
+                        a(href="#").pagination--item 5
+                        a(href="#").pagination--item 6
+                        a(href="#").pagination--item.next
+                            img(src="images/icons/arrow-angle.png")
+
+
+                    .d-block.d-xl-flex
+                        h2.text-uppercase.semibold Автомобили для аренды
+                        .city-select.ps-4.pe-0
+                            .city-select--head
+                                .icon
+                                    img(src="images/icons/cupola.png")
+                                .text в Санкт-Петербурге
+                                .arrow
+                                    img(src="images/icons/arrow-toggle-down.svg")
+                            .city-select--body
+                                .city-select--item в Санкт-Петербурге
+                                .city-select--item в Москве
+
+                include ./blocks/products-slider
+
+
             include ./blocks/about-block-small
             include ./blocks/rent-out-block
 

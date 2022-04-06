@@ -57,6 +57,41 @@
     }
 }
 
+.sort {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 38px 0 0 -28px;
+
+    &--item {
+        margin: 28px 0 0 28px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked + .text {
+        background: $blue;
+        color: $white;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 30px;
+        padding: 3px 13px;
+        font-family: $font-base-semiBold;
+        font-size: 14px;
+        line-height: 20px;
+        color: $black;
+        border-radius: 20px;
+    }
+}
 
 /*** Car select ***/
 
@@ -200,13 +235,17 @@
         display: flex;
         align-items: center;
 
+        .icon {
+            margin-right: 15px;
+        }
+
         .text {
             font-size: 37px;
             color: $blueText;
             border-bottom: 1px solid $blueText;
         }
 
-        .icon {
+        .arrow {
             width: 20px;
             height: 10px;
             margin-left: 20px;
