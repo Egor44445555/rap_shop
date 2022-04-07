@@ -27,12 +27,12 @@ html
                                 | РосАвтоПрокат оставляет за собой
                                 | право изменять условия скидок
                                 | и бонусов.
-                            a(href="#").btn.btn-blue.btn-medium Арендовать автомобиль
+                            a(href="#").btn.btn-blue.btn-medium.d-none.d-md-block Арендовать автомобиль
 
                         .card-list
                             .card-list--item
                                 .image
-                                    img(src="images/card.jpg")
+                                    img(src="images/card.png")
                                 .text
                                     .title Standart
                                     .description выдается при первом прокате автомобиля
@@ -41,7 +41,7 @@ html
                                         span скидка
                             .card-list--item
                                 .image
-                                    img(src="images/card-2.jpg")
+                                    img(src="images/card-2.png")
                                 .text
                                     .title Silver
                                     .description Выдается после 35 дней проката
@@ -50,7 +50,7 @@ html
                                         span скидка
                             .card-list--item
                                 .image
-                                    img(src="images/card-3.jpg")
+                                    img(src="images/card-3.png")
                                 .text
                                     .title Gold
                                     .description Выдается после 65 дней проката
@@ -59,7 +59,7 @@ html
                                         span скидка
                             .card-list--item
                                 .image
-                                    img(src="images/card-4.jpg")
+                                    img(src="images/card-4.png")
                                 .text
                                     .title V.I.P.
                                     .description Выдается после 100 дней проката
@@ -67,16 +67,19 @@ html
                                         span.percent 20%
                                         span скидка
 
-            .advantages-list-wrap
+                        .mt-5.pt-5.d-flex.d-md-none
+                            a(href="#").btn.btn-blue.btn-medium.d-flex Арендовать автомобиль
+
+            .advantages-list-wrap.bg-image(style="background-image: url(images/rent-block-bg.jpg);")
                 .container-block
-                    h2 В чем особенность бонусных карт «росавтопрокат»?
+                    h2.semibold.text-uppercase В чем особенность бонусных карт «росавтопрокат»?
 
                     .advantages-list
-                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Возможность получать постоянную скидку на прокат
-                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Размер скидки накапливается, чем больше вы арендуете авто
-                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Выгодно для всей семьи — карта неименная и действует на предьявителя
-                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Срок действия бонусных карт — неограничен
-                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Вы можете предьявить карту в любом городе в сети офисров «Росавтопрокат»
+                        .advantages-list--item(style="background-image: url(images/advantages-4.jpg);") Возможность получать постоянную скидку на прокат
+                        .advantages-list--item(style="background-image: url(images/advantages-5.jpg);") Размер скидки накапливается, чем больше вы арендуете авто
+                        .advantages-list--item(style="background-image: url(images/advantages-6.jpg);") Выгодно для всей семьи — карта неименная и действует на предьявителя
+                        .advantages-list--item(style="background-image: url(images/advantages-7.jpg);") Срок действия бонусных карт — неограничен
+                        .advantages-list--item Вы можете предьявить карту в любом городе в сети офисров «Росавтопрокат»
 
 
             include ./blocks/products-slider

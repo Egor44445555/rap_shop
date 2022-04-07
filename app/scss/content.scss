@@ -448,7 +448,25 @@
 }
 
 .advantages-list-wrap {
+    position: relative;
     padding: 80px 0 50px;
+
+    &.bg-image {
+        padding-bottom: 150px;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 60px;
+            width: calc(100vw - 120px);
+            height: 1px;
+            background: $borderColor;
+        }
+    }
 }
 
 .advantages-list {
@@ -465,7 +483,8 @@
         max-width: calc(33.333% - 85px);
         margin: 85px 0 0 85px;
         padding: 45px 70px 120px 35px;
-        background-size: contain;
+        background-color: $white;
+        background-size: auto;
         background-position: bottom right;
         background-repeat: no-repeat;
         font-size: 24px;
@@ -1121,6 +1140,7 @@
 
 .bonus-program-block {
     display: flex;
+    align-items: center;
 
     .info {
         flex: 1;

@@ -107,7 +107,11 @@
     }
 
     .advantages-list {
-        margin: -20px 0 0 -20px;
+        margin: 20px 0 0 -20px;
+
+        &:first-child {
+            margin-top: -20px;
+        }
 
         &--item {
             max-width: calc(33.333% - 20px);
@@ -161,6 +165,18 @@
             padding-left: 40px;
         }
     }
+
+
+    .bonus-program-block {
+
+        .card-list {
+
+            &--item {
+                max-width: calc(50% - 40px);
+                margin: 40px 0 0 40px;
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -177,6 +193,31 @@
 
     .about-block-small-wrap {
         margin-top: 0;
+    }
+
+    .advantages-list-wrap.bg-image {
+        padding-bottom: 60px;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .bonus-program-block {
+        display: block;
+
+        .info {
+            max-width: 100%;
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        .card-list {
+            margin: 40px 0 0 -40px;
+            padding-left: 0;
+        }
     }
 }
 
@@ -960,6 +1001,9 @@
 
     .advantages-list--item {
         max-width: calc(100% - 20px);
+        min-height: 270px;
+        padding-right: 34%;
+        background-size: contain;
     }
 
 
@@ -1006,6 +1050,61 @@
             max-width: 100%;
         }
     }
+
+    .bonus-program-block-wrap {
+        padding: 60px 0;
+        background: none !important;
+    }
+
+    .bonus-program-block {
+        display: block;
+
+        .info {
+
+            .title {
+                font-size: 36px;
+            }
+
+            p {
+                margin-top: 50px;
+            }
+        }
+
+        .card-list {
+            justify-content: center;
+            margin-top: -20px;
+
+            &--item {
+                position: relative;
+                max-width: calc(100% - 50px);
+                margin-top: 80px;
+                padding-top: 50px;
+            }
+
+            .image {
+                margin-right: 45px;
+            }
+
+            .text {
+                max-width: 110px;
+            }
+
+            .title {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .discount {
+
+                .percent {
+                    display: block;
+                    font-size: 30px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -1014,8 +1113,8 @@
 
     h1, .h1,
     h2, .h2 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 38px;
     }
 
     h3, .h3 {
@@ -1235,6 +1334,34 @@
             margin-top: 30px;
             font-size: 20px;
             line-height: 28px;
+        }
+    }
+
+
+    .advantages-list--item {
+        min-height: 200px;
+        padding-right: 20px;
+    }
+
+
+    .bonus-program-block {
+
+        .info {
+
+            .title {
+                font-size: 28px;
+                line-height: normal;
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 18px;
+                line-height: 29px;
+            }
+        }
+
+        .card-list .image {
+            margin-right: 20px;
         }
     }
 }
