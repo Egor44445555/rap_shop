@@ -1,0 +1,91 @@
+html
+    title Бонусная программа
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Бонусная программа
+
+            .bonus-program-block-wrap(style="background-image: url(images/lines-bg-2.jpg);")
+                .container-block
+                    .bonus-program-block
+                        .info
+                            h2.title.semibold.text-uppercase Бонусная программа «росавтопрокат»
+                            p Для активации Бонусной карты
+                                | необходимо заполнить анкету при первой
+                                | сдаче автомобиля. Заполненную Анкету
+                                | необходимо отдать сотруднику автопроката
+                                | для получения  Автокарты. Компания
+                                | РосАвтоПрокат оставляет за собой
+                                | право изменять условия скидок
+                                | и бонусов.
+                            a(href="#").btn.btn-blue.btn-medium Арендовать автомобиль
+
+                        .card-list
+                            .card-list--item
+                                .image
+                                    img(src="images/card.jpg")
+                                .text
+                                    .title Standart
+                                    .description выдается при первом прокате автомобиля
+                                    .discount
+                                        span.percent 5%
+                                        span скидка
+                            .card-list--item
+                                .image
+                                    img(src="images/card-2.jpg")
+                                .text
+                                    .title Silver
+                                    .description Выдается после 35 дней проката
+                                    .discount
+                                        span.percent 10%
+                                        span скидка
+                            .card-list--item
+                                .image
+                                    img(src="images/card-3.jpg")
+                                .text
+                                    .title Gold
+                                    .description Выдается после 65 дней проката
+                                    .discount
+                                        span.percent 15%
+                                        span скидка
+                            .card-list--item
+                                .image
+                                    img(src="images/card-4.jpg")
+                                .text
+                                    .title V.I.P.
+                                    .description Выдается после 100 дней проката
+                                    .discount
+                                        span.percent 20%
+                                        span скидка
+
+            .advantages-list-wrap
+                .container-block
+                    h2 В чем особенность бонусных карт «росавтопрокат»?
+
+                    .advantages-list
+                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Возможность получать постоянную скидку на прокат
+                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Размер скидки накапливается, чем больше вы арендуете авто
+                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Выгодно для всей семьи — карта неименная и действует на предьявителя
+                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Срок действия бонусных карт — неограничен
+                        .advantages-list--item(style="background-image: url(images/advantages-1.jpg);") Вы можете предьявить карту в любом городе в сети офисров «Росавтопрокат»
+
+
+            include ./blocks/products-slider
+
+
+            include ./blocks/about-block-small
+            include ./blocks/rent-out-block
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

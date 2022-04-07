@@ -62,7 +62,7 @@
     .custom-select-trigger {
         flex-direction: row-reverse;
         justify-content: center;
-        height: 95px;
+        height: 70px;
         background: $white;
         font-family: $font-base-semiBold;
         font-size: 20px;
@@ -454,7 +454,11 @@
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -85px 0 0 -85px;
+    margin: 20px 0 0 -85px;
+
+    &:first-child {
+        margin-top: -85px;
+    }
 
     &--item {
         flex: 100%;
@@ -1105,3 +1109,91 @@
 }
 
 /*** End rent out ***/
+
+
+/*** Bonus program block ***/
+
+.bonus-program-block-wrap {
+    padding: 120px 0;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.bonus-program-block {
+    display: flex;
+
+    .info {
+        flex: 1;
+        max-width: 540px;
+
+        .title {
+            font-size: 42px;
+            line-height: 42px;
+        }
+
+        p {
+            max-width: 480px;
+            margin-top: 70px;
+            font-family: $font-base-light;
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 380px;
+            margin-top: 50px;
+        }
+    }
+
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        margin: -140px 0 0 -140px;
+        padding-left: 120px;
+
+        &--item {
+            display: flex;
+            flex: 100%;
+            max-width: calc(50% - 140px);
+            margin: 140px 0 0 140px;
+        }
+
+        .image {
+            flex: 1;
+            max-width: 210px;
+            margin-right: 50px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 15px;
+            opacity: .7;
+        }
+
+        .discount {
+            margin-top: 20px;
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+            color: $blue;
+
+            .percent {
+                margin-right: 10px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+/*** End Bonus program block ***/
