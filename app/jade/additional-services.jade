@@ -1,0 +1,93 @@
+html
+    title Бонусная программа
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Бонусная программа
+
+            .additional-services
+                .container-block
+                    .text-block(style="background-image: url(images/lines-bg.jpg);")
+                        h2.title.semibold.text-uppercase Дополнительные услуги
+                        p «Росавтопрокат» предлагает вам гибкие цены на аренду и прокат легковых автомобилей.
+                            | Вы можете выбрать необходимые для вас дополнительные опции и сформировать
+                            | индивидуальный тариф на услуги аренды автомобилей.
+
+                    .services-list
+                        .services-list--item
+                            .image
+                                img(src="images/flag.png")
+                            .info
+                                .title Доставка до места
+                                .description Доставим машину в любое место в городе включая ЖД вокзал, Аэропорт, Автовокзал
+                                .cost + 600 руб.
+                        .services-list--item
+                            .image
+                                img(src="images/canister.png")
+                            .info
+                                .title Бензин 10л.
+                                .description Наполним бак бензином к началу аренды автомобиля
+                                .cost + 500 руб.
+                        .services-list--item
+                            .image
+                                img(src="images/baby-chair.png")
+                            .info
+                                .title Детское автокресло
+                                .description Для безопасной поездки с детьми предоставим детские автокресла
+                                .cost + 100 руб./сут.
+                        .services-list--item
+                            .image
+                                img(src="images/radar-detector.png")
+                            .info
+                                .title Радар-детектор
+                                .description Сокращает количество штрафов
+                                    | за превышение скорости,
+                                    | неправильную парковку,
+                                    | движение по автобусной полосе.
+                                .cost + 100 руб./сут.
+                        .services-list--item
+                            .image
+                                img(src="images/driver.png")
+                            .info
+                                .title Второй водитель
+                                .description Добавление второго водителя в право управления транспортным средством
+                                .cost + 500 руб.
+                        .services-list--item
+                            .image
+                                img(src="images/clock.png")
+                            .info
+                                .title Ранний\поздний забор
+                                .description Ранний забор —
+                                    | раньше 09:00 утра
+                                    | Поздний забор —
+                                    | после 19:00 вечера
+                                .cost + 500 руб.
+                        .services-list--item
+                            .image
+                                img(src="images/umbrella.png")
+                            .info
+                                .title КАСКО
+                                .description Позволяет застраховать
+                                    | ваш автомобиль от многих
+                                    | факторов, с которыми можно
+                                    | столкнуться во время эксплуатации
+                                .cost + 1000 руб.
+
+        include ./blocks/products-slider
+
+        include ./blocks/about-block-small
+        include ./blocks/rent-out-block
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

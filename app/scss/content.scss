@@ -1217,3 +1217,43 @@
 }
 
 /*** End Bonus program block ***/
+
+
+/*** Additional services block ***/
+
+.additional-services {
+    margin-top: 122px;
+
+    .text-block {
+        max-width: 1000px;
+        background-size: contain;
+        background-position: center right;
+        background-repeat: no-repeat;
+
+        .title {
+            font-size: 42px;
+            line-height: 42px;
+        }
+
+        p {
+            margin-top: 60px;
+            font-family: $font-base-light;
+            font-size: 24px;
+            line-height: 38px;
+        }
+    }
+
+    .services-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 0 -100px;
+
+        &--item {
+            flex: 100%;
+            max-width: calc(33.333% - 100px);
+            margin: 100px 0 0 100px;
+        }
+    }
+}
+
+/*** End Additional services block ***/
