@@ -1222,7 +1222,22 @@
 /*** Additional services block ***/
 
 .additional-services {
+    position: relative;
     margin-top: 122px;
+    padding-bottom: 168px;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 60px;
+        height: 1px;
+        width: calc(100vw - 120px);
+        background: $borderColor;
+    }
 
     .text-block {
         max-width: 1000px;
@@ -1236,7 +1251,7 @@
         }
 
         p {
-            margin-top: 60px;
+            margin: 60px 0 0 0;
             font-family: $font-base-light;
             font-size: 24px;
             line-height: 38px;
@@ -1249,9 +1264,42 @@
         margin: 0 0 0 -100px;
 
         &--item {
+            display: flex;
             flex: 100%;
             max-width: calc(33.333% - 100px);
             margin: 100px 0 0 100px;
+        }
+
+        .image {
+            flex: 1;
+            max-width: 80px;
+            margin-right: 60px;
+
+            img {
+                max-height: 120px;
+            }
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .title {
+            font-family: $font-base-semiBold;
+            font-size: 28px;
+        }
+
+        .description {
+            margin-top: 30px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        .cost {
+            margin-top: 35px;
+            font-family: $font-base-semiBold;
+            font-size: 38px;
+            color: $blue;
         }
     }
 }

@@ -61,6 +61,24 @@
             margin: 40px 0 0 80px;
         }
     }
+
+
+    .additional-services {
+        padding-bottom: 80px;
+
+        &:before {
+            background: none;
+        }
+
+        .services-list {
+            margin: 0 0 0 -20px;
+
+            &--item {
+                max-width: calc(33.333% - 20px);
+                margin: 60px 0 0 20px;
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -219,6 +237,17 @@
             padding-left: 0;
         }
     }
+
+
+    .additional-services {
+
+        .services-list {
+
+            &--item {
+                max-width: calc(50% - 20px);
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -234,7 +263,6 @@
 }
 
 /******************************************************************/
-
 
 @media (max-width: 1025px) {
 
@@ -761,6 +789,35 @@
 
         .btn {
             max-width: 390px;
+        }
+    }
+
+
+    .additional-services {
+        margin-top: 60px;
+        background: none !important;
+
+        .text-block {
+
+            .title {
+                font-size: 36px;
+                line-height: 42px;
+            }
+
+            p {
+                margin: 20px 0 0 0;
+            }
+        }
+
+        .services-list {
+
+            &--item {
+                max-width: calc(100% - 20px);
+            }
+
+            .image {
+                margin-right: 30px;
+            }
         }
     }
 }
@@ -1362,6 +1419,49 @@
 
         .card-list .image {
             margin-right: 20px;
+        }
+    }
+
+
+    .additional-services {
+
+        .text-block {
+
+            .title {
+                font-size: 28px;
+                line-height: 38px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .services-list {
+
+            &--item {
+                display: block;
+
+                .image {
+                    max-width: 100px;
+                    margin: 0 0 20px;
+                }
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .description {
+                margin-top: 15px;
+                font-size: 18px;
+            }
+
+            .cost {
+                margin-top: 20px;
+                font-size: 34px;
+            }
         }
     }
 }
