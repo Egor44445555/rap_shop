@@ -1,0 +1,87 @@
+html
+    title HYUNDAI SOLARIS 2021
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Каталог автомобилей
+
+            .product-detail-wrap
+                .container-block
+                    .product-detail
+                        a(href="#").prev-product
+                        a(href="#").next-product
+
+                        .image
+                            img(src="images/assets/product-image.jpg")
+                        .info
+                            h1.title.semibold HYUNDAI SOLARIS 2021
+
+                            .characteristics
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-user.png")
+                                    .text 5 мест
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-square.png")
+                                    .text 4 двери
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-check.png")
+                                    .text серебро
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-automatic.png")
+                                    .text Автомат
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-conditioner.png")
+                                    .text Кондиционер
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-clock.png")
+                                    .text 2019
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-graph.png")
+                                    .text 183 л.с
+                                .characteristics--item
+                                    img.icon(src="images/icons/characteristics-list.png")
+                                    .text 1-7 л.\км.
+
+                                .more-btn
+                                    span Все характеристики
+
+                            .row.align-items-end.mt-4.pt-3
+                                .col
+                                    .social-list
+                                        .label Поделиться:
+                                        a(href="#").social-list--item
+                                            img(src="images/icons/vk.png")
+                                        a(href="#").social-list--item
+                                            img(src="images/icons/facebook.png")
+                                        a(href="#").social-list--item
+                                            img(src="images/icons/ok.png")
+                                        a(href="#").social-list--item
+                                            img(src="images/icons/viber.png")
+                                        a(href="#").social-list--item
+                                            img(src="images/icons/whatsapp.png")
+                                        a(href="#").social-list--item
+                                            img(src="images/icons/telegram.png")
+                                .col
+                                    .cost-wrap
+                                        span.pe-4.ps-0 ОТ
+                                        .cost 1.575 Р
+                                            span / сутки
+
+
+        include ./blocks/products-slider
+        include ./blocks/about-block-small
+        include ./blocks/rent-out-block
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

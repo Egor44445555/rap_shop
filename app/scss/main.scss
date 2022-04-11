@@ -963,7 +963,7 @@ select {
     width: 16px;
     height: 64px;
     top: 50%;
-    right: 0;
+    right: 10px;
     transform: translateY(-50%);
 
     &:before,
@@ -988,7 +988,7 @@ select {
 }
 
 .swiper-button-prev.big {
-    left: 0;
+    left: 10px;
     transform: translateY(-50%) rotate(180deg);
 }
 
