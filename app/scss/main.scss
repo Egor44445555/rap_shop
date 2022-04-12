@@ -432,29 +432,6 @@ a {
         margin: 13px 0 0 20px;
     }
 
-    .info-group {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -30px 0 0 -30px;
-
-        .item {
-            flex: calc(50% - 30px);
-            max-width: calc(50% - 30px);
-            margin: 30px 0 0 30px;
-
-            &:first-child {
-                max-width: 425px;
-            }
-        }
-    }
-
-    .number {
-        width: 32px;
-        height: 32px;
-        min-width: 32px;
-        font-size: 16px;
-    }
-
     .error {
         color: $red;
     }
@@ -486,15 +463,23 @@ a {
 .select,
 .textarea {
     width: 100%;
-    height: 50px;
-    padding: 15px 28px;
+    height: 90px;
+    padding: 30px 80px 30px 40px;
+    background: $white;
     font-family: $font-base;
-    font-size: 16px;
+    font-size: 18px;
     color: $black;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
+    box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+
+    &::placeholder {
+        font-family: $font-base;
+        font-size: 18px;
+        color: $black;
+    }
 
     &.error {
         border: 1px solid $red;
@@ -512,11 +497,7 @@ input[type="password"] {
 }
 
 .textarea {
-    min-height: 220px;
-
-    &.small {
-        min-height: 122px;
-    }
+    min-height: 146px;
 }
 
 .checkbox {
@@ -1206,6 +1187,119 @@ select {
 }
 
 /*** End Rating ***/
+
+
+/*** Datepicker ***/
+
+.datepicker-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: $white;
+    border-radius: 30px;
+
+    input {
+        width: 100%;
+        height: 90px;
+        padding: 10px 80px 10px 40px;
+        background: $white;
+        font-family: $font-base;
+        font-size: 18px;
+        color: $black;
+        border-radius: 10px;
+        border: 0;
+        cursor: pointer;
+        box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+
+        &::placeholder {
+            font-family: $font-base;
+            font-size: 18px;
+            color: $black;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        font-size: 14px;
+        pointer-events: none;
+
+        &:before {
+            color: $black;
+        }
+    }
+}
+
+.ui-widget.ui-widget-content {
+    border-color: #f4f5f9;
+    z-index: 99;
+}
+
+.ui-widget-header {
+    border-color: #f4f5f9;
+    background: #f4f5f9;
+    color: $black;
+}
+
+.ui-datepicker .ui-datepicker-prev span:before,
+.ui-datepicker .ui-datepicker-next span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-style: solid;
+}
+
+.ui-datepicker .ui-datepicker-prev span:before {
+    border-width: 4px 8px 4px 0;
+    border-color: transparent $themeColor transparent transparent;
+}
+
+.ui-datepicker .ui-datepicker-next span:before {
+    border-width: 4px 0 4px 8px;
+    border-color: transparent transparent transparent $themeColor;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    text-align: center;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border-color: #f4f5f9;
+    background: #f4f5f9;
+    font-weight: normal;
+    color: $black;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border-color: $red;
+    background: $red;
+    color: $white;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active, .ui-button:active,
+.ui-button.ui-state-active:hover {
+    border-color: $themeColor;
+    background: $themeColor;
+    color: $white;
+}
+
+/*** End Datepicker ***/
 
 
 @import '_header.scss',

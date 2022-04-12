@@ -76,6 +76,95 @@ html
                                         .cost 1.575 Р
                                             span / сутки
 
+            .rent-block-wrap(style="background-image: url(images/app-block-bg.jpg);")
+                .container-block
+                    .rent-block
+                        h2.h3.semibold.title АРЕНДОВАТЬ HYUNDAI SOLARIS 2021
+
+                        form.form
+                            .row.mt-5.pt-3
+                                .col-12.col-lg-6
+                                    .input-wrap
+                                        .datepicker-wrap
+                                            input(type="text" placeholder="Начало аренды").input.datepicker-from
+                                            .icon
+                                                img(src="images/icons/calendar.png")
+
+                                .col-12.col-lg-6
+                                    .input-wrap
+                                        .datepicker-wrap
+                                            input(type="text" placeholder="Окончание аренды").input.datepicker-to
+                                            .icon
+                                                img(src="images/icons/calendar.png")
+
+                            .mt-4
+                                .additional-item-list
+                                    label(for="additional-item").additional-item-list--item
+                                        .image
+                                            img(src="images/flag.png")
+                                        .info
+                                            .title Доставка до места
+                                            .cost 600 руб.
+                                        input(type="checkbox" id="additional-item")
+                                        .icon
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/canister.png")
+                                        .info
+                                            .title Бензин 10л
+                                            .cost 600 руб.
+                                        .count 1 ШТ.
+                                        .icon
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/baby-chair.png")
+                                        .info
+                                            .title Детское автокресло
+                                            .cost 100 руб./сут.
+                                        .count 1 ШТ.
+                                        .icon
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/radar-detector.png")
+                                        .info
+                                            .title Радар-детектор
+                                            .cost 100 руб./сут.
+                                        .icon
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/driver.png")
+                                        .info
+                                            .title Второй водитель
+                                            .cost 500 руб.
+                                        .icon
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/clock.png")
+                                        .info
+                                            .title Ранний/поздний забор
+                                            .cost 500 руб.
+                                        .icon
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/umbrella.png")
+                                        .info
+                                            .title КАСКО
+                                            .cost 1000 руб.
+                                        .icon
+
+                            .row.mt-4
+                                .col-12.col-lg-6
+                                    .input-wrap
+                                        input(type="text" placeholder="Ваше имя").input
+                                .col-12.col-lg-6
+                                    .input-wrap
+                                        input(type="text" placeholder="Ваш телефон").input
+
+                            textarea(placeholder="Комментарий").textarea.mt-4
+
+                            .d-flex.justify-content-center.mt-5.pt-3
+                                button(type="submit").btn.btn-blue Арендовать
+
 
         include ./blocks/products-slider
         include ./blocks/about-block-small
