@@ -17,13 +17,15 @@ html
             .product-detail-wrap
                 .container-block
                     .product-detail
-                        a(href="#").prev-product
-                        a(href="#").next-product
+                        h1.title.semibold.d-block.d-xl-none HYUNDAI SOLARIS 2021
 
-                        .image
+                        .image.mt-4.pt-3.mt-xl-0.pt-xl-0
                             img(src="images/assets/product-image.jpg")
+                            a(href="#").prev-product
+                            a(href="#").next-product
+
                         .info
-                            h1.title.semibold HYUNDAI SOLARIS 2021
+                            h1.title.semibold.d-none.d-xl-block  HYUNDAI SOLARIS 2021
 
                             .characteristics
                                 .characteristics--item
@@ -57,7 +59,7 @@ html
                             .row.align-items-end.mt-4.pt-3
                                 .col
                                     .social-list
-                                        .label Поделиться:
+                                        .label Поделиться
                                         a(href="#").social-list--item
                                             img(src="images/icons/vk.png")
                                         a(href="#").social-list--item
@@ -79,9 +81,9 @@ html
             .rent-block-wrap(style="background-image: url(images/app-block-bg.jpg);")
                 .container-block
                     .rent-block
-                        h2.h3.semibold.title АРЕНДОВАТЬ HYUNDAI SOLARIS 2021
+                        h3.semibold.title АРЕНДОВАТЬ HYUNDAI SOLARIS 2021
 
-                        form.form
+                        form.form.ps-2
                             .row.mt-5.pt-3
                                 .col-12.col-lg-6
                                     .input-wrap
@@ -107,49 +109,55 @@ html
                                             .cost 600 руб.
                                         input(type="checkbox" id="additional-item")
                                         .icon
-                                    .additional-item-list--item
+                                    label(for="additional-item-2").additional-item-list--item
                                         .image
                                             img(src="images/canister.png")
                                         .info
                                             .title Бензин 10л
                                             .cost 600 руб.
                                         .count 1 ШТ.
+                                        input(type="checkbox" id="additional-item-2")
                                         .icon
-                                    .additional-item-list--item
+                                    label(for="additional-item-3").additional-item-list--item
                                         .image
                                             img(src="images/baby-chair.png")
                                         .info
                                             .title Детское автокресло
                                             .cost 100 руб./сут.
                                         .count 1 ШТ.
+                                        input(type="checkbox" id="additional-item-3")
                                         .icon
-                                    .additional-item-list--item
+                                    label(for="additional-item-4").additional-item-list--item
                                         .image
                                             img(src="images/radar-detector.png")
                                         .info
                                             .title Радар-детектор
                                             .cost 100 руб./сут.
+                                        input(type="checkbox" id="additional-item-4")
                                         .icon
-                                    .additional-item-list--item
+                                    label(for="additional-item-5").additional-item-list--item
                                         .image
                                             img(src="images/driver.png")
                                         .info
                                             .title Второй водитель
                                             .cost 500 руб.
+                                        input(type="checkbox" id="additional-item-5")
                                         .icon
-                                    .additional-item-list--item
+                                    label(for="additional-item-6").additional-item-list--item
                                         .image
                                             img(src="images/clock.png")
                                         .info
                                             .title Ранний/поздний забор
                                             .cost 500 руб.
+                                        input(type="checkbox" id="additional-item-6")
                                         .icon
-                                    .additional-item-list--item
+                                    label(for="additional-item-7").additional-item-list--item
                                         .image
                                             img(src="images/umbrella.png")
                                         .info
                                             .title КАСКО
                                             .cost 1000 руб.
+                                        input(type="checkbox" id="additional-item-7")
                                         .icon
 
                             .row.mt-4
@@ -165,8 +173,219 @@ html
                             .d-flex.justify-content-center.mt-5.pt-3
                                 button(type="submit").btn.btn-blue Арендовать
 
+            .characteristics-list-wrap
+                .container-block
+                    h3.semibold.text-uppercase.title Все характеристики
 
-        include ./blocks/products-slider
+                    .characteristics-list.ps-2
+                        .characteristics-list--item
+                            .label Места
+                            .value 4
+                        .characteristics-list--item
+                            .label Двери
+                            .value 5
+                        .characteristics-list--item
+                            .label Коробка передач
+                            .value Автомат
+                        .characteristics-list--item
+                            .label Автомат
+                            .value есть
+                        .characteristics-list--item
+                            .label Мощность двигателя
+                            .value 123 л.с.
+                        .characteristics-list--item
+                            .label Расход бензина
+                            .value 6-7 л/км.
+                        .characteristics-list--item
+                            .label Цвет
+                            .value Серебро
+                        .characteristics-list--item
+                            .label Год выпуска
+                            .value 2021
+                        .characteristics-list--item
+                            .label Тип кузова
+                            .value Седан
+                        .characteristics-list--item
+                            .label Класс машины
+                            .value Стандарт
+
+                    .d-flex.justify-content-center.mt-5.pt-3
+                        .more-btn
+                            .text Еще характеристики
+                            .icon
+                                img(src="images/icons/arrow-toggle-down.svg")
+
+
+        .product-slider-wrap
+            .container-block
+                .d-block.d-xl-flex
+                    h2.text-uppercase.semibold Другие автомобили
+
+                .product-slider.js-products-slider
+                    .swiper-button-prev.big
+                    .swiper-button-next.big
+
+                    .swiper-wrapper
+                        .swiper-slide
+                            .product-item
+                                a(href="#").image
+                                    img(src="images/assets/product-preview.jpg")
+                                .info
+                                    a(href="#").title Volkswagen Polo 2018 MT
+                                    .characteristics
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-user.png")
+                                            .text 2 мест
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-square.png")
+                                            .text 3 двери
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                            .text Автомат
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                            .text Кондиционер
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-graph.png")
+                                            .text 183 л.с
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-list.png")
+                                            .text 1-7 л.\км.
+                                    .price
+                                        .label ОТ
+                                        .value 1.575 Р
+                                            span / сутки
+
+                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+                        .swiper-slide
+                            .product-item
+                                a(href="#").image
+                                    img(src="images/assets/product-preview.jpg")
+                                .info
+                                    a(href="#").title Volkswagen Polo 2018 MT
+                                    .characteristics
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-user.png")
+                                            .text 2 мест
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-square.png")
+                                            .text 3 двери
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                            .text Автомат
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                            .text Кондиционер
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-graph.png")
+                                            .text 183 л.с
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-list.png")
+                                            .text 1-7 л.\км.
+                                    .price
+                                        .label ОТ
+                                        .value 1.575 Р
+                                            span / сутки
+
+                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                        .swiper-slide
+                            .product-item
+                                a(href="#").image
+                                    img(src="images/assets/product-preview.jpg")
+                                .info
+                                    a(href="#").title Volkswagen Polo 2018 MT
+                                    .characteristics
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-user.png")
+                                            .text 2 мест
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-square.png")
+                                            .text 3 двери
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                            .text Автомат
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                            .text Кондиционер
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-graph.png")
+                                            .text 183 л.с
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-list.png")
+                                            .text 1-7 л.\км.
+                                    .price
+                                        .label ОТ
+                                        .value 1.575 Р
+                                            span / сутки
+
+                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                        .swiper-slide
+                            .product-item
+                                a(href="#").image
+                                    img(src="images/assets/product-preview.jpg")
+                                .info
+                                    a(href="#").title Volkswagen Polo 2018 MT
+                                    .characteristics
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-user.png")
+                                            .text 2 мест
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-square.png")
+                                            .text 3 двери
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                            .text Автомат
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                            .text Кондиционер
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-graph.png")
+                                            .text 183 л.с
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-list.png")
+                                            .text 1-7 л.\км.
+                                    .price
+                                        .label ОТ
+                                        .value 1.575 Р
+                                            span / сутки
+
+                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                        .swiper-slide
+                            .product-item
+                                a(href="#").image
+                                    img(src="images/assets/product-preview.jpg")
+                                .info
+                                    a(href="#").title Volkswagen Polo 2018 MT
+                                    .characteristics
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-user.png")
+                                            .text 2 мест
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-square.png")
+                                            .text 3 двери
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                            .text Автомат
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                            .text Кондиционер
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-graph.png")
+                                            .text 183 л.с
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-list.png")
+                                            .text 1-7 л.\км.
+                                    .price
+                                        .label ОТ
+                                        .value 1.575 Р
+                                            span / сутки
+
+                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+
         include ./blocks/about-block-small
         include ./blocks/rent-out-block
 

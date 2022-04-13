@@ -83,10 +83,11 @@
       </div>
       <div class="product-detail-wrap">
         <div class="container-block">
-          <div class="product-detail"><a href="#" class="prev-product"></a><a href="#" class="next-product"></a>
-            <div class="image"><img src="images/assets/product-image.jpg"/></div>
+          <div class="product-detail">
+            <h1 class="title semibold d-block d-xl-none">HYUNDAI SOLARIS 2021</h1>
+            <div class="image mt-4 pt-3 mt-xl-0 pt-xl-0"><img src="images/assets/product-image.jpg"/><a href="#" class="prev-product"></a><a href="#" class="next-product"></a></div>
             <div class="info">
-              <h1 class="title semibold">HYUNDAI SOLARIS 2021</h1>
+              <h1 class="title semibold d-none d-xl-block"> HYUNDAI SOLARIS 2021</h1>
               <div class="characteristics">
                 <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
                   <div class="text">5 мест</div>
@@ -117,7 +118,7 @@
               <div class="row align-items-end mt-4 pt-3">
                 <div class="col">
                   <div class="social-list">
-                    <div class="label">Поделиться:</div><a href="#" class="social-list--item"><img src="images/icons/vk.png"/></a><a href="#" class="social-list--item"><img src="images/icons/facebook.png"/></a><a href="#" class="social-list--item"><img src="images/icons/ok.png"/></a><a href="#" class="social-list--item"><img src="images/icons/viber.png"/></a><a href="#" class="social-list--item"><img src="images/icons/whatsapp.png"/></a><a href="#" class="social-list--item"><img src="images/icons/telegram.png"/></a>
+                    <div class="label">Поделиться</div><a href="#" class="social-list--item"><img src="images/icons/vk.png"/></a><a href="#" class="social-list--item"><img src="images/icons/facebook.png"/></a><a href="#" class="social-list--item"><img src="images/icons/ok.png"/></a><a href="#" class="social-list--item"><img src="images/icons/viber.png"/></a><a href="#" class="social-list--item"><img src="images/icons/whatsapp.png"/></a><a href="#" class="social-list--item"><img src="images/icons/telegram.png"/></a>
                   </div>
                 </div>
                 <div class="col">
@@ -133,8 +134,8 @@
       <div style="background-image: url(images/app-block-bg.jpg);" class="rent-block-wrap">
         <div class="container-block">
           <div class="rent-block">
-            <h2 class="h3 semibold title">АРЕНДОВАТЬ HYUNDAI SOLARIS 2021</h2>
-            <form class="form">
+            <h3 class="semibold title">АРЕНДОВАТЬ HYUNDAI SOLARIS 2021</h3>
+            <form class="form ps-2">
               <div class="row mt-5 pt-3">
                 <div class="col-12 col-lg-6">
                   <div class="input-wrap">
@@ -164,56 +165,62 @@
                     <input type="checkbox" id="additional-item"/>
                     <div class="icon"></div>
                   </label>
-                  <div class="additional-item-list--item">
+                  <label for="additional-item-2" class="additional-item-list--item">
                     <div class="image"><img src="images/canister.png"/></div>
                     <div class="info">
                       <div class="title">Бензин 10л</div>
                       <div class="cost">600 руб.</div>
                     </div>
                     <div class="count">1 ШТ.</div>
+                    <input type="checkbox" id="additional-item-2"/>
                     <div class="icon"></div>
-                  </div>
-                  <div class="additional-item-list--item">
+                  </label>
+                  <label for="additional-item-3" class="additional-item-list--item">
                     <div class="image"><img src="images/baby-chair.png"/></div>
                     <div class="info">
                       <div class="title">Детское автокресло</div>
                       <div class="cost">100 руб./сут.</div>
                     </div>
                     <div class="count">1 ШТ.</div>
+                    <input type="checkbox" id="additional-item-3"/>
                     <div class="icon"></div>
-                  </div>
-                  <div class="additional-item-list--item">
+                  </label>
+                  <label for="additional-item-4" class="additional-item-list--item">
                     <div class="image"><img src="images/radar-detector.png"/></div>
                     <div class="info">
                       <div class="title">Радар-детектор</div>
                       <div class="cost">100 руб./сут.</div>
                     </div>
+                    <input type="checkbox" id="additional-item-4"/>
                     <div class="icon"></div>
-                  </div>
-                  <div class="additional-item-list--item">
+                  </label>
+                  <label for="additional-item-5" class="additional-item-list--item">
                     <div class="image"><img src="images/driver.png"/></div>
                     <div class="info">
                       <div class="title">Второй водитель</div>
                       <div class="cost">500 руб.</div>
                     </div>
+                    <input type="checkbox" id="additional-item-5"/>
                     <div class="icon"></div>
-                  </div>
-                  <div class="additional-item-list--item">
+                  </label>
+                  <label for="additional-item-6" class="additional-item-list--item">
                     <div class="image"><img src="images/clock.png"/></div>
                     <div class="info">
                       <div class="title">Ранний/поздний забор</div>
                       <div class="cost">500 руб.</div>
                     </div>
+                    <input type="checkbox" id="additional-item-6"/>
                     <div class="icon"></div>
-                  </div>
-                  <div class="additional-item-list--item">
+                  </label>
+                  <label for="additional-item-7" class="additional-item-list--item">
                     <div class="image"><img src="images/umbrella.png"/></div>
                     <div class="info">
                       <div class="title">КАСКО</div>
                       <div class="cost">1000 руб.</div>
                     </div>
+                    <input type="checkbox" id="additional-item-7"/>
                     <div class="icon"></div>
-                  </div>
+                  </label>
                 </div>
               </div>
               <div class="row mt-4">
@@ -236,22 +243,64 @@
           </div>
         </div>
       </div>
+      <div class="characteristics-list-wrap">
+        <div class="container-block">
+          <h3 class="semibold text-uppercase title">Все характеристики</h3>
+          <div class="characteristics-list ps-2">
+            <div class="characteristics-list--item">
+              <div class="label">Места</div>
+              <div class="value">4</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Двери</div>
+              <div class="value">5</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Коробка передач</div>
+              <div class="value">Автомат</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Автомат</div>
+              <div class="value">есть</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Мощность двигателя</div>
+              <div class="value">123 л.с.</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Расход бензина</div>
+              <div class="value">6-7 л/км.</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Цвет</div>
+              <div class="value">Серебро</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Год выпуска</div>
+              <div class="value">2021</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Тип кузова</div>
+              <div class="value">Седан</div>
+            </div>
+            <div class="characteristics-list--item">
+              <div class="label">Класс машины</div>
+              <div class="value">Стандарт</div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5 pt-3">
+            <div class="more-btn">
+              <div class="text">Еще характеристики</div>
+              <div class="icon"><img src="images/icons/arrow-toggle-down.svg"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="product-slider-wrap">
       <div class="container-block">
         <div class="d-block d-xl-flex">
-          <h2 class="text-uppercase semibold">Автомобили для аренды</h2>
-          <div class="city-select ps-0 ps-xl-4 pe-0 mt-3 mt-xl-0">
-            <div class="city-select--head">
-              <div class="icon"><img src="images/icons/cupola.png"/></div>
-              <div class="text">в Санкт-Петербурге</div>
-              <div class="arrow"><img src="images/icons/arrow-toggle-down.svg"/></div>
-            </div>
-            <div class="city-select--body">
-              <div class="city-select--item">в Санкт-Петербурге</div>
-              <div class="city-select--item">в Москве</div>
-            </div>
-          </div>
+          <h2 class="text-uppercase semibold">Другие автомобили</h2>
         </div>
         <div class="product-slider js-products-slider">
           <div class="swiper-button-prev big"></div>
