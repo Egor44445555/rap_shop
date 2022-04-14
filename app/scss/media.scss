@@ -732,6 +732,38 @@
 
 @media (max-width: 768px) {
 
+    .input,
+    .select,
+    .textarea {
+        height: 80px;
+        padding: 20px;
+        font-family: $font-base-bold;
+        font-size: 18px;
+
+        &::placeholder {
+            font-family: $font-base-bold;
+            font-size: 18px;
+            color: $black;
+        }
+    }
+
+    .datepicker-wrap {
+
+        input {
+            height: 80px;
+            font-family: $font-base-bold;
+
+            &::placeholder {
+                font-family: $font-base-bold;
+            }
+        }
+
+        .icon {
+            width: 24px;
+            height: 20px;
+        }
+    }
+
     .pagination {
         margin: 60px -10px;
 
@@ -818,6 +850,27 @@
             .image {
                 margin-right: 30px;
             }
+        }
+    }
+
+
+    .additional-item-list {
+        margin-top: -15px;
+
+        &--item {
+            margin-top: 15px;
+        }
+    }
+
+
+    .characteristics-list {
+        margin-top: 15px;
+
+        &--item {
+            max-width: calc(100% - 20px);
+            margin: 15px 0 0 20px;
+            padding: 20px;
+            font-size: 18px;
         }
     }
 }
@@ -1177,10 +1230,6 @@
     h3, .h3 {
         font-size: 25px;
         line-height: 35px;
-    }
-
-    .pagination {
-
     }
 
     .hero-block {

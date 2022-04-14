@@ -248,6 +248,10 @@
                 padding-bottom: 5px;
                 border-bottom: 1px solid $borderColor;
             }
+
+            .icon {
+                display: none;
+            }
         }
     }
 
@@ -300,6 +304,7 @@
     &--item {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         flex: 100%;
         max-width: calc(33.33% - 1.5em);
         margin: 25px 0 0 1.5rem;
@@ -493,13 +498,15 @@
 
         .image {
             position: relative;
+            max-width: 100%;
             margin: 0 auto;
+            padding: 0 30px;
             text-align: center;
         }
     }
 
     .rent-block-wrap {
-        padding-top: 40px;
+        padding: 40px 0;
     }
 
     .additional-item-list {
@@ -507,6 +514,14 @@
         &--item {
             max-width: calc(50% - 1.5em);
         }
+    }
+
+    .characteristics-list-wrap {
+        padding: 40px 0;
+    }
+
+    .characteristics-list {
+        margin-top: 20px;
     }
 }
 
@@ -532,6 +547,31 @@
         .product-item,
         .more-btn {
             max-width: calc(50% - 20px);
+        }
+    }
+
+    .additional-item-list {
+
+        &--item {
+            max-width: calc(100% - 1.5em);
+            padding: 20px;
+        }
+
+        .image {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+        }
+    }
+
+    .product-detail .characteristics--item {
+        max-width: 50%;
+    }
+
+    .rent-block-wrap {
+
+        .btn {
+            width: 100%;
         }
     }
 }
@@ -572,11 +612,70 @@
             margin-top: 60px;
         }
     }
+
+
+    .product-detail {
+
+        .characteristics {
+
+            .text {
+                font-size: 14px;
+            }
+
+            .icon {
+                margin-right: 10px;
+            }
+
+            .more-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 80px;
+                margin-top: 25px;
+                background: $white;
+                text-align: center;
+                box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+
+                span {
+                    padding: 0;
+                    border: 0;
+                }
+
+                .icon {
+                    display: inline-block;
+                    width: 14px;
+                    height: 4px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .cost-wrap {
+            font-size: 18px;
+        }
+
+        .cost {
+            font-size: 35px;
+
+            span {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 @media (max-width: 426px) {
 
     .product-item .characteristics--item {
         max-width: calc(100% - 10px);
+    }
+
+    .additional-item-list {
+
+        .image {
+            justify-content: flex-start;
+            flex: 100%;
+            margin: 0 0 20px;
+        }
     }
 }
