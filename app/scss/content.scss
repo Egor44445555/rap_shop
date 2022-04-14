@@ -1310,3 +1310,73 @@
 }
 
 /*** End Additional services block ***/
+
+
+/*** Catalog ***/
+
+.catalog-block-wrap {
+    max-width: 1960px;
+    margin: 0 auto;
+    padding: 70px 40px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .input-wrap {
+        margin-top: 40px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .label {
+            padding-bottom: 25px;
+            font-family: $font-base-bold;
+            font-size: 22px;
+        }
+    }
+
+    .input {
+        height: 70px;
+        padding: 10px 30px;
+        border: 1px solid $borderColor;
+        box-shadow: none;
+
+        &::placeholder {
+            font-size: 18px;
+            color: $black;
+            opacity: .88;
+        }
+    }
+
+    .product-list {
+        margin: -60px 0 0 -30px;
+
+        .product-item {
+            max-width: calc(25% - 30px);
+            margin: 60px 0 0 30px;
+        }
+    }
+
+    .button-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+
+        .btn {
+            width: 100%;
+            max-width: 315px;
+            font-family: $font-base-semiBold;
+            font-size: 23px;
+        }
+    }
+
+    .filters {
+        max-width: 340px;
+    }
+}
+
+.catalog-block {
+    margin-top: 90px;
+}
+
+/*** End Catalog ***/

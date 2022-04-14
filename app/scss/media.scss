@@ -79,6 +79,23 @@
             }
         }
     }
+
+
+    .catalog-block-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .catalog-block-wrap {
+
+        .product-list {
+
+            .product-item {
+                max-width: calc(33.333% - 30px);
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -245,6 +262,17 @@
 
             &--item {
                 max-width: calc(50% - 20px);
+            }
+        }
+    }
+
+
+    .catalog-block-wrap {
+
+        .product-list {
+
+            .product-item {
+                max-width: calc(50% - 30px);
             }
         }
     }

@@ -1,0 +1,234 @@
+html
+    title Каталог
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .catalog-block-wrap(style="background-image: url(images/rent-block-bg.jpg)")
+                h1.catalog-title КАТАЛОГ АВТОМОБИЛЕЙ
+
+                .catalog-block
+                    .row
+                        .col-12.col-lg-3
+                            .filters
+                                form
+                                    .input-wrap
+                                        .label Класс машины
+
+                                        select(placeholder="Стандарт").custom-select
+                                            option(value="Стандарт" selected) Стандарт
+                                            option(value="Компактный") Компактный
+
+                                    .input-wrap
+                                        .label Цена
+
+                                        input(type="text" placeholder="от").input
+                                        input(type="text" placeholder="до").input.mt-3
+
+                                    .input-wrap
+                                        .label Марка
+
+                                        label(for="brand").radio
+                                            input(type="radio" name="brand" id="brand")
+                                            .icon
+                                            .text Любая
+                                        label(for="brand-2").radio.mt-3
+                                            input(type="radio" name="brand" id="brand-2")
+                                            .icon
+                                            .text Марка 1
+
+                                    .input-wrap
+                                        .label Кузов
+
+                                        input(type="text" placeholder="Седан").input
+
+                                    .input-wrap
+                                        .label Кондиционер
+
+                                        select(placeholder="Есть").custom-select
+                                            option(value="Есть" selected) Есть
+                                            option(value="Нет") Нет
+
+                                    .input-wrap
+                                        .label Коробка передач
+
+                                        select(placeholder="Механика").custom-select
+                                            option(value="Механика" selected) Механика
+                                            option(value="Автомат") Автомат
+
+                                    .input-wrap
+                                        .label Мощность двигателя
+
+                                        select(placeholder="97 ЛС").custom-select
+                                            option(value="97 ЛС" selected) 97 ЛС
+
+                        .col-12.col-lg-9
+                            .product-list
+                                .product-item
+                                    a(href="#").image
+                                        img(src="images/assets/product-preview.jpg")
+                                    .info
+                                        a(href="#").title Volkswagen Polo 2018 MT
+                                        .characteristics
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-user.png")
+                                                .text 2 мест
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-square.png")
+                                                .text 3 двери
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-automatic.png")
+                                                .text Автомат
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-conditioner.png")
+                                                .text Кондиционер
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-graph.png")
+                                                .text 183 л.с
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-list.png")
+                                                .text 1-7 л.\км.
+                                        .price
+                                            .label ОТ
+                                            .value 1.575 Р
+                                                span / сутки
+
+                                        a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                                .product-item
+                                    a(href="#").image
+                                        img(src="images/assets/product-preview.jpg")
+                                    .info
+                                        a(href="#").title Volkswagen Polo 2018 MT
+                                        .characteristics
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-user.png")
+                                                .text 2 мест
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-square.png")
+                                                .text 3 двери
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-automatic.png")
+                                                .text Автомат
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-conditioner.png")
+                                                .text Кондиционер
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-graph.png")
+                                                .text 183 л.с
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-list.png")
+                                                .text 1-7 л.\км.
+                                        .price
+                                            .label ОТ
+                                            .value 1.575 Р
+                                                span / сутки
+
+                                        a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                                .product-item
+                                    a(href="#").image
+                                        img(src="images/assets/product-preview.jpg")
+                                    .info
+                                        a(href="#").title Volkswagen Polo 2018 MT
+                                        .characteristics
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-user.png")
+                                                .text 2 мест
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-square.png")
+                                                .text 3 двери
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-automatic.png")
+                                                .text Автомат
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-conditioner.png")
+                                                .text Кондиционер
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-graph.png")
+                                                .text 183 л.с
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-list.png")
+                                                .text 1-7 л.\км.
+                                        .price
+                                            .label ОТ
+                                            .value 1.575 Р
+                                                span / сутки
+
+                                        a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                                .product-item
+                                    a(href="#").image
+                                        img(src="images/assets/product-preview.jpg")
+                                    .info
+                                        a(href="#").title Volkswagen Polo 2018 MT
+                                        .characteristics
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-user.png")
+                                                .text 2 мест
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-square.png")
+                                                .text 3 двери
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-automatic.png")
+                                                .text Автомат
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-conditioner.png")
+                                                .text Кондиционер
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-graph.png")
+                                                .text 183 л.с
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-list.png")
+                                                .text 1-7 л.\км.
+                                        .price
+                                            .label ОТ
+                                            .value 1.575 Р
+                                                span / сутки
+
+                                        a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                                .product-item
+                                    a(href="#").image
+                                        img(src="images/assets/product-preview.jpg")
+                                    .info
+                                        a(href="#").title Volkswagen Polo 2018 MT
+                                        .characteristics
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-user.png")
+                                                .text 2 мест
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-square.png")
+                                                .text 3 двери
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-automatic.png")
+                                                .text Автомат
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-conditioner.png")
+                                                .text Кондиционер
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-graph.png")
+                                                .text 183 л.с
+                                            .characteristics--item
+                                                img.icon(src="images/icons/characteristics-list.png")
+                                                .text 1-7 л.\км.
+                                        .price
+                                            .label ОТ
+                                            .value 1.575 Р
+                                                span / сутки
+
+                                        a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                            .button-wrap
+                                .btn.btn-blue.more-btn Показать ещё
+
+
+        include ./blocks/about-block-small
+        include ./blocks/rent-out-block
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
