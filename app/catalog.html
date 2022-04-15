@@ -83,58 +83,68 @@
         <div class="catalog-block">
           <div class="row">
             <div class="col-12 col-lg-3">
-              <div class="filters">
-                <form>
-                  <div class="input-wrap">
-                    <div class="label">Класс машины</div>
-                    <select placeholder="Стандарт" class="custom-select">
-                      <option value="Стандарт" selected="selected">Стандарт</option>
-                      <option value="Компактный">Компактный</option>
-                    </select>
+              <div class="filters-wrap">
+                <div class="d-flex d-lg-none">
+                  <div class="filters-btn">
+                    <div class="icon"><img src="images/icons/filters.png"/></div>
+                    <div class="text">Открыть фильтры</div>
+                    <div class="arrow"><img src="images/icons/arrow-toggle-down.svg"/></div>
                   </div>
-                  <div class="input-wrap">
-                    <div class="label">Цена</div>
-                    <input type="text" placeholder="от" class="input"/>
-                    <input type="text" placeholder="до" class="input mt-3"/>
-                  </div>
-                  <div class="input-wrap">
-                    <div class="label">Марка</div>
-                    <label for="brand" class="radio">
-                      <input type="radio" name="brand" id="brand"/>
-                      <div class="icon"></div>
-                      <div class="text">Любая</div>
-                    </label>
-                    <label for="brand-2" class="radio mt-3">
-                      <input type="radio" name="brand" id="brand-2"/>
-                      <div class="icon"></div>
-                      <div class="text">Марка 1</div>
-                    </label>
-                  </div>
-                  <div class="input-wrap">
-                    <div class="label">Кузов</div>
-                    <input type="text" placeholder="Седан" class="input"/>
-                  </div>
-                  <div class="input-wrap">
-                    <div class="label">Кондиционер</div>
-                    <select placeholder="Есть" class="custom-select">
-                      <option value="Есть" selected="selected">Есть</option>
-                      <option value="Нет">Нет</option>
-                    </select>
-                  </div>
-                  <div class="input-wrap">
-                    <div class="label">Коробка передач</div>
-                    <select placeholder="Механика" class="custom-select">
-                      <option value="Механика" selected="selected">Механика</option>
-                      <option value="Автомат">Автомат</option>
-                    </select>
-                  </div>
-                  <div class="input-wrap">
-                    <div class="label">Мощность двигателя</div>
-                    <select placeholder="97 ЛС" class="custom-select">
-                      <option value="97 ЛС" selected="selected">97 ЛС</option>
-                    </select>
-                  </div>
-                </form>
+                </div>
+                <div class="filters">
+                  <form>
+                    <div class="input-wrap">
+                      <div class="label">Класс машины</div>
+                      <select placeholder="Стандарт" class="custom-select">
+                        <option value="Стандарт" selected="selected">Стандарт</option>
+                        <option value="Компактный">Компактный</option>
+                      </select>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="label">Цена</div>
+                      <input type="text" placeholder="от" class="input"/>
+                      <input type="text" placeholder="до" class="input mt-3"/>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="label">Марка</div>
+                      <label for="brand" class="radio">
+                        <input type="radio" name="brand" id="brand"/>
+                        <div class="icon"></div>
+                        <div class="text">Любая</div>
+                      </label>
+                      <label for="brand-2" class="radio mt-3">
+                        <input type="radio" name="brand" id="brand-2"/>
+                        <div class="icon"></div>
+                        <div class="text">Марка 1</div>
+                      </label>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="label">Кузов</div>
+                      <input type="text" placeholder="Седан" class="input"/>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="label">Кондиционер</div>
+                      <select placeholder="Есть" class="custom-select">
+                        <option value="Есть" selected="selected">Есть</option>
+                        <option value="Нет">Нет</option>
+                      </select>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="label">Коробка передач</div>
+                      <select placeholder="Механика" class="custom-select">
+                        <option value="Механика" selected="selected">Механика</option>
+                        <option value="Автомат">Автомат</option>
+                      </select>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="label">Мощность двигателя</div>
+                      <select placeholder="97 ЛС" class="custom-select">
+                        <option value="97 ЛС" selected="selected">97 ЛС</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-blue mt-5 w-100">Применить</button>
+                  </form>
+                </div>
               </div>
             </div>
             <div class="col-12 col-lg-9">

@@ -12,57 +12,67 @@ html
                 .catalog-block
                     .row
                         .col-12.col-lg-3
-                            .filters
-                                form
-                                    .input-wrap
-                                        .label Класс машины
+                            .filters-wrap
+                                .d-flex.d-lg-none
+                                    .filters-btn
+                                        .icon
+                                            img(src="images/icons/filters.png")
+                                        .text Открыть фильтры
+                                        .arrow
+                                            img(src="images/icons/arrow-toggle-down.svg")
+                                .filters
+                                    form
+                                        .input-wrap
+                                            .label Класс машины
 
-                                        select(placeholder="Стандарт").custom-select
-                                            option(value="Стандарт" selected) Стандарт
-                                            option(value="Компактный") Компактный
+                                            select(placeholder="Стандарт").custom-select
+                                                option(value="Стандарт" selected) Стандарт
+                                                option(value="Компактный") Компактный
 
-                                    .input-wrap
-                                        .label Цена
+                                        .input-wrap
+                                            .label Цена
 
-                                        input(type="text" placeholder="от").input
-                                        input(type="text" placeholder="до").input.mt-3
+                                            input(type="text" placeholder="от").input
+                                            input(type="text" placeholder="до").input.mt-3
 
-                                    .input-wrap
-                                        .label Марка
+                                        .input-wrap
+                                            .label Марка
 
-                                        label(for="brand").radio
-                                            input(type="radio" name="brand" id="brand")
-                                            .icon
-                                            .text Любая
-                                        label(for="brand-2").radio.mt-3
-                                            input(type="radio" name="brand" id="brand-2")
-                                            .icon
-                                            .text Марка 1
+                                            label(for="brand").radio
+                                                input(type="radio" name="brand" id="brand")
+                                                .icon
+                                                .text Любая
+                                            label(for="brand-2").radio.mt-3
+                                                input(type="radio" name="brand" id="brand-2")
+                                                .icon
+                                                .text Марка 1
 
-                                    .input-wrap
-                                        .label Кузов
+                                        .input-wrap
+                                            .label Кузов
 
-                                        input(type="text" placeholder="Седан").input
+                                            input(type="text" placeholder="Седан").input
 
-                                    .input-wrap
-                                        .label Кондиционер
+                                        .input-wrap
+                                            .label Кондиционер
 
-                                        select(placeholder="Есть").custom-select
-                                            option(value="Есть" selected) Есть
-                                            option(value="Нет") Нет
+                                            select(placeholder="Есть").custom-select
+                                                option(value="Есть" selected) Есть
+                                                option(value="Нет") Нет
 
-                                    .input-wrap
-                                        .label Коробка передач
+                                        .input-wrap
+                                            .label Коробка передач
 
-                                        select(placeholder="Механика").custom-select
-                                            option(value="Механика" selected) Механика
-                                            option(value="Автомат") Автомат
+                                            select(placeholder="Механика").custom-select
+                                                option(value="Механика" selected) Механика
+                                                option(value="Автомат") Автомат
 
-                                    .input-wrap
-                                        .label Мощность двигателя
+                                        .input-wrap
+                                            .label Мощность двигателя
 
-                                        select(placeholder="97 ЛС").custom-select
-                                            option(value="97 ЛС" selected) 97 ЛС
+                                            select(placeholder="97 ЛС").custom-select
+                                                option(value="97 ЛС" selected) 97 ЛС
+
+                                        button(type="submit").btn.btn-blue.mt-5.w-100 Применить
 
                         .col-12.col-lg-9
                             .product-list
