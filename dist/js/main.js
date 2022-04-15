@@ -242,6 +242,19 @@ $(document).ready(function() {
         }
     });
 
+    $('.filters-btn').on("click", function () {
+        let filters = $('.filters');
+        $(this).toggleClass('active');
+
+        if (filters.hasClass('active')) {
+            filters.slideUp();
+            filters.removeClass('active');
+        } else {
+            filters.addClass('active');
+            filters.slideDown();
+        }
+    });
+
     /*** End Spoiler ***/
 
 

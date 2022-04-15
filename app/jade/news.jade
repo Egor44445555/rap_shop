@@ -1,0 +1,107 @@
+html
+    title Новости
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Новости
+
+            .blog-block-wrap(style="background-image: url(images/rent-block-bg.jpg);")
+                .container-block
+                    h2.title.semibold.text-uppercase ПОСЛЕДНИЕ НОВОСТИ
+
+                    .sort-wrap
+                        .d-none.d-sm-block
+                            .sort
+                                .sort--item
+                                    label(for="sort-1")
+                                        input(type="radio" value="За сегодня" id="sort-1" name="sort")
+                                        span.text За сегодня
+                                .sort--item
+                                    label(for="sort-2")
+                                        input(type="radio" value="За неделю" id="sort-2" name="sort" checked)
+                                        span.text За неделю
+                                .sort--item
+                                    label(for="sort-3")
+                                        input(type="radio" value="За месяц" id="sort-3" name="sort")
+                                        span.text За месяц
+                                .sort--item
+                                    label(for="sort-4")
+                                        input(type="radio" value="За год" id="sort-4" name="sort")
+                                        span.text За год
+
+                        .d-block.d-sm-none.mt-4
+                            select(placeholder="За сегодня").custom-select
+                                option(value="За сегодня" selected) За сегодня
+                                option(value="За неделю") За неделю
+                                option(value="За месяц") За месяц
+                                option(value="За год") За год
+
+                    .blog-list.news
+                        a(href="#").blog-list--item
+                            span.info
+                                span.title Памятка водителю при аренде автомобиля
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.png")
+                                        span.text 287
+                        a(href="#").blog-list--item
+                            span.info
+                                span.title Памятка водителю при аренде автомобиля
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.png")
+                                        span.text 287
+                        a(href="#").blog-list--item
+                            span.info
+                                span.title Памятка водителю при аренде автомобиля
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.png")
+                                        span.text 287
+                        a(href="#").blog-list--item
+                            span.info
+                                span.title Памятка водителю при аренде автомобиля
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.png")
+                                        span.text 287
+
+                    .pagination
+                        a(href="#").pagination--item.prev
+                            img(src="images/icons/arrow-angle.png")
+                        a(href="#").pagination--item 1
+                        a(href="#").pagination--item 2
+                        span.pagination--item.active 3
+                        a(href="#").pagination--item 4
+                        a(href="#").pagination--item 5
+                        a(href="#").pagination--item 6
+                        a(href="#").pagination--item.next
+                            img(src="images/icons/arrow-angle.png")
+
+                include ./blocks/products-slider
+
+
+            include ./blocks/about-block-small
+            include ./blocks/rent-out-block
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
