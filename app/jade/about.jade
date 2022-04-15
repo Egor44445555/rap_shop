@@ -1,0 +1,125 @@
+html
+    title О компании
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text О нас
+
+            .about-block-wrap(style="background-image: url(images/rent-block-bg.jpg);")
+                .container-block
+                    .about-block
+                        .sidebar
+                            .menu
+                                a(href="#").menu--item О компании
+                                a(href="#").menu--item Контакты
+                                a(href="#").menu--item Аренда CRM
+                                a(href="#").menu--item Франшиза
+                                a(href="#").menu--item Сдать в аренду
+                                a(href="#").menu--item Отзывы
+                                a(href="#").menu--item Частые вопросы
+                                a(href="#").menu--item Дополнительные услуги
+                                a(href="#").menu--item Бонусная программа
+
+                            .social-list
+                                a(href='#').social-list--item
+                                    img(src="images/icons/social-phone.png").icon
+                                    span.text Звонок
+                                a(href='#').social-list--item
+                                    img(src="images/icons/social-whatsapp.png").icon
+                                    span.text Whats App
+                                a(href='#').social-list--item
+                                    img(src="images/icons/social-telegram.png").icon
+                                    span.text Тelegram
+
+                        .about-detail
+                            .about-block
+                                .text-block
+                                    h1.h2.text-uppercase.semibold о компании
+                                    .text «РосАвтоПрокат» — это удобный сервис проката легковых автомобилей, доступный во многих городах России
+                                .image
+                                    img(src="images/about-map.png")
+
+                            .statistic-list.no-shadow.mt-5.pt-0.mt-xl-5.pt-xl-5
+                                .row.gx-3.gx-xxl-5
+                                    .col-12.col-lg-6.col-xxl-3.mt-3.mt-xxl-0
+                                        .statistic-list--item
+                                            .icon(style="background-image: url('images/assets/sats-bg.jpg')")
+                                                .icon-location
+                                            .info
+                                                .count 52
+                                                .title Городов в сети
+                                    .col-12.col-lg-6.col-xxl-3.mt-3.mt-xxl-0
+                                        .statistic-list--item
+                                            .icon(style="background-image: url('images/assets/sats-bg.jpg')")
+                                                .icon-car2
+                                            .info
+                                                .count 250
+                                                .title Автомобилей в парке
+                                    .col-12.col-lg-6.col-xxl-3.mt-3.mt-xxl-0
+                                        .statistic-list--item
+                                            .icon(style="background-image: url('images/assets/sats-bg.jpg')")
+                                                .icon-users-fill
+                                            .info
+                                                .count 148
+                                                .title Сотрудников в компании
+
+                            .mt-5.pt-0.mt-xl-5.pt-xl-5
+                                .description
+                                    p РосАвтоПрокат предлагает легковые автомобили для передвижения туристов по стране
+                                        | и поездок на деловые встречи, найдутся автомобили и для тех, у кого авто находится на ремонте.
+                                        | Если ваша работа связана с наличием авто, а свой автомобиль пришлось продать,
+                                        | то на время можно воспользоваться услугами проката. Гибкий подход и готовность
+                                        | помочь клиенту – одна из главных задач организации.
+
+                                .description.mt-5.pt-0.mt-xl-5.pt-xl-5
+                                    .h2.font-regular.pb-xl-3 Наша миссия
+
+                                    p Наша компания видит свою цель в том, чтобы обеспечить людям  услуги по прокату
+                                        | автомобилей. И сделать это доступным для каждого города России. Мы готовы
+                                        | сотрудничать с организациями, владельцами автомобилей и физическими лицами,
+                                        | желающими взять автомобиль в прокат.
+
+
+                            .mt-5.pt-0.mt-xl-5.pt-xl-5
+                                .h2.font-regular Наши ресурсы
+
+                                .mt-3
+                                    .resource-list
+                                        .resource-list--item
+                                            .icon
+                                                img(src="images/icons/planet.png")
+                                            .text
+                                                .title Общий сайт
+                                                a(href="https://rosautoprokat.ru" target="_blank").link rosautoprokat.ru
+                                        .resource-list--item
+                                            .icon
+                                                img(src="images/icons/hands.png")
+                                            .text
+                                                .title Сайт франчайзинга
+                                                a(href="https://franshiza.rosautoprokat.ru" target="_blank").link franshiza.rosautoprokat.ru
+                                        .resource-list--item
+                                            .icon
+                                                img(src="images/icons/folder.png")
+                                            .text
+                                                .title Чёрный список водителей
+                                                a(href="https://blacklistprokat.ru" target="_blank").link blacklistprokat.ru
+                                        .resource-list--item
+                                            .icon
+                                                img(src="images/icons/smartphone.png")
+                                            .text
+                                                .title Инстаграм руководителя
+                                                a(href="https://franshiza.rosautoprokat.ru" target="_blank").link franshiza.rosautoprokat.ru
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
