@@ -637,91 +637,9 @@
 
 /*** About block ***/
 
-.about-block-wrap {
-    padding: 200px 0;
-    background-size: cover;
-}
-
 .about-block {
-
-    .info {
-        padding: 0 0 0 40%;
-
-        .title {
-            max-width: 530px;
-        }
-
-        .description {
-            max-width: 530px;
-            margin-top: 30px;
-            font-size: 35px;
-            line-height: 42px;
-            color: $textGray;
-        }
-
-        .count-wrap {
-            display: flex;
-            align-items: flex-end;
-            margin-top: 100px;
-
-            .num {
-                flex: 1;
-                max-width: 180px;
-                font-size: 157px;
-                line-height: 104px;
-                color: $blue;
-            }
-
-            .text {
-                flex: 1;
-                max-width: 430px;
-                padding: 0 80px 0 78px;
-                font-size: 30px;
-                line-height: 35px;
-            }
-
-            .btn {
-                flex: 1;
-            }
-        }
-    }
-
-    .bottom-block {
-        margin-top: 120px;
-
-        .btn {
-            display: none;
-        }
-    }
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1180px;
-        margin-left: 140px;
-
-        li {
-            position: relative;
-            flex: 100%;
-            max-width: 33.333%;
-            padding: 45px 100px 0 45px;
-            font-family: $font-base-semiBold;
-            font-size: 26px;
-            line-height: 34px;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 16px;
-                height: 25px;
-                background: $redBright;
-                transform: skew(-40deg, 0);
-                border-radius: 2px;
-            }
-        }
-    }
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-block-small-wrap {
@@ -1411,29 +1329,61 @@
 /*** End Catalog ***/
 
 
-/*** About ***/
+/*** About page ***/
 
-.about-detail {
-    padding-left: 130px;
+.about-block-wrap {
+    position: relative;
+    padding: 80px 0 200px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+}
 
-    .description {
-        max-width: 920px;
-        font-size: 20px;
-        line-height: 35px;
-        color: $textGray;
+.about-detail-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .sidebar {
+        flex: 1;
+        max-width: 350px;
+    }
+
+    .menu {
+
+        &--item {
+            display: block;
+            padding: 30px 0;
+            font-family: $font-base-semiBold;
+            font-size: 24px;
+            color: $black;
+            border-bottom: 1px solid $borderColor;
+        }
+    }
+
+    .social-list {
+        justify-content: flex-start;
+
+        &--item {
+            padding: 40px 0 0;
+        }
+
+        .icon {
+            margin-right: 40px;
+        }
+
+        .text {
+            margin-top: 0;
+            font-size: 22px;
+        }
+    }
+
+    .about-detail {
+        flex: 1;
     }
 }
 
-.about-block {
+.about-detail-block {
     display: flex;
-    position: relative;
-
-    .icon-bg {
-        position: absolute;
-        top: -40px;
-        left: -100px;
-        z-index: -1;
-    }
 
     .text-block {
         position: relative;
@@ -1442,8 +1392,8 @@
     }
 
     .text {
-        max-width: 640px;
-        margin-top: 40px;
+        max-width: 650px;
+        margin-top: 80px;
         font-size: 32px;
         line-height: 42px;
 
@@ -1452,25 +1402,46 @@
         }
     }
 
-    .link {
-        display: inline-block;
-        margin-top: 40px;
-        padding-bottom: 8px;
-        font-size: 27px;
-        color: $blue;
-        border-bottom: 1px solid $blue;
-    }
-
     .image {
         position: absolute;
-        top: -55px;
-        right: 0;
+        top: 0;
+        right: -26px;
 
         img {
             display: block;
             max-height: 100%;
             margin: 0 auto;
             object-fit: contain;
+        }
+    }
+}
+
+.about-detail {
+    padding-left: 70px;
+
+    .title {
+        font-size: 42px;
+    }
+
+    .description {
+
+        p {
+            max-width: 780px;
+            margin-top: 35px;
+            font-size: 20px;
+            line-height: 38px;
+            color: $textGray;
+        }
+    }
+
+    .app-block-wrap {
+        padding: 160px 0;
+        overflow: visible;
+
+        .title {
+            font-family: $font-base;
+            font-size: 32px;
+            line-height: 44px;
         }
     }
 }
@@ -1549,4 +1520,146 @@
     }
 }
 
-/*** End About ***/
+/*** Statistic list ***/
+
+.statistic-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 110px;
+
+    &--item {
+        display: flex;
+        align-items: center;
+        flex: 100%;
+        max-width: calc(33.333%);
+        padding: 20px 20px 0 0;
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            margin-right: 30px;
+            font-size: 33px;
+            background-size: cover;
+            border-radius: 10px;
+
+            &:before,
+            div:before {
+                color: $white;
+            }
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .count {
+            margin-top: 10px;
+            font-family: $font-base-semiBold;
+            font-size: 22px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .title {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 14px;
+            opacity: .5;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+/*** End About page ***/
+
+
+/*** Document block ***/
+
+.document-block {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image {
+        flex: 1;
+        max-width: 240px;
+        overflow: hidden;
+
+        img {
+            max-height: 440px;
+            margin-top: -122px;
+        }
+    }
+
+    .info {
+        flex: 1;
+        max-width: 630px;
+        padding-top: 80px;
+    }
+
+    .title {
+        font-size: 34px;
+        line-height: 40px;
+        opacity: .89;
+    }
+
+    .btn {
+        margin-top: 50px;
+        font-family: $font-base-semiBold;
+        font-size: 24px;
+    }
+
+    .document-wrap {
+        margin-top: 60px;
+
+        .title {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+
+    .document {
+        display: flex;
+        margin: 30px 0 0;
+
+        .icon {
+            flex: 1;
+            max-width: 63px;
+            margin-right: 50px;
+
+            img {
+                margin: 0;
+            }
+        }
+
+        .button-wrap {
+            flex: 1;
+            margin: -16px 0 0 -16px;
+        }
+
+        .label {
+            margin: 16px 0 0 16px;
+            font-family: $font-base-semiBold;
+            font-size: 20px;
+            color: $textGray;
+            opacity: .75;
+        }
+
+        .btn {
+            margin: 16px 0 0 16px;
+            padding: 9px 25px;
+            font-size: 18px;
+        }
+    }
+}
+
+/*** End Document block ***/
