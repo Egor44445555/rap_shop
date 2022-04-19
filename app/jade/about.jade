@@ -114,7 +114,7 @@ html
                                             | из любого места, где
                                             | бы клиент ни находился
 
-                                        .payment-list
+                                        .payment-list.d-none.d-sm-block
                                             .payment-list--item
                                                 img(src="images/payment-google.png")
                                             .payment-list--item
@@ -122,6 +122,12 @@ html
 
                                     .image
                                         img(src="images/mobile-app.png")
+
+                                    .payment-list.d-block.d-sm-none
+                                        .payment-list--item
+                                            img(src="images/payment-google.png")
+                                        .payment-list--item
+                                            img(src="images/payment-apple.png")
 
                             .mt-5.pt-2.mt-xl-5.pt-xl-5
                                 h3.regular Наши ресурсы

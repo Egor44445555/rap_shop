@@ -1435,11 +1435,29 @@
 
     .document-block {
 
+        .btn {
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+        }
+
         .document {
 
+            .icon {
+                margin-right: 35px;
+            }
+
+            .label {
+                max-width: 130px;
+                margin: 50px 0 25px;
+            }
+
             .btn {
+                display: flex;
                 flex: 100%;
-                width: 100%;
+                width: auto;
+                height: 60px;
+                margin: 25px 0 0 -85px;
             }
         }
     }
@@ -1461,8 +1479,12 @@
                 margin-left: 35px;
             }
 
-            .payment-list--item {
-                max-width: 100%;
+            .payment-list {
+                padding-left: 0;
+
+                &--item {
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -1763,6 +1785,28 @@
                 font-size: 34px;
             }
         }
+    }
+
+
+    .about-detail {
+
+        .app-block-wrap {
+            padding-bottom: 20px;
+        }
+
+        .app-block {
+
+            .description {
+                padding: 30px 0 0 20px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+
+    .resource-list {
+        padding: 0;
     }
 }
 
