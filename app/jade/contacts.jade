@@ -1,0 +1,75 @@
+html
+    title Контакты
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Контакты
+
+            .contact-page(style="background-image: url(images/page-bg.jpg);")
+                .container-block
+                    .contact-list
+                        .d-block.d-xl-flex
+                            h1.h2.text-uppercase.semibold Контакты
+                            .city-select.ps-0.ps-xl-4.pe-0.mt-3.mt-xl-0
+                                .city-select--head
+                                    .text в Санкт-Петербурге
+                                    .arrow
+                                        img(src="images/icons/arrow-toggle-down.svg")
+                                .city-select--body
+                                    .city-select--item в Санкт-Петербурге
+                                    .city-select--item в Москве
+
+                        .ms-md-5.ps-md-4
+                            .row.mt-5.pt-3
+                                .col-12.col-md-6
+                                    .contact-list--item
+                                        .title Офис
+                                        .description
+                                            span ул. Большая Конюшенная,
+                                            span дом 52, вход справа около
+                                            span торгового центра «Невский центр»
+
+                                .col-12.col-md-6.mt-5.pt-3.mt-md-0.pt-md-0
+                                    .contact-list--item
+                                        .title Режим работы
+                                        .description
+                                            span Понедельник - Пятница  9:00-18:00
+                                            span Суббота. 9:00-16:00
+                                            span Воскресенье — выходной
+
+                            .row.mt-5.pt-3
+                                .col-12.col-md-6
+                                    .contact-list--item
+                                        a(href="tel:8 800 250 46 00").phone 8 800 250 46 00
+                                        .phone-description
+                                            span Единый номер
+                                            span Бесплатно по Росcии
+
+                                .col-12.col-md-6.mt-5.pt-3.mt-md-0.pt-md-0
+                                    .contact-list--item
+                                        a(href="tel:+7 (3412) 476 475").phone +7 (3412) 476 475
+                                        .social-list
+                                            a(href="#").social-list--item
+                                                span.icon
+                                                    img(src="images/icons/whatsapp-small.png")
+                                                span.text Whats App
+                                            a(href="#").social-list--item
+                                                span.icon
+                                                    img(src="images/icons/telegram-small.png")
+                                                span.text Telegram
+
+                        .map#map
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
