@@ -760,7 +760,7 @@ select {
         position: relative;
         display: block;
         min-width: 100px;
-        padding: 10px 20px;
+        padding: 14px 20px;
         font-size: 16px;
         font-weight: normal;
         line-height: normal;
@@ -790,6 +790,21 @@ select {
                 line-height: 13px;
                 white-space: normal;
             }
+        }
+    }
+
+
+    &.big {
+
+        .custom-select-trigger {
+            height: 90px;
+            background: $white;
+            border: 0;
+            box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+        }
+
+        .custom-options {
+            border: 0;
         }
     }
 }

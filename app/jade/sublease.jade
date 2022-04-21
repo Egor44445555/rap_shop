@@ -18,7 +18,7 @@ html
                 .container-block
                     .sublease-info-block
                         .info
-                            h2.title Сдайте свой автомобиль в аренду «РОСАВТОПРОКАТ»
+                            h2.title.text-uppercase.semibold Сдайте свой автомобиль в аренду «РОСАВТОПРОКАТ»
                             p И получайте ежемесячный доход с проката вашего автомобиля
 
                         img(src="images/sublease-image.jpg").image.d-none.d-md-block
@@ -37,42 +37,43 @@ html
                                 | несколько ваших
                                 | автомобилей
 
-            .container-block
-                h2.semibold.text-uppercase Заполните форму субарендатора
+            .sublease-form-wrap(style="background-image: url(images/form-bg.jpg);")
+                .container-block
+                    h2.semibold.text-uppercase Заполните форму субарендатора
 
-                form.form.ps-0.ps-xl-2
-                    .row.mt-4
-                        .col-12.col-lg-6
-                            .input-wrap
-                                input(type="text" placeholder="Ваше имя").input
-                        .col-12.col-lg-6.mt-4.mt-lg-0
-                            .input-wrap
-                                input(type="text" placeholder="Ваш телефон").input
+                    form.form.ps-0.ps-xl-2
+                        .row.mt-4
+                            .col-12.col-lg-6
+                                .input-wrap
+                                    input(type="text" placeholder="Ваше имя").input
+                            .col-12.col-lg-6.mt-4.mt-lg-0
+                                .input-wrap
+                                    input(type="text" placeholder="Ваш телефон").input
 
-                    .row.mt-4
-                        .col-12.col-lg-6
-                            .input-wrap
-                                input(type="text" placeholder="Название машины").input
-                        .col-12.col-lg-6.mt-4.mt-lg-0
-                            .input-wrap
-                                select(placeholder="Класс машины").custom-select
-                                    option(value="Класс машины 1")
-                                    option(value="Класс машины 2")
+                        .row.mt-4
+                            .col-12.col-lg-6
+                                .input-wrap
+                                    input(type="text" placeholder="Название машины").input
+                            .col-12.col-lg-6.mt-4.mt-lg-0
+                                .input-wrap
+                                    select(placeholder="Класс машины").custom-select.big
+                                        option(value="Класс машины 1")
+                                        option(value="Класс машины 2")
 
-                    .row.mt-4
-                        .col-12.col-lg-6
-                            .input-wrap
-                                input(type="text" placeholder="Год выпуска").input
-                        .col-12.col-lg-6.mt-4.mt-lg-0
-                            .input-wrap
-                                select(placeholder="Тип кузова").custom-select
-                                    option(value="Тип кузова 1")
-                                    option(value="Тип кузова 2")
+                        .row.mt-4
+                            .col-12.col-lg-6
+                                .input-wrap
+                                    input(type="text" placeholder="Год выпуска").input
+                            .col-12.col-lg-6.mt-4.mt-lg-0
+                                .input-wrap
+                                    select(placeholder="Тип кузова").custom-select.big
+                                        option(value="Тип кузова 1")
+                                        option(value="Тип кузова 2")
 
-                    textarea(placeholder="Комментарий").textarea.mt-4
+                        textarea(placeholder="Комментарий").textarea.mt-4
 
-                    .d-block.d-md-flex.justify-content-center.mt-3.pt-3.mt-lg-5
-                        button(type="submit").btn.btn-blue Отправить запрос
+                        .d-block.d-md-flex.justify-content-center.mt-3.pt-3.mt-lg-5
+                            button(type="submit").btn.btn-blue Отправить запрос
 
             .faq-block-wrap(style="background-image: url(images/faq-block-bg.jpg);")
                 .container-block
@@ -120,8 +121,8 @@ html
                             .faq-list--item-body.spoiler--body
                                 p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-                    .d-flex.justify-content-center
-                        a(href="#").btn.btn-blue.btn-big.mt-5 Показать ещё
+                    .d-flex.justify-content-center.mt-5.pt-4
+                        a(href="#").btn.btn-blue.btn-big Показать ещё
 
             .contact-block-wrap
                 .container-block
