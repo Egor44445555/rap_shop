@@ -560,9 +560,7 @@
         padding: 50px 0;
     }
 
-    .reviews-slider {
-        margin-top: 60px;
-        padding: 0 80px;
+    .reviews {
 
         .name-wrap {
             display: block;
@@ -590,9 +588,27 @@
             margin-top: 40px;
             font-size: 16px;
         }
+    }
+
+    .reviews-slider {
+        margin-top: 60px;
+        padding: 0 80px;
 
         .btn {
             margin-top: 60px;
+        }
+    }
+
+    .reviews-page {
+        padding-bottom: 70px;
+    }
+
+    .reviews-list {
+        margin-top: 0;
+        padding: 0 23px;
+
+        &--item {
+            padding: 60px 0;
         }
     }
 
@@ -936,7 +952,7 @@
     }
 
     .pagination {
-        margin: 60px -10px;
+        margin: 60px -10px 0;
 
         &--item {
             margin: 20px 10px 0;
@@ -1515,6 +1531,17 @@
         line-height: 35px;
     }
 
+    .pagination {
+        margin: 40px -5px 0;
+
+        &--item {
+            width: 25px;
+            height: 25px;
+            min-width: 25px;
+            margin: 10px 5px 0;
+        }
+    }
+
     .hero-block {
 
         .title {
@@ -1608,6 +1635,7 @@
         }
     }
 
+
     .reviews-slider {
         padding: 0 30px;
 
@@ -1616,6 +1644,11 @@
             padding: 20px 20px;
         }
     }
+
+    .reviews-list {
+        padding: 0;
+    }
+
 
     .about-block {
 

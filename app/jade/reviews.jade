@@ -1,0 +1,100 @@
+html
+    title Отзывы арендаторов
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Отзывы арендаторов
+
+            .reviews-page(style="background-image: url(images/page-bg.jpg);")
+                .container-block
+                    h1.h2.semibold ОТЗЫВЫ АРЕНДАТОРОВ
+
+                    .reviews-list.reviews
+                        .reviews-list--item
+                            .name-wrap
+                                .quotes “
+                                .text
+                                    .name Наталья Горбунцова
+                                    .rating(data-rating-count="4")
+                                        .rating--list
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+
+                            .description Ставлю 5 звезд. Создали заявку через их приложение, отзвонились через 10 минут,
+                                | забронировали авто. По приезду - авто чистый, документы оформили быстро.
+                                | Со сдачей проблем не возникло, правда я немного поцарапала бампер.
+                                | Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
+
+                            .author Google Отзывы
+
+                        .reviews-list--item
+                            .name-wrap
+                                .quotes “
+                                .text
+                                    .name Наталья Горбунцова
+                                    .rating(data-rating-count="4")
+                                        .rating--list
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+
+                            .description Ставлю 5 звезд. Создали заявку через их приложение, отзвонились через 10 минут,
+                                | забронировали авто. По приезду - авто чистый, документы оформили быстро.
+                                | Со сдачей проблем не возникло, правда я немного поцарапала бампер.
+                                | Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
+
+                            .author Google Отзывы
+
+                        .reviews-list--item
+                            .name-wrap
+                                .quotes “
+                                .text
+                                    .name Наталья Горбунцова
+                                    .rating(data-rating-count="4")
+                                        .rating--list
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+                                            .icon.disabled
+
+                            .description Ставлю 5 звезд. Создали заявку через их приложение, отзвонились через 10 минут,
+                                | забронировали авто. По приезду - авто чистый, документы оформили быстро.
+                                | Со сдачей проблем не возникло, правда я немного поцарапала бампер.
+                                | Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
+
+                            .author Google Отзывы
+
+                    .pagination
+                        a(href="#").pagination--item.prev
+                            img(src="images/icons/arrow-angle.png")
+                        a(href="#").pagination--item 1
+                        a(href="#").pagination--item 2
+                        span.pagination--item.active 3
+                        a(href="#").pagination--item 4
+                        a(href="#").pagination--item 5
+                        a(href="#").pagination--item 6
+                        a(href="#").pagination--item.next
+                            img(src="images/icons/arrow-angle.png")
+
+            include ./blocks/products-slider
+            include ./blocks/about-block-small
+            include ./blocks/rent-out-block
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

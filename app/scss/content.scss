@@ -506,18 +506,7 @@
     overflow: hidden;
 }
 
-.reviews-slider {
-    max-width: 1116px;
-    margin: 160px auto 0;
-    padding: 0 116px;
-    overflow: visible;
-
-    .swiper-slide-active {
-
-        .btn {
-            display: inline-block;
-        }
-    }
+.reviews {
 
     .name-wrap {
         display: flex;
@@ -555,10 +544,43 @@
         font-size: 24px;
         opacity: .7;
     }
+}
+
+.reviews-slider {
+    max-width: 1116px;
+    margin: 160px auto 0;
+    padding: 0 116px;
+    overflow: visible;
+
+    .swiper-slide-active {
+
+        .btn {
+            display: inline-block;
+        }
+    }
 
     .btn {
         display: none;
         margin-top: 100px;
+    }
+}
+
+.reviews-page {
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.reviews-list {
+    margin-top: 30px;
+
+    &--item {
+        padding: 90px 0;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .description {
+        max-width: 1410px;
     }
 }
 
