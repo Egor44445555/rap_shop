@@ -250,8 +250,8 @@ h1,
 
 h2,
 .h2 {
-    font-size: 55px;
-    line-height: 57px;
+    font-size: 42px;
+    line-height: 52px;
 }
 
 h3,
@@ -471,7 +471,7 @@ a {
     padding: 30px 80px 30px 40px;
     background: $white;
     font-family: $font-base;
-    font-size: 18px;
+    font-size: 20px;
     color: $black;
     border: 0;
     border-radius: 5px;
@@ -479,20 +479,18 @@ a {
     text-overflow: ellipsis;
     box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
 
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
     &::placeholder {
         font-family: $font-base;
-        font-size: 18px;
+        font-size: 20px;
         color: $black;
+        opacity: 1;
     }
 
     &.error {
         border: 1px solid $red;
-    }
-
-    &::placeholder {
-        font-family: $font-base;
-        font-size: 16px;
-        color: $placeholderColor;
     }
 }
 

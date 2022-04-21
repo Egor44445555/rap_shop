@@ -1,0 +1,186 @@
+html
+    title Сдать авто в аренду
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Сдать авто в аренду
+
+            .sublease-block-wrap
+                .container-block
+                    .sublease-info-block
+                        .info
+                            h2.title Сдайте свой автомобиль в аренду «РОСАВТОПРОКАТ»
+                            p И получайте ежемесячный доход с проката вашего автомобиля
+
+                        img(src="images/sublease-image.jpg").image.d-none.d-md-block
+
+                .advantages-list-wrap
+                    .container-block
+                        .advantages-list
+                            .advantages-list--item(style="background-image: url(images/advantages-7.jpg);") Оформление документов
+                                | на субаренду быстро
+                                | в любом офисе сети
+                            .advantages-list--item(style="background-image: url(images/advantages-8.jpg);") Дадим доступ к личному кабинету,
+                                | где вы можете отслеживать
+                                | онлайн заказы и свой доход
+                                | с аренды
+                            .advantages-list--item(style="background-image: url(images/advantages-7.jpg);") Возможность сдать в аренду
+                                | несколько ваших
+                                | автомобилей
+
+            .container-block
+                h2.semibold.text-uppercase Заполните форму субарендатора
+
+                form.form.ps-0.ps-xl-2
+                    .row.mt-4
+                        .col-12.col-lg-6
+                            .input-wrap
+                                input(type="text" placeholder="Ваше имя").input
+                        .col-12.col-lg-6.mt-4.mt-lg-0
+                            .input-wrap
+                                input(type="text" placeholder="Ваш телефон").input
+
+                    .row.mt-4
+                        .col-12.col-lg-6
+                            .input-wrap
+                                input(type="text" placeholder="Название машины").input
+                        .col-12.col-lg-6.mt-4.mt-lg-0
+                            .input-wrap
+                                select(placeholder="Класс машины").custom-select
+                                    option(value="Класс машины 1")
+                                    option(value="Класс машины 2")
+
+                    .row.mt-4
+                        .col-12.col-lg-6
+                            .input-wrap
+                                input(type="text" placeholder="Год выпуска").input
+                        .col-12.col-lg-6.mt-4.mt-lg-0
+                            .input-wrap
+                                select(placeholder="Тип кузова").custom-select
+                                    option(value="Тип кузова 1")
+                                    option(value="Тип кузова 2")
+
+                    textarea(placeholder="Комментарий").textarea.mt-4
+
+                    .d-block.d-md-flex.justify-content-center.mt-3.pt-3.mt-lg-5
+                        button(type="submit").btn.btn-blue Отправить запрос
+
+            .faq-block-wrap(style="background-image: url(images/faq-block-bg.jpg);")
+                .container-block
+                    .title-wrap
+                        h2.semibold.text-uppercase ЧАСТЫЕ ВОПРОСЫ ПРО СУБАРЕНДУ
+
+                    .faq-list
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text В каком виде я должен вернуть автомобиль?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        .faq-list--item.spoiler--item
+                            .faq-list--item-head.spoiler--head
+                                .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                .icon
+
+                            .faq-list--item-body.spoiler--body
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                    .d-flex.justify-content-center
+                        a(href="#").btn.btn-blue.btn-big.mt-5 Показать ещё
+
+            .contact-block-wrap
+                .container-block
+                    .contact-block
+                        .title.semibold.text-center Задайте свой вопрос удобным способом
+
+                        .social-list
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-phone.png").icon
+                                span.text Звонок
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-whatsapp.png").icon
+                                span.text Whats App
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-telegram.png").icon
+                                span.text Тelegram
+
+            .about-block-small-wrap(style="background-image: url(images/about-block-small-bg.jpg);")
+                .about-block-small
+                    .info
+                        h2.h1.title.semibold.text-uppercase Откройте офис росавтопрокат в своем городе
+                        .description Мы поможем легко стартовать и принимать первые заказы
+                        a(href="#").btn.btn-blue.btn-medium.d-none.d-md-block Больше о франшизе
+                    .image
+                        img(src="images/car.png")
+
+                    .container-block.text-center.d-block.d-md-none
+                        a(href="#").btn.btn-blue.btn-medium Больше о франшизе
+
+            .rent-out-block
+                .info
+                    h2.title.text-uppercase сдайте свой автомобиль в аренду
+                    .description И получайте ежемесячный доходот аренды автомобиля
+                    a(href="#").btn.btn-blue.btn-medium.d-none.d-md-inline-block Узнать больше
+                .image
+                    .slider.js-slider-image
+                        .swiper-wrapper
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-2.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-3.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-2.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-3.jpg")
+
+                .container-block.d-flex.d-md-none
+                    a(href="#").btn.btn-blue.btn-medium Узнать больше
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
