@@ -756,7 +756,7 @@
     }
 
     .faq-list {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
 
@@ -934,6 +934,18 @@
         }
     }
 
+    .custom-select {
+
+        &.big {
+
+            .custom-select-trigger {
+                height: 80px;
+                font-family: $font-base-bold;
+                font-size: 18px;
+            }
+        }
+    }
+
     .datepicker-wrap {
 
         input {
@@ -1101,6 +1113,20 @@
 
     .map {
         max-height: 60vh;
+    }
+
+
+    .sublease-info-block {
+        display: block;
+        margin-bottom: 0;
+
+        .info {
+            padding: 60px 0 0;
+        }
+
+        .image {
+            margin: 0;
+        }
     }
 }
 
@@ -1511,6 +1537,44 @@
                 &--item {
                     max-width: 100%;
                 }
+            }
+        }
+    }
+
+
+    .sublease-info-block {
+        margin: 0 -20px;
+        padding: 0 20px;
+
+        .info {
+
+            p {
+                font-family: $font-base-light;
+                font-size: 28px;
+                line-height: 31px;
+            }
+        }
+
+        .image {
+            width: 600px;
+            max-width: none;
+            margin: 0 0 0 50%;
+            transform: translateX(calc(-50% + 60px));
+        }
+    }
+
+    .sublease-block-wrap {
+        padding: 0;
+    }
+
+    .sublease-form-wrap {
+        padding-bottom: 50px;
+
+        .form {
+            margin-top: 54px;
+
+            .btn {
+                width: 100%;
             }
         }
     }
