@@ -1,0 +1,192 @@
+html
+    title Частые вопросы
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="#").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.png").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Частые вопросы
+
+            .faq-page.pt-4.mt-5(style="background-image: url(images/page-bg.jpg);")
+                .container-block
+                    .column-wrap
+                        .column
+                            .title-wrap
+                                h1.h2.semibold.text-uppercase ЧАСТЫЕ ВОПРОСЫ
+
+                            .filters-wrap
+                                .d-flex.d-lg-none
+                                    .filters-btn
+                                        .icon
+                                            img(src="images/icons/filters.png")
+                                        .text Вопросы по категориям
+                                        .arrow
+                                            img(src="images/icons/arrow-toggle-down.svg")
+                                .filters
+                                    .menu
+                                        a(href="#").menu--item Аренда авто
+                                        a(href="#").menu--item Возврат авто
+                                        a(href="#").menu--item Страховка авто
+                                        a(href="#").menu--item Документы
+                                        a(href="#").menu--item ДТП
+                                        a(href="#").menu--item Неисправности
+                                        a(href="#").menu--item Правила аренды
+                                        a(href="#").menu--item Сроки аренды
+                                        a(href="#").menu--item Дополнительные услуги
+                                        a(href="#").menu--item Франшиза «Росавтопрокат»
+
+                            .sort-wrap
+                                .d-none.d-sm-block
+                                    .sort
+                                        .sort--item
+                                            label(for="sort-1")
+                                                input(type="radio" value="Популярные" id="sort-1" name="sort")
+                                                span.text Популярные
+                                        .sort--item
+                                            label(for="sort-2")
+                                                input(type="radio" value="Все" id="sort-2" name="sort" checked)
+                                                span.text Все
+
+                                .d-block.d-sm-none.mt-4
+                                    select(placeholder="Популярные").custom-select
+                                        option(value="Популярные" selected) Популярные
+                                        option(value="Все") Все
+
+                            .faq-list
+                                .faq-list--item.spoiler--item
+                                    .faq-list--item-head.spoiler--head
+                                        .text В каком виде я должен вернуть автомобиль?
+                                        .icon
+
+                                    .faq-list--item-body.spoiler--body
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                .faq-list--item.spoiler--item
+                                    .faq-list--item-head.spoiler--head
+                                        .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                        .icon
+
+                                    .faq-list--item-body.spoiler--body
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                .faq-list--item.spoiler--item
+                                    .faq-list--item-head.spoiler--head
+                                        .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                        .icon
+
+                                    .faq-list--item-body.spoiler--body
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                .faq-list--item.spoiler--item
+                                    .faq-list--item-head.spoiler--head
+                                        .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                        .icon
+
+                                    .faq-list--item-body.spoiler--body
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                .faq-list--item.spoiler--item
+                                    .faq-list--item-head.spoiler--head
+                                        .text Что делать, если автомобиль невозможно вернуть точно к заданному сроку?
+                                        .icon
+
+                                    .faq-list--item-body.spoiler--body
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                            .pagination
+                                a(href="#").pagination--item.prev
+                                    img(src="images/icons/arrow-angle.png")
+                                a(href="#").pagination--item 1
+                                a(href="#").pagination--item 2
+                                span.pagination--item.active 3
+                                a(href="#").pagination--item 4
+                                a(href="#").pagination--item 5
+                                a(href="#").pagination--item 6
+                                a(href="#").pagination--item.next
+                                    img(src="images/icons/arrow-angle.png")
+
+                        .column.sidebar
+                            .title-wrap
+                                .h2.semibold.text-uppercase ЧАСТЫЕ ВОПРОСЫ
+
+                            .title Вопросы по категориям
+
+                            .menu
+                                a(href="#").menu--item Аренда авто
+                                a(href="#").menu--item Возврат авто
+                                a(href="#").menu--item Страховка авто
+                                a(href="#").menu--item Документы
+                                a(href="#").menu--item ДТП
+                                a(href="#").menu--item Неисправности
+                                a(href="#").menu--item Правила аренды
+                                a(href="#").menu--item Сроки аренды
+                                a(href="#").menu--item Дополнительные услуги
+                                a(href="#").menu--item Франшиза «Росавтопрокат»
+
+                            .title Задайте свой вопрос удобным способом
+
+                            .social-list
+                                a(href='#').social-list--item
+                                    img(src="images/icons/social-phone.png").icon
+                                    span.text Звонок
+                                a(href='#').social-list--item
+                                    img(src="images/icons/social-whatsapp.png").icon
+                                    span.text Whats App
+                                a(href='#').social-list--item
+                                    img(src="images/icons/social-telegram.png").icon
+                                    span.text Тelegram
+
+            include ./blocks/products-slider
+
+            .about-block-small-wrap(style="background-image: url(images/about-block-small-bg.jpg);")
+                .about-block-small
+                    .info
+                        h2.h1.title.semibold.text-uppercase Откройте офис росавтопрокат в своем городе
+                        .description Мы поможем легко стартовать и принимать первые заказы
+                        a(href="#").btn.btn-blue.btn-medium.d-none.d-md-block Больше о франшизе
+                    .image
+                        img(src="images/car.png")
+
+                    .container-block.text-center.d-block.d-md-none
+                        a(href="#").btn.btn-blue.btn-medium Больше о франшизе
+
+            .rent-out-block
+                .info
+                    h2.title.text-uppercase сдайте свой автомобиль в аренду
+                    .description И получайте ежемесячный доходот аренды автомобиля
+                    a(href="#").btn.btn-blue.btn-medium.d-none.d-md-inline-block Узнать больше
+                .image
+                    .slider.js-slider-image
+                        .swiper-wrapper
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-2.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-3.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-2.jpg")
+                            .swiper-slide
+                                .slider--image
+                                    img(src="images/assets/slider-image-3.jpg")
+
+                .container-block.d-flex.d-md-none
+                    a(href="#").btn.btn-blue.btn-medium Узнать больше
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

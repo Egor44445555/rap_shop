@@ -862,7 +862,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 50px auto 0;
+    margin: 30px auto 0;
 
     &--item {
         flex: 100%;
@@ -873,8 +873,14 @@
 
         &.active {
 
-            .faq-list--item-head .icon:after {
-                transform: rotate(0);
+            .faq-list--item-head .icon {
+                margin-top: -15px;
+                transform: rotate(-45deg);
+
+                &:before,
+                &:after {
+                    background: $black;
+                }
             }
         }
     }
@@ -885,14 +891,15 @@
         align-items: center;
         height: 80px;
         padding: 20px 60px 20px 40px;
-        font-family: $font-base-semiBold;
-        font-size: 16px;
-        line-height: 20px;
-        color: $textGray;
         cursor: pointer;
 
         .text {
             max-height: 100%;
+            font-family: $font-base-semiBold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $black;
+            opacity: .77;
             overflow: hidden;
         }
 
@@ -904,8 +911,9 @@
             top: 50%;
             right: 30px;
             transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
+            width: 33px;
+            height: 33px;
+            transition: .3s;
 
             &:before,
             &:after {
@@ -916,14 +924,127 @@
             }
 
             &:after {
-                margin: 0 0 0 -20px;
+                margin: 0 0 0 -33px;
                 transform: rotate(90deg);
             }
         }
     }
 
     &--item-body {
-        padding: 10px 40px 30px;
+        position: relative;
+        padding: 20px 40px 70px 95px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 65px;
+            width: 12px;
+            height: 18px;
+            background: $redBright;
+            transform: skew(-40deg, 0);
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            color: $black;
+            opacity: .77;
+        }
+    }
+}
+
+.faq-page {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    .sort {
+        margin-top: 30px;
+
+        .text {
+            min-width: 116px;
+            min-height: 35px;
+            padding: 3px 20px;
+            font-size: 17px;
+        }
+    }
+
+    .column-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -60px;
+
+        .column {
+            flex: 1;
+            padding-left: 60px;
+        }
+
+        .sidebar {
+            max-width: 375px;
+
+            .title-wrap {
+                display: none;
+            }
+
+            .title {
+                margin-top: 75px;
+                font-family: $font-base-semiBold;
+                font-size: 24px;
+                line-height: 32px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            .menu {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-top: 60px;
+
+                &--item {
+                    margin-top: 30px;
+                    font-size: 20px;
+                    color: $black;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+
+            .social-list {
+                justify-content: flex-start;
+                margin-top: 0;
+
+                &--item {
+                    padding: 40px 0 0;
+                }
+            }
+        }
+    }
+
+    .filters-wrap {
+        display: none;
+    }
+
+    .faq-list {
+        margin-top: 50px;
+
+        &--item {
+            margin-top: 40px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
     }
 }
 

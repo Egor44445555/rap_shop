@@ -1128,6 +1128,23 @@
             margin: 0;
         }
     }
+
+
+    .faq-page {
+
+        .column-wrap {
+            display: block;
+        }
+
+        .filters-wrap {
+            display: block;
+            margin: 40px 0 0;
+
+            .filters {
+                display: none;
+            }
+        }
+    }
 }
 
 /******************************************************************/
