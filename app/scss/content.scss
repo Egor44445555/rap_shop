@@ -999,6 +999,10 @@
                 }
             }
 
+            .menu-wrap {
+                margin-top: 80px;
+            }
+
             .menu {
                 display: flex;
                 align-items: flex-start;
@@ -1033,6 +1037,48 @@
 
     .filters-wrap {
         display: none;
+        padding: 0;
+        border-radius: 2px;
+    }
+
+    .filters-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 29px 25px;
+
+        .icon {
+            width: 22px;
+            height: 22px;
+            margin-right: 16px;
+        }
+
+        .text {
+            font-family: $font-base-bold;
+            font-size: 18px;
+            text-align: center;
+            opacity: .84;
+        }
+
+        .arrow {
+            margin-left: 22px;
+        }
+    }
+
+    .filters {
+
+        .menu {
+
+            &--item {
+                display: block;
+                padding: 22px 50px;
+                font-family: $font-base-semiBold;
+                font-size: 20px;
+                color: $black;
+                border-top: 1px solid $borderColor;
+            }
+        }
     }
 
     .faq-list {

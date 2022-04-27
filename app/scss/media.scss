@@ -1134,6 +1134,31 @@
 
         .column-wrap {
             display: block;
+
+            .sidebar {
+                max-width: 100%;
+
+                .title {
+                    max-width: 256px;
+                    margin: 85px auto 0;
+                    text-align: center;
+                }
+
+                .menu-wrap {
+                    display: none;
+                }
+
+                .social-list {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &--item {
+                        width: 100%;
+                        max-width: 190px;
+                    }
+                }
+            }
         }
 
         .filters-wrap {
@@ -1143,6 +1168,14 @@
             .filters {
                 display: none;
             }
+        }
+
+        .sort {
+            justify-content: center;
+        }
+
+        .faq-list--item {
+            margin-top: 30px;
         }
     }
 }
@@ -1326,7 +1359,12 @@
         }
 
         &--item-body {
-            padding: 10px 20px 30px;
+            padding: 10px 20px 30px 50px;
+
+            &:before {
+                top: 0;
+                left: 25px;
+            }
         }
     }
 
@@ -1931,6 +1969,14 @@
 
     .resource-list {
         padding: 0;
+    }
+
+
+    .faq-page {
+
+        .sort .text {
+            min-width: 100px;
+        }
     }
 }
 
