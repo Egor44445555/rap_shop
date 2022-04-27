@@ -1,0 +1,288 @@
+html
+    title Аренда
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            form(action="#").rent-form
+                .step-1
+                    .car-select-block-wrap
+                        .container-block
+                            .car-select-block
+                                .d-block.d-xl-flex
+                                    h2.text-uppercase Выберите автомобиль
+                                    .city-select
+                                        .city-select--head
+                                            .text в Санкт-Петербурге
+                                            .arrow
+                                                img(src="images/icons/arrow-toggle-down.svg")
+                                        .city-select--body
+                                            .city-select--item в Санкт-Петербурге
+                                            .city-select--item в Москве
+
+                                .car-type-list
+                                    label(for="type1").car-type-list--item
+                                        input(type="radio" name="type" id="type1")
+                                        span Эконом
+                                    label(for="type2").car-type-list--item
+                                        input(type="radio" name="type" id="type2" checked)
+                                        span Стандарт
+                                    label(for="type3").car-type-list--item
+                                        input(type="radio" name="type" id="type3")
+                                        span Комфорт
+                                    label(for="type4").car-type-list--item
+                                        input(type="radio" name="type" id="type4")
+                                        span Бизнес-класс
+                                    label(for="type5").car-type-list--item
+                                        input(type="radio" name="type" id="type5")
+                                        span Внедорожники
+
+                                select(placeholder="Класс машины").custom-select
+                                    option(value="Эконом") Эконом
+                                    option(value="Стандарт") Стандарт
+                                    option(value="Комфорт") Комфорт
+                                    option(value="Бизнес-класс") Бизнес-класс
+                                    option(value="Внедорожники") Внедорожники
+
+                                .car-select-slider
+                                    .js-slider-car-select
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                .car-select-slider--item
+                                                    .characteristics
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-user.png")
+                                                            .text 5 мест
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-square.png")
+                                                            .text 4 двери
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                                            .text Автомат
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                                            .text Кондиционер
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-graph.png")
+                                                            .text 123 л.с
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-list.png")
+                                                            .text 6-7 л.\км.
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-check.png")
+                                                            .text серебро
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-clock.png")
+                                                            .text 2019
+
+                                                    .image
+                                                        h3.title.text-center Hyundai Solaris 2021
+
+                                                        .swiper-button-prev
+                                                        img(src="images/assets/car.jpg")
+                                                        .swiper-button-next
+
+                                                        .button-wrap.d-none.d-lg-flex
+                                                            a(href="#").btn.btn-blue.btn-empty Подробнее о машине
+                                                            a(href="#").btn.btn-blue
+                                                                span.text Выбрать
+                                                                img.icon(src="images/icons/arrow-white.png")
+
+                                                    .price-list
+                                                        .price-list--item
+                                                            .label 1-3 дня:
+                                                            .price 1.575 Р
+                                                                span / сутки
+                                                        .price-list--item
+                                                            .label 3-5 дней:
+                                                            .price 1.800 Р
+                                                                span / сутки
+                                                        .price-list--item
+                                                            .label 5-10 дней:
+                                                            .price 2.000 Р
+                                                                span / сутки
+                                                        .price-list--item
+                                                            .label 10-15 дней:
+                                                            .price 2.300 Р
+                                                                span / сутки
+
+                                                    .button-wrap.d-flex.d-lg-none
+                                                        a(href="#").btn.btn-blue.btn-empty Подробнее о машине
+                                                        a(href="#").btn.btn-blue
+                                                            span.text Выбрать
+                                                            img.icon(src="images/icons/arrow-white.png")
+
+                                            .swiper-slide
+                                                .car-select-slider--item
+                                                    .characteristics
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-user.png")
+                                                            .text 2 мест
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-square.png")
+                                                            .text 3 двери
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                                            .text Автомат
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                                            .text Кондиционер
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-graph.png")
+                                                            .text 183 л.с
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-list.png")
+                                                            .text 1-7 л.\км.
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-check.png")
+                                                            .text серебро
+                                                        .characteristics--item
+                                                            img.icon(src="images/icons/characteristics-clock.png")
+                                                            .text 2013
+
+                                                    .image
+                                                        h3.title.text-center Hyundai Solaris 2022
+
+                                                        .swiper-button-prev
+                                                        img(src="images/assets/car.jpg")
+                                                        .swiper-button-next
+
+                                                        .button-wrap.d-none.d-lg-flex
+                                                            a(href="#").btn.btn-blue.btn-empty Подробнее о машине
+                                                            a(href="#").btn.btn-blue
+                                                                span.text Выбрать
+                                                                img.icon(src="images/icons/arrow-white.png")
+
+                                                    .price-list
+                                                        .price-list--item
+                                                            .label 1-3 дня:
+                                                            .price 1.575 Р
+                                                                span / сутки
+                                                        .price-list--item
+                                                            .label 3-5 дней:
+                                                            .price 1.800 Р
+                                                                span / сутки
+                                                        .price-list--item
+                                                            .label 5-10 дней:
+                                                            .price 2.000 Р
+                                                                span / сутки
+                                                        .price-list--item
+                                                            .label 10-15 дней:
+                                                            .price 2.300 Р
+                                                                span / сутки
+
+                                                    .button-wrap.d-flex.d-lg-none
+                                                        a(href="#").btn.btn-blue.btn-empty Подробнее о машине
+                                                        a(href="#").btn.btn-blue
+                                                            span.text Выбрать
+                                                            img.icon(src="images/icons/arrow-white.png")
+
+                .step-2
+                    .form.ps-0.ps-xl-2
+                        .row.mt-5.pt-0.pt-lg-3
+                            .col-12.col-lg-6
+                                .input-wrap
+                                    .datepicker-wrap
+                                        input(type="text" placeholder="Начало аренды").input.datepicker-from
+                                        .icon
+                                            img(src="images/icons/calendar.png")
+
+                            .col-12.col-lg-6.mt-4.mt-lg-0
+                                .input-wrap
+                                    .datepicker-wrap
+                                        input(type="text" placeholder="Окончание аренды").input.datepicker-to
+                                        .icon
+                                            img(src="images/icons/calendar.png")
+
+                        .mt-4
+                            .additional-item-list
+                                label(for="additional-item").additional-item-list--item
+                                    .image
+                                        img(src="images/flag.png")
+                                    .info
+                                        .title Доставка до места
+                                        .cost 600 руб.
+                                    input(type="checkbox" id="additional-item")
+                                    .icon
+                                label(for="additional-item-2").additional-item-list--item
+                                    .image
+                                        img(src="images/canister.png")
+                                    .info
+                                        .title Бензин 10л
+                                        .cost 600 руб.
+                                    .count 1 ШТ.
+                                    input(type="checkbox" id="additional-item-2")
+                                    .icon
+                                label(for="additional-item-3").additional-item-list--item
+                                    .image
+                                        img(src="images/baby-chair.png")
+                                    .info
+                                        .title Детское автокресло
+                                        .cost 100 руб./сут.
+                                    .count 1 ШТ.
+                                    input(type="checkbox" id="additional-item-3")
+                                    .icon
+                                label(for="additional-item-4").additional-item-list--item
+                                    .image
+                                        img(src="images/radar-detector.png")
+                                    .info
+                                        .title Радар-детектор
+                                        .cost 100 руб./сут.
+                                    input(type="checkbox" id="additional-item-4")
+                                    .icon
+                                label(for="additional-item-5").additional-item-list--item
+                                    .image
+                                        img(src="images/driver.png")
+                                    .info
+                                        .title Второй водитель
+                                        .cost 500 руб.
+                                    input(type="checkbox" id="additional-item-5")
+                                    .icon
+                                label(for="additional-item-6").additional-item-list--item
+                                    .image
+                                        img(src="images/clock.png")
+                                    .info
+                                        .title Ранний/поздний забор
+                                        .cost 500 руб.
+                                    input(type="checkbox" id="additional-item-6")
+                                    .icon
+                                label(for="additional-item-7").additional-item-list--item
+                                    .image
+                                        img(src="images/umbrella.png")
+                                    .info
+                                        .title КАСКО
+                                        .cost 1000 руб.
+                                    input(type="checkbox" id="additional-item-7")
+                                    .icon
+
+                .step-3
+                    form.form.ps-0.ps-xl-2
+                        .row.mt-4
+                            .col-12.col-lg-6
+                                .input-wrap
+                                    input(type="text" placeholder="Ваше имя").input
+                            .col-12.col-lg-6.mt-4.mt-lg-0
+                                .input-wrap
+                                    input(type="text" placeholder="Ваш телефон").input
+
+                        textarea(placeholder="Комментарий").textarea.mt-4
+
+                        .d-block.d-md-flex.justify-content-center.mt-3.pt-3.mt-lg-5
+                            button(type="submit").btn.btn-blue Арендовать
+
+                .success-block
+                    .icon-big
+                        img(src="images/icons/check-circle.png")
+                    .title Спасибо за заказ!
+                    .description Мы свяжемся с вами для уточнения деталей заказа в ближайшие 15 минут
+                    a(href="#").btn.btn-blue
+                        span.text В каталог
+                        span.icon
+                            img(src="images/icons/arrow-white.png")
+
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
