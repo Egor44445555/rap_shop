@@ -68,7 +68,7 @@
         font-size: 20px;
         text-align: center;
         border: 0;
-        box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+        box-shadow: $boxShadow;
 
         &:before {
             position: relative;
@@ -84,7 +84,7 @@
         .custom-options {
             padding: 20px 10px;
             border: 0;
-            box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+            box-shadow: $boxShadow;
             z-index: 1;
         }
 
@@ -1615,6 +1615,11 @@
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
+
+    .map {
+        height: 550px;
+        margin-top: 0;
+    }
 }
 
 .about-detail-wrap {

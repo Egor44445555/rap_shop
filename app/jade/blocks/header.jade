@@ -2,22 +2,36 @@ header.header
     .wrap
         .left-block
             a(href="/index.html").logo
-                img(src="../images/logo.png")
+                img(src="images/logo.png")
 
-            .location.d-none.d-xxl-flex
-                .icon
-                    img(src="../images/icons/location.png")
-                .text Санкт- Петербург
-                .arrow
-                    img(src="../images/icons/arrow-toggle-down.svg")
-
-            .phones.d-none.d-xxl-flex
-                .phones--item
-                    .text 8 800 250 46 00
-                .phones--item
-                    .text +7 (965) 25 58 16
+            .location-wrap.d-none.d-xxl-flex
+                .location
+                    .icon
+                        img(src="images/icons/location.png")
+                    .text Санкт- Петербург
                     .arrow
-                        img(src="../images/icons/arrow-toggle-down.svg")
+                        img(src="images/icons/arrow-toggle-down.svg" alt="")
+                .location-list
+                    .location-list--item
+                        .icon
+                            img(src="images/icons/location.png")
+                        .text Санкт- Петербург
+                    .location-list--item
+                        .icon
+                            img(src="images/icons/location.png")
+                        .text Москва
+
+            .phones-wrap.d-none.d-xxl-flex
+                .phones
+                    .phones--item
+                        .text 8 800 250 46 00
+                    .phones--item
+                        .text +7 (965) 25 58 16
+                        .arrow
+                            img(src="images/icons/arrow-toggle-down.svg")
+                .phones-list
+                    a(href="tel:8 800 250 46 00").phones-list--item 8 800 250 46 00
+                    a(href="tel:+7 (965) 25 58 16").phones-list--item +7 (965) 25 58 16
 
         .right-block
             .menu.d-none.d-xxl-flex
@@ -25,18 +39,18 @@ header.header
                     .label
                         .text О нас
                         .icon
-                            img(src="../images/icons/arrow-toggle-down.svg")
+                            img(src="images/icons/arrow-toggle-down.svg")
                     .dropdown
-                        a(href="#").dropdown--item Link
+                        a(href="/about.html").dropdown--item О нас
                         a(href="#").dropdown--item Link 2
 
                 a(href="#").menu--item Франшиза
-                a(href="#").menu--item Аренда CRM
-                a(href="#").menu--item Контакты
+                a(href="/rent.html").menu--item Аренда CRM
+                a(href="/contacts.html").menu--item Контакты
 
             .button-wrap.d-none.d-xxl-flex
                 a(href="/rent-form.html").btn.btn-blue Арендовать
-                a(href="#").btn.btn-blue.btn-empty Сдать в аренду
+                a(href="/sublease.html").btn.btn-blue.btn-empty Сдать в аренду
 
             .d-block.d-xxl-none
                 .menu-btn.js-menu-btn
@@ -61,16 +75,16 @@ header.header
                 span.text Тelegram
 
         .modal-menu
-            a(href="#").modal-menu--item Каталог
-            a(href="#").modal-menu--item Сдать авто в аренду
-            a(href="#").modal-menu--item О нас
-            a(href="#").modal-menu--item Контакты
-            a(href="#").modal-menu--item Бонусная программа
-            a(href="#").modal-menu--item Дополнительные услуги
+            a(href="/catalog.html").modal-menu--item Каталог
+            a(href="/sublease.html").modal-menu--item Сдать авто в аренду
+            a(href="/about.html").modal-menu--item О нас
+            a(href="/contacts.html").modal-menu--item Контакты
+            a(href="/bonus-program.html").modal-menu--item Бонусная программа
+            a(href="/additional-services.html").modal-menu--item Дополнительные услуги
             a(href="#").modal-menu--item Франшиза
-            a(href="#").modal-menu--item Аренда CRM
-            a(href="#").modal-menu--item Новости
-            a(href="#").modal-menu--item Блог
+            a(href="/rent.html").modal-menu--item Аренда CRM
+            a(href="/news.html").modal-menu--item Новости
+            a(href="/blog.html").modal-menu--item Блог
 
         .social-list.small
             a(href='#').social-list--item

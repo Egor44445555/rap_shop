@@ -311,7 +311,7 @@
         padding: 25px 30px;
         background: $white;
         border-radius: 5px;
-        box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+        box-shadow: $boxShadow;
         cursor: pointer;
     }
 
@@ -433,7 +433,7 @@
         padding: 30px 40px;
         background: $white;
         font-size: 21px;
-        box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+        box-shadow: $boxShadow;
     }
 
     .label {
@@ -634,7 +634,7 @@
                 margin-top: 25px;
                 background: $white;
                 text-align: center;
-                box-shadow: 0 0 27px rgba(229, 229, 229, .75%);
+                box-shadow: $boxShadow;
 
                 span {
                     padding: 0;

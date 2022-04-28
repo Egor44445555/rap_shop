@@ -34,7 +34,7 @@ $(document).ready(function() {
         return false
     });
 
-    modalMenuClose.on('click', function (e) {
+    modalMenuClose.on('click', function () {
         modalMenu.removeClass('open');
         mobileMenu.removeClass('open');
         _html.removeClass('noscroll');
@@ -83,15 +83,59 @@ $(document).ready(function() {
         $(this).parent().addClass('active');
     });
 
-    $('.eye').on('click', function(e) {
-        if($(this).hasClass('active')) {
-            $(this).parent().find('input').attr('type', 'password');
-            $(this).removeClass('active');
-        } else {
-            $(this).parent().find('input').attr('type', 'text');
-            $(this).addClass('active');
+
+    $(document).on('click', function (event) {
+        let $target = $(event.target);
+
+        if (!$target.closest('.location').length) {
+            $('.location-wrap').removeClass('active');
+        }
+
+        if (!$target.closest('.phones').length) {
+            $('.phones-wrap').removeClass('active');
+        }
+
+        if (!$target.closest('.dropdown-wrap .label').length) {
+            $('.dropdown-wrap').removeClass('active');
         }
     });
+
+    /*** Dropdown header ***/
+
+    $('.dropdown-wrap .label').on('click', function () {
+        $(this).parent().toggleClass('active');
+    });
+
+    /*** End Dropdown header ***/
+
+
+    /*** Location header ***/
+
+    $('.location').on('click', function () {
+        $(this).parent().toggleClass('active');
+    });
+
+    $('.location-list').on('click', '.location-list--item', function (e) {
+        let wrap = $(this).parents('.location-wrap');
+        wrap.find('.location').html($(this).html() + `<div class="arrow"><img src="../images/icons/arrow-toggle-down.svg" alt="" /></div>`);
+        wrap.removeClass('active');
+    });
+
+    /*** End Location header ***/
+
+
+    /*** Phone header ***/
+
+    $('.phones').on('click', function () {
+        $(this).parent().toggleClass('active');
+    });
+
+    $('.phones-list').on('click', '.location-list--item', function (e) {
+        let wrap = $(this).parents('.phones-wrap');
+        wrap.removeClass('active');
+    });
+
+    /*** End Phone header ***/
 
 
     /*** Password ***/
@@ -523,9 +567,10 @@ $(document).ready(function() {
     let stepBlock = $('.step');
 
     $('[data-step-btn]').on('click', function (e) {
-        // e.preventDefault();
+        e.preventDefault();
 
         let _this = $(this);
+
         stepBlock.removeClass('active');
 
         stepBlock.each(function () {
