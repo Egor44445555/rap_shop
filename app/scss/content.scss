@@ -2115,3 +2115,94 @@
 }
 
 /*** End Sublease block ***/
+
+
+/*** Rent form ***/
+
+.rent-form {
+    padding: 100px 0 120px;
+
+    .step {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    .button-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -25px;
+        padding: 40px 20px 0;
+
+        .steps {
+            flex: 100%;
+            margin: 0 0 10px 25px;
+            font-family: $font-base-semiBold;
+            text-align: center;
+            opacity: .43;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 225px;
+            margin: 25px 0 0 25px;
+            padding: 16px 28px;
+            font-family: $font-base-semiBold;
+            font-size: 20px;
+        }
+    }
+
+    .car-select-block-wrap {
+        margin: 0;
+        padding: 0;
+    }
+
+    .car-select-slider {
+
+        .image .swiper-button-prev,
+        .image .swiper-button-next {
+            top: calc(50% + 50px);
+        }
+    }
+
+    .custom-select-wrapper {
+        display: none;
+    }
+}
+
+.success-block {
+    display: none;
+    max-width: 550px;
+    margin: 100px auto 0;
+    text-align: center;
+
+    &.active {
+        display: block;
+    }
+
+    .title {
+        margin-top: 50px;
+        font-family: $font-base-semiBold;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    .description {
+        margin-top: 35px;
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .btn {
+        margin-top: 60px;
+        font-family: $font-base-semiBold;
+        font-size: 20px;
+    }
+}
+
+/*** End Rent form ***/

@@ -516,5 +516,26 @@ $(document).ready(function() {
     /*** End Custom select ***/
 
     $('.fancybox').fancybox();
+
+
+    /*** Steps rent ***/
+
+    let stepBlock = $('.step');
+
+    $('[data-step-btn]').on('click', function (e) {
+        // e.preventDefault();
+
+        let _this = $(this);
+        stepBlock.removeClass('active');
+
+        stepBlock.each(function () {
+
+            if ($(this).data('step') === _this.data('step-btn')) {
+                $(this).addClass('active');
+            }
+        });
+    });
+
+    /*** End Steps rent ***/
 });
 

@@ -6,46 +6,46 @@ html
         include ./blocks/header.jade
 
         .wrapper
-            form(action="#").rent-form
-                .step-1
-                    .car-select-block-wrap
-                        .container-block
+            .container-block
+                form(action="#").rent-form
+                    .d-block.d-xl-flex
+                        h2.text-uppercase Выберите автомобиль
+                        .city-select.ps-0.ps-xl-5.pe-0
+                            .city-select--head
+                                .text в Санкт-Петербурге
+                                .arrow
+                                    img(src="images/icons/arrow-toggle-down.svg")
+                            .city-select--body
+                                .city-select--item в Санкт-Петербурге
+                                .city-select--item в Москве
+
+                    .car-type-list
+                        label(for="type1").car-type-list--item
+                            input(type="radio" name="type" id="type1")
+                            span Эконом
+                        label(for="type2").car-type-list--item
+                            input(type="radio" name="type" id="type2" checked)
+                            span Стандарт
+                        label(for="type3").car-type-list--item
+                            input(type="radio" name="type" id="type3")
+                            span Комфорт
+                        label(for="type4").car-type-list--item
+                            input(type="radio" name="type" id="type4")
+                            span Бизнес-класс
+                        label(for="type5").car-type-list--item
+                            input(type="radio" name="type" id="type5")
+                            span Внедорожники
+
+                    select(placeholder="Класс машины").custom-select
+                        option(value="Эконом") Эконом
+                        option(value="Стандарт") Стандарт
+                        option(value="Комфорт") Комфорт
+                        option(value="Бизнес-класс") Бизнес-класс
+                        option(value="Внедорожники") Внедорожники
+
+                    .step.step-1.active(data-step="1")
+                        .car-select-block-wrap
                             .car-select-block
-                                .d-block.d-xl-flex
-                                    h2.text-uppercase Выберите автомобиль
-                                    .city-select
-                                        .city-select--head
-                                            .text в Санкт-Петербурге
-                                            .arrow
-                                                img(src="images/icons/arrow-toggle-down.svg")
-                                        .city-select--body
-                                            .city-select--item в Санкт-Петербурге
-                                            .city-select--item в Москве
-
-                                .car-type-list
-                                    label(for="type1").car-type-list--item
-                                        input(type="radio" name="type" id="type1")
-                                        span Эконом
-                                    label(for="type2").car-type-list--item
-                                        input(type="radio" name="type" id="type2" checked)
-                                        span Стандарт
-                                    label(for="type3").car-type-list--item
-                                        input(type="radio" name="type" id="type3")
-                                        span Комфорт
-                                    label(for="type4").car-type-list--item
-                                        input(type="radio" name="type" id="type4")
-                                        span Бизнес-класс
-                                    label(for="type5").car-type-list--item
-                                        input(type="radio" name="type" id="type5")
-                                        span Внедорожники
-
-                                select(placeholder="Класс машины").custom-select
-                                    option(value="Эконом") Эконом
-                                    option(value="Стандарт") Стандарт
-                                    option(value="Комфорт") Комфорт
-                                    option(value="Бизнес-класс") Бизнес-класс
-                                    option(value="Внедорожники") Внедорожники
-
                                 .car-select-slider
                                     .js-slider-car-select
                                         .swiper-wrapper
@@ -84,12 +84,6 @@ html
                                                         img(src="images/assets/car.jpg")
                                                         .swiper-button-next
 
-                                                        .button-wrap.d-none.d-lg-flex
-                                                            a(href="#").btn.btn-blue.btn-empty Подробнее о машине
-                                                            a(href="#").btn.btn-blue
-                                                                span.text Выбрать
-                                                                img.icon(src="images/icons/arrow-white.png")
-
                                                     .price-list
                                                         .price-list--item
                                                             .label 1-3 дня:
@@ -107,12 +101,6 @@ html
                                                             .label 10-15 дней:
                                                             .price 2.300 Р
                                                                 span / сутки
-
-                                                    .button-wrap.d-flex.d-lg-none
-                                                        a(href="#").btn.btn-blue.btn-empty Подробнее о машине
-                                                        a(href="#").btn.btn-blue
-                                                            span.text Выбрать
-                                                            img.icon(src="images/icons/arrow-white.png")
 
                                             .swiper-slide
                                                 .car-select-slider--item
@@ -149,12 +137,6 @@ html
                                                         img(src="images/assets/car.jpg")
                                                         .swiper-button-next
 
-                                                        .button-wrap.d-none.d-lg-flex
-                                                            a(href="#").btn.btn-blue.btn-empty Подробнее о машине
-                                                            a(href="#").btn.btn-blue
-                                                                span.text Выбрать
-                                                                img.icon(src="images/icons/arrow-white.png")
-
                                                     .price-list
                                                         .price-list--item
                                                             .label 1-3 дня:
@@ -173,114 +155,129 @@ html
                                                             .price 2.300 Р
                                                                 span / сутки
 
-                                                    .button-wrap.d-flex.d-lg-none
-                                                        a(href="#").btn.btn-blue.btn-empty Подробнее о машине
-                                                        a(href="#").btn.btn-blue
-                                                            span.text Выбрать
-                                                            img.icon(src="images/icons/arrow-white.png")
+                        .button-wrap
+                            .steps Шаг 1 из 3
 
-                .step-2
-                    .form.ps-0.ps-xl-2
-                        .row.mt-5.pt-0.pt-lg-3
-                            .col-12.col-lg-6
-                                .input-wrap
-                                    .datepicker-wrap
-                                        input(type="text" placeholder="Начало аренды").input.datepicker-from
+                            a(href="/product.html").btn.btn-gray.btn-empty Подробнее о машине
+                            a(href="#" data-step-btn="2").btn.btn-blue
+                                span.text Выбрать
+                                img.icon(src="images/icons/arrow-white.png")
+
+                    .step(data-step="2")
+                        .form
+                            .row.mt-5.pt-0.pt-lg-3
+                                .col-12.col-lg-6
+                                    .input-wrap
+                                        .datepicker-wrap
+                                            input(type="text" placeholder="Начало аренды").input.datepicker-from
+                                            .icon
+                                                img(src="images/icons/calendar.png")
+
+                                .col-12.col-lg-6.mt-4.mt-lg-0
+                                    .input-wrap
+                                        .datepicker-wrap
+                                            input(type="text" placeholder="Окончание аренды").input.datepicker-to
+                                            .icon
+                                                img(src="images/icons/calendar.png")
+
+                            .mt-4
+                                .additional-item-list
+                                    label(for="additional-item").additional-item-list--item
+                                        .image
+                                            img(src="images/flag.png")
+                                        .info
+                                            .title Доставка до места
+                                            .cost 600 руб.
+                                        input(type="checkbox" id="additional-item")
                                         .icon
-                                            img(src="images/icons/calendar.png")
-
-                            .col-12.col-lg-6.mt-4.mt-lg-0
-                                .input-wrap
-                                    .datepicker-wrap
-                                        input(type="text" placeholder="Окончание аренды").input.datepicker-to
+                                    label(for="additional-item-2").additional-item-list--item
+                                        .image
+                                            img(src="images/canister.png")
+                                        .info
+                                            .title Бензин 10л
+                                            .cost 600 руб.
+                                        .count 1 ШТ.
+                                        input(type="checkbox" id="additional-item-2")
                                         .icon
-                                            img(src="images/icons/calendar.png")
+                                    label(for="additional-item-3").additional-item-list--item
+                                        .image
+                                            img(src="images/baby-chair.png")
+                                        .info
+                                            .title Детское автокресло
+                                            .cost 100 руб./сут.
+                                        .count 1 ШТ.
+                                        input(type="checkbox" id="additional-item-3")
+                                        .icon
+                                    label(for="additional-item-4").additional-item-list--item
+                                        .image
+                                            img(src="images/radar-detector.png")
+                                        .info
+                                            .title Радар-детектор
+                                            .cost 100 руб./сут.
+                                        input(type="checkbox" id="additional-item-4")
+                                        .icon
+                                    label(for="additional-item-5").additional-item-list--item
+                                        .image
+                                            img(src="images/driver.png")
+                                        .info
+                                            .title Второй водитель
+                                            .cost 500 руб.
+                                        input(type="checkbox" id="additional-item-5")
+                                        .icon
+                                    label(for="additional-item-6").additional-item-list--item
+                                        .image
+                                            img(src="images/clock.png")
+                                        .info
+                                            .title Ранний/поздний забор
+                                            .cost 500 руб.
+                                        input(type="checkbox" id="additional-item-6")
+                                        .icon
+                                    label(for="additional-item-7").additional-item-list--item
+                                        .image
+                                            img(src="images/umbrella.png")
+                                        .info
+                                            .title КАСКО
+                                            .cost 1000 руб.
+                                        input(type="checkbox" id="additional-item-7")
+                                        .icon
 
-                        .mt-4
-                            .additional-item-list
-                                label(for="additional-item").additional-item-list--item
-                                    .image
-                                        img(src="images/flag.png")
-                                    .info
-                                        .title Доставка до места
-                                        .cost 600 руб.
-                                    input(type="checkbox" id="additional-item")
-                                    .icon
-                                label(for="additional-item-2").additional-item-list--item
-                                    .image
-                                        img(src="images/canister.png")
-                                    .info
-                                        .title Бензин 10л
-                                        .cost 600 руб.
-                                    .count 1 ШТ.
-                                    input(type="checkbox" id="additional-item-2")
-                                    .icon
-                                label(for="additional-item-3").additional-item-list--item
-                                    .image
-                                        img(src="images/baby-chair.png")
-                                    .info
-                                        .title Детское автокресло
-                                        .cost 100 руб./сут.
-                                    .count 1 ШТ.
-                                    input(type="checkbox" id="additional-item-3")
-                                    .icon
-                                label(for="additional-item-4").additional-item-list--item
-                                    .image
-                                        img(src="images/radar-detector.png")
-                                    .info
-                                        .title Радар-детектор
-                                        .cost 100 руб./сут.
-                                    input(type="checkbox" id="additional-item-4")
-                                    .icon
-                                label(for="additional-item-5").additional-item-list--item
-                                    .image
-                                        img(src="images/driver.png")
-                                    .info
-                                        .title Второй водитель
-                                        .cost 500 руб.
-                                    input(type="checkbox" id="additional-item-5")
-                                    .icon
-                                label(for="additional-item-6").additional-item-list--item
-                                    .image
-                                        img(src="images/clock.png")
-                                    .info
-                                        .title Ранний/поздний забор
-                                        .cost 500 руб.
-                                    input(type="checkbox" id="additional-item-6")
-                                    .icon
-                                label(for="additional-item-7").additional-item-list--item
-                                    .image
-                                        img(src="images/umbrella.png")
-                                    .info
-                                        .title КАСКО
-                                        .cost 1000 руб.
-                                    input(type="checkbox" id="additional-item-7")
-                                    .icon
+                        .button-wrap
+                            .steps Шаг 2 из 3
 
-                .step-3
-                    form.form.ps-0.ps-xl-2
-                        .row.mt-4
-                            .col-12.col-lg-6
-                                .input-wrap
-                                    input(type="text" placeholder="Ваше имя").input
-                            .col-12.col-lg-6.mt-4.mt-lg-0
-                                .input-wrap
-                                    input(type="text" placeholder="Ваш телефон").input
+                            a(href="#" data-step-btn="1").btn.btn-gray.btn-empty Назад
+                            a(href="#" data-step-btn="3").btn.btn-blue
+                                span.text Дальше
+                                img.icon(src="images/icons/arrow-white.png")
 
-                        textarea(placeholder="Комментарий").textarea.mt-4
+                    .step(data-step="3")
+                        .form
+                            .row.mt-5.pt-0.pt-lg-3
+                                .col-12.col-lg-6
+                                    .input-wrap
+                                        input(type="text" placeholder="Ваше имя").input
+                                .col-12.col-lg-6.mt-4.mt-lg-0
+                                    .input-wrap
+                                        input(type="text" placeholder="Ваш телефон").input
 
-                        .d-block.d-md-flex.justify-content-center.mt-3.pt-3.mt-lg-5
-                            button(type="submit").btn.btn-blue Арендовать
+                            textarea(placeholder="Комментарий").textarea.mt-4
 
-                .success-block
-                    .icon-big
-                        img(src="images/icons/check-circle.png")
-                    .title Спасибо за заказ!
-                    .description Мы свяжемся с вами для уточнения деталей заказа в ближайшие 15 минут
-                    a(href="#").btn.btn-blue
-                        span.text В каталог
-                        span.icon
-                            img(src="images/icons/arrow-white.png")
+                        .button-wrap
+                            .steps Шаг 3 из 3
+
+                            a(href="#" data-step-btn="2").btn.btn-gray.btn-empty Назад
+                            a(href="#" data-step-btn="success").btn.btn-blue
+                                img.icon(src="images/icons/check-white.png")
+                                span.text Аредовать
+
+                    .success-block.step(data-step="success")
+                        .icon-big
+                            img(src="images/icons/check-circle.png")
+                        .title Спасибо за заказ!
+                        .description Мы свяжемся с вами для уточнения деталей заказа в ближайшие 15 минут
+                        a(href="/catalog.html").btn.btn-blue
+                            span.text В каталог
+                            span.icon
+                                img(src="images/icons/arrow-white.png")
 
 
         include ./blocks/footer.jade

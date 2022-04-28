@@ -78,48 +78,48 @@
     </div>
     <div class="overflow"></div>
     <div class="wrapper">
-      <form action="#" class="rent-form">
-        <div class="step-1">
-          <div class="car-select-block-wrap">
-            <div class="container-block">
+      <div class="container-block">
+        <form action="#" class="rent-form">
+          <div class="d-block d-xl-flex">
+            <h2 class="text-uppercase">Выберите автомобиль</h2>
+            <div class="city-select ps-0 ps-xl-5 pe-0">
+              <div class="city-select--head">
+                <div class="text">в Санкт-Петербурге</div>
+                <div class="arrow"><img src="images/icons/arrow-toggle-down.svg"/></div>
+              </div>
+              <div class="city-select--body">
+                <div class="city-select--item">в Санкт-Петербурге</div>
+                <div class="city-select--item">в Москве</div>
+              </div>
+            </div>
+          </div>
+          <div class="car-type-list">
+            <label for="type1" class="car-type-list--item">
+              <input type="radio" name="type" id="type1"/><span>Эконом</span>
+            </label>
+            <label for="type2" class="car-type-list--item">
+              <input type="radio" name="type" id="type2" checked="checked"/><span>Стандарт</span>
+            </label>
+            <label for="type3" class="car-type-list--item">
+              <input type="radio" name="type" id="type3"/><span>Комфорт</span>
+            </label>
+            <label for="type4" class="car-type-list--item">
+              <input type="radio" name="type" id="type4"/><span>Бизнес-класс</span>
+            </label>
+            <label for="type5" class="car-type-list--item">
+              <input type="radio" name="type" id="type5"/><span>Внедорожники</span>
+            </label>
+          </div>
+          <select placeholder="Класс машины" class="custom-select">
+            <option value="Эконом">Эконом</option>
+            <option value="Стандарт">Стандарт</option>
+            <option value="Комфорт">Комфорт</option>
+            <option value="Бизнес-класс">Бизнес-класс</option>
+            <option value="Внедорожники">Внедорожники</option>
+          </select>
+          <div data-step="1" class="step step-1 active">
+            <div class="car-select-block-wrap">
               <div class="car-select-block">
-                <div class="d-block d-xl-flex">
-                  <h2 class="text-uppercase">Выберите автомобиль</h2>
-                  <div class="city-select">
-                    <div class="city-select--head">
-                      <div class="text">в Санкт-Петербурге</div>
-                      <div class="arrow"><img src="images/icons/arrow-toggle-down.svg"/></div>
-                    </div>
-                    <div class="city-select--body">
-                      <div class="city-select--item">в Санкт-Петербурге</div>
-                      <div class="city-select--item">в Москве</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="car-type-list">
-                  <label for="type1" class="car-type-list--item">
-                    <input type="radio" name="type" id="type1"/><span>Эконом</span>
-                  </label>
-                  <label for="type2" class="car-type-list--item">
-                    <input type="radio" name="type" id="type2" checked="checked"/><span>Стандарт</span>
-                  </label>
-                  <label for="type3" class="car-type-list--item">
-                    <input type="radio" name="type" id="type3"/><span>Комфорт</span>
-                  </label>
-                  <label for="type4" class="car-type-list--item">
-                    <input type="radio" name="type" id="type4"/><span>Бизнес-класс</span>
-                  </label>
-                  <label for="type5" class="car-type-list--item">
-                    <input type="radio" name="type" id="type5"/><span>Внедорожники</span>
-                  </label>
-                </div>
-                <select placeholder="Класс машины" class="custom-select">
-                  <option value="Эконом">Эконом</option>
-                  <option value="Стандарт">Стандарт</option>
-                  <option value="Комфорт">Комфорт</option>
-                  <option value="Бизнес-класс">Бизнес-класс</option>
-                  <option value="Внедорожники">Внедорожники</option>
-                </select>
                 <div class="car-select-slider">
                   <div class="js-slider-car-select">
                     <div class="swiper-wrapper">
@@ -155,7 +155,6 @@
                             <h3 class="title text-center">Hyundai Solaris 2021</h3>
                             <div class="swiper-button-prev"></div><img src="images/assets/car.jpg"/>
                             <div class="swiper-button-next"></div>
-                            <div class="button-wrap d-none d-lg-flex"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                           </div>
                           <div class="price-list">
                             <div class="price-list--item">
@@ -175,7 +174,6 @@
                               <div class="price">2.300 Р<span>/ сутки</span></div>
                             </div>
                           </div>
-                          <div class="button-wrap d-flex d-lg-none"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -210,7 +208,6 @@
                             <h3 class="title text-center">Hyundai Solaris 2022</h3>
                             <div class="swiper-button-prev"></div><img src="images/assets/car.jpg"/>
                             <div class="swiper-button-next"></div>
-                            <div class="button-wrap d-none d-lg-flex"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                           </div>
                           <div class="price-list">
                             <div class="price-list--item">
@@ -230,7 +227,6 @@
                               <div class="price">2.300 Р<span>/ сутки</span></div>
                             </div>
                           </div>
-                          <div class="button-wrap d-flex d-lg-none"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                         </div>
                       </div>
                     </div>
@@ -238,125 +234,131 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="step-2">
-          <div class="form ps-0 ps-xl-2">
-            <div class="row mt-5 pt-0 pt-lg-3">
-              <div class="col-12 col-lg-6">
-                <div class="input-wrap">
-                  <div class="datepicker-wrap">
-                    <input type="text" placeholder="Начало аренды" class="input datepicker-from"/>
-                    <div class="icon"><img src="images/icons/calendar.png"/></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-                <div class="input-wrap">
-                  <div class="datepicker-wrap">
-                    <input type="text" placeholder="Окончание аренды" class="input datepicker-to"/>
-                    <div class="icon"><img src="images/icons/calendar.png"/></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="additional-item-list">
-                <label for="additional-item" class="additional-item-list--item">
-                  <div class="image"><img src="images/flag.png"/></div>
-                  <div class="info">
-                    <div class="title">Доставка до места</div>
-                    <div class="cost">600 руб.</div>
-                  </div>
-                  <input type="checkbox" id="additional-item"/>
-                  <div class="icon"></div>
-                </label>
-                <label for="additional-item-2" class="additional-item-list--item">
-                  <div class="image"><img src="images/canister.png"/></div>
-                  <div class="info">
-                    <div class="title">Бензин 10л</div>
-                    <div class="cost">600 руб.</div>
-                  </div>
-                  <div class="count">1 ШТ.</div>
-                  <input type="checkbox" id="additional-item-2"/>
-                  <div class="icon"></div>
-                </label>
-                <label for="additional-item-3" class="additional-item-list--item">
-                  <div class="image"><img src="images/baby-chair.png"/></div>
-                  <div class="info">
-                    <div class="title">Детское автокресло</div>
-                    <div class="cost">100 руб./сут.</div>
-                  </div>
-                  <div class="count">1 ШТ.</div>
-                  <input type="checkbox" id="additional-item-3"/>
-                  <div class="icon"></div>
-                </label>
-                <label for="additional-item-4" class="additional-item-list--item">
-                  <div class="image"><img src="images/radar-detector.png"/></div>
-                  <div class="info">
-                    <div class="title">Радар-детектор</div>
-                    <div class="cost">100 руб./сут.</div>
-                  </div>
-                  <input type="checkbox" id="additional-item-4"/>
-                  <div class="icon"></div>
-                </label>
-                <label for="additional-item-5" class="additional-item-list--item">
-                  <div class="image"><img src="images/driver.png"/></div>
-                  <div class="info">
-                    <div class="title">Второй водитель</div>
-                    <div class="cost">500 руб.</div>
-                  </div>
-                  <input type="checkbox" id="additional-item-5"/>
-                  <div class="icon"></div>
-                </label>
-                <label for="additional-item-6" class="additional-item-list--item">
-                  <div class="image"><img src="images/clock.png"/></div>
-                  <div class="info">
-                    <div class="title">Ранний/поздний забор</div>
-                    <div class="cost">500 руб.</div>
-                  </div>
-                  <input type="checkbox" id="additional-item-6"/>
-                  <div class="icon"></div>
-                </label>
-                <label for="additional-item-7" class="additional-item-list--item">
-                  <div class="image"><img src="images/umbrella.png"/></div>
-                  <div class="info">
-                    <div class="title">КАСКО</div>
-                    <div class="cost">1000 руб.</div>
-                  </div>
-                  <input type="checkbox" id="additional-item-7"/>
-                  <div class="icon"></div>
-                </label>
-              </div>
+            <div class="button-wrap">
+              <div class="steps">Шаг 1 из 3</div><a href="/product.html" class="btn btn-gray btn-empty">Подробнее о машине</a><a href="#" data-step-btn="2" class="btn btn-blue"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a>
             </div>
           </div>
-        </div>
-        <div class="step-3">
-          <form class="form ps-0 ps-xl-2">
-            <div class="row mt-4">
-              <div class="col-12 col-lg-6">
-                <div class="input-wrap">
-                  <input type="text" placeholder="Ваше имя" class="input"/>
+          <div data-step="2" class="step">
+            <div class="form">
+              <div class="row mt-5 pt-0 pt-lg-3">
+                <div class="col-12 col-lg-6">
+                  <div class="input-wrap">
+                    <div class="datepicker-wrap">
+                      <input type="text" placeholder="Начало аренды" class="input datepicker-from"/>
+                      <div class="icon"><img src="images/icons/calendar.png"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                  <div class="input-wrap">
+                    <div class="datepicker-wrap">
+                      <input type="text" placeholder="Окончание аренды" class="input datepicker-to"/>
+                      <div class="icon"><img src="images/icons/calendar.png"/></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-                <div class="input-wrap">
-                  <input type="text" placeholder="Ваш телефон" class="input"/>
+              <div class="mt-4">
+                <div class="additional-item-list">
+                  <label for="additional-item" class="additional-item-list--item">
+                    <div class="image"><img src="images/flag.png"/></div>
+                    <div class="info">
+                      <div class="title">Доставка до места</div>
+                      <div class="cost">600 руб.</div>
+                    </div>
+                    <input type="checkbox" id="additional-item"/>
+                    <div class="icon"></div>
+                  </label>
+                  <label for="additional-item-2" class="additional-item-list--item">
+                    <div class="image"><img src="images/canister.png"/></div>
+                    <div class="info">
+                      <div class="title">Бензин 10л</div>
+                      <div class="cost">600 руб.</div>
+                    </div>
+                    <div class="count">1 ШТ.</div>
+                    <input type="checkbox" id="additional-item-2"/>
+                    <div class="icon"></div>
+                  </label>
+                  <label for="additional-item-3" class="additional-item-list--item">
+                    <div class="image"><img src="images/baby-chair.png"/></div>
+                    <div class="info">
+                      <div class="title">Детское автокресло</div>
+                      <div class="cost">100 руб./сут.</div>
+                    </div>
+                    <div class="count">1 ШТ.</div>
+                    <input type="checkbox" id="additional-item-3"/>
+                    <div class="icon"></div>
+                  </label>
+                  <label for="additional-item-4" class="additional-item-list--item">
+                    <div class="image"><img src="images/radar-detector.png"/></div>
+                    <div class="info">
+                      <div class="title">Радар-детектор</div>
+                      <div class="cost">100 руб./сут.</div>
+                    </div>
+                    <input type="checkbox" id="additional-item-4"/>
+                    <div class="icon"></div>
+                  </label>
+                  <label for="additional-item-5" class="additional-item-list--item">
+                    <div class="image"><img src="images/driver.png"/></div>
+                    <div class="info">
+                      <div class="title">Второй водитель</div>
+                      <div class="cost">500 руб.</div>
+                    </div>
+                    <input type="checkbox" id="additional-item-5"/>
+                    <div class="icon"></div>
+                  </label>
+                  <label for="additional-item-6" class="additional-item-list--item">
+                    <div class="image"><img src="images/clock.png"/></div>
+                    <div class="info">
+                      <div class="title">Ранний/поздний забор</div>
+                      <div class="cost">500 руб.</div>
+                    </div>
+                    <input type="checkbox" id="additional-item-6"/>
+                    <div class="icon"></div>
+                  </label>
+                  <label for="additional-item-7" class="additional-item-list--item">
+                    <div class="image"><img src="images/umbrella.png"/></div>
+                    <div class="info">
+                      <div class="title">КАСКО</div>
+                      <div class="cost">1000 руб.</div>
+                    </div>
+                    <input type="checkbox" id="additional-item-7"/>
+                    <div class="icon"></div>
+                  </label>
                 </div>
               </div>
             </div>
-            <textarea placeholder="Комментарий" class="textarea mt-4"></textarea>
-            <div class="d-block d-md-flex justify-content-center mt-3 pt-3 mt-lg-5">
-              <button type="submit" class="btn btn-blue">Арендовать</button>
+            <div class="button-wrap">
+              <div class="steps">Шаг 2 из 3</div><a href="#" data-step-btn="1" class="btn btn-gray btn-empty">Назад</a><a href="#" data-step-btn="3" class="btn btn-blue"><span class="text">Дальше</span><img src="images/icons/arrow-white.png" class="icon"/></a>
             </div>
-          </form>
-        </div>
-        <div class="success-block">
-          <div class="icon-big"><img src="images/icons/check-circle.png"/></div>
-          <div class="title">Спасибо за заказ!</div>
-          <div class="description">Мы свяжемся с вами для уточнения деталей заказа в ближайшие 15 минут</div><a href="#" class="btn btn-blue"><span class="text">В каталог</span><span class="icon"><img src="images/icons/arrow-white.png"/></span></a>
-        </div>
-      </form>
+          </div>
+          <div data-step="3" class="step">
+            <div class="form">
+              <div class="row mt-5 pt-0 pt-lg-3">
+                <div class="col-12 col-lg-6">
+                  <div class="input-wrap">
+                    <input type="text" placeholder="Ваше имя" class="input"/>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                  <div class="input-wrap">
+                    <input type="text" placeholder="Ваш телефон" class="input"/>
+                  </div>
+                </div>
+              </div>
+              <textarea placeholder="Комментарий" class="textarea mt-4"></textarea>
+            </div>
+            <div class="button-wrap">
+              <div class="steps">Шаг 3 из 3</div><a href="#" data-step-btn="2" class="btn btn-gray btn-empty">Назад</a><a href="#" data-step-btn="success" class="btn btn-blue"><img src="images/icons/check-white.png" class="icon"/><span class="text">Аредовать</span></a>
+            </div>
+          </div>
+          <div data-step="success" class="success-block step">
+            <div class="icon-big"><img src="images/icons/check-circle.png"/></div>
+            <div class="title">Спасибо за заказ!</div>
+            <div class="description">Мы свяжемся с вами для уточнения деталей заказа в ближайшие 15 минут</div><a href="/catalog.html" class="btn btn-blue"><span class="text">В каталог</span><span class="icon"><img src="images/icons/arrow-white.png"/></span></a>
+          </div>
+        </form>
+      </div>
     </div>
     <footer class="footer">
       <div class="wrap">

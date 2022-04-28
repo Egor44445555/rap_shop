@@ -1178,6 +1178,26 @@
             margin-top: 30px;
         }
     }
+
+
+    .rent-form {
+        padding: 40px 0 60px;
+    }
+
+    .success-block {
+        margin: 60px auto 0;
+
+        .title {
+            margin-top: 30px;
+            font-size: 35px;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
 }
 
 /******************************************************************/
@@ -1631,6 +1651,19 @@
             .btn {
                 width: 100%;
             }
+        }
+    }
+
+
+    .rent-form {
+
+        .car-type-list {
+            display: none;
+        }
+
+        .custom-select-wrapper {
+            display: block;
+            margin-top: 30px;
         }
     }
 }

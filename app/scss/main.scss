@@ -65,6 +65,10 @@ body {
         border: 0;
         transition: .3s;
 
+        &:first-child {
+            margin: 0 14px 0 0;
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -111,6 +115,17 @@ body {
             background: $linkColorHover;
             color: $white;
             border-color: $linkColorHover;
+        }
+    }
+
+    &.btn-gray {
+        color: $black;
+        border-color: $textGray;
+
+        &:hover {
+            background: $textGray;
+            color: $white;
+            border-color: $textGray;
         }
     }
 
