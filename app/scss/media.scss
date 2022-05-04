@@ -102,6 +102,10 @@
 
 @media (max-width: 1441px) {
 
+    .about-block-wrap {
+        background-position: 45% 0;
+    }
+
     .about-block {
 
         .info {
@@ -117,7 +121,6 @@
             margin: 0;
         }
     }
-
 
     .about-detail {
         padding-left: 40px;
@@ -149,6 +152,7 @@
     }
 
     .hero-block {
+        min-height: 900px;
         padding-top: 160px;
     }
 
@@ -401,7 +405,7 @@
 
     .hero-block {
         min-height: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0;
         padding: 50px 0 40px;
 
         .title {
@@ -496,6 +500,11 @@
         .title-wrap {
             display: block;
             padding: 0 10px;
+
+            h2 {
+                font-size: 37px;
+                line-height: 46px;
+            }
 
             .info-block {
                 margin-top: 70px;
@@ -655,6 +664,7 @@
 
     .about-block-wrap {
         padding: 50px 0;
+        background: none !important;
     }
 
     .about-block {
@@ -1275,6 +1285,14 @@
 
     .advantages-block-wrap {
 
+        .title-wrap {
+
+            h2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+
         .more-block {
             padding: 0 30px;
 
@@ -1670,6 +1688,30 @@
             margin-top: 30px;
         }
     }
+
+    .about-detail-block {
+
+        .title {
+            font-size: 30px;
+        }
+
+        .text {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 33px;
+        }
+    }
+
+    .about-detail {
+
+        .app-block-wrap .title {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+
+
+
 }
 
 /******************************************************************/

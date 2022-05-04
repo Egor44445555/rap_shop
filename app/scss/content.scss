@@ -134,7 +134,7 @@
 /*** Car select ***/
 
 .car-select-block-wrap {
-    padding: 100px 0 125px;
+    padding: 100px 0;
 
     .city-select {
         margin-left: 40px;
@@ -269,6 +269,15 @@
 }
 
 .city-select {
+    position: relative;
+    cursor: pointer;
+
+    &.active {
+
+        .city-select--body {
+            display: block;
+        }
+    }
 
     &--head {
         display: flex;
@@ -281,7 +290,10 @@
         .text {
             font-size: 37px;
             color: $blueText;
-            border-bottom: 1px solid $blueText;
+
+            span {
+                border-bottom: 1px solid $blueText;
+            }
         }
 
         .arrow {
@@ -298,6 +310,29 @@
 
     &--body {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 250px;
+        max-height: 400px;
+        background: $white;
+        box-shadow: $boxShadow;
+        z-index: 99;
+
+        .city-select--item {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-family: $font-base-semiBold;
+            font-size: 20px;
+            color: $black;
+            border-top: 1px solid $borderColor;
+            cursor: pointer;
+
+            &:first-child {
+                border-top: 0;
+            }
+        }
     }
 }
 
@@ -341,11 +376,16 @@
 /*** Advantages ***/
 
 .advantages-block-wrap {
-    padding: 140px 0 160px;
+    padding: 140px 0;
 
     .title-wrap {
         display: flex;
         justify-content: space-between;
+
+        h2 {
+            font-size: 59px;
+            line-height: 61px;
+        }
 
         h2,
         h3,
@@ -548,7 +588,7 @@
 
 .reviews-slider {
     max-width: 1116px;
-    margin: 160px auto 0;
+    margin: 120px auto 0;
     padding: 0 116px;
     overflow: visible;
 
@@ -590,7 +630,7 @@
 /*** Mobile app ***/
 
 .app-block-wrap {
-    padding: 360px 0 160px;
+    padding: 250px 0 160px;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;

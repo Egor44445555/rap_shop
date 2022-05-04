@@ -51,6 +51,14 @@ $(document).ready(function() {
         modalMenu.removeClass('open');
     });
 
+    $('.city-select').on('click', function () {
+        $(this).toggleClass('active');
+    });
+
+    $('.city-select--item').on('click', function () {
+        $(this).parents('.city-select').find('.city-select--head .text span').text($(this).text())
+    });
+
     tooltip.tooltip({
         html: true,
         placement: 'bottom',
@@ -307,22 +315,12 @@ $(document).ready(function() {
     new Swiper('.js-slider-image', {
         slidesPerView: 2,
         simulateTouch: true,
-        grid: {
-            rows: 3,
-        },
         breakpoints: {
             561: {
                 slidesPerView: 4,
-                grid: {
-                    rows: 3,
-                },
             },
             1601: {
                 slidesPerView: 5,
-                slidesPerGroup: 5,
-                grid: {
-                    rows: 3,
-                },
             }
         }
     });
