@@ -1,9 +1,9 @@
 @import '_var.scss';
 
 .hero-block {
-    min-height: 1099px;
+    min-height: 100vh;
     margin-bottom: 77px;
-    padding: 290px 0 40px;
+    padding: 200px 0 40px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -134,7 +134,7 @@
 /*** Car select ***/
 
 .car-select-block-wrap {
-    padding: 100px 0;
+    padding: 70px 0;
 
     .city-select {
         margin-left: 40px;
@@ -340,7 +340,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 80px -10px 0;
+    margin: 50px -10px 0;
 
     &--item {
         cursor: pointer;
@@ -376,15 +376,15 @@
 /*** Advantages ***/
 
 .advantages-block-wrap {
-    padding: 140px 0;
+    padding: 70px 0;
 
     .title-wrap {
         display: flex;
         justify-content: space-between;
 
         h2 {
-            font-size: 59px;
-            line-height: 61px;
+            font-size: 50px;
+            line-height: 54px;
         }
 
         h2,
@@ -540,7 +540,7 @@
 /*** Reviews ***/
 
 .reviews-block-wrap {
-    padding: 160px 0 60px;
+    padding: 90px 0 60px;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -588,7 +588,7 @@
 
 .reviews-slider {
     max-width: 1116px;
-    margin: 120px auto 0;
+    margin: 80px auto 0;
     padding: 0 116px;
     overflow: visible;
 
@@ -606,7 +606,7 @@
 }
 
 .reviews-page {
-    padding-top: 80px;
+    padding-top: 60px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -615,7 +615,7 @@
     margin-top: 30px;
 
     &--item {
-        padding: 90px 0;
+        padding: 70px 0;
         border-bottom: 1px solid $borderColor;
     }
 

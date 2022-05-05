@@ -361,79 +361,13 @@ a {
 
 .tabs {
 
-    &-head {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -13px 0 0 -13px;
-
-        &--item {
-            flex: 100%;
-            max-width: calc(33.333% - 53px);
-            margin: 13px 0 0 13px;
-            padding: 15px;
-            background: $grayLight;
-            font-size: 18px;
-            color: $black;
-            text-align: center;
-            border-radius: 20px 20px 0 0;
-            transition: .2s;
-            cursor: pointer;
-        }
-
-        &--item.active {
-            background: $black;
-            color: $white;
-        }
-
-        &--item.active span {
-            border-bottom: 2px solid $linkColor;
-        }
-    }
-
     &-body {
-        background: $white;
-        border-radius: 0 20px 20px 20px;
-        filter: drop-shadow(1px 1px 30px rgba(0, 0, 0, .05));
 
         &--item {
             display: none;
-            padding: 50px 50px 70px 25px;
 
             &.active {
                 display: block;
-            }
-        }
-
-        h2,
-        .h2,
-        h3,
-        .h3,
-        h4,
-        .h4,
-        h5,
-        .h5 {
-            margin-top: 25px;
-            font-family: $font-base-extraBold;
-            color: $green;
-
-            &:first-child {
-                margin-top: 0;
-            }
-        }
-
-        h4,
-        .h4 {
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        p {
-            margin-top: 10px;
-            font-size: 14px;
-            line-height: 17px;
-
-            &:first-child {
-                margin-top: 0;
             }
         }
     }
