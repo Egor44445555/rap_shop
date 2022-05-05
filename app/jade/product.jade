@@ -8,7 +8,7 @@ html
         .wrapper
             .container-block
                 .breadcrumbs
-                    a(href="#").breadcrumbs--item.back-link
+                    a(href="/index.html").breadcrumbs--item.back-link
                         img(src="images/icons/back-arrow.png").icon
                         span.text Назад
                     a(href="#").breadcrumbs--item
@@ -53,7 +53,7 @@ html
                                     img.icon(src="images/icons/characteristics-list.png")
                                     .text 1-7 л.\км.
 
-                                .more-btn
+                                a(href="#characteristics").more-btn
                                     span Все характеристики
                                     .icon
                                         img(src="images/icons/arrow-toggle-down.svg")
@@ -210,12 +210,43 @@ html
                         .characteristics-list--item
                             .label Класс машины
                             .value Стандарт
+                        .characteristics-list--item
+                            .label Места
+                            .value 4
+                        .characteristics-list--item
+                            .label Двери
+                            .value 5
+                        .characteristics-list--item
+                            .label Коробка передач
+                            .value Автомат
+                        .characteristics-list--item
+                            .label Автомат
+                            .value есть
+                        .characteristics-list--item
+                            .label Мощность двигателя
+                            .value 123 л.с.
+                        .characteristics-list--item
+                            .label Расход бензина
+                            .value 6-7 л/км.
+                        .characteristics-list--item
+                            .label Цвет
+                            .value Серебро
+                        .characteristics-list--item
+                            .label Год выпуска
+                            .value 2021
+                        .characteristics-list--item
+                            .label Тип кузова
+                            .value Седан
+                        .characteristics-list--item
+                            .label Класс машины
+                            .value Стандарт
 
-                    .d-flex.justify-content-center.mt-5.pt-3
-                        .more-btn
-                            .text Еще характеристики
-                            .icon
-                                img(src="images/icons/arrow-toggle-down.svg")
+                    .more-btn-wrap
+                        .d-flex.justify-content-center.mt-5.pt-3
+                            .more-btn
+                                .text Еще характеристики
+                                .icon
+                                    img(src="images/icons/arrow-toggle-down.svg")
 
 
         .product-slider-wrap
@@ -258,7 +289,7 @@ html
                                         .value 1.575 Р
                                             span / сутки
 
-                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+                                    a(href="/product.html#rent").btn.btn-blue.btn-empty.btn-small Забронировать
                         .swiper-slide
                             .product-item
                                 a(href="#").image
@@ -289,39 +320,7 @@ html
                                         .value 1.575 Р
                                             span / сутки
 
-                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
-
-                        .swiper-slide
-                            .product-item
-                                a(href="#").image
-                                    img(src="images/assets/product-preview.jpg")
-                                .info
-                                    a(href="#").title Volkswagen Polo 2018 MT
-                                    .characteristics
-                                        .characteristics--item
-                                            img.icon(src="images/icons/characteristics-user.png")
-                                            .text 2 мест
-                                        .characteristics--item
-                                            img.icon(src="images/icons/characteristics-square.png")
-                                            .text 3 двери
-                                        .characteristics--item
-                                            img.icon(src="images/icons/characteristics-automatic.png")
-                                            .text Автомат
-                                        .characteristics--item
-                                            img.icon(src="images/icons/characteristics-conditioner.png")
-                                            .text Кондиционер
-                                        .characteristics--item
-                                            img.icon(src="images/icons/characteristics-graph.png")
-                                            .text 183 л.с
-                                        .characteristics--item
-                                            img.icon(src="images/icons/characteristics-list.png")
-                                            .text 1-7 л.\км.
-                                    .price
-                                        .label ОТ
-                                        .value 1.575 Р
-                                            span / сутки
-
-                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+                                    a(href="/product.html#rent").btn.btn-blue.btn-empty.btn-small Забронировать
 
                         .swiper-slide
                             .product-item
@@ -353,7 +352,7 @@ html
                                         .value 1.575 Р
                                             span / сутки
 
-                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+                                    a(href="/product.html#rent").btn.btn-blue.btn-empty.btn-small Забронировать
 
                         .swiper-slide
                             .product-item
@@ -385,7 +384,39 @@ html
                                         .value 1.575 Р
                                             span / сутки
 
-                                    a(href="#").btn.btn-blue.btn-empty.btn-small Забронировать
+                                    a(href="/product.html#rent").btn.btn-blue.btn-empty.btn-small Забронировать
+
+                        .swiper-slide
+                            .product-item
+                                a(href="#").image
+                                    img(src="images/assets/product-preview.jpg")
+                                .info
+                                    a(href="#").title Volkswagen Polo 2018 MT
+                                    .characteristics
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-user.png")
+                                            .text 2 мест
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-square.png")
+                                            .text 3 двери
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-automatic.png")
+                                            .text Автомат
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-conditioner.png")
+                                            .text Кондиционер
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-graph.png")
+                                            .text 183 л.с
+                                        .characteristics--item
+                                            img.icon(src="images/icons/characteristics-list.png")
+                                            .text 1-7 л.\км.
+                                    .price
+                                        .label ОТ
+                                        .value 1.575 Р
+                                            span / сутки
+
+                                    a(href="/product.html#rent").btn.btn-blue.btn-empty.btn-small Забронировать
 
 
         include ./blocks/about-block-small

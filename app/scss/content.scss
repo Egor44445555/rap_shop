@@ -98,7 +98,7 @@
 .sort {
     display: flex;
     flex-wrap: wrap;
-    margin: 54px 0 0 -28px;
+    margin: 50px 0 0 -28px;
 
     &--item {
         margin: 10px 0 0 28px;
@@ -288,7 +288,7 @@
         }
 
         .text {
-            font-size: 37px;
+            font-size: 30px;
             color: $blueText;
 
             span {
@@ -453,7 +453,7 @@
 .step-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px 0 0 0;
+    margin: 70px 0 0 0;
 
     &--item {
         flex: 100%;
@@ -482,8 +482,8 @@
     .text {
         max-width: 280px;
         font-family: $font-base-semiBold;
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 20px;
+        line-height: 30px;
     }
 }
 
@@ -492,7 +492,7 @@
     padding: 80px 0 50px;
 
     &.bg-image {
-        padding-bottom: 150px;
+        padding-bottom: 100px;
         background-repeat: no-repeat;
         background-position: center bottom;
 
@@ -512,7 +512,7 @@
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0 0 -85px;
+    margin: -20px 0 0 -85px;
 
     &:first-child {
         margin-top: -85px;
@@ -555,7 +555,7 @@
             flex: 1;
             max-width: 110px;
             height: 80px;
-            margin-right: 80px;
+            margin-right: 60px;
             font-size: 333px;
             line-height: 250px;
             color: $redBright;
@@ -563,7 +563,7 @@
 
         .name {
             font-family: $font-base-semiBold;
-            font-size: 27px;
+            font-size: 25px;
         }
 
         .rating {
@@ -572,14 +572,14 @@
     }
 
     .description {
-        margin-top: 80px;
+        margin-top: 60px;
         font-family: $font-base-semiBold;
-        font-size: 22px;
-        line-height: 34px;
+        font-size: 20px;
+        line-height: 32px;
     }
 
     .author {
-        margin-top: 60px;
+        margin-top: 40px;
         font-family: $font-base-semiBold;
         font-size: 24px;
         opacity: .7;
@@ -615,7 +615,7 @@
     margin-top: 30px;
 
     &--item {
-        padding: 70px 0;
+        padding: 60px 0;
         border-bottom: 1px solid $borderColor;
     }
 
@@ -630,7 +630,7 @@
 /*** Mobile app ***/
 
 .app-block-wrap {
-    padding: 250px 0 160px;
+    padding: 70px 0;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -646,7 +646,7 @@
 
     .title {
         font-family: $font-base-semiBold;
-        font-size: 58px;
+        font-size: 50px;
         line-height: normal;
         text-transform: uppercase;
     }
@@ -656,8 +656,8 @@
         max-width: 500px;
         margin-top: 75px;
         padding: 40px 0 0 65px;
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 26px;
+        line-height: 38px;
         color: $textGray;
         z-index: 5;
 
@@ -677,7 +677,7 @@
     .payment-list {
         display: flex;
         flex-wrap: wrap;
-        margin: 145px 0 0 -15px;
+        margin: 100px 0 0 -15px;
 
         &--item {
             margin: 15px 0 0 15px;
@@ -735,18 +735,18 @@
 
             .num {
                 flex: 1;
-                max-width: 180px;
-                font-size: 157px;
-                line-height: 104px;
+                max-width: 138px;
+                font-size: 120px;
+                line-height: 90px;
                 color: $blue;
             }
 
             .text {
                 flex: 1;
                 max-width: 430px;
-                padding: 0 80px 0 78px;
-                font-size: 30px;
-                line-height: 35px;
+                padding: 0 50px 0 40px;
+                font-size: 28px;
+                line-height: 32px;
             }
 
             .btn {
@@ -775,7 +775,7 @@
             max-width: 33.333%;
             padding: 45px 100px 0 45px;
             font-family: $font-base-semiBold;
-            font-size: 26px;
+            font-size: 22px;
             line-height: 34px;
 
             &:before {
@@ -795,7 +795,7 @@
 
 .about-block-small-wrap {
     min-height: 677px;
-    margin-top: 80px;
+    margin-top: 70px;
     background-size: cover;
 }
 
@@ -814,7 +814,7 @@
 
     .description {
         margin-top: 30px;
-        font-size: 34px;
+        font-size: 26px;
         color: $textGray;
     }
 
@@ -837,7 +837,7 @@
 /*** Partners block ***/
 
 .partners-block-wrap {
-    padding: 200px 0 100px;
+    padding: 140px 0 70px;
 }
 
 .partners-block {
@@ -876,7 +876,7 @@
 
     .description {
         margin-top: 20px;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 30px;
         color: $textGray;
     }
@@ -892,7 +892,7 @@
 /*** FAQ ***/
 
 .faq-block-wrap {
-    padding: 100px 0 48px;
+    padding: 70px 0;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -1140,7 +1140,7 @@
 /*** Contact block ***/
 
 .contact-block-wrap {
-    padding: 50px 0 136px;
+    padding: 50px 0 70px;
 }
 
 .contact-block {
@@ -1208,9 +1208,9 @@
     }
 
     p {
-        max-width: 663px;
-        margin-top: 35px;
-        font-size: 35px;
+        max-width: 570px;
+        margin-top: 25px;
+        font-size: 26px;
         color: $textGrayDark;
     }
 
@@ -1234,15 +1234,15 @@
         p {
             max-width: 100%;
             margin: 0;
-            font-size: 30px;
-            line-height: 42px;
+            font-size: 26px;
+            line-height: 36px;
             color: $textGray;
         }
 
         .btn {
-            margin-top: 70px;
+            margin-top: 60px;
             font-family: $font-base-semiBold;
-            font-size: 24px;
+            font-size: 20px;
         }
     }
 }
@@ -1251,7 +1251,7 @@
     padding: 50px 0;
 
     .btn {
-        margin-top: 195px;
+        margin-top: 100px;
     }
 }
 
@@ -1259,7 +1259,7 @@
 
     &--item {
         display: flex;
-        margin-top: 195px;
+        margin-top: 150px;
 
         &:first-child {
             margin-top: 0;
@@ -1269,7 +1269,7 @@
             flex-direction: row-reverse;
 
             .image {
-                margin: 0 0 0 170px;
+                margin: 0 0 0 120px;
             }
 
             .info {
@@ -1279,7 +1279,7 @@
 
         .image {
             flex: 1;
-            margin-right: 170px;
+            margin-right: 120px;
         }
 
         .info {
@@ -1293,8 +1293,8 @@
             position: relative;
             margin-top: 90px;
             padding: 40px 0 0 60px;
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 26px;
+            line-height: 38px;
             color: $textGray;
 
             &:first-child {
@@ -1331,7 +1331,7 @@
 .rent-out-block {
     display: flex;
     justify-content: space-between;
-    padding: 128px 0 187px;
+    padding: 100px 0;
     background: url(../images/lines-bg.jpg);
     background-repeat: no-repeat;
     background-position: top right;
@@ -1356,7 +1356,7 @@
     .description {
         max-width: 470px;
         margin-top: 40px;
-        font-size: 34px;
+        font-size: 28px;
         line-height: 40px;
         color: $textGray;
     }
@@ -1374,7 +1374,7 @@
 /*** Bonus program block ***/
 
 .bonus-program-block-wrap {
-    padding: 120px 0;
+    padding: 70px 0;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
@@ -1394,9 +1394,9 @@
 
         p {
             max-width: 480px;
-            margin-top: 70px;
+            margin-top: 50px;
             font-family: $font-base-light;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 34px;
         }
 
@@ -1411,14 +1411,14 @@
         display: flex;
         flex-wrap: wrap;
         flex: 1;
-        margin: -140px 0 0 -140px;
+        margin: -100px 0 0 -100px;
         padding-left: 120px;
 
         &--item {
             display: flex;
             flex: 100%;
-            max-width: calc(50% - 140px);
-            margin: 140px 0 0 140px;
+            max-width: calc(50% - 100px);
+            margin: 100px 0 0 100px;
         }
 
         .image {
@@ -1464,8 +1464,8 @@
 
 .additional-services {
     position: relative;
-    margin-top: 122px;
-    padding-bottom: 168px;
+    margin-top: 80px;
+    padding-bottom: 80px;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -1492,7 +1492,7 @@
         }
 
         p {
-            margin: 60px 0 0 0;
+            margin: 40px 0 0 0;
             font-family: $font-base-light;
             font-size: 24px;
             line-height: 38px;
@@ -1502,7 +1502,7 @@
     .services-list {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 0 0 -100px;
+        margin: 30px 0 0 -100px;
 
         &--item {
             display: flex;
@@ -1532,14 +1532,14 @@
 
         .description {
             margin-top: 30px;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 30px;
         }
 
         .cost {
-            margin-top: 35px;
+            margin-top: 30px;
             font-family: $font-base-semiBold;
-            font-size: 38px;
+            font-size: 34px;
             color: $blue;
         }
     }
@@ -1596,13 +1596,13 @@
     .button-wrap {
         display: flex;
         justify-content: center;
-        margin-top: 90px;
+        margin-top: 70px;
 
         .btn {
             width: 100%;
             max-width: 315px;
             font-family: $font-base-semiBold;
-            font-size: 23px;
+            font-size: 20px;
         }
     }
 
@@ -1651,7 +1651,7 @@
 
 .about-page {
     position: relative;
-    padding: 80px 0 200px;
+    padding: 80px 0 100px;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -1758,7 +1758,7 @@
     }
 
     .app-block-wrap {
-        padding: 160px 0 60px;
+        padding: 100px 0 60px;
         overflow: visible;
 
         .title {
@@ -1820,7 +1820,7 @@
         align-items: center;
         flex: 100%;
         max-width: 50%;
-        padding: 150px 40px 0 0;
+        padding: 120px 40px 0 0;
     }
 
     .icon {
@@ -1966,7 +1966,7 @@
     .btn {
         margin-top: 50px;
         font-family: $font-base-semiBold;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .document-wrap {
@@ -2019,7 +2019,7 @@
 /*** Contacts ***/
 
 .contact-page {
-    padding: 80px 0 170px;
+    padding: 70px 0 100px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -2100,6 +2100,7 @@
     overflow: hidden;
 
     .advantages-list-wrap {
+        padding-bottom: 0;
         z-index: 5;
     }
 
@@ -2127,8 +2128,8 @@
 
         p {
             font-family: $font-base-light;
-            font-size: 33px;
-            line-height: 37px;
+            font-size: 30px;
+            line-height: 36px;
         }
     }
 
@@ -2141,13 +2142,13 @@
 }
 
 .sublease-form-wrap {
-    padding: 50px 0 140px;
+    padding: 50px 0 70px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 97%;
 
     .form {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .btn-big {
@@ -2198,7 +2199,7 @@
             margin: 25px 0 0 25px;
             padding: 16px 28px;
             font-family: $font-base-semiBold;
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 

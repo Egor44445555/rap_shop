@@ -8,7 +8,7 @@ html
         .wrapper
             .container-block
                 .breadcrumbs
-                    a(href="#").breadcrumbs--item.back-link
+                    a(href="/index.html").breadcrumbs--item.back-link
                         img(src="images/icons/back-arrow.png").icon
                         span.text Назад
                     a(href="#").breadcrumbs--item
@@ -24,7 +24,7 @@ html
                                 .quotes “
                                 .text
                                     .name Наталья Горбунцова
-                                    .rating(data-rating-count="4")
+                                    .rating(data-rating-count="1")
                                         .rating--list
                                             .icon.disabled
                                             .icon.disabled
@@ -64,7 +64,7 @@ html
                                 .quotes “
                                 .text
                                     .name Наталья Горбунцова
-                                    .rating(data-rating-count="4")
+                                    .rating(data-rating-count="2")
                                         .rating--list
                                             .icon.disabled
                                             .icon.disabled
@@ -91,9 +91,9 @@ html
                         a(href="#").pagination--item.next
                             img(src="images/icons/arrow-angle.png")
 
-            include ./blocks/products-slider
-            include ./blocks/about-block-small
-            include ./blocks/rent-out-block
+        include ./blocks/products-slider
+        include ./blocks/about-block-small
+        include ./blocks/rent-out-block
 
         include ./blocks/footer.jade
         include ./blocks/modals.jade

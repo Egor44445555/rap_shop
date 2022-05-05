@@ -6,8 +6,8 @@
 
     h1,
     .h1 {
-        font-size: 55px;
-        line-height: 60px;
+        font-size: 50px;
+        line-height: 55px;
     }
 
     .app-block .image {
@@ -64,14 +64,14 @@
 
 
     .additional-services {
-        padding-bottom: 80px;
+        padding-bottom: 70px;
 
         &:before {
             background: none;
         }
 
         .services-list {
-            margin: 0 0 0 -20px;
+            margin: 20px 0 0 -20px;
 
             &--item {
                 max-width: calc(33.333% - 20px);
@@ -1098,7 +1098,7 @@
 
 
     .about-page {
-        padding-bottom: 100px;
+        padding-bottom: 50px;
 
         .map {
             height: 200px;
@@ -1217,6 +1217,11 @@
 /******************************************************************/
 
 @media (max-width: 561px) {
+
+    .btn-medium {
+        min-height: 60px;
+        font-size: 20px;
+    }
 
     .car-select-block-wrap {
 
@@ -1339,7 +1344,19 @@
     }
 
 
+    .app-block-wrap {
+
+        .title {
+            font-size: 25px;
+        }
+    }
+
     .app-block {
+
+        .description {
+            font-size: 18px;
+            line-height: 28px;
+        }
 
         .payment-list--item {
             width: 100%;
@@ -1389,7 +1406,7 @@
             height: 70px;
             margin-left: -30px;
             margin-right: -30px;
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
@@ -1495,6 +1512,7 @@
 
 
     .rent-out-block {
+        padding: 70px 0;
 
         .info {
             padding: 0 20px;
@@ -1605,8 +1623,8 @@
                 display: flex;
                 flex: 100%;
                 width: auto;
-                height: 60px;
-                margin: 25px 0 0 -85px;
+                height: 50px;
+                margin: 20px 0 0 -85px;
             }
         }
     }
@@ -1710,8 +1728,24 @@
         }
     }
 
+    .about-block {
 
+        .info {
 
+            .count-wrap {
+
+                .num {
+                    max-width: 100%;
+                    font-size: 70px;
+                    line-height: 45px;
+                }
+            }
+        }
+
+        ul li {
+            margin-top: 30px;
+        }
+    }
 }
 
 /******************************************************************/
@@ -1845,6 +1879,10 @@
 
     .reviews-list {
         padding: 0;
+
+        &--item {
+            padding: 40px 0;
+        }
     }
 
 

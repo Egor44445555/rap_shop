@@ -21,7 +21,6 @@ html
                             p Подберите автомобиль в 2 клика и рассчитайте стоимость аренды онлайн
 
             include ./blocks/car-select.jade
-
             include ./blocks/product-list.jade
 
             .advantages-block-wrap
@@ -65,7 +64,7 @@ html
                             .title Для владельцев автомобилей —
                             p возможность сдать свой автомобиль в прокат и отслеживать до ход от аренды онлайн
 
-                        a(href="#").btn.btn-blue Узнать больше
+                        a(href="/sublease.html").btn.btn-blue Узнать больше
 
             .reviews-block-wrap(style="background-image: url(images/reviews-bg.jpg);")
                 .container-block
@@ -94,7 +93,7 @@ html
 
                                     .author Google Отзывы
 
-                                    a(href="#").btn.btn-blue
+                                    a(href="/reviews.html").btn.btn-blue
                                         span.d-flex.align-items-center.justify-content-center
                                             span.text Смотреть все отзывы
                                             .icon.arrow
@@ -120,7 +119,7 @@ html
 
                                     .author Google Отзывы
 
-                                    a(href="#").btn.btn-blue
+                                    a(href="/reviews.html").btn.btn-blue
                                         span.d-flex.align-items-center.justify-content-center
                                             span.text Смотреть все отзывы
                                             .icon.arrow
@@ -146,7 +145,7 @@ html
 
                                     .author Google Отзывы
 
-                                    a(href="#").btn.btn-blue
+                                    a(href="/reviews.html").btn.btn-blue
                                         span.d-flex.align-items-center.justify-content-center
                                             span.text Смотреть все отзывы
                                             .icon.arrow
@@ -168,9 +167,9 @@ html
                                 | бы клиент ни находился
 
                             .payment-list
-                                .payment-list--item
+                                a(href="#").payment-list--item
                                     img(src="images/payment-google.png")
-                                .payment-list--item
+                                a(href="#").payment-list--item
                                     img(src="images/payment-apple.png")
 
                         .image
@@ -186,7 +185,7 @@ html
                             .count-wrap
                                 .num.semibold 52
                                 .text.semibold города в нашей сети, присоединяйтесь
-                                a(href="#").btn.btn-blue.btn-medium Больше о франшизе
+                                a(href="https://franshiza.rosautoprokat.ru/").btn.btn-blue.btn-medium Больше о франшизе
 
                         .bottom-block
                             ul
@@ -194,7 +193,7 @@ html
                                 li Предоставляем уже готовые материалы для вашей работы
                                 li Проводим обучение ведению бизнеса по прокату
 
-                            a(href="#").btn.btn-blue.btn-medium Больше о франшизе
+                            a(href="https://franshiza.rosautoprokat.ru/").btn.btn-blue.btn-medium Больше о франшизе
 
             .partners-block-wrap
                 .container-block
@@ -208,7 +207,7 @@ html
                                 .title Для прокатных компаний —
                                 .description Тут расписать про црм систему заточенную под прокатные компании
 
-                                a(href="#").btn.btn-blue.btn-empty
+                                a(href="/rent.html").btn.btn-blue.btn-empty
                                     span.d-flex.align-items-center.justify-content-center
                                         span.text Узнать больше
                                         span.icon.arrow
@@ -220,7 +219,7 @@ html
                                 .title Для владельцев автомобилей —
                                 .description возможность сдать свой автомобиль в прокат и отслеживать доход от аренды онлайн
 
-                                a(href="#").btn.btn-blue.btn-empty
+                                a(href="/sublease.html").btn.btn-blue.btn-empty
                                     span.d-flex.align-items-center.justify-content-center
                                         span.text Условия субаренды
                                         span.icon.arrow
@@ -229,7 +228,7 @@ html
                 .container-block
                     .title-wrap.d-block.d-md-flex.align-items-center.justify-content-between
                         h2.h1 ЧАСТЫЕ ВОПРОСЫ
-                        a(href="#").btn.btn-blue.btn-small.d-none.d-md-flex Все вопросы
+                        a(href="/faq.html").btn.btn-blue.btn-small.d-none.d-md-flex Все вопросы
 
                     .faq-list
                         .faq-list--item.spoiler--item

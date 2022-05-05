@@ -68,7 +68,7 @@
                 <div class="icon"><img src="images/icons/arrow-toggle-down.svg"/></div>
               </div>
               <div class="dropdown"><a href="/about.html" class="dropdown--item">О нас</a><a href="#" class="dropdown--item">Link 2</a></div>
-            </div><a href="#" class="menu--item">Франшиза</a><a href="/rent.html" class="menu--item">Аренда CRM</a><a href="/contacts.html" class="menu--item">Контакты</a>
+            </div><a href="https://franshiza.rosautoprokat.ru/" class="menu--item">Франшиза</a><a href="/rent.html" class="menu--item">Аренда CRM</a><a href="/contacts.html" class="menu--item">Контакты</a>
           </div>
           <div class="button-wrap d-none d-xxl-flex"><a href="/rent-form.html" class="btn btn-blue">Арендовать</a><a href="/sublease.html" class="btn btn-blue btn-empty">Сдать в аренду</a></div>
           <div class="d-block d-xxl-none">
@@ -81,7 +81,7 @@
       <div class="wrap js-custom-scroll">
         <div class="phones"><a href="tel:8 800 250 46 00" class="phones--item"><span class="text">8 800 250 46 00</span></a><a href="tel:+7 (965) 25 58 16" class="phones--item"><span class="text">+7 (965) 25 58 16</span></a></div>
         <div class="social-list"><a href="#" class="social-list--item"><img src="images/icons/social-whatsapp.png" class="icon"/><span class="text">Whats App</span></a><a href="#" class="social-list--item"><img src="images/icons/social-telegram.png" class="icon"/><span class="text">Тelegram</span></a></div>
-        <div class="modal-menu"><a href="/catalog.html" class="modal-menu--item">Каталог</a><a href="/sublease.html" class="modal-menu--item">Сдать авто в аренду</a><a href="/about.html" class="modal-menu--item">О нас</a><a href="/contacts.html" class="modal-menu--item">Контакты</a><a href="/bonus-program.html" class="modal-menu--item">Бонусная программа</a><a href="/additional-services.html" class="modal-menu--item">Дополнительные услуги</a><a href="#" class="modal-menu--item">Франшиза</a><a href="/rent.html" class="modal-menu--item">Аренда CRM</a><a href="/news.html" class="modal-menu--item">Новости</a><a href="/blog.html" class="modal-menu--item">Блог</a></div>
+        <div class="modal-menu"><a href="/catalog.html" class="modal-menu--item">Каталог</a><a href="/sublease.html" class="modal-menu--item">Сдать авто в аренду</a><a href="/about.html" class="modal-menu--item">О нас</a><a href="/contacts.html" class="modal-menu--item">Контакты</a><a href="/bonus-program.html" class="modal-menu--item">Бонусная программа</a><a href="/additional-services.html" class="modal-menu--item">Дополнительные услуги</a><a href="https://franshiza.rosautoprokat.ru/" class="modal-menu--item">Франшиза</a><a href="/rent.html" class="modal-menu--item">Аренда CRM</a><a href="/news.html" class="modal-menu--item">Новости</a><a href="/blog.html" class="modal-menu--item">Блог</a></div>
         <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram-blue.png" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk-blue.png" class="icon"/><span class="text">Вконтакте</span></a>
           <div class="social-list--item blue"><img src="images/icons/social-mobile-app-blue.png" class="icon"/>
             <div class="text"><span>Мобильное приложение</span>
@@ -97,7 +97,7 @@
         <div class="container-block">
           <div class="info">
             <h1 class="title text-uppercase">Прокат автомобилей по всей России</h1>
-            <p>Мы предлагаем удобный сервис аренды автомобилей от эконом до премиум класса</p><a href="#" class="btn btn-blue"><span class="d-flex align-items-center"><span class="text">Выбрать автомобиль</span>
+            <p>Мы предлагаем удобный сервис аренды автомобилей от эконом до премиум класса</p><a href="/catalog.html" class="btn btn-blue"><span class="d-flex align-items-center"><span class="text">Выбрать автомобиль</span>
                 <div class="icon arrow"></div></span></a>
             <div class="info-text"><img src="images/assets/keys.png"/>
               <p>Подберите автомобиль в 2 клика и рассчитайте стоимость аренды онлайн</p>
@@ -122,140 +122,441 @@
               </div>
             </div>
             <div class="car-type-list">
-              <label for="type1" class="car-type-list--item">
-                <input type="radio" name="type" id="type1"/><span>Эконом</span>
+              <label for="type1" data-tab="type1" class="car-type-list--item tabs-head--item">
+                <input type="radio" name="type" id="type1" checked="checked"/><span>Эконом</span>
               </label>
-              <label for="type2" class="car-type-list--item">
-                <input type="radio" name="type" id="type2" checked="checked"/><span>Стандарт</span>
+              <label for="type2" data-tab="type2" class="car-type-list--item tabs-head--item">
+                <input type="radio" name="type" id="type2"/><span>Стандарт</span>
               </label>
-              <label for="type3" class="car-type-list--item">
+              <label for="type3" data-tab="type3" class="car-type-list--item tabs-head--item">
                 <input type="radio" name="type" id="type3"/><span>Комфорт</span>
               </label>
-              <label for="type4" class="car-type-list--item">
+              <label for="type4" data-tab="type4" class="car-type-list--item tabs-head--item">
                 <input type="radio" name="type" id="type4"/><span>Бизнес-класс</span>
               </label>
-              <label for="type5" class="car-type-list--item">
+              <label for="type5" data-tab="type5" class="car-type-list--item tabs-head--item">
                 <input type="radio" name="type" id="type5"/><span>Внедорожники</span>
               </label>
             </div>
             <select placeholder="Класс машины" class="custom-select">
-              <option value="Эконом">Эконом</option>
-              <option value="Стандарт">Стандарт</option>
-              <option value="Комфорт">Комфорт</option>
-              <option value="Бизнес-класс">Бизнес-класс</option>
-              <option value="Внедорожники">Внедорожники</option>
+              <option value="Эконом" data-tab="type1" class="tabs-head--item">Эконом</option>
+              <option value="Стандарт" data-tab="type2" class="tabs-head--item">Стандарт</option>
+              <option value="Комфорт" data-tab="type3" class="tabs-head--item">Комфорт</option>
+              <option value="Бизнес-класс" data-tab="type4" class="tabs-head--item">Бизнес-класс</option>
+              <option value="Внедорожники" data-tab="type5" class="tabs-head--item">Внедорожники</option>
             </select>
             <div class="car-select-slider">
-              <div class="js-slider-car-select">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="car-select-slider--item">
-                      <div class="characteristics">
-                        <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
-                          <div class="text">5 мест</div>
+              <div data-tab="type1" class="tabs-body--item active">
+                <div class="js-slider-car-select index-slider-0">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="car-select-slider--item">
+                        <div class="characteristics">
+                          <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
+                            <div class="text">5 мест</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
+                            <div class="text">4 двери</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
+                            <div class="text">Автомат</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
+                            <div class="text">Кондиционер</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
+                            <div class="text">123 л.с</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
+                            <div class="text">6-7 л.\км.</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
+                            <div class="text">серебро</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
+                            <div class="text">2019</div>
+                          </div>
                         </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
-                          <div class="text">4 двери</div>
+                        <div class="image">
+                          <h3 class="title text-center">Hyundai Solaris 2021</h3>
+                          <div class="swiper-button-prev"></div><img src="images/assets/car.jpg"/>
+                          <div class="swiper-button-next"></div>
+                          <div class="button-wrap d-none d-lg-flex"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                         </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
-                          <div class="text">Автомат</div>
+                        <div class="price-list">
+                          <div class="price-list--item">
+                            <div class="label">1-3 дня:</div>
+                            <div class="price">1.575 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">3-5 дней:</div>
+                            <div class="price">1.800 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">5-10 дней:</div>
+                            <div class="price">2.000 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">10-15 дней:</div>
+                            <div class="price">2.300 Р<span>/ сутки</span></div>
+                          </div>
                         </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
-                          <div class="text">Кондиционер</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
-                          <div class="text">123 л.с</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
-                          <div class="text">6-7 л.\км.</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
-                          <div class="text">серебро</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
-                          <div class="text">2019</div>
-                        </div>
+                        <div class="button-wrap d-flex d-lg-none"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                       </div>
-                      <div class="image">
-                        <h3 class="title text-center">Hyundai Solaris 2021</h3>
-                        <div class="swiper-button-prev"></div><img src="images/assets/car.jpg"/>
-                        <div class="swiper-button-next"></div>
-                        <div class="button-wrap d-none d-lg-flex"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="car-select-slider--item">
+                        <div class="characteristics">
+                          <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
+                            <div class="text">2 мест</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
+                            <div class="text">3 двери</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
+                            <div class="text">Автомат</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
+                            <div class="text">Кондиционер</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
+                            <div class="text">183 л.с</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
+                            <div class="text">1-7 л.\км.</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
+                            <div class="text">серебро</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
+                            <div class="text">2013</div>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <h3 class="title text-center">Hyundai Solaris 2022</h3>
+                          <div class="swiper-button-prev"></div><img src="images/assets/car.jpg"/>
+                          <div class="swiper-button-next"></div>
+                          <div class="button-wrap d-none d-lg-flex"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                        </div>
+                        <div class="price-list">
+                          <div class="price-list--item">
+                            <div class="label">1-3 дня:</div>
+                            <div class="price">1.575 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">3-5 дней:</div>
+                            <div class="price">1.800 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">5-10 дней:</div>
+                            <div class="price">2.000 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">10-15 дней:</div>
+                            <div class="price">2.300 Р<span>/ сутки</span></div>
+                          </div>
+                        </div>
+                        <div class="button-wrap d-flex d-lg-none"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                       </div>
-                      <div class="price-list">
-                        <div class="price-list--item">
-                          <div class="label">1-3 дня:</div>
-                          <div class="price">1.575 Р<span>/ сутки</span></div>
-                        </div>
-                        <div class="price-list--item">
-                          <div class="label">3-5 дней:</div>
-                          <div class="price">1.800 Р<span>/ сутки</span></div>
-                        </div>
-                        <div class="price-list--item">
-                          <div class="label">5-10 дней:</div>
-                          <div class="price">2.000 Р<span>/ сутки</span></div>
-                        </div>
-                        <div class="price-list--item">
-                          <div class="label">10-15 дней:</div>
-                          <div class="price">2.300 Р<span>/ сутки</span></div>
-                        </div>
-                      </div>
-                      <div class="button-wrap d-flex d-lg-none"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="car-select-slider--item">
-                      <div class="characteristics">
-                        <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
-                          <div class="text">2 мест</div>
+                </div>
+              </div>
+              <div data-tab="type2" class="tabs-body--item">
+                <div class="js-slider-car-select index-slider-1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="car-select-slider--item">
+                        <div class="characteristics">
+                          <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
+                            <div class="text">5 мест</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
+                            <div class="text">4 двери</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
+                            <div class="text">Автомат</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
+                            <div class="text">Кондиционер</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
+                            <div class="text">123 л.с</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
+                            <div class="text">6-7 л.\км.</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
+                            <div class="text">серебро</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
+                            <div class="text">2019</div>
+                          </div>
                         </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
-                          <div class="text">3 двери</div>
+                        <div class="image">
+                          <h3 class="title text-center">Hyundai Solaris 2021 Стандарт</h3>
+                          <div class="swiper-button-prev d-none"></div><img src="images/assets/car.jpg"/>
+                          <div class="swiper-button-next d-none"></div>
+                          <div class="button-wrap d-none d-lg-flex"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                         </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
-                          <div class="text">Автомат</div>
+                        <div class="price-list">
+                          <div class="price-list--item">
+                            <div class="label">1-3 дня:</div>
+                            <div class="price">1.575 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">3-5 дней:</div>
+                            <div class="price">1.800 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">5-10 дней:</div>
+                            <div class="price">2.000 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">10-15 дней:</div>
+                            <div class="price">2.300 Р<span>/ сутки</span></div>
+                          </div>
                         </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
-                          <div class="text">Кондиционер</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
-                          <div class="text">183 л.с</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
-                          <div class="text">1-7 л.\км.</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
-                          <div class="text">серебро</div>
-                        </div>
-                        <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
-                          <div class="text">2013</div>
-                        </div>
+                        <div class="button-wrap d-flex d-lg-none"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                       </div>
-                      <div class="image">
-                        <h3 class="title text-center">Hyundai Solaris 2022</h3>
-                        <div class="swiper-button-prev"></div><img src="images/assets/car.jpg"/>
-                        <div class="swiper-button-next"></div>
-                        <div class="button-wrap d-none d-lg-flex"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="car-select-slider--item">
+                        <div class="characteristics">
+                          <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
+                            <div class="text">5 мест</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
+                            <div class="text">4 двери</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
+                            <div class="text">Автомат</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
+                            <div class="text">Кондиционер</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
+                            <div class="text">123 л.с</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
+                            <div class="text">6-7 л.\км.</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
+                            <div class="text">серебро</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
+                            <div class="text">2019</div>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <h3 class="title text-center">Hyundai Solaris 2021 Стандарт</h3>
+                          <div class="swiper-button-prev d-none"></div><img src="images/assets/car.jpg"/>
+                          <div class="swiper-button-next d-none"></div>
+                          <div class="button-wrap d-none d-lg-flex"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                        </div>
+                        <div class="price-list">
+                          <div class="price-list--item">
+                            <div class="label">1-3 дня:</div>
+                            <div class="price">1.575 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">3-5 дней:</div>
+                            <div class="price">1.800 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">5-10 дней:</div>
+                            <div class="price">2.000 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">10-15 дней:</div>
+                            <div class="price">2.300 Р<span>/ сутки</span></div>
+                          </div>
+                        </div>
+                        <div class="button-wrap d-flex d-lg-none"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                       </div>
-                      <div class="price-list">
-                        <div class="price-list--item">
-                          <div class="label">1-3 дня:</div>
-                          <div class="price">1.575 Р<span>/ сутки</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-tab="type3" class="tabs-body--item">
+                <div class="js-slider-car-select index-slider-2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="car-select-slider--item">
+                        <div class="characteristics">
+                          <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
+                            <div class="text">5 мест</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
+                            <div class="text">4 двери</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
+                            <div class="text">Автомат</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
+                            <div class="text">Кондиционер</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
+                            <div class="text">123 л.с</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
+                            <div class="text">6-7 л.\км.</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
+                            <div class="text">серебро</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
+                            <div class="text">2019</div>
+                          </div>
                         </div>
-                        <div class="price-list--item">
-                          <div class="label">3-5 дней:</div>
-                          <div class="price">1.800 Р<span>/ сутки</span></div>
+                        <div class="image">
+                          <h3 class="title text-center">Hyundai Solaris 2021 Комфорт</h3>
+                          <div class="swiper-button-prev d-none"></div><img src="images/assets/car.jpg"/>
+                          <div class="swiper-button-next d-none"></div>
+                          <div class="button-wrap d-none d-lg-flex"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                         </div>
-                        <div class="price-list--item">
-                          <div class="label">5-10 дней:</div>
-                          <div class="price">2.000 Р<span>/ сутки</span></div>
+                        <div class="price-list">
+                          <div class="price-list--item">
+                            <div class="label">1-3 дня:</div>
+                            <div class="price">1.575 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">3-5 дней:</div>
+                            <div class="price">1.800 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">5-10 дней:</div>
+                            <div class="price">2.000 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">10-15 дней:</div>
+                            <div class="price">2.300 Р<span>/ сутки</span></div>
+                          </div>
                         </div>
-                        <div class="price-list--item">
-                          <div class="label">10-15 дней:</div>
-                          <div class="price">2.300 Р<span>/ сутки</span></div>
-                        </div>
+                        <div class="button-wrap d-flex d-lg-none"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
                       </div>
-                      <div class="button-wrap d-flex d-lg-none"><a href="#" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="#" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-tab="type4" class="tabs-body--item">
+                <div class="js-slider-car-select index-slider-3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="car-select-slider--item">
+                        <div class="characteristics">
+                          <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
+                            <div class="text">5 мест</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
+                            <div class="text">4 двери</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
+                            <div class="text">Автомат</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
+                            <div class="text">Кондиционер</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
+                            <div class="text">123 л.с</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
+                            <div class="text">6-7 л.\км.</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
+                            <div class="text">серебро</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
+                            <div class="text">2019</div>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <h3 class="title text-center">Hyundai Solaris 2021 Бизнес-класс</h3>
+                          <div class="swiper-button-prev d-none"></div><img src="images/assets/car.jpg"/>
+                          <div class="swiper-button-next d-none"></div>
+                          <div class="button-wrap d-none d-lg-flex"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                        </div>
+                        <div class="price-list">
+                          <div class="price-list--item">
+                            <div class="label">1-3 дня:</div>
+                            <div class="price">1.575 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">3-5 дней:</div>
+                            <div class="price">1.800 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">5-10 дней:</div>
+                            <div class="price">2.000 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">10-15 дней:</div>
+                            <div class="price">2.300 Р<span>/ сутки</span></div>
+                          </div>
+                        </div>
+                        <div class="button-wrap d-flex d-lg-none"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-tab="type5" class="tabs-body--item">
+                <div class="js-slider-car-select index-slider-4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="car-select-slider--item">
+                        <div class="characteristics">
+                          <div class="characteristics--item"><img src="images/icons/characteristics-user.png" class="icon"/>
+                            <div class="text">5 мест</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-square.png" class="icon"/>
+                            <div class="text">4 двери</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-automatic.png" class="icon"/>
+                            <div class="text">Автомат</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.png" class="icon"/>
+                            <div class="text">Кондиционер</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-graph.png" class="icon"/>
+                            <div class="text">123 л.с</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-list.png" class="icon"/>
+                            <div class="text">6-7 л.\км.</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-check.png" class="icon"/>
+                            <div class="text">серебро</div>
+                          </div>
+                          <div class="characteristics--item"><img src="images/icons/characteristics-clock.png" class="icon"/>
+                            <div class="text">2019</div>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <h3 class="title text-center">Hyundai Solaris 2021 Внедорожники</h3>
+                          <div class="swiper-button-prev d-none"></div><img src="images/assets/car.jpg"/>
+                          <div class="swiper-button-next d-none"></div>
+                          <div class="button-wrap d-none d-lg-flex"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                        </div>
+                        <div class="price-list">
+                          <div class="price-list--item">
+                            <div class="label">1-3 дня:</div>
+                            <div class="price">1.575 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">3-5 дней:</div>
+                            <div class="price">1.800 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">5-10 дней:</div>
+                            <div class="price">2.000 Р<span>/ сутки</span></div>
+                          </div>
+                          <div class="price-list--item">
+                            <div class="label">10-15 дней:</div>
+                            <div class="price">2.300 Р<span>/ сутки</span></div>
+                          </div>
+                        </div>
+                        <div class="button-wrap d-flex d-lg-none"><a href="/product.html#characteristics" class="btn btn-blue btn-empty">Подробнее о машине</a><a href="/product.html#rent" class="btn btn-blue d-flex"><span class="text">Выбрать</span><img src="images/icons/arrow-white.png" class="icon"/></a></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -292,7 +593,7 @@
                 <div class="price">
                   <div class="label">ОТ</div>
                   <div class="value">1.575 Р<span>/ сутки</span></div>
-                </div><a href="#" class="btn btn-blue btn-empty btn-small">Забронировать</a>
+                </div><a href="/product.html#rent" class="btn btn-blue btn-empty btn-small">Забронировать</a>
               </div>
             </div>
             <div class="product-item"><a href="#" class="image"><img src="images/assets/product-preview.jpg"/></a>
@@ -320,7 +621,7 @@
                 <div class="price">
                   <div class="label">ОТ</div>
                   <div class="value">1.575 Р<span>/ сутки</span></div>
-                </div><a href="#" class="btn btn-blue btn-empty btn-small">Забронировать</a>
+                </div><a href="/product.html#rent" class="btn btn-blue btn-empty btn-small">Забронировать</a>
               </div>
             </div>
             <div class="product-item"><a href="#" class="image"><img src="images/assets/product-preview.jpg"/></a>
@@ -348,7 +649,7 @@
                 <div class="price">
                   <div class="label">ОТ</div>
                   <div class="value">1.575 Р<span>/ сутки</span></div>
-                </div><a href="#" class="btn btn-blue btn-empty btn-small">Забронировать</a>
+                </div><a href="/product.html#rent" class="btn btn-blue btn-empty btn-small">Забронировать</a>
               </div>
             </div>
             <div class="product-item"><a href="#" class="image"><img src="images/assets/product-preview.jpg"/></a>
@@ -376,7 +677,7 @@
                 <div class="price">
                   <div class="label">ОТ</div>
                   <div class="value">1.575 Р<span>/ сутки</span></div>
-                </div><a href="#" class="btn btn-blue btn-empty btn-small">Забронировать</a>
+                </div><a href="/product.html#rent" class="btn btn-blue btn-empty btn-small">Забронировать</a>
               </div>
             </div>
             <div class="product-item"><a href="#" class="image"><img src="images/assets/product-preview.jpg"/></a>
@@ -404,9 +705,9 @@
                 <div class="price">
                   <div class="label">ОТ</div>
                   <div class="value">1.575 Р<span>/ сутки</span></div>
-                </div><a href="#" class="btn btn-blue btn-empty btn-small">Забронировать</a>
+                </div><a href="/product.html#rent" class="btn btn-blue btn-empty btn-small">Забронировать</a>
               </div>
-            </div><a href="#" class="more-btn"><span class="title">Смотреть весь автопарк</span><span class="icon"><img src="images/icons/arrow-white.png"/></span></a>
+            </div><a href="/catalog.html" class="more-btn"><span class="title">Смотреть весь автопарк</span><span class="icon"><img src="images/icons/arrow-white.png"/></span></a>
           </div>
         </div>
       </div>
@@ -462,7 +763,7 @@
             <div class="text">
               <div class="title">Для владельцев автомобилей —</div>
               <p>возможность сдать свой автомобиль в прокат и отслеживать до ход от аренды онлайн</p>
-            </div><a href="#" class="btn btn-blue">Узнать больше</a>
+            </div><a href="/sublease.html" class="btn btn-blue">Узнать больше</a>
           </div>
         </div>
       </div>
@@ -494,7 +795,7 @@
                     Со сдачей проблем не возникло, правда я немного поцарапала бампер.
                     Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
                   </div>
-                  <div class="author">Google Отзывы</div><a href="#" class="btn btn-blue"><span class="d-flex align-items-center justify-content-center"><span class="text">Смотреть все отзывы</span>
+                  <div class="author">Google Отзывы</div><a href="/reviews.html" class="btn btn-blue"><span class="d-flex align-items-center justify-content-center"><span class="text">Смотреть все отзывы</span>
                       <div class="icon arrow"></div></span></a>
                 </div>
               </div>
@@ -504,7 +805,7 @@
                     <div class="quotes">“</div>
                     <div class="text">
                       <div class="name">Наталья Горбунцова</div>
-                      <div data-rating-count="2" class="rating">
+                      <div data-rating-count="4" class="rating">
                         <div class="rating--list">
                           <div class="icon disabled"></div>
                           <div class="icon disabled"></div>
@@ -521,7 +822,7 @@
                     Со сдачей проблем не возникло, правда я немного поцарапала бампер.
                     Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
                   </div>
-                  <div class="author">Google Отзывы</div><a href="#" class="btn btn-blue"><span class="d-flex align-items-center justify-content-center"><span class="text">Смотреть все отзывы</span>
+                  <div class="author">Google Отзывы</div><a href="/reviews.html" class="btn btn-blue"><span class="d-flex align-items-center justify-content-center"><span class="text">Смотреть все отзывы</span>
                       <div class="icon arrow"></div></span></a>
                 </div>
               </div>
@@ -531,7 +832,7 @@
                     <div class="quotes">“</div>
                     <div class="text">
                       <div class="name">Наталья Горбунцова</div>
-                      <div data-rating-count="2" class="rating">
+                      <div data-rating-count="1" class="rating">
                         <div class="rating--list">
                           <div class="icon disabled"></div>
                           <div class="icon disabled"></div>
@@ -548,7 +849,7 @@
                     Со сдачей проблем не возникло, правда я немного поцарапала бампер.
                     Однако никаких доплат не взяли. Спасибо вам! Рекомендую.
                   </div>
-                  <div class="author">Google Отзывы</div><a href="#" class="btn btn-blue"><span class="d-flex align-items-center justify-content-center"><span class="text">Смотреть все отзывы</span>
+                  <div class="author">Google Отзывы</div><a href="/reviews.html" class="btn btn-blue"><span class="d-flex align-items-center justify-content-center"><span class="text">Смотреть все отзывы</span>
                       <div class="icon arrow"></div></span></a>
                 </div>
               </div>
@@ -574,10 +875,7 @@
                 из любого места, где
                 бы клиент ни находился
               </div>
-              <div class="payment-list">
-                <div class="payment-list--item"><img src="images/payment-google.png"/></div>
-                <div class="payment-list--item"><img src="images/payment-apple.png"/></div>
-              </div>
+              <div class="payment-list"><a href="#" class="payment-list--item"><img src="images/payment-google.png"/></a><a href="#" class="payment-list--item"><img src="images/payment-apple.png"/></a></div>
             </div>
             <div class="image"><img src="images/mobile-app.png"/></div>
           </div>
@@ -591,7 +889,7 @@
               <div class="description">Мы поможем легко стартовать и принимать первые заказы</div>
               <div class="count-wrap">
                 <div class="num semibold">52</div>
-                <div class="text semibold">города в нашей сети, присоединяйтесь</div><a href="#" class="btn btn-blue btn-medium">Больше о франшизе</a>
+                <div class="text semibold">города в нашей сети, присоединяйтесь</div><a href="https://franshiza.rosautoprokat.ru/" class="btn btn-blue btn-medium">Больше о франшизе</a>
               </div>
             </div>
             <div class="bottom-block">
@@ -599,7 +897,7 @@
                 <li>На выбор — несколько удобных пакетов франшизы</li>
                 <li>Предоставляем уже готовые материалы для вашей работы</li>
                 <li>Проводим обучение ведению бизнеса по прокату</li>
-              </ul><a href="#" class="btn btn-blue btn-medium">Больше о франшизе</a>
+              </ul><a href="https://franshiza.rosautoprokat.ru/" class="btn btn-blue btn-medium">Больше о франшизе</a>
             </div>
           </div>
         </div>
@@ -612,14 +910,14 @@
               <div class="image"><img src="images/partner-image.png"/></div>
               <div class="info semibold">
                 <div class="title">Для прокатных компаний —</div>
-                <div class="description">Тут расписать про црм систему заточенную под прокатные компании</div><a href="#" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Узнать больше</span><span class="icon arrow"></span></span></a>
+                <div class="description">Тут расписать про црм систему заточенную под прокатные компании</div><a href="/rent.html" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Узнать больше</span><span class="icon arrow"></span></span></a>
               </div>
             </div>
             <div class="partners-block--item">
               <div class="image"><img src="images/partner-image-2.png"/></div>
               <div class="info semibold">
                 <div class="title">Для владельцев автомобилей —</div>
-                <div class="description">возможность сдать свой автомобиль в прокат и отслеживать доход от аренды онлайн</div><a href="#" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Условия субаренды</span><span class="icon arrow"></span></span></a>
+                <div class="description">возможность сдать свой автомобиль в прокат и отслеживать доход от аренды онлайн</div><a href="/sublease.html" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Условия субаренды</span><span class="icon arrow"></span></span></a>
               </div>
             </div>
           </div>
@@ -628,7 +926,7 @@
       <div style="background-image: url(images/faq-block-bg.jpg);" class="faq-block-wrap">
         <div class="container-block">
           <div class="title-wrap d-block d-md-flex align-items-center justify-content-between">
-            <h2 class="h1">ЧАСТЫЕ ВОПРОСЫ</h2><a href="#" class="btn btn-blue btn-small d-none d-md-flex">Все вопросы</a>
+            <h2 class="h1">ЧАСТЫЕ ВОПРОСЫ</h2><a href="/faq.html" class="btn btn-blue btn-small d-none d-md-flex">Все вопросы</a>
           </div>
           <div class="faq-list">
             <div class="faq-list--item spoiler--item">
@@ -715,7 +1013,7 @@
           </div>
           <div class="col-12 col-md-7 col-xl-4 mt-5 mt-md-0">
             <div class="footer-menu-wrap">
-              <div class="footer-menu"><a href="/rent-form.html" class="footer-menu--item bold">Арендовать</a><a href="/sublease.html" class="footer-menu--item bold">Сдать в аренду</a><a href="#" class="footer-menu--item bold">Франшиза</a><a href="/rent.html" class="footer-menu--item bold">Аренда CRM</a><a href="#" class="footer-menu--item bold">Договор оферты</a><a href="/reviews.html" class="footer-menu--item bold">Отзывы</a></div>
+              <div class="footer-menu"><a href="/rent-form.html" class="footer-menu--item bold">Арендовать</a><a href="/sublease.html" class="footer-menu--item bold">Сдать в аренду</a><a href="https://franshiza.rosautoprokat.ru/" class="footer-menu--item bold">Франшиза</a><a href="/rent.html" class="footer-menu--item bold">Аренда CRM</a><a href="#" class="footer-menu--item bold">Договор оферты</a><a href="/reviews.html" class="footer-menu--item bold">Отзывы</a></div>
               <div class="footer-menu"><a href="/about.html" class="footer-menu--item">О компании</a><a href="/about.html#our-cities" class="footer-menu--item">Наши города</a><a href="/contacts.html" class="footer-menu--item">Контакты</a><a href="/blog.html" class="footer-menu--item">Блог</a><a href="/news.html" class="footer-menu--item">Новости</a><a href="/bonus-program.html" class="footer-menu--item">Бонусная программа</a><a href="/additional-services.html" class="footer-menu--item">Дополнительные услуги</a><a href="#" class="footer-menu--item">Стать партнером</a></div>
             </div>
           </div>

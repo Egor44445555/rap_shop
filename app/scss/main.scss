@@ -153,7 +153,7 @@ body {
     min-height: 70px;
     padding: 20px 20px;
     font-family: $font-base-semiBold;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /*** End Buttons ***/
@@ -265,8 +265,8 @@ h1,
 
 h2,
 .h2 {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 44px;
+    line-height: 54px;
 }
 
 h3,
@@ -740,6 +740,11 @@ select {
                 white-space: normal;
             }
         }
+
+        &:hover,
+        &.selection {
+            color: $themeColor;
+        }
     }
 
 
@@ -883,6 +888,13 @@ select {
     overflow: hidden;
 }
 
+.swiper-container-fade {
+
+    .swiper-slide {
+        pointer-events: all;
+    }
+}
+
 .swiper-wrapper {
     height: auto;
 }
@@ -998,7 +1010,7 @@ select {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 95px -18px 0;
+    margin: 40px -18px 0;
     
     &--item {
         display: flex;

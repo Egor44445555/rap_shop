@@ -325,17 +325,27 @@ $(document).ready(function() {
         }
     });
 
-    new Swiper('.js-slider-car-select', {
-        slidesPerGroup: 1,
-        simulateTouch: true,
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
-        navigation: {
-            nextEl: ".js-slider-car-select .swiper-button-next",
-            prevEl: ".js-slider-car-select .swiper-button-prev",
-        },
+    $('.js-slider-car-select').each(function () {
+
+        $(this)[0].classList.forEach(function (item) {
+
+            if (item.indexOf('index-slider-') > -1) {
+
+                new Swiper('.' + item, {
+                    slidesPerGroup: 1,
+                    simulateTouch: true,
+                    dragged: false,
+                    effect: 'fade',
+                    fadeEffect: {
+                        crossFade: true
+                    },
+                    navigation: {
+                        nextEl: ".js-slider-car-select .swiper-button-next",
+                        prevEl: ".js-slider-car-select .swiper-button-prev",
+                    },
+                });
+            }
+        })
     });
 
     new Swiper('.js-reviews-slider', {
@@ -514,8 +524,10 @@ $(document).ready(function() {
         $(this).find('option')
             .each(function () {
                 let data = $(this).attr("value");
+                let classes = $(this).attr('class');
+                let dataTab = $(this).attr('data-tab');
 
-                template += '<span class="custom-option">' + '<span class="text">' + data + '</span>' +'</span>'
+                template += '<span class="custom-option ' + classes + '" data-tab="'+ dataTab +'">' + '<span class="text">' + data + '</span>' +'</span>'
             });
         template += '</div></div>';
 
@@ -545,6 +557,11 @@ $(document).ready(function() {
     $('.custom-option').on('click', function () {
         let valueSelect = $(this).find('.text').text();
         let template = '';
+        let id = $(this).data('tab'),
+            content = $('.tabs-body--item[data-tab="'+ id +'"]');
+
+        $('.tabs-body--item.active').removeClass('active');
+        content.addClass('active');
 
         template += '<span>' + valueSelect + '</span>'
 
@@ -580,5 +597,16 @@ $(document).ready(function() {
     });
 
     /*** End Steps rent ***/
+
+
+    /*** Characteristics ***/
+
+    $('.characteristics-list-wrap .more-btn').on("click", function(e) {
+        e.preventDefault();
+
+        $(this).parents('.characteristics-list-wrap').toggleClass('open');
+    });
+
+    /*** End characteristics ***/
 });
 

@@ -8,7 +8,7 @@ html
         .wrapper
             .container-block
                 .breadcrumbs
-                    a(href="#").breadcrumbs--item.back-link
+                    a(href="/index.html").breadcrumbs--item.back-link
                         img(src="images/icons/back-arrow.png").icon
                         span.text Назад
                     a(href="#").breadcrumbs--item
@@ -57,7 +57,7 @@ html
                                         | удобный поиск, перемещение
                                         | по датам аренды
                                     li Синхронизация с нашим сервисом
-                                        | и проверкой клиента
+                                        | и проверкой клиента&nbsp;
                                         a(href="#") blacklistprokat.ru
 
                         .rent-info-list--item
@@ -79,42 +79,14 @@ html
                     .info
                         h2.h1.title.semibold.text-uppercase Откройте офис росавтопрокат в своем городе
                         .description Мы поможем легко стартовать и принимать первые заказы
-                        a(href="#").btn.btn-blue.btn-medium.d-none.d-md-block Больше о франшизе
+                        a(href="https://franshiza.rosautoprokat.ru/").btn.btn-blue.btn-medium.d-none.d-md-block Больше о франшизе
                     .image
                         img(src="images/car.png")
 
                     .container-block.text-center.d-block.d-md-none
-                        a(href="#").btn.btn-blue.btn-medium Больше о франшизе
+                        a(href="https://franshiza.rosautoprokat.ru/").btn.btn-blue.btn-medium Больше о франшизе
 
-            .rent-out-block
-                .info
-                    h2.title.text-uppercase сдайте свой автомобиль в аренду
-                    .description И получайте ежемесячный доходот аренды автомобиля
-                    a(href="#").btn.btn-blue.btn-medium.d-none.d-md-inline-block Узнать больше
-                .image
-                    .slider.js-slider-image
-                        .swiper-wrapper
-                            .swiper-slide
-                                .slider--image
-                                    img(src="images/assets/slider-image.jpg")
-                            .swiper-slide
-                                .slider--image
-                                    img(src="images/assets/slider-image-2.jpg")
-                            .swiper-slide
-                                .slider--image
-                                    img(src="images/assets/slider-image-3.jpg")
-                            .swiper-slide
-                                .slider--image
-                                    img(src="images/assets/slider-image.jpg")
-                            .swiper-slide
-                                .slider--image
-                                    img(src="images/assets/slider-image-2.jpg")
-                            .swiper-slide
-                                .slider--image
-                                    img(src="images/assets/slider-image-3.jpg")
-
-                .container-block.d-flex.d-md-none
-                    a(href="#").btn.btn-blue.btn-medium Узнать больше
+        include ./blocks/rent-out-block
 
         include ./blocks/footer.jade
         include ./blocks/modals.jade
