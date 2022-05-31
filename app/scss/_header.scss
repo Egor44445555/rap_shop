@@ -54,11 +54,15 @@
         cursor: pointer;
 
         .icon {
+            align-self: center;
+            width: 25px;
+            height: 25px;
             margin-right: 14px;
         }
 
         .text {
             max-width: 80px;
+            line-height: 17px;
         }
 
         .arrow {
@@ -73,17 +77,18 @@
         left: 50%;
         min-width: 200px;
         transform: translateX(-50%);
+        padding: 15px 5px;
         background: $white;
         box-shadow: $boxShadow;
+        border-radius: 5px;
 
         &--item {
             display: flex;
             align-items: center;
-            padding: 10px 20px;
+            padding: 5px 20px;
             font-family: $font-base-semiBold;
             font-size: 16px;
             color: $black;
-            border-top: 1px solid $borderColor;
             cursor: pointer;
 
             &:first-child {
@@ -117,6 +122,7 @@
             display: flex;
             align-items: flex-end;
             width: 100%;
+            line-height: 17px;
         }
 
         .arrow {
@@ -129,19 +135,20 @@
         position: absolute;
         top: calc(100% + 10px);
         left: 50%;
-        min-width: 170px;
+        min-width: 200px;
         transform: translateX(-50%);
+        padding: 15px 5px;
         background: $white;
         box-shadow: $boxShadow;
+        border-radius: 5px;
 
         &--item {
             display: flex;
             align-items: center;
-            padding: 10px 20px;
+            padding: 5px 20px;
             font-family: $font-base-semiBold;
             font-size: 16px;
             color: $black;
-            border-top: 1px solid $borderColor;
             cursor: pointer;
 
             &:first-child {
@@ -162,7 +169,7 @@
         &--item {
             margin-left: 50px;
             font-family: $font-base-semiBold;
-            font-size: 18px;
+            font-size: 14px;
             color: $black;
 
             &:first-child {
@@ -198,20 +205,20 @@
             display: none;
             position: absolute;
             top: calc(100% + 10px);
-            left: 50%;
-            min-width: 200px;
-            transform: translateX(-50%);
+            left: -10px;
+            min-width: 300px;
+            padding: 15px 5px;
             background: $white;
             box-shadow: $boxShadow;
+            border-radius: 10px;
 
             &--item {
                 display: flex;
                 align-items: center;
-                padding: 10px 20px;
+                padding: 5px 20px;
                 font-family: $font-base-semiBold;
                 font-size: 16px;
                 color: $black;
-                border-top: 1px solid $borderColor;
                 cursor: pointer;
 
                 &:first-child {
@@ -221,6 +228,50 @@
 
             .icon {
                 margin-right: 10px;
+            }
+
+            .social-list {
+                display: block;
+                margin-top: 10px;
+                padding: 0 20px;
+
+                &--item {
+                    margin-top: 5px;
+                    padding: 0;
+                    font-size: 16px;
+                    color: $textGray;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &.blue {
+                        align-items: flex-start;
+
+                        .text {
+                            padding-top: 5px;
+                        }
+                    }
+                }
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .button-wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 10px 0 0 -10px;
+
+                    a {
+                        margin: 5px 0 0 10px;
+                        padding-bottom: 3px;
+                        text-transform: none;
+                        border-bottom: 1px solid $blueOtherLight;
+                    }
+                }
             }
         }
     }
@@ -233,7 +284,9 @@
         .btn {
             min-height: 0;
             margin-left: 15px;
-            padding: 15px 40px;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-width: 1px;
 
             &:first-child {
                 margin: 0;
@@ -356,7 +409,9 @@
             .btn {
                 flex: 100%;
                 max-width: calc(117px - 15px);
+                min-height: 34px;
                 margin: 15px 0 0 15px;
+                padding: 8px 20px;
             }
         }
     }
@@ -413,10 +468,6 @@
             max-width: 240px;
         }
 
-        .location-wrap {
-            margin-left: 30px;
-        }
-
         .phones-wrap {
             margin-left: 30px;
         }
@@ -429,7 +480,7 @@
             margin-left: 20px;
 
             .btn {
-                padding: 15px 20px;
+                padding: 10px 15px;
             }
         }
     }

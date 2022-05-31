@@ -469,6 +469,13 @@
 
 @media (max-width: 1441px) {
 
+    .product-item {
+
+        .characteristics--item {
+            max-width: calc(100% - 10px);
+        }
+    }
+
     .product-list {
         margin: -20px 0 0 -20px;
 

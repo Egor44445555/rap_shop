@@ -11,7 +11,7 @@
     }
 
     .app-block .image {
-        left: calc(50vw - 600px);
+        left: calc(64vw - 750px);
     }
 
 
@@ -260,7 +260,7 @@
 @media (max-width: 1281px) {
 
     .container-block {
-        padding: 0 20px;
+        padding: 0 40px;
     }
 
     .pagination {
@@ -359,6 +359,34 @@
             }
         }
     }
+
+
+    .car-select-slider {
+
+        .image {
+            padding: 0 40px;
+
+            .swiper-button-prev {
+                left: 10px;
+            }
+
+            .swiper-button-next {
+                right: 10px;
+            }
+        }
+
+        .characteristics {
+            margin: -20px 0 0 -10px;
+
+            &--item {
+                margin: 20px 0 0 10px;
+            }
+
+            .icon {
+                margin-right: 5px;
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -408,6 +436,10 @@
         margin-bottom: 0;
         padding: 50px 0 40px;
 
+        .info {
+            max-width: 480px;
+        }
+
         .title {
             font-size: 36px;
             line-height: 46px;
@@ -422,13 +454,14 @@
         .btn {
             max-width: 300px;
             height: 40px;
-            margin-top: 40px;
+            margin-top: 20px;
             padding: 20px;
             border-radius: 50px;
             font-size: 20px;
         }
 
         .info-text {
+            max-width: 388px;
             margin-top: 30px;
 
             img {
@@ -469,6 +502,7 @@
 
         .characteristics {
             order: 2;
+            justify-content: center;
             max-width: 420px;
             padding: 40px 35px 0;
         }
@@ -499,7 +533,6 @@
 
         .title-wrap {
             display: block;
-            padding: 0 10px;
 
             h2 {
                 font-size: 37px;
@@ -713,7 +746,7 @@
             display: block;
             max-width: 100%;
             min-height: 408px;
-            margin-left: -20px;
+            margin-left: -40px;
             padding: 20px 0 50px 170px;
             background: url(../images/hand-keys.jpg);
             background-repeat: no-repeat;
@@ -1361,12 +1394,6 @@
         .payment-list--item {
             width: 100%;
             text-align: center;
-
-            img {
-                width: 240px;
-                height: 80px;
-                object-fit: cover;
-            }
         }
     }
 
@@ -1763,6 +1790,10 @@
         line-height: 35px;
     }
 
+    .container-block {
+        padding: 0 20px;
+    }
+
     .pagination {
         margin: 40px -5px 0;
 
@@ -1788,6 +1819,7 @@
 
         .info-text {
             display: block;
+            max-width: 255px;
 
             img {
                 margin: 0 0 30px;
@@ -2066,6 +2098,10 @@
         }
     }
 
+
+    .app-block .info {
+        padding: 0;
+    }
 
     .about-detail {
 

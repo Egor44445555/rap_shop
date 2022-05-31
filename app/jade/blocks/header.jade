@@ -13,12 +13,8 @@ header.header
                         img(src="images/icons/arrow-toggle-down.svg" alt="")
                 .location-list
                     .location-list--item
-                        .icon
-                            img(src="images/icons/location.png")
                         .text Санкт- Петербург
                     .location-list--item
-                        .icon
-                            img(src="images/icons/location.png")
                         .text Москва
 
             .phones-wrap.d-none.d-xxl-flex
@@ -30,8 +26,14 @@ header.header
                         .arrow
                             img(src="images/icons/arrow-toggle-down.svg")
                 .phones-list
-                    a(href="tel:8 800 250 46 00").phones-list--item 8 800 250 46 00
-                    a(href="tel:+7 (965) 25 58 16").phones-list--item +7 (965) 25 58 16
+                    a(href="tel:8 800 250 46 00").phones-list--item
+                        span.icon
+                            img(src="images/icons/social-whatsapp.png")
+                        span.text Whats App
+                    a(href="tel:+7 (965) 25 58 16").phones-list--item
+                        span.icon
+                            img(src="images/icons/social-telegram.png")
+                        span.text Telegram
 
         .right-block
             .menu.d-none.d-xxl-flex
@@ -41,8 +43,28 @@ header.header
                         .icon
                             img(src="images/icons/arrow-toggle-down.svg")
                     .dropdown
-                        a(href="/about.html").dropdown--item О нас
-                        a(href="#").dropdown--item Link 2
+                        a(href="/about.html").dropdown--item Компания
+                        a(href="/contacts.html").dropdown--item Контакты
+                        a(href="/sublease.html").dropdown--item Сдать авто в аренду
+                        a(href="/bonus-program.html").dropdown--item Бонусная программа
+                        a(href="/additional-services.html").dropdown--item Дополнительные услуги
+                        a(href="/news.html").dropdown--item Новости
+                        a(href="/blog.html").dropdown--item Блог
+
+                        .social-list.small
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-instagram-blue.png").icon
+                                span.text Инстаграм
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-vk-blue.png").icon
+                                span.text Вконтакте
+                            .social-list--item.blue
+                                img(src="images/icons/social-mobile-app-blue.png").icon
+                                .text
+                                    span Мобильное приложение
+                                    .button-wrap
+                                        a(href="#") Для IOS
+                                        a(href="#") Для Android
 
                 a(href="https://franshiza.rosautoprokat.ru/").menu--item Франшиза
                 a(href="/rent.html").menu--item Аренда CRM

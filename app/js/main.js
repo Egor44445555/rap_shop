@@ -23,7 +23,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         overflow.toggleClass('active');
 
-        if (_html.hasClass('noscroll')) {
+        if (!_html.hasClass('noscroll')) {
             _html.addClass('noscroll');
             body.addClass('noscroll');
         } else {
@@ -125,7 +125,7 @@ $(document).ready(function() {
 
     $('.location-list').on('click', '.location-list--item', function (e) {
         let wrap = $(this).parents('.location-wrap');
-        wrap.find('.location').html($(this).html() + `<div class="arrow"><img src="../images/icons/arrow-toggle-down.svg" alt="" /></div>`);
+        wrap.find('.location .text').html($(this).text());
         wrap.removeClass('active');
     });
 
@@ -356,6 +356,20 @@ $(document).ready(function() {
             nextEl: ".js-reviews-slider .swiper-button-next",
             prevEl: ".js-reviews-slider .swiper-button-prev",
         },
+        breakpoints: {
+            768: {
+                spaceBetween: 40,
+            },
+            992: {
+                spaceBetween: 80,
+            },
+            1400: {
+                spaceBetween: 150,
+            },
+            1601: {
+                spaceBetween: 300,
+            }
+        }
     });
 
     new Swiper('.js-products-slider', {

@@ -32,9 +32,9 @@ body {
 
 .container-block {
     width: 100%;
-    max-width: 1695px;
+    max-width: 1755px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 150px;
 }
 
 
@@ -44,9 +44,9 @@ body {
     display: inline-block;
     align-items: center;
     justify-content: center;
-    min-height: 60px;
+    min-height: 50px;
     width: auto;
-    padding: 20px 50px;
+    padding: 15px 40px;
     font-family: $font-base-bold;
     font-size: 16px;
     line-height: normal;
@@ -144,16 +144,16 @@ body {
 
 .btn-small {
     min-height: 40px;
-    padding: 12px 20px;
+    padding: 15px 25px;
     font-family: $font-base-semiBold;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .btn-medium {
-    min-height: 70px;
-    padding: 20px 20px;
+    min-height: 50px;
+    padding: 15px 20px;
     font-family: $font-base-semiBold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /*** End Buttons ***/
@@ -241,6 +241,10 @@ img {
 
 .dashed {
     border-bottom: 1px dashed;
+}
+
+.rouble {
+    font-family: $font-rouble !important;
 }
 
 h1,

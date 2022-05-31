@@ -62,11 +62,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'rubl';
+  src: url('../fonts/rouble/rouble.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $titleFont: '';
 $titleFontRegular: '';
 $titleFontMedium: '';
 $titleFontBold: '';
 $titleFontExtraBold: '';
+
+$font-rouble: 'rubl', sans-serif;
 
 $font-base: "Proxima Nova Regular", sans-serif;
 $font-base-light: "Proxima Nova Light", sans-serif;
