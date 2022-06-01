@@ -352,6 +352,7 @@ $(document).ready(function() {
         slidesPerGroup: 1,
         simulateTouch: true,
         spaceBetween: 330,
+        loop: true,
         navigation: {
             nextEl: ".js-reviews-slider .swiper-button-next",
             prevEl: ".js-reviews-slider .swiper-button-prev",

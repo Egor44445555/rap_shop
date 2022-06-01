@@ -145,7 +145,7 @@
 }
 
 .car-select-slider {
-    margin-top: 65px;
+    margin-top: 50px;
 
     &--item {
         display: flex;
@@ -159,7 +159,7 @@
         align-items: flex-start;
         flex: 1;
         max-width: 360px;
-        margin: -30px 0 0 -40px;
+        margin: -15px 0 0 -40px;
         padding-top: 100px;
 
         &--item {
@@ -167,7 +167,7 @@
             align-items: center;
             flex: 100%;
             max-width: calc(50% - 40px);
-            margin: 30px 0 0 40px;
+            margin: 15px 0 0 40px;
             font-family: $font-base-light;
             font-size: 18px;
         }
@@ -292,7 +292,7 @@
             color: $blueText;
 
             span {
-                border-bottom: 1px solid $blueText;
+                border-bottom: 1px solid $blueTextLight;
             }
         }
 
@@ -361,10 +361,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 35px;
+        height: 30px;
         margin: 20px 10px 0;
-        padding: 8px 20px;
+        padding: 6px 16px;
         font-family: $font-base-semiBold;
+        font-size: 14px;
         text-align: center;
         border: 1px solid rgba(0, 0, 0, .48%);
         border-radius: 50px;
@@ -411,7 +412,7 @@
 
         .text {
             font-size: 21px;
-            line-height: 28px;
+            line-height: 24px;
         }
     }
 
@@ -484,7 +485,7 @@
         max-width: 280px;
         font-family: $font-base-semiBold;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 24px;
     }
 }
 
@@ -576,7 +577,7 @@
         margin-top: 60px;
         font-family: $font-base-semiBold;
         font-size: 20px;
-        line-height: 32px;
+        line-height: 26px;
     }
 
     .author {

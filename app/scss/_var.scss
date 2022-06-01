@@ -63,6 +63,13 @@
 }
 
 @font-face {
+  font-family: 'geometria';
+  src: url('../fonts/geometria/geometria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'rubl';
   src: url('../fonts/rouble/rouble.ttf') format('truetype');
   font-weight: normal;
@@ -76,6 +83,7 @@ $titleFontBold: '';
 $titleFontExtraBold: '';
 
 $font-rouble: 'rubl', sans-serif;
+//$font-rouble: 'geometria', sans-serif;
 
 $font-base: "Proxima Nova Regular", sans-serif;
 $font-base-light: "Proxima Nova Light", sans-serif;
@@ -116,6 +124,7 @@ $textGrayLight: #a4a4a4;
 $textGray: #767676;
 $textGrayDark: #606060;
 $blueText: #497eb9;
+$blueTextLight: #B7C7D8;
 $placeholderColor: #9A9A9A;
 $borderColorLight: #E5E5E5;
 $borderColor: #cccccc;

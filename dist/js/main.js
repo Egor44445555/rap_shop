@@ -23,7 +23,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         overflow.toggleClass('active');
 
-        if (_html.hasClass('noscroll')) {
+        if (!_html.hasClass('noscroll')) {
             _html.addClass('noscroll');
             body.addClass('noscroll');
         } else {
