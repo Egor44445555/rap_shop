@@ -26,8 +26,8 @@
     .btn {
         display: flex;
         align-items: center;
-        max-width: 320px;
-        height: 60px;
+        max-width: 310px;
+        height: 55px;
         margin-top: 30px;
         border-radius: 50px;
         font-family: $font-base-semiBold;
@@ -263,7 +263,11 @@
         margin: -26px 0 0 -26px;
 
         .btn {
+            min-height: 45px;
             margin: 26px 0 0 26px;
+            padding: 12px 30px;
+            font-size: 14px;
+
         }
     }
 }
@@ -393,7 +397,7 @@
         h3,
         h4 {
             flex: 1;
-            max-width: 650px;
+            max-width: 585px;
         }
     }
 
@@ -650,18 +654,18 @@
     .title {
         font-family: $font-base-semiBold;
         font-size: 50px;
-        line-height: normal;
+        line-height: 50px;
         text-transform: uppercase;
     }
 
     .description {
         position: relative;
-        max-width: 500px;
+        max-width: 417px;
         margin-top: 75px;
-        padding: 40px 0 0 65px;
-        font-size: 26px;
-        line-height: 38px;
-        color: $textGray;
+        padding: 35px 0 0 45px;
+        font-size: 24px;
+        line-height: 28px;
+        color: $textGrayDark;
         z-index: 5;
 
         &:before {
@@ -669,8 +673,8 @@
             position: absolute;
             top: 0;
             left: 5px;
-            width: 16px;
-            height: 25px;
+            width: 14px;
+            height: 20px;
             background: $redBright;
             transform: skew(-40deg, 0);
             border-radius: 2px;
@@ -680,7 +684,7 @@
     .payment-list {
         display: flex;
         flex-wrap: wrap;
-        margin: 100px 0 0 -15px;
+        margin: 50px 0 0 -15px;
 
         &--item {
             max-width: 200px;
@@ -700,8 +704,9 @@
     }
 
     .image {
-        position: relative;
-        left: calc(50vw - 800px);
+        position: absolute;
+        right: 0;
+        max-width: 50vw;
         z-index: 2;
     }
 }
@@ -726,10 +731,10 @@
         }
 
         .description {
-            max-width: 530px;
+            max-width: 510px;
             margin-top: 30px;
             font-size: 35px;
-            line-height: 42px;
+            line-height: 35px;
             color: $textGray;
         }
 
@@ -751,11 +756,12 @@
                 max-width: 430px;
                 padding: 0 50px 0 40px;
                 font-size: 28px;
-                line-height: 32px;
+                line-height: 28px;
             }
 
             .btn {
                 flex: 1;
+                max-width: 250px;
             }
         }
     }
@@ -771,25 +777,26 @@
     ul {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1180px;
+        max-width: 1050px;
         margin-left: 140px;
 
         li {
             position: relative;
             flex: 100%;
             max-width: 33.333%;
-            padding: 45px 100px 0 45px;
+            margin-top: 0;
+            padding: 35px 60px 0 35px;
             font-family: $font-base-semiBold;
             font-size: 22px;
-            line-height: 34px;
+            line-height: 24px;
 
             &:before {
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 16px;
-                height: 25px;
+                width: 14px;
+                height: 18px;
                 background: $redBright;
                 transform: skew(-40deg, 0);
                 border-radius: 2px;
@@ -876,13 +883,13 @@
 
     .title {
         font-size: 30px;
-        line-height: 40px;
+        line-height: 32px;
     }
 
     .description {
         margin-top: 20px;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 24px;
         color: $textGray;
     }
 
@@ -963,13 +970,13 @@
             &:before,
             &:after {
                 content: '';
-                width: 34px;
+                width: 24px;
                 height: 2px;
                 background: $themeColor;
             }
 
             &:after {
-                margin: 0 0 0 -33px;
+                margin: 0 0 0 -24px;
                 transform: rotate(90deg);
             }
         }
@@ -984,8 +991,8 @@
             position: absolute;
             top: 15px;
             left: 65px;
-            width: 12px;
-            height: 18px;
+            width: 10px;
+            height: 15px;
             background: $redBright;
             transform: skew(-40deg, 0);
             border-radius: 2px;
@@ -1171,8 +1178,8 @@
     }
 
     .icon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         object-fit: contain;
         margin-right: 20px;
     }
@@ -1229,8 +1236,8 @@
             position: absolute;
             top: 0;
             left: 10px;
-            width: 15px;
-            height: 20px;
+            width: 12px;
+            height: 18px;
             background: $redBright;
             transform: skew(-40deg, 0);
             border-radius: 2px;
@@ -1311,8 +1318,8 @@
                 position: absolute;
                 top: 0;
                 left: 10px;
-                width: 13px;
-                height: 20px;
+                width: 12px;
+                height: 18px;
                 background: $redBright;
                 transform: skew(-40deg, 0);
                 border-radius: 2px;

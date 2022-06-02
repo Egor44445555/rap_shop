@@ -10,10 +10,6 @@
         line-height: 55px;
     }
 
-    .app-block .image {
-        left: calc(64vw - 750px);
-    }
-
 
     .about-block-wrap {
         padding: 100px 0;
@@ -241,16 +237,6 @@
 
         .text-block {
             max-width: 100%;
-        }
-    }
-
-    .about-detail {
-
-        .app-block {
-
-            .image {
-                margin-left: -100px;
-            }
         }
     }
 }
@@ -660,6 +646,7 @@
 
         .title {
             font-size: 37px;
+            line-height: 37px;
         }
     }
 
@@ -688,6 +675,7 @@
         }
 
         .image {
+            position: relative;
             left: 0;
             margin: 0 -20px 0 auto;
             max-width: 600px;
@@ -1381,6 +1369,7 @@
 
         .title {
             font-size: 25px;
+            line-height: 25px;
         }
     }
 
@@ -1782,12 +1771,12 @@
     h1, .h1,
     h2, .h2 {
         font-size: 28px;
-        line-height: 38px;
+        line-height: 30px;
     }
 
     h3, .h3 {
         font-size: 25px;
-        line-height: 35px;
+        line-height: 27px;
     }
 
     .container-block {
