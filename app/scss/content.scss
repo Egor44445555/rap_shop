@@ -518,7 +518,7 @@
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -20px 0 0 -85px;
+    margin: -20px 0 0 -60px;
 
     &:first-child {
         margin-top: -85px;
@@ -526,14 +526,14 @@
 
     &--item {
         flex: 100%;
-        max-width: calc(33.333% - 85px);
-        margin: 85px 0 0 85px;
-        padding: 45px 70px 120px 35px;
+        max-width: calc(33.333% - 60px);
+        margin: 85px 0 0 60px;
+        padding: 45px 35px 120px 30px;
         background-color: $white;
         background-size: auto;
         background-position: bottom right;
         background-repeat: no-repeat;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 30px;
         border-radius: 5px;
         box-shadow: 0 0 24px rgba(0, 0, 0, .05);
@@ -593,7 +593,7 @@
 }
 
 .reviews-slider {
-    max-width: 1116px;
+    max-width: 1060px;
     margin: 80px auto 0;
     padding: 0 116px;
     overflow: visible;
@@ -832,7 +832,7 @@
 
     .btn {
         width: 100%;
-        max-width: 324px;
+        max-width: 300px;
         margin-top: 60px;
     }
 
@@ -1362,11 +1362,11 @@
     }
 
     .title {
-        max-width: 690px;
+        max-width: 540px;
     }
 
     .description {
-        max-width: 470px;
+        max-width: 375px;
         margin-top: 40px;
         font-size: 28px;
         line-height: 40px;
@@ -1414,7 +1414,7 @@
 
         .btn {
             width: 100%;
-            max-width: 380px;
+            max-width: 300px;
             margin-top: 50px;
         }
     }
@@ -1514,19 +1514,19 @@
     .services-list {
         display: flex;
         flex-wrap: wrap;
-        margin: 30px 0 0 -100px;
+        margin: 30px 0 0 -80px;
 
         &--item {
             display: flex;
             flex: 100%;
-            max-width: calc(33.333% - 100px);
-            margin: 100px 0 0 100px;
+            max-width: calc(33.333% - 80px);
+            margin: 100px 0 0 80px;
         }
 
         .image {
             flex: 1;
             max-width: 80px;
-            margin-right: 60px;
+            margin-right: 40px;
 
             img {
                 max-height: 120px;
@@ -1722,7 +1722,7 @@
 
     .text-block {
         position: relative;
-        max-width: 50%;
+        max-width: 65%;
         z-index: 5;
     }
 
@@ -1740,7 +1740,7 @@
     .image {
         position: absolute;
         top: 0;
-        right: -26px;
+        right: -125px;
 
         img {
             display: block;
@@ -1783,17 +1783,17 @@
     .app-block {
 
         .image {
-            width: calc(50vw - 100px);
+            width: calc(50vw - 230px);
             margin-left: -230px;
         }
 
         .payment-list {
             display: block;
             margin: 0;
-            padding: 40px 0 0 65px;
+            padding: 40px 0 0 45px;
 
             &--item {
-                max-width: 256px;
+                max-width: 200px;
                 height: 80px;
                 margin: 20px 0 0 0;
                 border-radius: 2px;
