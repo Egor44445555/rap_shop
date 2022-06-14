@@ -24,7 +24,7 @@
         max-width: 1960px;
         margin: 0 auto;
         padding: 60px 0;
-        border-bottom: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColorLight;
     }
 
     .left-block,
@@ -461,7 +461,7 @@
         padding: 0 20px;
 
         .wrap {
-            padding: 20px 0;
+            padding: 40px 0;
         }
 
         .logo {
