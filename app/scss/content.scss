@@ -671,10 +671,10 @@
         &:before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 5px;
-            width: 14px;
-            height: 20px;
+            top: 15px;
+            left: 10px;
+            width: 10px;
+            height: 15px;
             background: $redBright;
             transform: skew(-40deg, 0);
             border-radius: 2px;
@@ -687,6 +687,7 @@
         margin: 50px 0 0 -15px;
 
         &--item {
+            display: block;
             max-width: 200px;
             max-height: 60px;
             margin: 15px 0 0 15px;
@@ -793,10 +794,10 @@
             &:before {
                 content: '';
                 position: absolute;
-                top: 0;
-                left: 0;
-                width: 14px;
-                height: 18px;
+                top: 15px;
+                left: 10px;
+                width: 10px;
+                height: 15px;
                 background: $redBright;
                 transform: skew(-40deg, 0);
                 border-radius: 2px;
@@ -990,7 +991,7 @@
             content: '';
             position: absolute;
             top: 15px;
-            left: 65px;
+            left: 10px;
             width: 10px;
             height: 15px;
             background: $redBright;
@@ -1234,10 +1235,10 @@
         &:before {
             content: '';
             position: absolute;
-            top: 0;
+            top: 15px;
             left: 10px;
-            width: 12px;
-            height: 18px;
+            width: 10px;
+            height: 15px;
             background: $redBright;
             transform: skew(-40deg, 0);
             border-radius: 2px;
@@ -1316,10 +1317,10 @@
             &:before {
                 content: '';
                 position: absolute;
-                top: 0;
+                top: 15px;
                 left: 10px;
-                width: 12px;
-                height: 18px;
+                width: 10px;
+                height: 15px;
                 background: $redBright;
                 transform: skew(-40deg, 0);
                 border-radius: 2px;
@@ -1774,9 +1775,11 @@
         overflow: visible;
 
         .title {
+            max-width: 315px;
             font-family: $font-base;
-            font-size: 32px;
-            line-height: 44px;
+            font-size: 27px;
+            line-height: 30px;
+            text-transform: none;
         }
     }
 
@@ -1787,14 +1790,19 @@
             margin-left: -230px;
         }
 
+        .description {
+            font-size: 20px;
+            line-height: 22px;
+        }
+
         .payment-list {
             display: block;
             margin: 0;
             padding: 40px 0 0 45px;
 
             &--item {
-                max-width: 200px;
-                height: 80px;
+                max-width: 150px;
+                height: 60px;
                 margin: 20px 0 0 0;
                 border-radius: 2px;
                 overflow: hidden;
