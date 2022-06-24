@@ -44,10 +44,12 @@
             width: 25px;
             height: 25px;
             min-width: 25px;
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         .text {
+            display: flex;
+            align-items: center;
             font-family: $font-base-light;
             font-size: 13px;
             color: $black;
@@ -81,6 +83,7 @@
 
     .btn {
         margin-top: 25px;
+        padding: 9px 25px;
     }
 }
 

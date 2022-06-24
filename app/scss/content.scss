@@ -278,6 +278,13 @@
 
     &.active {
 
+        .city-select--head {
+
+            .arrow {
+                transform: rotate(180deg);
+            }
+        }
+
         .city-select--body {
             display: block;
         }
@@ -288,6 +295,8 @@
         align-items: center;
 
         .icon {
+            width: 24px;
+            height: 24px;
             margin-right: 15px;
         }
 
@@ -316,7 +325,7 @@
         display: none;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 60px;
         min-width: 250px;
         max-height: 400px;
         padding: 15px 5px;
@@ -533,8 +542,8 @@
         background-size: auto;
         background-position: bottom right;
         background-repeat: no-repeat;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 24px;
         border-radius: 5px;
         box-shadow: 0 0 24px rgba(0, 0, 0, .05);
     }
@@ -826,15 +835,15 @@
     }
 
     .description {
-        margin-top: 30px;
+        margin-top: 15px;
         font-size: 26px;
         color: $textGray;
     }
 
     .btn {
         width: 100%;
-        max-width: 300px;
-        margin-top: 60px;
+        max-width: 250px;
+        margin-top: 30px;
     }
 
     .image {
@@ -991,7 +1000,7 @@
             content: '';
             position: absolute;
             top: 15px;
-            left: 10px;
+            left: 60px;
             width: 10px;
             height: 15px;
             background: $redBright;
@@ -1001,7 +1010,7 @@
 
         p {
             font-size: 16px;
-            line-height: 30px;
+            line-height: 25px;
             color: $black;
             opacity: .77;
         }
@@ -1060,11 +1069,11 @@
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
-                margin-top: 60px;
+                margin-top: 50px;
 
                 &--item {
-                    margin-top: 30px;
-                    font-size: 20px;
+                    margin-top: 15px;
+                    font-size: 18px;
                     color: $black;
 
                     &:first-child {
@@ -1078,11 +1087,12 @@
             }
 
             .social-list {
+                flex-direction: column;
                 justify-content: flex-start;
                 margin-top: 0;
 
                 &--item {
-                    padding: 40px 0 0;
+                    padding: 30px 0 0;
                 }
             }
         }
@@ -1138,7 +1148,7 @@
         margin-top: 50px;
 
         &--item {
-            margin-top: 40px;
+            margin-top: 20px;
 
             &:first-child {
                 margin-top: 0;
@@ -1179,10 +1189,10 @@
     }
 
     .icon {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         object-fit: contain;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .label {
@@ -1223,7 +1233,8 @@
     p {
         max-width: 570px;
         margin-top: 25px;
-        font-size: 26px;
+        font-size: 24px;
+        line-height: 26px;
         color: $textGrayDark;
     }
 
@@ -1247,8 +1258,8 @@
         p {
             max-width: 100%;
             margin: 0;
-            font-size: 26px;
-            line-height: 36px;
+            font-size: 24px;
+            line-height: 30px;
             color: $textGray;
         }
 
@@ -1306,8 +1317,8 @@
             position: relative;
             margin-top: 90px;
             padding: 40px 0 0 60px;
-            font-size: 26px;
-            line-height: 38px;
+            font-size: 22px;
+            line-height: 28px;
             color: $textGray;
 
             &:first-child {
@@ -1331,7 +1342,7 @@
             display: inline-block;
             padding-bottom: 5px;
             color: $blueLight;
-            border-bottom: 1px solid $blueLight;
+            border-bottom: 1px solid $blueLighter;
         }
     }
 }
@@ -1368,16 +1379,16 @@
 
     .description {
         max-width: 375px;
-        margin-top: 40px;
-        font-size: 28px;
-        line-height: 40px;
+        margin-top: 15px;
+        font-size: 26px;
+        line-height: 30px;
         color: $textGray;
     }
 
     .btn {
         width: 100%;
-        max-width: 325px;
-        margin-top: 50px;
+        max-width: 250px;
+        margin-top: 30px;
     }
 }
 
@@ -1409,8 +1420,8 @@
             max-width: 480px;
             margin-top: 50px;
             font-family: $font-base-light;
-            font-size: 22px;
-            line-height: 34px;
+            font-size: 20px;
+            line-height: 27px;
         }
 
         .btn {
@@ -1505,10 +1516,11 @@
         }
 
         p {
+            max-width: 740px;
             margin: 40px 0 0 0;
             font-family: $font-base-light;
-            font-size: 24px;
-            line-height: 38px;
+            font-size: 20px;
+            line-height: 29px;
         }
     }
 
@@ -1527,7 +1539,7 @@
         .image {
             flex: 1;
             max-width: 80px;
-            margin-right: 40px;
+            margin-right: 20px;
 
             img {
                 max-height: 120px;
@@ -1540,20 +1552,25 @@
 
         .title {
             font-family: $font-base-semiBold;
-            font-size: 28px;
+            font-size: 24px;
+            line-height: 26px;
         }
 
         .description {
-            margin-top: 30px;
-            font-size: 20px;
-            line-height: 30px;
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 24px;
         }
 
         .cost {
-            margin-top: 30px;
+            margin-top: 15px;
             font-family: $font-base-semiBold;
             font-size: 34px;
             color: $blue;
+        }
+
+        .rouble {
+            font-weight: 600;
         }
     }
 }
@@ -2057,8 +2074,8 @@
 
     .description {
         margin-top: 25px;
-        font-size: 22px;
-        line-height: 33px;
+        font-size: 20px;
+        line-height: 26px;
 
         span {
             display: block;
@@ -2152,8 +2169,8 @@
 
         p {
             font-family: $font-base-light;
-            font-size: 30px;
-            line-height: 36px;
+            font-size: 28px;
+            line-height: 32px;
         }
     }
 

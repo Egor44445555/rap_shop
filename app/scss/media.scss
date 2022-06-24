@@ -7,7 +7,7 @@
     h1,
     .h1 {
         font-size: 50px;
-        line-height: 55px;
+        line-height: 45px;
     }
 
 
@@ -386,6 +386,10 @@
             margin: 20px 0 0;
         }
     }
+
+    .city-select--body {
+        left: 37px;
+    }
 }
 
 /******************************************************************/
@@ -395,7 +399,7 @@
     h1,
     .h1 {
         font-size: 37px;
-        line-height: 46px;
+        line-height: 40px;
     }
 
     h2, .h2 {
@@ -1076,10 +1080,6 @@
 
             &--item {
                 max-width: calc(100% - 20px);
-            }
-
-            .image {
-                margin-right: 30px;
             }
         }
     }

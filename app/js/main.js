@@ -392,7 +392,7 @@ $(document).ready(function() {
             },
             1400: {
                 slidesPerView: 4,
-                spaceBetween: 70,
+                spaceBetween: 30,
             }
         }
     });
