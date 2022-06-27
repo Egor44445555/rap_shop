@@ -14,6 +14,7 @@
     .title {
         font-family: $font-base-semiBold;
         font-size: 61px;
+        line-height: 55px;
         text-transform: uppercase;
     }
 
@@ -1461,14 +1462,14 @@
         }
 
         .description {
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 14px;
             line-height: 15px;
             opacity: .7;
         }
 
         .discount {
-            margin-top: 20px;
+            margin-top: 10px;
             font-family: $font-base-semiBold;
             font-size: 18px;
             color: $blue;
@@ -1583,35 +1584,47 @@
 .catalog-block-wrap {
     max-width: 1960px;
     margin: 0 auto;
-    padding: 70px 40px 80px;
+    padding: 0 40px 80px;
     background-repeat: no-repeat;
     background-position: center;
 
     .input-wrap {
-        margin-top: 40px;
+        margin-top: 20px;
 
         &:first-child {
             margin-top: 0;
         }
 
         .label {
-            padding-bottom: 25px;
+            padding-bottom: 15px;
             font-family: $font-base-bold;
-            font-size: 22px;
+            font-size: 18px;
         }
     }
 
+    .custom-select-trigger {
+        height: 50px;
+        font-size: 16px;
+    }
+
     .input {
-        height: 70px;
-        padding: 10px 30px;
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
         border: 1px solid $borderColor;
         box-shadow: none;
 
         &::placeholder {
-            font-size: 18px;
+            font-size: 16px;
             color: $black;
             opacity: .88;
         }
+    }
+
+    .radio {
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
     }
 
     .product-list {
@@ -1630,9 +1643,11 @@
 
         .btn {
             width: 100%;
-            max-width: 315px;
+            max-width: 200px;
+            min-height: 45px;
+            padding: 12px 40px;
             font-family: $font-base-semiBold;
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
@@ -1666,12 +1681,12 @@
     }
 
     .filters {
-        max-width: 340px;
+        max-width: 250px;
     }
 }
 
 .catalog-block {
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 /*** End Catalog ***/
@@ -2236,11 +2251,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 225px;
+            min-width: 200px;
             margin: 25px 0 0 25px;
-            padding: 16px 28px;
+            padding: 10px 20px;
             font-family: $font-base-semiBold;
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 

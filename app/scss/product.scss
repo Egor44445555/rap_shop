@@ -298,21 +298,33 @@
     padding: 70px 0;
     background-repeat: no-repeat;
     background-position: center;
+
+    .form {
+
+        .datepicker-wrap input {
+            height: 70px;
+        }
+
+        .input,
+        .select {
+            height: 70px;
+        }
+    }
 }
 
 .additional-item-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -25px 0 0 -1.5em;
+    margin: -10px 0 0 -0.7em;
 
     &--item {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         flex: 100%;
-        max-width: calc(33.33% - 1.5em);
-        margin: 25px 0 0 1.5rem;
-        padding: 25px 30px;
+        max-width: calc(33.33% - 0.7em);
+        margin: 10px 0 0 0.7rem;
+        padding: 15px;
         background: $white;
         border-radius: 5px;
         box-shadow: $boxShadow;
@@ -323,9 +335,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 70px;
-        height: 70px;
-        min-width: 70px;
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
         margin-right: 20px;
 
         img {
@@ -341,13 +353,13 @@
 
     .title {
         font-family: $font-base-semiBold;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .cost {
         margin-top: 3px;
         font-family: $font-base-semiBold;
-        font-size: 20px;
+        font-size: 18px;
         color: $blue;
     }
 
@@ -436,7 +448,7 @@
 .characteristics-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 40px 0 0 -20px;
+    margin: 40px 0 0 -30px;
 
     &--item {
         display: flex;
@@ -445,9 +457,9 @@
         flex: 100%;
         max-width: calc(50% - 30px);
         margin: 20px 0 0 30px;
-        padding: 30px 40px;
+        padding: 20px 30px;
         background: $white;
-        font-size: 21px;
+        font-size: 18px;
         box-shadow: $boxShadow;
 
         &:nth-child(n+11) {
