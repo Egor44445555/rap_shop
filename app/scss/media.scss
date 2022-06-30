@@ -21,6 +21,7 @@
             padding-left: 35%;
 
             .description {
+                max-width: 435px;
                 font-size: 30px;
                 line-height: 40px;
             }
@@ -129,6 +130,17 @@
     .statistic-list {
         margin-top: 20px;
     }
+
+    .bonus-program-block {
+
+        .card-list {
+
+            &--item {
+                max-width: calc(50% - 40px);
+                margin: 40px 0 0 40px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1400px) {
@@ -207,18 +219,6 @@
 
         .info {
             padding-left: 40px;
-        }
-    }
-
-
-    .bonus-program-block {
-
-        .card-list {
-
-            &--item {
-                max-width: calc(50% - 40px);
-                margin: 40px 0 0 40px;
-            }
         }
     }
 

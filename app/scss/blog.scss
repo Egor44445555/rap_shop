@@ -39,7 +39,7 @@
 
     .title {
         display: block;
-        max-width: 270px;
+        max-width: 300px;
         font-family: $font-base-semiBold;
         font-size: 22px;
         line-height: 24px;
@@ -59,6 +59,9 @@
     .views-counter {
 
         .icon {
+            display: inline-block;
+            width: 23px;
+            height: 11px;
             margin-right: 18px;
         }
     }

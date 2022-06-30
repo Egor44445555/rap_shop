@@ -1163,12 +1163,12 @@ select {
         width: 24px;
         height: 24px;
         margin: 14px 0 0 14px;
-        background-image: url('../images/icons/star.png');
+        background-image: url('../images/icons/star.svg');
         background-size: contain;
         background-repeat: no-repeat;
 
         &.disabled {
-            background-image: url('../images/icons/star--disable.png');
+            background-image: url('../images/icons/star--disable.svg');
         }
     }
 }

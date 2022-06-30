@@ -475,6 +475,34 @@
         flex: 100%;
         max-width: 25%;
         padding: 40px 20px 0 0;
+
+        &:nth-child(1) {
+
+            .number {
+                background-image: url(../images/step-num-bg-1.png);
+            }
+        }
+
+        &:nth-child(2) {
+
+            .number {
+                background-image: url(../images/step-num-bg-2.png);
+            }
+        }
+
+        &:nth-child(3) {
+
+            .number {
+                background-image: url(../images/step-num-bg-3.png);
+            }
+        }
+
+        &:nth-child(4) {
+
+            .number {
+                background-image: url(../images/step-num-bg-4.png);
+            }
+        }
     }
 
     .number {
@@ -647,8 +675,9 @@
 
 .app-block-wrap {
     padding: 90px 0;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center 10px;
     overflow: hidden;
 }
 
@@ -1436,14 +1465,14 @@
         display: flex;
         flex-wrap: wrap;
         flex: 1;
-        margin: -100px 0 0 -100px;
+        margin: -80px 0 0 -80px;
         padding-left: 120px;
 
         &--item {
             display: flex;
             flex: 100%;
-            max-width: calc(50% - 100px);
-            margin: 100px 0 0 100px;
+            max-width: calc(50% - 80px);
+            margin: 80px 0 0 80px;
         }
 
         .image {
@@ -1517,7 +1546,7 @@
         }
 
         p {
-            max-width: 740px;
+            max-width: 830px;
             margin: 40px 0 0 0;
             font-family: $font-base-light;
             font-size: 20px;
@@ -2178,7 +2207,7 @@
     .info {
         position: relative;
         flex: 1;
-        max-width: 625px;
+        max-width: 660px;
         padding: 100px 0 250px;
         z-index: 5;
 
@@ -2285,6 +2314,12 @@
 
     &.active {
         display: block;
+    }
+
+    .icon-big {
+        width: 54px;
+        height: 54px;
+        margin: 0 auto;
     }
 
     .title {
