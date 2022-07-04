@@ -233,7 +233,7 @@
         &--item {
             display: flex;
             align-items: center;
-            margin-top: 13px;
+            margin-top: 15px;
 
             &:first-child {
                 margin-top: 0;
@@ -247,7 +247,7 @@
         }
 
         .price {
-            font-size: 33px;
+            font-size: 23px;
             color: $blueDark;
 
             span {
@@ -326,7 +326,7 @@
         display: none;
         position: absolute;
         top: 100%;
-        left: 60px;
+        left: 0;
         min-width: 250px;
         max-height: 400px;
         padding: 15px 5px;
@@ -849,6 +849,7 @@
     min-height: 677px;
     margin-top: 70px;
     background-size: cover;
+    background-position: center;
 }
 
 .about-block-small {
@@ -1175,7 +1176,7 @@
     }
 
     .faq-list {
-        margin-top: 50px;
+        margin-top: 30px;
 
         &--item {
             margin-top: 20px;
@@ -1955,9 +1956,11 @@
 /*** Statistic list ***/
 
 .statistic-list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    z-index: 9;
 
     &--item {
         display: flex;
@@ -2198,10 +2201,8 @@
 }
 
 .sublease-info-block {
-    position: relative;
     display: flex;
     margin-bottom: -250px;
-    overflow: hidden;
     z-index: 1;
 
     .info {
@@ -2219,9 +2220,10 @@
     }
 
     .image {
-        position: relative;
-        flex: 1;
-        margin: -60px -200px 0 0;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        transform: translate(0, -50%);
         z-index: 1;
     }
 }

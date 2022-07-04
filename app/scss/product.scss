@@ -94,13 +94,13 @@
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -40px 0 0 -70px;
+    margin: -20px 0 0 -20px;
 
     .product-item,
     .more-btn {
         flex: 100%;
-        max-width: calc(25% - 70px);
-        margin: 40px 0 0 70px;
+        max-width: calc(25% - 20px);
+        margin: 20px 0 0 20px;
     }
 
     .more-btn {

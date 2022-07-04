@@ -82,6 +82,42 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+
+    .car-select-slider {
+
+        .characteristics {
+            max-width: 250px;
+
+            &--item {
+                max-width: calc(100% - 40px);
+            }
+        }
+
+        .image {
+            padding: 0 40px;
+
+            .swiper-button-prev {
+                left: 20px;
+            }
+
+            .swiper-button-next {
+                right: 20px;
+            }
+        }
+
+        .price-list {
+            max-width: 250px;
+
+            .label {
+                font-size: 16px;
+            }
+
+            .price {
+                font-size: 25px;
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -375,10 +411,6 @@
             margin: 20px 0 0;
         }
     }
-
-    .city-select--body {
-        left: 37px;
-    }
 }
 
 /******************************************************************/
@@ -483,8 +515,12 @@
         .characteristics {
             order: 2;
             justify-content: center;
-            max-width: 420px;
+            max-width: 100%;
             padding: 40px 35px 0;
+
+            &--item {
+                max-width: calc(25% - 10px);
+            }
         }
 
         .price-list {
@@ -917,6 +953,12 @@
             }
         }
     }
+
+
+    .sublease-info-block .image {
+        top: 20%;
+        right: -15%;
+    }
 }
 
 /******************************************************************/
@@ -1223,6 +1265,17 @@
             line-height: 32px;
         }
     }
+
+    .car-select-slider {
+
+        .characteristics {
+
+            &--item {
+                max-width: calc(50% - 10px);
+            }
+        }
+    }
+
 }
 
 /******************************************************************/
@@ -1269,20 +1322,6 @@
                 right: 10px;
                 bottom: 70px;
                 transform: translateY(0);
-            }
-        }
-
-        .characteristics {
-            margin: -12px 0 0 -12px;
-
-            &--item {
-                margin: 12px 0 0 12px;
-            }
-
-            .icon {
-                width: 25px;
-                height: 25px;
-
             }
         }
 
