@@ -623,5 +623,32 @@ $(document).ready(function() {
     });
 
     /*** End characteristics ***/
+
+
+    /*** Quantity ***/
+
+//Calculate new total when the quantity changes.
+
+    $('.quantity-block').each(function () {
+        let input = $(this).find(".quantity-input");
+        let step = Number($(this).data('step'));
+
+        $(this).find('.quantity-minus').on('click', function () {
+            let value = Number(input.val());
+            let newValue = value - step;
+            if(newValue < 0) newValue = 0;
+
+            input.val(newValue);
+        });
+
+        $(this).find('.quantity-plus').on('click', function () {
+            let value = Number(input.val());
+            let newValue = value + step;
+
+            input.val(newValue);
+        });
+    });
+
+    /*** End Quantity ***/
 });
 

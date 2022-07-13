@@ -14,7 +14,6 @@ html
                         a(href="/catalog.html").btn.btn-blue
                             span.d-flex.align-items-center
                                 span.text Выбрать автомобиль
-                                .icon.arrow
 
                         .info-text
                             img(src="images/keys.png")
@@ -22,7 +21,9 @@ html
                                 br
                                 | аренды онлайн
 
-            include ./blocks/car-select.jade
+            .container-block
+                include ./blocks/rent-form.jade
+            //include ./blocks/car-select.jade
             include ./blocks/product-list.jade
 
             .advantages-block-wrap
@@ -74,7 +75,7 @@ html
                             img(src="images/car-2.png")
                         .text
                             .title Для владельцев автомобилей —
-                            p возможность сдать свой автомобиль в&nbsp;прокат и&nbsp;отслеживать доход от&nbsp;аренды&nbsp;онлайн
+                            p Возможность сдать свой автомобиль в&nbsp;прокат и&nbsp;отслеживать доход от&nbsp;аренды&nbsp;онлайн
 
                         a(href="/sublease.html").btn.btn-blue Узнать больше
 
@@ -111,7 +112,6 @@ html
                                     a(href="/reviews.html").btn.btn-blue
                                         span.d-flex.align-items-center.justify-content-center
                                             span.text Смотреть все отзывы
-                                            .icon.arrow
 
                             .swiper-slide
                                 .reviews-slider--item
@@ -140,7 +140,6 @@ html
                                     a(href="/reviews.html").btn.btn-blue
                                         span.d-flex.align-items-center.justify-content-center
                                             span.text Смотреть все отзывы
-                                            .icon.arrow
 
                             .swiper-slide
                                 .reviews-slider--item
@@ -169,7 +168,6 @@ html
                                     a(href="/reviews.html").btn.btn-blue
                                         span.d-flex.align-items-center.justify-content-center
                                             span.text Смотреть все отзывы
-                                            .icon.arrow
 
                         .swiper-button-prev.big
                         .swiper-button-next.big
@@ -255,7 +253,6 @@ html
                                 a(href="/rent.html").btn.btn-blue.btn-empty
                                     span.d-flex.align-items-center.justify-content-center
                                         span.text Узнать больше
-                                        span.icon.arrow
 
                         .partners-block--item
                             .image
@@ -269,7 +266,6 @@ html
                                 a(href="/sublease.html").btn.btn-blue.btn-empty
                                     span.d-flex.align-items-center.justify-content-center
                                         span.text Условия субаренды
-                                        span.icon.arrow
 
             .faq-block-wrap(style="background-image: url(images/faq-block-bg.jpg);")
                 .container-block

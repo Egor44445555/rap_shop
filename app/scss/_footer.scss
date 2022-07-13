@@ -33,7 +33,7 @@
 
     .phone {
         font-family: $font-base-semiBold;
-        font-size: 30px;
+        font-size: 26px;
         color: $black;
     }
 
@@ -55,13 +55,13 @@
 
         .title {
             font-family: $font-base-bold;
-            font-size: 26px;
+            font-size: 22px;
         }
 
         .description {
             max-width: 320px;
             margin-top: 30px;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 24px;
         }
     }
@@ -92,8 +92,8 @@
 
     &--item {
         display: block;
-        margin-top: 30px;
-        font-size: 20px;
+        margin-top: 25px;
+        font-size: 18px;
         color: $black;
 
         &:first-child {

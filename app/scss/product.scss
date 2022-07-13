@@ -409,6 +409,17 @@
             transform: translate(-50%, -50%) rotate(90deg);
         }
     }
+
+    .quantity-block {
+        display: flex;
+
+        input {
+            display: block;
+            background: none;
+            border: 0;
+            text-align: center;
+        }
+    }
 }
 
 .characteristics-list-wrap {
@@ -636,8 +647,6 @@
             display: flex;
             align-items: center;
             width: 100%;
-            min-height: 60px;
-            font-size: 16px;
         }
     }
 
