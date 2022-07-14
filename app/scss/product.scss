@@ -388,10 +388,13 @@
         }
     }
 
-    .icon {
+    .icon,
+    .quantity-plus {
         position: relative;
         width: 26px;
         height: 26px;
+        min-width: 26px;
+        cursor: pointer;
 
         &:before,
         &:after {
@@ -410,11 +413,31 @@
         }
     }
 
+    .quantity-minus {
+        position: relative;
+        width: 26px;
+        height: 26px;
+        min-width: 26px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 26px;
+            height: 2px;
+            background: $blue;
+        }
+    }
+
     .quantity-block {
         display: flex;
+        max-width: 120px;
 
         input {
             display: block;
+            padding: 0 10px;
             background: none;
             border: 0;
             text-align: center;

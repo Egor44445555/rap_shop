@@ -268,7 +268,8 @@
     .about-block-small {
 
         .info {
-            max-width: 900px;
+            max-width: 805px;
+            min-height: 620px;
             padding: 70px 20px 80px 350px;
             background-position: -100px -190px;
         }
@@ -904,6 +905,7 @@
         }
 
         .info {
+            min-height: 410px;
             padding: 80px 20px 60px 170px;
             background-position: -18px 86px;
             background-size: 180px;
@@ -2074,8 +2076,8 @@
 
         .info {
             padding: 40px 20px 60px;
-            background-position: 0 205px;
-            background-size: 96px;
+            background-position: 0 160px;
+            background-size: 132px;
         }
 
         .description {

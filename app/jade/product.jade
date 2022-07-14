@@ -123,10 +123,10 @@ html
                                             .cost 600&nbsp;
                                                 b.rouble.d-inline ₽
                                         .quantity-block(data-step="1")
-                                            .quantity-minus -
+                                            .quantity-minus
                                             input(type="text" class="quantity-input" placeholder="0" value="0")
-                                            .quantity-plus +
-                                    label(for="additional-item-3").additional-item-list--item
+                                            .quantity-plus
+                                    label.additional-item-list--item
                                         .image
                                             img(src="images/baby-chair.png")
                                         .info
@@ -134,9 +134,10 @@ html
                                             .cost 100&nbsp;
                                                 b.rouble.d-inline ₽
                                                 | /сут.
-                                        .count 1 ШТ.
-                                        input(type="checkbox" id="additional-item-3")
-                                        .icon
+                                        .quantity-block(data-step="1")
+                                            .quantity-minus
+                                            input(type="text" class="quantity-input" placeholder="0" value="0")
+                                            .quantity-plus
                                     label(for="additional-item-4").additional-item-list--item
                                         .image
                                             img(src="images/radar-detector.png")

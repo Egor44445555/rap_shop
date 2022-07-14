@@ -115,17 +115,18 @@ html
                                                 b.rouble.d-inline ₽
                                         input(type="checkbox" id="additional-item")
                                         .icon
-                                    label(for="additional-item-2").additional-item-list--item
+                                    label.additional-item-list--item
                                         .image
                                             img(src="images/canister.png")
                                         .info
                                             .title Бензин 10л
                                             .cost 600&nbsp;
                                                 b.rouble.d-inline ₽
-                                        .count 1 ШТ.
-                                        input(type="checkbox" id="additional-item-2")
-                                        .icon
-                                    label(for="additional-item-3").additional-item-list--item
+                                        .quantity-block(data-step="1")
+                                            .quantity-minus
+                                            input(type="text" class="quantity-input" placeholder="0" value="0")
+                                            .quantity-plus
+                                    label.additional-item-list--item
                                         .image
                                             img(src="images/baby-chair.png")
                                         .info
@@ -133,9 +134,10 @@ html
                                             .cost 100&nbsp;
                                                 b.rouble.d-inline ₽
                                                 | /сут.
-                                        .count 1 ШТ.
-                                        input(type="checkbox" id="additional-item-3")
-                                        .icon
+                                        .quantity-block(data-step="1")
+                                            .quantity-minus
+                                            input(type="text" class="quantity-input" placeholder="0" value="0")
+                                            .quantity-plus
                                     label(for="additional-item-4").additional-item-list--item
                                         .image
                                             img(src="images/radar-detector.png")
