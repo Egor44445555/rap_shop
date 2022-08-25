@@ -5,7 +5,7 @@ html
     body
         include ./blocks/header.jade
 
-        .wrapper
+        .wrapper.bonus-program-page(style="background-image: url(images/bonus-program-bg.jpg);background-repeat: no-repeat;background-position: top center;")
             .container-block
                 .breadcrumbs
                     a(href="/index.html").breadcrumbs--item.back-link
@@ -14,7 +14,7 @@ html
                     a(href="#").breadcrumbs--item
                         span.text Бонусная программа
 
-            .bonus-program-block-wrap(style="background-image: url(images/lines-bg-2.jpg);")
+            .bonus-program-block-wrap
                 .container-block
                     .bonus-program-block
                         .info
@@ -93,9 +93,10 @@ html
                         .mt-4.pt-4.d-flex.d-md-none
                             a(href="#").btn.btn-blue.btn-medium.d-flex Арендовать автомобиль
 
-            .advantages-list-wrap.bg-image(style="background-image: url(images/page-bg.jpg);")
+            .advantages-list-wrap.bg-image
                 .container-block
-                    h2.semibold.text-uppercase В чем особенность бонусных карт&nbsp;«росавтопрокат»?
+                    .title-wrap
+                        h2.semibold.text-uppercase В чем особенность бонусных карт&nbsp;«росавтопрокат»?
 
                     .advantages-list
                         .advantages-list--item(style="background-image: url(images/advantages-4.jpg);")

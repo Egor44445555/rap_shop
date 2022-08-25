@@ -648,25 +648,29 @@
                     <input type="checkbox" id="additional-item"/>
                     <div class="icon"></div>
                   </label>
-                  <label for="additional-item-2" class="additional-item-list--item">
+                  <label class="additional-item-list--item">
                     <div class="image"><img src="images/canister.png"/></div>
                     <div class="info">
                       <div class="title">Бензин 10л</div>
                       <div class="cost">600&nbsp;<b class="rouble d-inline">₽</b></div>
                     </div>
-                    <div class="count">1 ШТ.</div>
-                    <input type="checkbox" id="additional-item-2"/>
-                    <div class="icon"></div>
+                    <div data-step="1" class="quantity-block">
+                      <div class="quantity-minus"></div>
+                      <input type="text" placeholder="0" value="0" class="quantity-input"/>
+                      <div class="quantity-plus"></div>
+                    </div>
                   </label>
-                  <label for="additional-item-3" class="additional-item-list--item">
+                  <label class="additional-item-list--item">
                     <div class="image"><img src="images/baby-chair.png"/></div>
                     <div class="info">
                       <div class="title">Детское автокресло</div>
-                      <div class="cost">100&nbsp;<b class="rouble d-inline">₽</b>./сут.</div>
+                      <div class="cost">100&nbsp;<b class="rouble d-inline">₽</b>/сут.</div>
                     </div>
-                    <div class="count">1 ШТ.</div>
-                    <input type="checkbox" id="additional-item-3"/>
-                    <div class="icon"></div>
+                    <div data-step="1" class="quantity-block">
+                      <div class="quantity-minus"></div>
+                      <input type="text" placeholder="0" value="0" class="quantity-input"/>
+                      <div class="quantity-plus"></div>
+                    </div>
                   </label>
                   <label for="additional-item-4" class="additional-item-list--item">
                     <div class="image"><img src="images/radar-detector.png"/></div>
@@ -1031,7 +1035,7 @@
             <div class="bottom-block">
               <ul>
                 <li>На выбор —<br/>несколько удобных<br/>пакетов франшизы</li>
-                <li>Предоставляем уже<br/>готовые материалы<br/>для вашей работы</li>
+                <li>Предоставляем уже&nbsp;<br/>готовые материалы<br/>для вашей работы</li>
                 <li>Проводим обучение<br/>ведению бизнеса<br/>по&nbsp;прокату</li>
               </ul><a href="https://franshiza.rosautoprokat.ru/" class="btn btn-blue btn-medium">Больше о франшизе</a>
             </div>
@@ -1046,14 +1050,20 @@
               <div class="image"><img src="images/partner-image.png"/></div>
               <div class="info semibold">
                 <div class="title">Для прокатных компаний</div>
-                <div class="description">Тут расписать про црм систему заточенную<br/>под прокатные компании</div><a href="/rent.html" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Узнать больше</span></span></a>
+                <div class="description">
+                  Тут расписать про црм систему заточенную&nbsp;
+                  под прокатные компании
+                </div><a href="/rent.html" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Узнать больше</span></span></a>
               </div>
             </div>
             <div class="partners-block--item">
               <div class="image"><img src="images/partner-image-2.png"/></div>
               <div class="info semibold">
                 <div class="title">Для владельцев автомобилей</div>
-                <div class="description">возможность сдать свой автомобиль в прокат<br/>и&nbsp;отслеживать доход от аренды онлайн</div><a href="/sublease.html" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Условия субаренды</span></span></a>
+                <div class="description">
+                  Возможность сдать свой&nbsp;автомобиль в&nbsp;прокат&nbsp;
+                  и&nbsp;отслеживать доход от аренды онлайн
+                </div><a href="/sublease.html" class="btn btn-blue btn-empty"><span class="d-flex align-items-center justify-content-center"><span class="text">Условия субаренды</span></span></a>
               </div>
             </div>
           </div>

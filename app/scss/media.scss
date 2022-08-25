@@ -45,6 +45,10 @@
             li {
                 padding-right: 40px;
             }
+
+            br {
+                display: none;
+            }
         }
     }
 
@@ -290,6 +294,11 @@
         .text-block {
             max-width: 100%;
         }
+    }
+
+
+    .contact-page-bg {
+        background-position: center 100px;
     }
 }
 
@@ -812,6 +821,10 @@
                     height: 15px;
                 }
             }
+
+            br {
+                display: inline-block;
+            }
         }
     }
 
@@ -1211,6 +1224,14 @@
     }
 
 
+    .partners-block {
+
+        .description br {
+            display: none;
+        }
+    }
+
+
     .sublease-info-block {
         display: block;
         margin-bottom: 0;
@@ -1302,6 +1323,23 @@
                 max-width: calc(50% - 10px);
             }
         }
+    }
+
+
+    .bonus-program-page {
+
+        .bonus-program-block-wrap {
+            padding-bottom: 80px;
+            background: none !important;
+        }
+
+        .advantages-list-wrap.bg-image {
+            background-position: center -65%;
+        }
+    }
+
+    .contact-page-bg {
+        background: none !important;
     }
 }
 

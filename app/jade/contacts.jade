@@ -5,7 +5,7 @@ html
     body
         include ./blocks/header.jade
 
-        .wrapper
+        .wrapper.contact-page-bg(style="background-image: url(images/page-bg-3.jpg);")
             .container-block
                 .breadcrumbs
                     a(href="/index.html").breadcrumbs--item.back-link
@@ -14,7 +14,7 @@ html
                     a(href="#").breadcrumbs--item
                         span.text Контакты
 
-            .contact-page(style="background-image: url(images/page-bg.jpg);")
+            .contact-page
                 .container-block
                     .contact-list
                         .d-block.d-xl-flex
