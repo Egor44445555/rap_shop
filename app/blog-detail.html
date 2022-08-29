@@ -31,7 +31,7 @@
       <div class="wrap">
         <div class="left-block"><a href="/index.html" class="logo"><img src="images/logo.png"/></a>
           <div class="location-wrap d-none d-xxl-flex">
-            <div class="location">
+            <div data-url="cities" class="location modal-btn">
               <div class="icon"><img src="images/icons/cupola.svg"/></div>
               <div class="text">Санкт- Петербург</div>
               <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
@@ -74,7 +74,7 @@
                   </div>
                 </div>
               </div>
-            </div><a href="https://franshiza.rosautoprokat.ru/" class="menu--item">Франшиза</a><a href="/rent.html" class="menu--item">Аренда CRM</a><a href="/contacts.html" class="menu--item">Контакты</a>
+            </div><a href="https://franshiza.rosautoprokat.ru/" class="menu--item"><span class="text">Франшиза</span></a><a href="/rent.html" class="menu--item"><span class="text">Аренда CRM</span></a><a href="/contacts.html" class="menu--item"><span class="text">Контакты</span></a>
           </div>
           <div class="button-wrap d-none d-xxl-flex"><a href="/rent-form.html" class="btn btn-blue">Арендовать</a><a href="/sublease.html" class="btn btn-blue btn-empty">Сдать в аренду</a></div>
           <div class="d-block d-xxl-none">
@@ -194,6 +194,35 @@
         </div>
       </div>
     </footer>
+    <div id="cities" style="opacity: 0;" class="modal-wrap">
+      <div class="overflow"></div>
+      <div class="modal">
+        <div class="close">X</div>
+        <div class="wrap">
+          <h3>Выберите город, в котором желаете арендовать автомобиль</h3>
+          <ul class="cities">
+            <li><a href="#">Адлер</a></li>
+            <li><a href="#">Альметьевск</a></li>
+            <li><a href="#">Ангарск</a></li>
+            <li><a href="#">Апрелевка</a></li>
+            <li><a href="#">Архангельск</a></li>
+            <li><a href="#">Белгород</a></li>
+            <li><a href="#">Великий Новгород</a></li>
+            <li><a href="#">Внуково</a></li>
+            <li><a href="#">Воронеж</a></li>
+            <li><a href="#">Воткинск</a></li>
+            <li><a href="#">Глазов</a></li>
+            <li><a href="#">Домодедово</a></li>
+            <li><a href="#">Иваново</a></li>
+            <li><a href="#">Ижевск</a></li>
+            <li><a href="#">Кисловодск</a></li>
+            <li><a href="#">Краснодар</a></li>
+            <li><a href="#">Курск</a></li>
+            <li><a href="#">Минеральные воды</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c61ec5ce-a317-4252-be8a-849a258229bf&amp;lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>

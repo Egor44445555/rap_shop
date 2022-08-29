@@ -5,7 +5,7 @@ header.header
                 img(src="images/logo.png")
 
             .location-wrap.d-none.d-xxl-flex
-                .location
+                .location.modal-btn(data-url="cities")
                     .icon
                         img(src="images/icons/cupola.svg")
                     .text Санкт- Петербург
@@ -66,9 +66,12 @@ header.header
                                         a(href="#") Для IOS
                                         a(href="#") Для Android
 
-                a(href="https://franshiza.rosautoprokat.ru/").menu--item Франшиза
-                a(href="/rent.html").menu--item Аренда CRM
-                a(href="/contacts.html").menu--item Контакты
+                a(href="https://franshiza.rosautoprokat.ru/").menu--item
+                    span.text Франшиза
+                a(href="/rent.html").menu--item
+                    span.text Аренда CRM
+                a(href="/contacts.html").menu--item
+                    span.text Контакты
 
             .button-wrap.d-none.d-xxl-flex
                 a(href="/rent-form.html").btn.btn-blue Арендовать
