@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/bootstrap/bootstrap-reboot.min.css"/>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap-reboot.rtl.min.css"/>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap-utilities.min.css"/>
+    <link rel="stylesheet" href="./css/jquery-ui-timepicker-addon.min.css"/>
     <link rel="stylesheet" href="./css/jquery-ui.css"/>
     <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css"/>
     <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
@@ -31,7 +32,7 @@
       <div class="wrap">
         <div class="left-block"><a href="/index.html" class="logo"><img src="images/logo.png"/></a>
           <div class="location-wrap d-none d-xxl-flex">
-            <div class="location">
+            <div data-url="cities" class="location modal-btn">
               <div class="icon"><img src="images/icons/cupola.svg"/></div>
               <div class="text">Санкт- Петербург</div>
               <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
@@ -74,7 +75,7 @@
                   </div>
                 </div>
               </div>
-            </div><a href="https://franshiza.rosautoprokat.ru/" class="menu--item">Франшиза</a><a href="/rent.html" class="menu--item">Аренда CRM</a><a href="/contacts.html" class="menu--item">Контакты</a>
+            </div><a href="https://franshiza.rosautoprokat.ru/" class="menu--item"><span class="text">Франшиза</span></a><a href="/rent.html" class="menu--item"><span class="text">Аренда CRM</span></a><a href="/contacts.html" class="menu--item"><span class="text">Контакты</span></a>
           </div>
           <div class="button-wrap d-none d-xxl-flex"><a href="/rent-form.html" class="btn btn-blue">Арендовать</a><a href="/sublease.html" class="btn btn-blue btn-empty">Сдать в аренду</a></div>
           <div class="d-block d-xxl-none">
@@ -87,6 +88,21 @@
       <div class="wrap js-custom-scroll">
         <div class="phones"><a href="tel:8 800 250 46 00" class="phones--item"><span class="text">8 800 250 46 00</span></a><a href="tel:+7 (965) 25 58 16" class="phones--item"><span class="text">+7 (965) 25 58 16</span></a></div>
         <div class="social-list"><a href="#" class="social-list--item"><img src="images/icons/social-whatsapp.png" class="icon"/><span class="text">Whats App</span></a><a href="#" class="social-list--item"><img src="images/icons/social-telegram.png" class="icon"/><span class="text">Тelegram</span></a></div>
+        <div class="location-wrap">
+          <div data-url="cities" class="location modal-btn">
+            <div class="icon"><img src="images/icons/cupola.svg"/></div>
+            <div class="text">Санкт- Петербург</div>
+            <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
+          </div>
+          <div class="location-list">
+            <div class="location-list--item">
+              <div class="text">Санкт- Петербург</div>
+            </div>
+            <div class="location-list--item">
+              <div class="text">Москва</div>
+            </div>
+          </div>
+        </div>
         <div class="modal-menu"><a href="/catalog.html" class="modal-menu--item">Каталог</a><a href="/sublease.html" class="modal-menu--item">Сдать авто в аренду</a><a href="/about.html" class="modal-menu--item">О нас</a><a href="/contacts.html" class="modal-menu--item">Контакты</a><a href="/bonus-program.html" class="modal-menu--item">Бонусная программа</a><a href="/additional-services.html" class="modal-menu--item">Дополнительные услуги</a><a href="https://franshiza.rosautoprokat.ru/" class="modal-menu--item">Франшиза</a><a href="/rent.html" class="modal-menu--item">Аренда CRM</a><a href="/news.html" class="modal-menu--item">Новости</a><a href="/blog.html" class="modal-menu--item">Блог</a></div>
         <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram-blue.png" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk-blue.png" class="icon"/><span class="text">Вконтакте</span></a>
           <div class="social-list--item blue"><img src="images/icons/social-mobile-app-blue.png" class="icon"/>
@@ -417,10 +433,58 @@
         </div>
       </div>
     </footer>
+    <div id="cities" style="opacity: 0;" class="modal-wrap">
+      <div class="overflow"></div>
+      <div class="modal">
+        <div class="close"></div>
+        <div class="wrap">
+          <h3>Выберите город, в котором желаете арендовать автомобиль</h3>
+          <ul class="cities">
+            <li><a href="#">Адлер</a></li>
+            <li><a href="#">Альметьевск</a></li>
+            <li><a href="#">Ангарск</a></li>
+            <li><a href="#">Апрелевка</a></li>
+            <li><a href="#">Архангельск</a></li>
+            <li><a href="#">Белгород</a></li>
+            <li><a href="#">Великий Новгород</a></li>
+            <li><a href="#">Внуково</a></li>
+            <li><a href="#">Воронеж</a></li>
+            <li><a href="#">Воткинск</a></li>
+            <li><a href="#">Глазов</a></li>
+            <li><a href="#">Домодедово</a></li>
+            <li><a href="#">Иваново</a></li>
+            <li><a href="#">Ижевск</a></li>
+            <li><a href="#">Кисловодск</a></li>
+            <li><a href="#">Краснодар</a></li>
+            <li><a href="#">Курск</a></li>
+            <li><a href="#">Минеральные воды</a></li>
+            <li><a href="#">Адлер</a></li>
+            <li><a href="#">Альметьевск</a></li>
+            <li><a href="#">Ангарск</a></li>
+            <li><a href="#">Апрелевка</a></li>
+            <li><a href="#">Архангельск</a></li>
+            <li><a href="#">Белгород</a></li>
+            <li><a href="#">Великий Новгород</a></li>
+            <li><a href="#">Внуково</a></li>
+            <li><a href="#">Воронеж</a></li>
+            <li><a href="#">Воткинск</a></li>
+            <li><a href="#">Глазов</a></li>
+            <li><a href="#">Домодедово</a></li>
+            <li><a href="#">Иваново</a></li>
+            <li><a href="#">Ижевск</a></li>
+            <li><a href="#">Кисловодск</a></li>
+            <li><a href="#">Краснодар</a></li>
+            <li><a href="#">Курск</a></li>
+            <li><a href="#">Минеральные воды</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c61ec5ce-a317-4252-be8a-849a258229bf&amp;lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-timepicker-addon.min.js"></script>
     <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>

@@ -1000,6 +1000,18 @@
         top: 20%;
         right: -15%;
     }
+
+
+    .rent-form {
+
+        .info-car {
+            display: block;
+
+            .info {
+                padding: 20px 0 0;
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -1019,6 +1031,13 @@
             display: none;
             max-width: 100%;
             margin-top: 40px;
+        }
+    }
+
+    .cities {
+
+        li {
+            max-width: 33.333%;
         }
     }
 }
@@ -1341,11 +1360,54 @@
     .contact-page-bg {
         background: none !important;
     }
+
+    .rent-form {
+
+        .info-car {
+
+            .characteristics--item {
+                max-width: 33.333%;
+                font-size: 16px;
+
+                .icon {
+                    margin-right: 10px;
+                }
+
+                .text {
+                    padding-top: 4px;
+                }
+            }
+        }
+    }
 }
 
 /******************************************************************/
 
 @media (max-width: 561px) {
+
+    .modal {
+
+        .close {
+            width: 40px;
+            height: 40px;
+
+            &:before,
+            &:after {
+                width: 20px;
+            }
+        }
+
+        .wrap {
+            padding: 50px 20px 0;
+        }
+    }
+
+    .cities {
+
+        li {
+            max-width: 50%;
+        }
+    }
 
     .btn-medium {
         min-height: 60px;
@@ -1881,6 +1943,17 @@
             margin-top: 30px;
         }
     }
+
+
+    .rent-form {
+
+        .info-car {
+
+            .characteristics--item {
+                max-width: 50%;
+            }
+        }
+    }
 }
 
 /******************************************************************/
@@ -2252,5 +2325,13 @@
     .h2 {
         font-size: 22px;
         line-height: 26px;
+    }
+
+
+    .cities {
+
+        li {
+            max-width: 100%;
+        }
     }
 }

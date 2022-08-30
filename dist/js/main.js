@@ -119,15 +119,15 @@ $(document).ready(function() {
 
     /*** Location header ***/
 
-    $('.location').on('click', function () {
-        $(this).parent().toggleClass('active');
-    });
-
-    $('.location-list').on('click', '.location-list--item', function (e) {
-        let wrap = $(this).parents('.location-wrap');
-        wrap.find('.location .text').html($(this).text());
-        wrap.removeClass('active');
-    });
+    // $('.location').on('click', function () {
+    //     $(this).parent().toggleClass('active');
+    // });
+    //
+    // $('.location-list').on('click', '.location-list--item', function (e) {
+    //     let wrap = $(this).parents('.location-wrap');
+    //     wrap.find('.location .text').html($(this).text());
+    //     wrap.removeClass('active');
+    // });
 
     /*** End Location header ***/
 
@@ -160,11 +160,11 @@ $(document).ready(function() {
 
     /*** Datepicker ***/
 
-    $(".datepicker").datepicker({
+    $(".datepicker").datetimepicker({
         dateFormat: 'dd.mm.y',
     });
 
-    $(".datepicker-from").datepicker({
+    $(".datepicker-from").datetimepicker({
         defaultDate: "+1w",
         dateFormat: 'dd.mm.y',
         numberOfMonths: 1,
@@ -184,7 +184,7 @@ $(document).ready(function() {
         yearSuffix: ''
     });
 
-    $(".datepicker-to").datepicker({
+    $(".datepicker-to").datetimepicker({
         defaultDate: "+1w",
         dateFormat: 'dd.mm.y',
         numberOfMonths: 1,
@@ -494,7 +494,7 @@ $(document).ready(function() {
 
     $('.modal-btn').on("click", function() {
 
-        if($(this).attr('href')) {
+        if ($(this).attr('href')) {
             idModal = $(this).attr('href');
             idModal = idModal.slice(1, idModal.length);
         } else {

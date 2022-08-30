@@ -182,7 +182,7 @@
     .image {
         position: relative;
         flex: 1;
-        max-width: 500px;
+        max-width: 700px;
         padding: 0 40px;
         text-align: center;
 
@@ -2308,7 +2308,7 @@
         }
 
         .step-body {
-            min-height: 450px;
+            min-height: 482px;
         }
     }
 
@@ -2363,6 +2363,50 @@
 
     .custom-select-wrapper {
         display: none;
+    }
+
+    .info-car {
+        display: flex;
+
+        .image {
+            flex: 1;
+            max-width: 265px;
+        }
+
+        .info {
+            flex: 1;
+            padding-left: 95px;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .characteristics {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 25px;
+
+            &--item {
+                display: flex;
+                flex: 100%;
+                max-width: 25%;
+                margin-top: 15px;
+                padding-right: 10px;
+                font-size: 18px;
+            }
+
+            .icon {
+                width: 25px;
+                height: 25px;
+                min-width: 25px;
+                margin-right: 25px;
+            }
+
+            .text {
+                padding-top: 2px;
+            }
+        }
     }
 }
 

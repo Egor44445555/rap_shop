@@ -160,11 +160,11 @@ $(document).ready(function() {
 
     /*** Datepicker ***/
 
-    $(".datepicker").datepicker({
+    $(".datepicker").datetimepicker({
         dateFormat: 'dd.mm.y',
     });
 
-    $(".datepicker-from").datepicker({
+    $(".datepicker-from").datetimepicker({
         defaultDate: "+1w",
         dateFormat: 'dd.mm.y',
         numberOfMonths: 1,
@@ -184,7 +184,7 @@ $(document).ready(function() {
         yearSuffix: ''
     });
 
-    $(".datepicker-to").datepicker({
+    $(".datepicker-to").datetimepicker({
         defaultDate: "+1w",
         dateFormat: 'dd.mm.y',
         numberOfMonths: 1,
