@@ -392,6 +392,26 @@ a {
     .error {
         color: $red;
     }
+
+    .total-price {
+        display: flex;
+        align-items: baseline;
+
+        .label {
+            padding-right: 20px;
+            font-family: $font-base-semiBold;
+            font-size: 45px;
+        }
+
+        .price {
+            font-size: 65px;
+            color: $blue;
+
+            b {
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 .input-wrap {
@@ -1282,6 +1302,80 @@ select {
 }
 
 /*** End Rating ***/
+
+
+.date-time-picker-wrap {
+    display: flex;
+    box-shadow: $boxShadow;
+
+    .timepicker-wrap,
+    .datepicker-wrap {
+
+        input {
+            box-shadow: none;
+        }
+    }
+
+    .datepicker-wrap input {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .timepicker-wrap input {
+        border-left: 2px solid $grayBg;
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+
+/*** Timepicker ***/
+
+.timepicker-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: $white;
+    border-radius: 30px;
+
+    input {
+        width: 100%;
+        height: 90px;
+        padding: 10px 80px 10px 40px;
+        background: $white;
+        font-family: $font-base;
+        font-size: 18px;
+        color: $black;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        box-shadow: $boxShadow;
+
+        &::placeholder {
+            font-family: $font-base;
+            font-size: 18px;
+            color: $black;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        height: 29px;
+        pointer-events: none;
+
+        &:before {
+            color: $black;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/*** End Timepicker ***/
 
 
 /*** Datepicker ***/

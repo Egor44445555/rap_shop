@@ -469,17 +469,27 @@ form(action="#").rent-form
                 .row.mt-5.pt-0.pt-lg-3
                     .col-12.col-lg-6
                         .input-wrap
-                            .datepicker-wrap
-                                input(type="text" placeholder="Начало аренды").input.datepicker-from
-                                .icon
-                                    img(src="images/icons/calendar.png")
+                            .date-time-picker-wrap
+                                .datepicker-wrap
+                                    input(type="text" placeholder="Начало аренды").input.datepicker-from
+                                    .icon
+                                        img(src="images/icons/calendar.png")
+                                .timepicker-wrap
+                                    input(type="text" placeholder="Время").input.timepicker
+                                    .icon
+                                        img(src="images/icons/clock.svg")
 
                     .col-12.col-lg-6.mt-3.mt-lg-0
                         .input-wrap
-                            .datepicker-wrap
-                                input(type="text" placeholder="Окончание аренды").input.datepicker-to
-                                .icon
-                                    img(src="images/icons/calendar.png")
+                            .date-time-picker-wrap
+                                .datepicker-wrap
+                                    input(type="text" placeholder="Окончание аренды").input.datepicker-to
+                                    .icon
+                                        img(src="images/icons/calendar.png")
+                                .timepicker-wrap
+                                    input(type="text" placeholder="Время").input.timepicker
+                                    .icon
+                                        img(src="images/icons/clock.svg")
 
                 .mt-3
                     .additional-item-list
@@ -552,6 +562,12 @@ form(action="#").rent-form
                                     b.rouble.d-inline ₽
                             input(type="checkbox" id="additional-item-7")
                             .icon
+
+                .mt-5
+                    .total-price
+                        span.label Итого к оплате
+                        span.price 1.856&nbsp;
+                            b.rouble.d-inline ₽
 
         .button-wrap
             .steps Шаг 2 из 3

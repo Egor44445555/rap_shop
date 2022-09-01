@@ -122,114 +122,6 @@
         .text {
             transition: .3s;
         }
-
-        .dropdown-wrap {
-            position: relative;
-
-            .label {
-                display: flex;
-                align-items: center;
-                text-align: center;
-                cursor: pointer;
-
-                .icon {
-                    width: 12px;
-                    height: 7px;
-                    margin: 3px 0 0 10px;
-                }
-            }
-
-            &.active {
-
-                .dropdown {
-                    display: block;
-                }
-            }
-        }
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: calc(100% + 10px);
-            left: -10px;
-            min-width: 300px;
-            padding: 15px 5px;
-            background: $white;
-            box-shadow: $boxShadow;
-            border-radius: 10px;
-
-            &--item {
-                display: flex;
-                align-items: center;
-                padding: 5px 20px;
-                font-family: $font-base-semiBold;
-                font-size: 16px;
-                color: $black;
-                cursor: pointer;
-                transition: .3s;
-
-                &:first-child {
-                    border-top: 0;
-                }
-
-                &:hover {
-                    opacity: .7;
-                }
-            }
-
-            .icon {
-                margin-right: 10px;
-            }
-
-            .social-list {
-                display: block;
-                margin-top: 10px;
-                padding: 0 20px;
-
-                &--item {
-                    margin-top: 5px;
-                    padding: 0;
-                    font-size: 16px;
-                    color: $textGray;
-                    transition: .3s;
-
-                    &:first-child {
-                        margin-top: 0;
-                    }
-
-                    &:hover {
-                        opacity: .7;
-                    }
-
-                    &.blue {
-                        align-items: flex-start;
-
-                        .text {
-                            padding-top: 5px;
-                        }
-                    }
-                }
-
-                .icon {
-                    width: 30px;
-                    height: 30px;
-                }
-
-                .button-wrap {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    margin: 10px 0 0 -10px;
-
-                    a {
-                        margin: 5px 0 0 10px;
-                        padding-bottom: 3px;
-                        text-transform: none;
-                        border-bottom: 1px solid $blueOtherLight;
-                    }
-                }
-            }
-        }
     }
 
     .button-wrap {
@@ -246,6 +138,121 @@
 
             &:first-child {
                 margin: 0;
+            }
+        }
+    }
+}
+
+.dropdown-wrap {
+    position: relative;
+
+    .label {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+
+        .icon {
+            width: 12px;
+            height: 7px;
+            margin: 3px 0 0 10px;
+        }
+    }
+
+    &.active {
+
+        .label {
+
+            .icon {
+                transform: rotate(-180deg);
+            }
+        }
+
+        .dropdown {
+            display: block;
+        }
+    }
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: -10px;
+    min-width: 300px;
+    padding: 15px 5px;
+    background: $white;
+    box-shadow: $boxShadow;
+    border-radius: 10px;
+
+    &--item {
+        display: flex;
+        align-items: center;
+        padding: 5px 20px;
+        font-family: $font-base-semiBold;
+        font-size: 16px;
+        color: $black;
+        cursor: pointer;
+        transition: .3s;
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    .social-list {
+        display: block;
+        margin-top: 10px;
+        padding: 0 20px;
+
+        &--item {
+            margin-top: 5px;
+            padding: 0;
+            font-size: 16px;
+            color: $textGray;
+            transition: .3s;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:hover {
+                opacity: .7;
+            }
+
+            &.blue {
+                align-items: flex-start;
+
+                .text {
+                    padding-top: 5px;
+                }
+            }
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .button-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10px 0 0 -10px;
+
+            a {
+                margin: 5px 0 0 10px;
+                padding-bottom: 3px;
+                text-transform: none;
+                border-bottom: 1px solid $blueOtherLight;
             }
         }
     }

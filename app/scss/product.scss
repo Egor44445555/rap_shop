@@ -147,6 +147,7 @@
 .product-detail-wrap {
     position: relative;
     padding: 80px 0 116px;
+    z-index: 5;
 
     &:before {
         content: '';
@@ -272,22 +273,61 @@
         display: flex;
         align-items: flex-end;
         font-family: $font-base-semiBold;
-        font-size: 23px;
-        line-height: 23px;
+        font-size: 20px;
+        line-height: 20px;
         color: $black;
         white-space: nowrap;
+
+        .dropdown {
+            width: 350px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+
+            &--item {
+                font-size: 14px;
+            }
+
+            .cost {
+                font-size: 24px;
+
+                span {
+                    padding-left: 5px;
+                    font-size: 14px;
+                }
+            }
+
+            .info-text {
+                position: relative;
+                padding: 10px 0 0 15px;
+                line-height: normal;
+                white-space: normal;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 6px;
+                    height: 11px;
+                    background: $redBright;
+                    transform: skew(-40deg, 0);
+                    border-radius: 2px;
+                }
+            }
+        }
     }
 
     .cost {
         font-family: $font-base;
-        font-size: 46px;
+        font-size: 36px;
         line-height: 23px;
         color: $blue;
 
         span {
             padding-left: 10px;
             font-family: $font-base-semiBold;
-            font-size: 29px;
+            font-size: 20px;
             line-height: 23px;
             color: $black;
         }
@@ -555,7 +595,6 @@
         }
     }
 
-
     .product-detail-wrap {
         padding-bottom: 40px;
 
@@ -726,6 +765,10 @@
 
         .cost-wrap {
             font-size: 18px;
+
+            .dropdown {
+                max-width: 100%;
+            }
         }
 
         .cost {

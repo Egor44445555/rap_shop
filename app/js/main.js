@@ -158,13 +158,20 @@ $(document).ready(function() {
     });
 
 
+    /*** Timepicker ***/
+
+    $(".timepicker").timepicker();
+
+    /*** End Timepicker ***/
+
+
     /*** Datepicker ***/
 
-    $(".datepicker").datetimepicker({
+    $(".datepicker").datepicker({
         dateFormat: 'dd.mm.y',
     });
 
-    $(".datepicker-from").datetimepicker({
+    $(".datepicker-from").datepicker({
         defaultDate: "+1w",
         dateFormat: 'dd.mm.y',
         numberOfMonths: 1,
@@ -184,7 +191,7 @@ $(document).ready(function() {
         yearSuffix: ''
     });
 
-    $(".datepicker-to").datetimepicker({
+    $(".datepicker-to").datepicker({
         defaultDate: "+1w",
         dateFormat: 'dd.mm.y',
         numberOfMonths: 1,

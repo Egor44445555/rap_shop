@@ -1385,6 +1385,39 @@
 
 @media (max-width: 561px) {
 
+    .btn-medium {
+        min-height: 60px;
+        font-size: 20px;
+    }
+
+    .form {
+
+        .total-price {
+
+            .label {
+                font-size: 20px;
+            }
+
+            .price {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .date-time-picker-wrap {
+        display: block;
+
+        .datepicker-wrap input,
+        .timepicker-wrap input {
+            border-radius: 5px;
+        }
+
+        .timepicker-wrap input {
+            border-left: 0;
+            border-top: 2px solid $grayBg;
+        }
+    }
+
     .modal {
 
         .close {
@@ -1407,11 +1440,6 @@
         li {
             max-width: 50%;
         }
-    }
-
-    .btn-medium {
-        min-height: 60px;
-        font-size: 20px;
     }
 
     .car-select-block-wrap {

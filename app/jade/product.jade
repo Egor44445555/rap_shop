@@ -60,8 +60,8 @@ html
                                     .icon
                                         img(src="images/icons/arrow-toggle-down.svg")
 
-                            .row.align-items-end.flex-column-reverse.flex-lg-row.mt-5.pt-3
-                                .col.mt-4.mt-lg-0
+                            .d-flex.align-items-center.align-items-lg-end.flex-column-reverse.flex-lg-row.flex-wrap.mt-2.pt-3
+                                .mt-4
                                     .social-list.justify-content-center.justify-content-lg-start
                                         .label.text-center.text-lg-start.order-last.order-lg-first.pt-3.pt-lg-0 Поделиться
                                         a(href="#").social-list--item
@@ -76,12 +76,41 @@ html
                                             img(src="images/icons/whatsapp.png")
                                         a(href="#").social-list--item
                                             img(src="images/icons/telegram.png")
-                                .col
-                                    .cost-wrap.justify-content-center.justify-content-lg-start
-                                        span.pe-2.pe-lg-4.ps-0 ОТ
-                                        .cost 1.575
-                                            .rouble.d-inline ₽
-                                            span / сутки
+
+                                .cost-wrap.dropdown-wrap.justify-content-center.justify-content-lg-start.mt-4
+                                    .label.d-flex.align-items-baseline
+                                        .d-flex.justify-content-center.justify-content-lg-start.align-items-baseline
+                                            span.pe-2.pe-lg-3.ps-0 ОТ
+                                            .cost 1.575
+                                                .rouble.d-inline ₽
+                                                span / сутки
+                                        .icon
+                                            img(src="images/icons/arrow-toggle-down.svg")
+
+                                    .dropdown
+                                        .dropdown--item.align-items-baseline
+                                            span.pe-2.ps-0 1-3 дня
+                                            .cost 1.575
+                                                .rouble.d-inline ₽
+                                                span / сутки
+                                        .dropdown--item.align-items-baseline
+                                            span.pe-2.ps-0 3-5 дней
+                                            .cost 1.480
+                                                .rouble.d-inline ₽
+                                                span / сутки
+                                        .dropdown--item.align-items-baseline
+                                            span.pe-2.ps-0 5-10 дней
+                                            .cost 1.360
+                                                .rouble.d-inline ₽
+                                                span / сутки
+                                        .dropdown--item.align-items-baseline
+                                            span.pe-2.ps-0 10-15 дней
+                                            .cost 1.280
+                                                .rouble.d-inline ₽
+                                                span / сутки
+                                        .dropdown--item
+                                            .info-text Чем больше дней арендуете автомобиль, тем больше скидка на аренду
+
 
             .rent-block-wrap(style="background-image: url(images/app-block-bg.jpg);")
                 .container-block
@@ -92,17 +121,27 @@ html
                             .row.mt-5.pt-0.pt-lg-3
                                 .col-12.col-lg-6
                                     .input-wrap
-                                        .datepicker-wrap
-                                            input(type="text" placeholder="Начало аренды").input.datepicker-from
-                                            .icon
-                                                img(src="images/icons/calendar.png")
+                                        .date-time-picker-wrap
+                                            .datepicker-wrap
+                                                input(type="text" placeholder="Начало аренды").input.datepicker-from
+                                                .icon
+                                                    img(src="images/icons/calendar.png")
+                                            .timepicker-wrap
+                                                input(type="text" placeholder="Время").input.timepicker
+                                                .icon
+                                                    img(src="images/icons/clock.svg")
 
                                 .col-12.col-lg-6.mt-3.mt-lg-0
                                     .input-wrap
-                                        .datepicker-wrap
-                                            input(type="text" placeholder="Окончание аренды").input.datepicker-to
-                                            .icon
-                                                img(src="images/icons/calendar.png")
+                                        .date-time-picker-wrap
+                                            .datepicker-wrap
+                                                input(type="text" placeholder="Окончание аренды").input.datepicker-to
+                                                .icon
+                                                    img(src="images/icons/calendar.png")
+                                            .timepicker-wrap
+                                                input(type="text" placeholder="Время").input.timepicker
+                                                .icon
+                                                    img(src="images/icons/clock.svg")
 
                             .mt-3
                                 .additional-item-list

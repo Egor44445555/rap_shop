@@ -152,16 +152,44 @@
                 </div><a href="#characteristics" class="more-btn"><span>Все характеристики</span>
                   <div class="icon"><img src="images/icons/arrow-toggle-down.svg"/></div></a>
               </div>
-              <div class="row align-items-end flex-column-reverse flex-lg-row mt-5 pt-3">
-                <div class="col mt-4 mt-lg-0">
+              <div class="d-flex align-items-center align-items-lg-end flex-column-reverse flex-lg-row flex-wrap mt-2 pt-3">
+                <div class="mt-4">
                   <div class="social-list justify-content-center justify-content-lg-start">
                     <div class="label text-center text-lg-start order-last order-lg-first pt-3 pt-lg-0">Поделиться</div><a href="#" class="social-list--item"><img src="images/icons/vk.png"/></a><a href="#" class="social-list--item"><img src="images/icons/facebook.png"/></a><a href="#" class="social-list--item"><img src="images/icons/ok.png"/></a><a href="#" class="social-list--item"><img src="images/icons/viber.png"/></a><a href="#" class="social-list--item"><img src="images/icons/whatsapp.png"/></a><a href="#" class="social-list--item"><img src="images/icons/telegram.png"/></a>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="cost-wrap justify-content-center justify-content-lg-start"><span class="pe-2 pe-lg-4 ps-0">ОТ</span>
-                    <div class="cost">1.575
-                      <div class="rouble d-inline">₽</div><span>/ сутки</span>
+                <div class="cost-wrap dropdown-wrap justify-content-center justify-content-lg-start mt-4">
+                  <div class="label d-flex align-items-baseline">
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-baseline"><span class="pe-2 pe-lg-3 ps-0">ОТ</span>
+                      <div class="cost">1.575
+                        <div class="rouble d-inline">₽</div><span>/ сутки</span>
+                      </div>
+                    </div>
+                    <div class="icon"><img src="images/icons/arrow-toggle-down.svg"/></div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown--item align-items-baseline"><span class="pe-2 ps-0">1-3 дня</span>
+                      <div class="cost">1.575
+                        <div class="rouble d-inline">₽</div><span>/ сутки</span>
+                      </div>
+                    </div>
+                    <div class="dropdown--item align-items-baseline"><span class="pe-2 ps-0">3-5 дней</span>
+                      <div class="cost">1.480
+                        <div class="rouble d-inline">₽</div><span>/ сутки</span>
+                      </div>
+                    </div>
+                    <div class="dropdown--item align-items-baseline"><span class="pe-2 ps-0">5-10 дней</span>
+                      <div class="cost">1.360
+                        <div class="rouble d-inline">₽</div><span>/ сутки</span>
+                      </div>
+                    </div>
+                    <div class="dropdown--item align-items-baseline"><span class="pe-2 ps-0">10-15 дней</span>
+                      <div class="cost">1.280
+                        <div class="rouble d-inline">₽</div><span>/ сутки</span>
+                      </div>
+                    </div>
+                    <div class="dropdown--item">
+                      <div class="info-text">Чем больше дней арендуете автомобиль, тем больше скидка на аренду</div>
                     </div>
                   </div>
                 </div>
@@ -178,17 +206,29 @@
               <div class="row mt-5 pt-0 pt-lg-3">
                 <div class="col-12 col-lg-6">
                   <div class="input-wrap">
-                    <div class="datepicker-wrap">
-                      <input type="text" placeholder="Начало аренды" class="input datepicker-from"/>
-                      <div class="icon"><img src="images/icons/calendar.png"/></div>
+                    <div class="date-time-picker-wrap">
+                      <div class="datepicker-wrap">
+                        <input type="text" placeholder="Начало аренды" class="input datepicker-from"/>
+                        <div class="icon"><img src="images/icons/calendar.png"/></div>
+                      </div>
+                      <div class="timepicker-wrap">
+                        <input type="text" placeholder="Время" class="input timepicker"/>
+                        <div class="icon"><img src="images/icons/clock.svg"/></div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 mt-3 mt-lg-0">
                   <div class="input-wrap">
-                    <div class="datepicker-wrap">
-                      <input type="text" placeholder="Окончание аренды" class="input datepicker-to"/>
-                      <div class="icon"><img src="images/icons/calendar.png"/></div>
+                    <div class="date-time-picker-wrap">
+                      <div class="datepicker-wrap">
+                        <input type="text" placeholder="Окончание аренды" class="input datepicker-to"/>
+                        <div class="icon"><img src="images/icons/calendar.png"/></div>
+                      </div>
+                      <div class="timepicker-wrap">
+                        <input type="text" placeholder="Время" class="input timepicker"/>
+                        <div class="icon"><img src="images/icons/clock.svg"/></div>
+                      </div>
                     </div>
                   </div>
                 </div>
