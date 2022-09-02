@@ -395,6 +395,7 @@ a {
 
     .total-price {
         display: flex;
+        flex-wrap: wrap;
         align-items: baseline;
 
         .label {
@@ -409,6 +410,17 @@ a {
 
             b {
                 font-weight: 500;
+            }
+        }
+
+        &.medium {
+
+            .label {
+                font-size: 34px;
+            }
+
+            .price {
+                font-size: 45px;
             }
         }
     }
@@ -703,7 +715,7 @@ select {
 
     .custom-options {
         position: absolute;
-        top: calc(100% - 6px);
+        top: calc(100% - 3px);
         left: 0;
         right: 0;
         min-width: 100%;
@@ -1093,43 +1105,95 @@ select {
 
 /*** Range slider ***/
 
+.irs {
+    height: 10px;
+}
+
 .irs--round {
+    height: 10px;
 
-    .irs-handle {
-        top: 28px;
-        width: 20px;
-        height: 20px;
-        border: 2px solid $themeColor;
-        border-radius: 50%;
-        box-shadow: none;
-    }
-
-    .irs-bar {
-        height: 5px;
-        background-color: $themeColor;
+    .irs-max,
+    .irs-min {
+        display: none;
     }
 
     .irs-line {
-        height: 5px;
-        background-color: $borderColorLight;
-        border-radius: 0;
+        top: 4px;
+        height: 3px;
+        background-color: $borderColor;
+        border-radius: 3px;
     }
 
-    .irs-to,
-    .irs-from,
-    .irs-single {
-        top: -13px;
-        min-width: 52px;
-        margin: 0 0 0 15px;
-        padding: 4px 8px;
-        background: $themeColor;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
+    .irs-bar {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 0;
+        top: 4px;
+        height: 3px;
+        background-color: $themeColor;
+        border-radius: 3px;
+    }
 
-        &:before {
-            display: none;
+    .irs-handle {
+        position: absolute;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        background-color: $themeColor;
+        border-radius: 50%;
+    }
+}
+
+.range-slider-controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 13px;
+
+    &--item {
+        flex: 1;
+
+        &:first-child {
+            margin-right: -3px;
         }
+    }
+
+    .label {
+        padding-bottom: 2px;
+        font-size: 14px;
+        line-height: 17px;
+        color: $borderColor;
+    }
+
+    .input {
+        height: 40px;
+        padding: 0 20px;
+        font-family: $font-base-semiBold;
+        font-size: 14px;
+        line-height: 19px;
+        color: $black;
+
+        input {
+            flex: 1;
+            height: 100%;
+            padding: 0;
+            font-size: 14px;
+            border: 0;
+            text-align: right;
+        }
+
+        span {
+            flex: 1;
+        }
+    }
+
+    .from {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .to {
+        border-radius: 0 5px 5px 0;
     }
 }
 

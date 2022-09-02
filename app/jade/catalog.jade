@@ -37,8 +37,29 @@ html
                                         .input-wrap
                                             .label Цена
 
-                                            input(type="text" placeholder="от").input
-                                            input(type="text" placeholder="до").input.mt-3
+                                            .range-slider-wrap.mt-2
+                                                .range-slider
+                                                    input.js-range-slider(
+                                                        type="text"
+                                                        hidden
+                                                        data-min="0"
+                                                        data-max="35000"
+                                                        data-from="6000"
+                                                        data-to="35000")
+
+                                            .range-slider-controls.mt-4.pt-2
+                                                .range-slider-controls--item
+                                                    .input.from.d-flex.align-items-center
+                                                        span от
+                                                        input(type="text" value="1000").js-input-from
+                                                        | &nbsp;
+                                                        b.rouble ₽
+                                                .range-slider-controls--item
+                                                    .input.to.d-flex.align-items-center
+                                                        span до
+                                                        input(type="text" value="35000").js-input-to
+                                                        | &nbsp;
+                                                        b.rouble ₽
 
                                         .input-wrap
                                             .label Марка

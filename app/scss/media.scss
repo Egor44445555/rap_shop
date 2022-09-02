@@ -10,6 +10,26 @@
         line-height: 45px;
     }
 
+    .range-slider-controls {
+
+        &--item {
+            flex: 100%;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            .from {
+                border-radius: 5px 5px 0 0;
+            }
+
+            .to {
+                margin-top: -1px;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+
 
     .about-block-wrap {
         padding: 100px 0;
@@ -1400,6 +1420,17 @@
 
             .price {
                 font-size: 32px;
+            }
+
+            &.medium {
+
+                .label {
+                    font-size: 20px;
+                }
+
+                .price {
+                    font-size: 32px;
+                }
             }
         }
     }
