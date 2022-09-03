@@ -149,6 +149,13 @@ body {
     font-size: 14px;
 }
 
+.btn-extraSmall {
+    min-height: 20px;
+    padding: 5px 25px;
+    font-family: $font-base-semiBold;
+    font-size: 12px;
+}
+
 .btn-medium {
     min-height: 50px;
     padding: 15px 20px;
@@ -429,22 +436,10 @@ a {
 .input-wrap {
     position: relative;
 
-    .eye {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    .currency {
-        position: absolute;
-        top: 50%;
-        right: 28px;
-        transform: translateY(-50%);
-        font-size: 14px;
-        cursor: pointer;
+    .label {
+        margin-bottom: 10px;
+        font-family: $font-base-semiBold;
+        color: $textGray;
     }
 }
 
@@ -929,24 +924,22 @@ select {
     position: relative;
     width: 100%;
     height: auto;
-    max-width: 1000px;
+    max-width: 600px;
     margin: auto;
-    padding: 0 0 20px;
     background: $white;
+    border-radius: 10px;
     overflow: visible;
     z-index: 5;
 
     .close {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 25px;
+        right: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 60px;
-        height: 60px;
-        background: $themeColor;
-        color: $white;
+        width: 25px;
+        height: 25px;
         cursor: pointer;
         z-index: 9;
 
@@ -959,7 +952,7 @@ select {
             transform: translate(-50%, -50%) rotate(45deg);
             width: 25px;
             height: 2px;
-            background: $white;
+            background: $black;
         }
 
         &:after {
@@ -968,7 +961,24 @@ select {
     }
 
     .wrap {
-        padding: 40px 60px 20px;
+        padding: 60px 80px 40px;
+    }
+
+    .sub-title {
+        margin-top: 15px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .input,
+    .select,
+    .textarea {
+        height: 80px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
     }
 }
 

@@ -540,6 +540,15 @@
                 line-height: 22px;
             }
         }
+
+        ul {
+            margin-top: 40px;
+            max-width: 550px;
+
+            li {
+                max-width: 100%;
+            }
+        }
     }
 
 
@@ -1452,8 +1461,8 @@
     .modal {
 
         .close {
-            width: 40px;
-            height: 40px;
+            top: 10px;
+            right: 10px;
 
             &:before,
             &:after {
@@ -1462,7 +1471,13 @@
         }
 
         .wrap {
-            padding: 50px 20px 0;
+            padding: 40px 20px 20px;
+        }
+
+        .sub-title {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 18px;
         }
     }
 

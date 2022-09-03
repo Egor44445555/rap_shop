@@ -410,10 +410,11 @@ $(document).ready(function() {
         $inputFrom = $(".js-input-from"),
         $inputTo = $(".js-input-to"),
         instance,
-        min = 0,
-        max = 1000,
-        from = 0,
-        to = 0;
+        min = $range.data('min'),
+        max = $range.data('max'),
+        from = $range.data('from'),
+        to = $range.data('to'),
+        currency = '';
 
     if($range.length > 0) {
 
@@ -422,9 +423,10 @@ $(document).ready(function() {
             type: "double",
             min: min,
             max: max,
-            from: 200,
-            to: 800,
+            from: from,
+            to: to,
             hide_min_max: true,
+            hide_from_to: true,
             onStart: updateInputs,
             onChange: updateInputs,
             onFinish: updateInputs
@@ -435,8 +437,8 @@ $(document).ready(function() {
             from = data.from;
             to = data.to;
 
-            $inputFrom.prop("value", from);
-            $inputTo.prop("value", to);
+            $inputFrom.prop("value", from + currency);
+            $inputTo.prop("value", to + currency);
         }
 
         $inputFrom.on("change", function () {
@@ -453,7 +455,7 @@ $(document).ready(function() {
                 from: val
             });
 
-            $(this).prop("value", val);
+            $(this).prop("value", val + currency);
 
         });
 
@@ -471,7 +473,7 @@ $(document).ready(function() {
                 to: val
             });
 
-            $(this).prop("value", val);
+            $(this).prop("value", val + currency);
         });
     }
     
@@ -507,6 +509,8 @@ $(document).ready(function() {
         } else {
             idModal = $(this).attr('data-url');
         }
+
+        console.log(idModal)
 
         $('.modal-wrap').each(function () {
 
@@ -557,6 +561,7 @@ $(document).ready(function() {
         $(this).after(template)
         $('.custom-options').mCustomScrollbar();
     });
+
     $('.custom-option:first-of-type').hover(
         function () {
             $(this).parents('.custom-options').addClass('option-hover')
@@ -565,15 +570,16 @@ $(document).ready(function() {
             $(this).parents('.custom-options').removeClass('option-hover')
         }
     );
+
     $('.custom-select-trigger').on('click', function (event) {
-        $('.custom-select').removeClass('opened');
-
-        $('html').on('click', function () {
-            $('.custom-select').removeClass('opened');
-        });
-
-        $(this).parents('.custom-select').toggleClass('opened');
         event.stopPropagation();
+
+        $('.custom-select').not($(this).parent()).removeClass('opened');
+        $(this).parents('.custom-select').toggleClass('opened');
+    });
+
+    _html.on('click', function () {
+        $('.custom-select').removeClass('opened');
     });
 
     $('.custom-option').on('click', function () {
