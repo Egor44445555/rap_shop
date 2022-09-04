@@ -32,17 +32,23 @@
       <div class="wrap">
         <div class="left-block"><a href="/index.html" class="logo"><img src="images/logo.png"/></a>
           <div class="location-wrap d-none d-xxl-flex">
-            <div data-url="cities" class="location modal-btn">
+            <div class="location js-location-modal-btn">
               <div class="icon"><img src="images/icons/cupola.svg"/></div>
               <div class="text">Санкт- Петербург</div>
               <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
             </div>
-            <div class="location-list">
-              <div class="location-list--item">
-                <div class="text">Санкт- Петербург</div>
+            <div class="location-search">
+              <div class="input-wrap">
+                <input type="text" class="input js-autocomplete-input"/>
+                <div class="autocomplete-list d-none js-autocomplete">
+                  <div class="autocomplete-list--item">Москва</div>
+                  <div class="autocomplete-list--item">Можга</div>
+                  <div class="autocomplete-list--item">Можайск</div>
+                  <div class="autocomplete-list--item">Молькино</div>
+                </div>
               </div>
-              <div class="location-list--item">
-                <div class="text">Москва</div>
+              <div class="mt-3">
+                <button type="submit" class="btn btn-blue btn-extraSmall">Выбрать</button>
               </div>
             </div>
           </div>
@@ -96,21 +102,6 @@
             <div data-url="feedback" class="btn btn-blue btn-small modal-btn">Заказать звонок</div>
           </div>
         </div>
-        <div class="location-wrap">
-          <div data-url="cities" class="location modal-btn">
-            <div class="icon"><img src="images/icons/cupola.svg"/></div>
-            <div class="text">Санкт- Петербург</div>
-            <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
-          </div>
-          <div class="location-list">
-            <div class="location-list--item">
-              <div class="text">Санкт- Петербург</div>
-            </div>
-            <div class="location-list--item">
-              <div class="text">Москва</div>
-            </div>
-          </div>
-        </div>
         <div class="modal-menu"><a href="/catalog.html" class="modal-menu--item">Каталог</a><a href="/sublease.html" class="modal-menu--item">Сдать авто в аренду</a><a href="/about.html" class="modal-menu--item">О нас</a><a href="/contacts.html" class="modal-menu--item">Контакты</a><a href="/bonus-program.html" class="modal-menu--item">Бонусная программа</a><a href="/additional-services.html" class="modal-menu--item">Дополнительные услуги</a><a href="https://franshiza.rosautoprokat.ru/" class="modal-menu--item">Франшиза</a><a href="/rent.html" class="modal-menu--item">Аренда CRM</a><a href="/news.html" class="modal-menu--item">Новости</a><a href="/blog.html" class="modal-menu--item">Блог</a></div>
         <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram-blue.png" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk-blue.png" class="icon"/><span class="text">Вконтакте</span></a>
           <div class="social-list--item blue"><img src="images/icons/social-mobile-app-blue.png" class="icon"/>
@@ -134,7 +125,7 @@
               <p>Нужен инструмент для приема заказов?<br/>У нас есть готовое решение.</p><img src="images/rent-image.png" class="image d-block d-md-none"/>
               <div class="description">
                 <p>CRM «Росавтопрокат» — это готовая<br/>многофункциональная система<br/>учета заказов и приема заявок, полностью<br/>адаптированая под прокатный бизнес</p>
-                <div data-url="feedback" class="btn btn-blue modal-btn">Тестовый доступ</div>
+                <div data-url="test-access" class="btn btn-blue modal-btn">Тестовый доступ</div>
               </div>
             </div><img src="images/rent-image.png" class="image d-none d-md-block"/>
           </div>
@@ -245,6 +236,30 @@
         </div>
       </div>
     </footer>
+    <div id="test-access" style="opacity: 0;" class="modal-wrap">
+      <div class="overflow"></div>
+      <div class="modal medium-size">
+        <div class="close"></div>
+        <div class="wrap">
+          <div class="feedback-form">
+            <h3 class="title">Запрос на тестовый доступ<br/>к&nbsp;CRM-системе</h3>
+            <form class="mt-4 mb-0">
+              <div class="input-wrap mt-3">
+                <div class="label">Ваше имя</div>
+                <input type="text" class="input"/>
+              </div>
+              <div class="input-wrap mt-3">
+                <div class="label">Ваш телефон</div>
+                <input type="text" class="input"/>
+              </div>
+              <div class="mt-4 text-center">
+                <button type="submit" class="btn btn-blue">Отправить запрос</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="feedback" style="opacity: 0;" class="modal-wrap">
       <div class="overflow"></div>
       <div class="modal">

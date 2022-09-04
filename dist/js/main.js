@@ -510,11 +510,9 @@ $(document).ready(function() {
             idModal = $(this).attr('data-url');
         }
 
-        console.log(idModal)
-
         $('.modal-wrap').each(function () {
 
-            if(idModal === $(this).attr('id')) {
+            if (idModal === $(this).attr('id')) {
                 $(this).addClass('open');
 
                 body.css('padding-right', (window.innerWidth - document.documentElement.clientWidth));

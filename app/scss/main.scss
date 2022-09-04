@@ -931,6 +931,10 @@ select {
     overflow: visible;
     z-index: 5;
 
+    &.medium-size {
+        max-width: 800px;
+    }
+
     .close {
         position: absolute;
         top: 25px;

@@ -269,6 +269,10 @@
         .location-list {
             display: block;
         }
+
+        .location-search {
+            display: block;
+        }
     }
 }
 
@@ -291,6 +295,53 @@
 
     .arrow {
         margin: 0 0 5px 10px;
+    }
+}
+
+.location-search {
+    display: none;
+    position: absolute;
+    top: calc(100% + 30px);
+    left: -20px;
+    width: 500px;
+    padding: 30px 30px 35px;
+    background: $white;
+    box-shadow: $boxShadow;
+    border-radius: 5px;
+
+    .input {
+        height: 50px;
+        padding: 5px 20px;
+        font-family: $font-base-semiBold;
+        font-size: 16px;
+        border: 1px solid $borderColor;
+        box-shadow: none;
+    }
+
+    .btn {
+        padding: 8px 30px;
+    }
+}
+
+.autocomplete-list {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    border: 1px solid $borderColor;
+    border-top: none;
+
+    &--item {
+        padding: 10px 20px;
+        background: $white;
+        font-family: $font-base-semiBold;
+        font-size: 14px;
+        border-top: 1px solid $borderColor;
+        cursor: pointer;
+
+        &:hover {
+            background: $grayBg;
+        }
     }
 }
 
@@ -589,6 +640,10 @@
 
         .social-list.small {
             margin-top: 10px;
+        }
+
+        .location-wrap {
+            margin-left: 20px;
         }
     }
 }
