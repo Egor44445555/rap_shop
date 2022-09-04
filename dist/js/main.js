@@ -95,7 +95,9 @@ $(document).ready(function() {
     $(document).on('click', function (event) {
         let $target = $(event.target);
 
-        if (!$target.closest('.location').length) {
+        if (!$target.closest('.location-wrap').length) {
+            $('.js-autocomplete-input')[0].value = '';
+            $('.js-autocomplete').addClass('d-none');
             $('.location-wrap').removeClass('active');
         }
 
@@ -119,15 +121,34 @@ $(document).ready(function() {
 
     /*** Location header ***/
 
-    // $('.location').on('click', function () {
-    //     $(this).parent().toggleClass('active');
-    // });
-    //
-    // $('.location-list').on('click', '.location-list--item', function (e) {
-    //     let wrap = $(this).parents('.location-wrap');
-    //     wrap.find('.location .text').html($(this).text());
-    //     wrap.removeClass('active');
-    // });
+    let autocompleteInput = $('.js-autocomplete-input');
+    let autocompleteList = $('.js-autocomplete');
+    let locationModalBtn = $('.js-location-modal-btn');
+
+    $('.location').on('click', function () {
+        $(this).parent().toggleClass('active');
+    });
+
+    autocompleteInput.on('input', function () {
+
+        if ($(this)[0].value.length > 1) {
+            autocompleteList.removeClass('d-none');
+        } else {
+            autocompleteList.addClass('d-none');
+        }
+    });
+
+    $('.autocomplete-list--item').on('click', function (e) {
+        $(this).parent().addClass('d-none');
+        autocompleteInput.val($(this).text());
+    });
+
+    $('.location-search').on('click', '.btn', function (e) {
+        let wrap = $(this).parents('.location-wrap');
+        locationModalBtn.find('.text').text(autocompleteInput.val());
+        autocompleteInput.val('');
+        wrap.removeClass('active');
+    });
 
     /*** End Location header ***/
 
