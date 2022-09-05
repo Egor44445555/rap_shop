@@ -28,13 +28,6 @@ html
                                 .filters
                                     form
                                         .input-wrap
-                                            .label Класс машины
-
-                                            select(placeholder="Стандарт").custom-select
-                                                option(value="Стандарт" selected) Стандарт
-                                                option(value="Компактный") Компактный
-
-                                        .input-wrap
                                             .label Цена
 
                                             .range-slider-wrap.mt-2
@@ -60,23 +53,6 @@ html
                                                         input(type="text" value="35000").js-input-to
                                                         | &nbsp;
                                                         b.rouble ₽
-
-                                        .input-wrap
-                                            .label Марка
-
-                                            label(for="brand").radio
-                                                input(type="radio" name="brand" id="brand")
-                                                .icon
-                                                .text Любая
-                                            label(for="brand-2").radio.mt-3
-                                                input(type="radio" name="brand" id="brand-2")
-                                                .icon
-                                                .text Марка 1
-
-                                        .input-wrap
-                                            .label Кузов
-
-                                            input(type="text" placeholder="Седан").input
 
                                         .input-wrap
                                             .label Кондиционер

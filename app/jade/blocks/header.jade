@@ -15,10 +15,6 @@ header.header
                     .input-wrap
                         input(type="text").input.js-autocomplete-input
                         .autocomplete-list.d-none.js-autocomplete
-                            .autocomplete-list--item Москва
-                            .autocomplete-list--item Можга
-                            .autocomplete-list--item Можайск
-                            .autocomplete-list--item Молькино
 
                     .mt-3
                         button(type="submit").btn.btn-blue.btn-extraSmall Выбрать
@@ -53,7 +49,6 @@ header.header
                             img(src="images/icons/arrow-toggle-down.svg")
                     .dropdown
                         a(href="/about.html").dropdown--item Компания
-                        a(href="/contacts.html").dropdown--item Контакты
                         a(href="/sublease.html").dropdown--item Сдать авто в аренду
                         a(href="/bonus-program.html").dropdown--item Бонусная программа
                         a(href="/additional-services.html").dropdown--item Дополнительные услуги
@@ -83,7 +78,7 @@ header.header
                     span.text Контакты
 
             .button-wrap.d-none.d-xxl-flex
-                a(href="/rent-form.html").btn.btn-blue Арендовать
+                a(href="/catalog.html").btn.btn-blue Каталог
                 a(href="/sublease.html").btn.btn-blue.btn-empty Сдать в аренду
 
             .d-block.d-xxl-none
@@ -109,6 +104,21 @@ header.header
                 span.text Тelegram
             .social-list--item
                 .btn.btn-blue.btn-small.modal-btn(data-url="feedback") Заказать звонок
+
+        .location-wrap
+            .location.js-location-modal-btn
+                .icon
+                    img(src="images/icons/cupola.svg")
+                .text Санкт- Петербург
+                .arrow
+                    img(src="images/icons/arrow-toggle-down.svg" alt="")
+            .location-search
+                .input-wrap
+                    input(type="text").input.js-autocomplete-input
+                    .autocomplete-list.d-none.js-autocomplete
+
+                .mt-3
+                    button(type="submit").btn.btn-blue.btn-extraSmall Выбрать
 
         .modal-menu
             a(href="/catalog.html").modal-menu--item Каталог

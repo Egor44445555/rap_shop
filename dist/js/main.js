@@ -124,12 +124,33 @@ $(document).ready(function() {
     let autocompleteInput = $('.js-autocomplete-input');
     let autocompleteList = $('.js-autocomplete');
     let locationModalBtn = $('.js-location-modal-btn');
+    let cities = ['Адлер', 'Ангарск', 'Альметьевск', 'Апрелевка', 'Архангельск', 'Белгород', 'Великий Новгород', 'Внуково', 'Воронеж', 'Воткинск', 'Глазов', 'Домодедово', 'Иваново', 'Ижевск', 'Кисловодск', 'Краснодар', 'Курск', 'Минеральные воды', 'Москва', 'Можга', 'Можайск', 'Молькино'];
 
     $('.location').on('click', function () {
         $(this).parent().toggleClass('active');
     });
 
     autocompleteInput.on('input', function () {
+
+        const checkInput = (wordTyped, cities) => {
+            return cities.filter(place => {
+                const REG_CHECK = new RegExp(wordTyped, "gi");
+                return place.match(REG_CHECK) || place.match(REG_CHECK);
+            });
+        };
+
+        const FILTERED = checkInput(this.value, cities);
+
+        const RENDER = FILTERED.map(place => {
+            const REG_CHECK = new RegExp(this.value, "gi");
+            const CITY_NAME = place.replace(
+                REG_CHECK,
+                `<span class="text-primary">${this.value}</span>`
+            );
+
+            return `<div class="autocomplete-list--item">${CITY_NAME}</div>`;
+        }).join("");
+        autocompleteList[0].innerHTML = RENDER;
 
         if ($(this)[0].value.length > 1) {
             autocompleteList.removeClass('d-none');
@@ -138,7 +159,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.autocomplete-list--item').on('click', function (e) {
+    $('.autocomplete-list').on('click', '.autocomplete-list--item', function (e) {
         $(this).parent().addClass('d-none');
         autocompleteInput.val($(this).text());
     });

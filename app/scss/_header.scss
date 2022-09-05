@@ -23,7 +23,7 @@
         justify-content: space-between;
         max-width: 1960px;
         margin: 0 auto;
-        padding: 60px 0;
+        padding: 40px 0;
         border-bottom: 1px solid $borderColorLight;
     }
 
@@ -31,6 +31,10 @@
     .right-block {
         display: flex;
         align-items: center;
+    }
+
+    .logo {
+        max-width: 350px;
     }
 
     .phones-wrap {
@@ -41,6 +45,10 @@
 
             .phones-list {
                 display: block;
+            }
+
+            .arrow {
+                transform: rotate(-180deg);
             }
         }
     }
@@ -132,7 +140,7 @@
         .btn {
             min-height: 0;
             margin-left: 15px;
-            padding: 10px 20px;
+            padding: 7px 15px;
             font-size: 14px;
             border-width: 1px;
 
@@ -273,6 +281,10 @@
         .location-search {
             display: block;
         }
+
+        .arrow {
+            transform: rotate(-180deg);
+        }
     }
 }
 
@@ -291,6 +303,8 @@
     .text {
         max-width: 80px;
         line-height: 17px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .arrow {
@@ -336,6 +350,7 @@
         background: $white;
         font-family: $font-base-semiBold;
         font-size: 14px;
+        text-transform: capitalize;
         border-top: 1px solid $borderColor;
         cursor: pointer;
 
@@ -527,6 +542,10 @@
             max-width: 150px;
         }
     }
+
+    .location-search {
+        max-width: 100%;
+    }
 }
 
 .overflow {
@@ -564,7 +583,7 @@
         padding: 0 20px;
 
         .wrap {
-            padding: 40px 0;
+            padding: 20px 0;
         }
 
         .logo {
@@ -583,7 +602,7 @@
             margin-left: 20px;
 
             .btn {
-                padding: 10px 15px;
+                padding: 6px 15px;
             }
         }
     }

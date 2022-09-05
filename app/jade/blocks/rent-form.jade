@@ -13,7 +13,7 @@ form(action="#").rent-form
 
     .step.step-1.active(data-step="1")
         .step-body
-            .car-type-list
+            .car-type-list.d-none
                 label(for="type1" data-tab="type1").car-type-list--item.tabs-head--item
                     input(type="radio" name="type" id="type1" checked)
                     span Эконом
@@ -461,7 +461,7 @@ form(action="#").rent-form
 
             a(href="/product.html").btn.btn-gray.btn-empty Подробнее о машине
             a(href="#" data-step-btn="2").btn.btn-blue
-                span.text Выбрать
+                span.text Арендовать
 
     .step(data-step="2")
         .step-body
@@ -628,7 +628,7 @@ form(action="#").rent-form
             a(href="#" data-step-btn="2").btn.btn-gray.btn-empty Назад
             a(href="#" data-step-btn="success").btn.btn-blue
                 img.icon(src="images/icons/check-white.png")
-                span.text Аредовать
+                span.text Отправить
 
     .success-block.step(data-step="success")
         .icon-big

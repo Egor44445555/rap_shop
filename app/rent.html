@@ -40,12 +40,7 @@
             <div class="location-search">
               <div class="input-wrap">
                 <input type="text" class="input js-autocomplete-input"/>
-                <div class="autocomplete-list d-none js-autocomplete">
-                  <div class="autocomplete-list--item">Москва</div>
-                  <div class="autocomplete-list--item">Можга</div>
-                  <div class="autocomplete-list--item">Можайск</div>
-                  <div class="autocomplete-list--item">Молькино</div>
-                </div>
+                <div class="autocomplete-list d-none js-autocomplete"></div>
               </div>
               <div class="mt-3">
                 <button type="submit" class="btn btn-blue btn-extraSmall">Выбрать</button>
@@ -76,7 +71,7 @@
                 <div class="text">О нас</div>
                 <div class="icon"><img src="images/icons/arrow-toggle-down.svg"/></div>
               </div>
-              <div class="dropdown"><a href="/about.html" class="dropdown--item">Компания</a><a href="/contacts.html" class="dropdown--item">Контакты</a><a href="/sublease.html" class="dropdown--item">Сдать авто в аренду</a><a href="/bonus-program.html" class="dropdown--item">Бонусная программа</a><a href="/additional-services.html" class="dropdown--item">Дополнительные услуги</a><a href="/news.html" class="dropdown--item">Новости</a><a href="/blog.html" class="dropdown--item">Блог</a>
+              <div class="dropdown"><a href="/about.html" class="dropdown--item">Компания</a><a href="/sublease.html" class="dropdown--item">Сдать авто в аренду</a><a href="/bonus-program.html" class="dropdown--item">Бонусная программа</a><a href="/additional-services.html" class="dropdown--item">Дополнительные услуги</a><a href="/news.html" class="dropdown--item">Новости</a><a href="/blog.html" class="dropdown--item">Блог</a>
                 <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram-blue.png" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk-blue.png" class="icon"/><span class="text">Вконтакте</span></a>
                   <div class="social-list--item blue"><img src="images/icons/social-mobile-app-blue.png" class="icon"/>
                     <div class="text"><span>Мобильное приложение</span>
@@ -87,7 +82,7 @@
               </div>
             </div><a href="https://franshiza.rosautoprokat.ru/" class="menu--item"><span class="text">Франшиза</span></a><a href="/rent.html" class="menu--item"><span class="text">Аренда CRM</span></a><a href="/contacts.html" class="menu--item"><span class="text">Контакты</span></a>
           </div>
-          <div class="button-wrap d-none d-xxl-flex"><a href="/rent-form.html" class="btn btn-blue">Арендовать</a><a href="/sublease.html" class="btn btn-blue btn-empty">Сдать в аренду</a></div>
+          <div class="button-wrap d-none d-xxl-flex"><a href="/catalog.html" class="btn btn-blue">Каталог</a><a href="/sublease.html" class="btn btn-blue btn-empty">Сдать в аренду</a></div>
           <div class="d-block d-xxl-none">
             <div class="menu-btn js-menu-btn"><span></span><span></span><span></span></div>
           </div>
@@ -100,6 +95,22 @@
         <div class="social-list"><a href="#" class="social-list--item"><img src="images/icons/social-whatsapp.png" class="icon"/><span class="text">Whats App</span></a><a href="#" class="social-list--item"><img src="images/icons/social-telegram.png" class="icon"/><span class="text">Тelegram</span></a>
           <div class="social-list--item">
             <div data-url="feedback" class="btn btn-blue btn-small modal-btn">Заказать звонок</div>
+          </div>
+        </div>
+        <div class="location-wrap">
+          <div class="location js-location-modal-btn">
+            <div class="icon"><img src="images/icons/cupola.svg"/></div>
+            <div class="text">Санкт- Петербург</div>
+            <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
+          </div>
+          <div class="location-search">
+            <div class="input-wrap">
+              <input type="text" class="input js-autocomplete-input"/>
+              <div class="autocomplete-list d-none js-autocomplete"></div>
+            </div>
+            <div class="mt-3">
+              <button type="submit" class="btn btn-blue btn-extraSmall">Выбрать</button>
+            </div>
           </div>
         </div>
         <div class="modal-menu"><a href="/catalog.html" class="modal-menu--item">Каталог</a><a href="/sublease.html" class="modal-menu--item">Сдать авто в аренду</a><a href="/about.html" class="modal-menu--item">О нас</a><a href="/contacts.html" class="modal-menu--item">Контакты</a><a href="/bonus-program.html" class="modal-menu--item">Бонусная программа</a><a href="/additional-services.html" class="modal-menu--item">Дополнительные услуги</a><a href="https://franshiza.rosautoprokat.ru/" class="modal-menu--item">Франшиза</a><a href="/rent.html" class="modal-menu--item">Аренда CRM</a><a href="/news.html" class="modal-menu--item">Новости</a><a href="/blog.html" class="modal-menu--item">Блог</a></div>
@@ -245,11 +256,11 @@
             <h3 class="title">Запрос на тестовый доступ<br/>к&nbsp;CRM-системе</h3>
             <form class="mt-4 mb-0">
               <div class="input-wrap mt-3">
-                <div class="label">Ваше имя</div>
+                <div class="label gray">Ваше имя</div>
                 <input type="text" class="input"/>
               </div>
               <div class="input-wrap mt-3">
-                <div class="label">Ваш телефон</div>
+                <div class="label gray">Ваш телефон</div>
                 <input type="text" class="input"/>
               </div>
               <div class="mt-4 text-center">
@@ -270,11 +281,11 @@
             <div class="sub-title">Мы позвоним вам в течение 10 минут и ответим</div>
             <form class="mt-4 mb-0">
               <div class="input-wrap mt-3">
-                <div class="label">Ваше имя</div>
+                <div class="label gray">Ваше имя</div>
                 <input type="text" class="input"/>
               </div>
               <div class="input-wrap mt-3">
-                <div class="label">Ваш телефон</div>
+                <div class="label gray">Ваш телефон</div>
                 <input type="text" class="input"/>
               </div>
               <div class="mt-4 text-center">
@@ -282,53 +293,6 @@
               </div>
             </form>
           </div>
-        </div>
-      </div>
-    </div>
-    <div id="cities" style="opacity: 0;" class="modal-wrap">
-      <div class="overflow"></div>
-      <div class="modal">
-        <div class="close"></div>
-        <div class="wrap">
-          <h3>Выберите город, в котором желаете арендовать автомобиль</h3>
-          <ul class="cities">
-            <li><a href="#">Адлер</a></li>
-            <li><a href="#">Альметьевск</a></li>
-            <li><a href="#">Ангарск</a></li>
-            <li><a href="#">Апрелевка</a></li>
-            <li><a href="#">Архангельск</a></li>
-            <li><a href="#">Белгород</a></li>
-            <li><a href="#">Великий Новгород</a></li>
-            <li><a href="#">Внуково</a></li>
-            <li><a href="#">Воронеж</a></li>
-            <li><a href="#">Воткинск</a></li>
-            <li><a href="#">Глазов</a></li>
-            <li><a href="#">Домодедово</a></li>
-            <li><a href="#">Иваново</a></li>
-            <li><a href="#">Ижевск</a></li>
-            <li><a href="#">Кисловодск</a></li>
-            <li><a href="#">Краснодар</a></li>
-            <li><a href="#">Курск</a></li>
-            <li><a href="#">Минеральные воды</a></li>
-            <li><a href="#">Адлер</a></li>
-            <li><a href="#">Альметьевск</a></li>
-            <li><a href="#">Ангарск</a></li>
-            <li><a href="#">Апрелевка</a></li>
-            <li><a href="#">Архангельск</a></li>
-            <li><a href="#">Белгород</a></li>
-            <li><a href="#">Великий Новгород</a></li>
-            <li><a href="#">Внуково</a></li>
-            <li><a href="#">Воронеж</a></li>
-            <li><a href="#">Воткинск</a></li>
-            <li><a href="#">Глазов</a></li>
-            <li><a href="#">Домодедово</a></li>
-            <li><a href="#">Иваново</a></li>
-            <li><a href="#">Ижевск</a></li>
-            <li><a href="#">Кисловодск</a></li>
-            <li><a href="#">Краснодар</a></li>
-            <li><a href="#">Курск</a></li>
-            <li><a href="#">Минеральные воды</a></li>
-          </ul>
         </div>
       </div>
     </div>

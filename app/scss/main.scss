@@ -439,7 +439,10 @@ a {
     .label {
         margin-bottom: 10px;
         font-family: $font-base-semiBold;
-        color: $textGray;
+
+        &.gray {
+            color: $textGray;
+        }
     }
 }
 
