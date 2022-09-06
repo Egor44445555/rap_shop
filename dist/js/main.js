@@ -150,7 +150,10 @@ $(document).ready(function() {
 
             return `<div class="autocomplete-list--item">${CITY_NAME}</div>`;
         }).join("");
-        autocompleteList[0].innerHTML = RENDER;
+
+        autocompleteList.each(function () {
+            $(this)[0].innerHTML = RENDER;
+        });
 
         if ($(this)[0].value.length > 1) {
             autocompleteList.removeClass('d-none');
@@ -166,7 +169,10 @@ $(document).ready(function() {
 
     $('.location-search').on('click', '.btn', function (e) {
         let wrap = $(this).parents('.location-wrap');
-        locationModalBtn.find('.text').text(autocompleteInput.val());
+
+        if (autocompleteInput.val() !== '') {
+            locationModalBtn.find('.text').text(autocompleteInput.val());
+        }
         autocompleteInput.val('');
         wrap.removeClass('active');
     });

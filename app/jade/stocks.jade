@@ -1,0 +1,97 @@
+html
+    title Акции
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header.jade
+
+        .wrapper
+            .container-block
+                .breadcrumbs
+                    a(href="/index.html").breadcrumbs--item.back-link
+                        img(src="images/icons/back-arrow.svg").icon
+                        span.text Назад
+                    a(href="#").breadcrumbs--item
+                        span.text Акции
+
+            .blog-block-wrap(style="background-image: url(images/page-bg.jpg);")
+                .container-block
+                    h2.title.semibold.text-uppercase Акции
+
+                    .blog-list.news
+                        a(href="/blog-detail.html").blog-list--item
+
+                            span.info
+                                span.title Только 3&nbsp;дня! 10&nbsp;литров
+                                    br
+                                    | бензина со скидкой 50%
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.svg")
+                                        span.text 287
+                        a(href="/blog-detail.html").blog-list--item
+                            span.info
+                                span.title Детские автокресла
+                                    br
+                                    | 2&nbsp;по&nbsp;цене одного
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.svg")
+                                        span.text 287
+                        a(href="/blog-detail.html").blog-list--item
+                            span.info
+                                span.title Очень большая скидка на&nbsp;аренду более 10&nbsp;дней
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.svg")
+                                        span.text 287
+                        a(href="/blog-detail.html").blog-list--item
+                            span.info
+                                span.title При первой аренде автомобиля доставка до места бесплатно
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.svg")
+                                        span.text 287
+                        a(href="/blog-detail.html").blog-list--item
+                            span.info
+                                span.title Минус 10% на посуточную аренду всех автомобилей
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.svg")
+                                        span.text 287
+                        a(href="/blog-detail.html").blog-list--item
+                            span.info
+                                span.title Проводим розыгрыш автомобильных призов
+                                span.bottom-panel.d-block.d-sm-flex.justify-content-between
+                                    span.date 28 сентября 2020
+                                    span.views-counter.d-block.mt-2.mt-sm-0
+                                        span.icon
+                                            img(src="images/icons/eye.svg")
+                                        span.text 287
+
+                    .pagination
+                        a(href="#").pagination--item.prev
+                            img(src="images/icons/arrow-angle.png")
+                        a(href="#").pagination--item 1
+                        a(href="#").pagination--item 2
+                        span.pagination--item.active 3
+                        a(href="#").pagination--item 4
+                        a(href="#").pagination--item 5
+                        a(href="#").pagination--item 6
+                        a(href="#").pagination--item.next
+                            img(src="images/icons/arrow-angle.png")
+                .mt-5.pt-5
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
