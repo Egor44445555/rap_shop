@@ -16,107 +16,112 @@ html
 
             .additional-services(style="background-image: url(images/additional-services-bg.jpg);")
                 .container-block
-                    .text-block
-                        h2.title.semibold.text-uppercase Дополнительные услуги
-                        p «Росавтопрокат» предлагает вам гибкие цены на аренду и&nbsp;прокат легковых автомобилей.
-                            | Вы можете выбрать необходимые для вас дополнительные опции и&nbsp;сформировать
-                            | индивидуальный тариф на&nbsp;услуги аренды автомобилей.
+                    .column-wrap
+                        .column.sidebar
+                            include ./blocks/sidebar.jade
 
-                    .services-list
-                        .services-list--item
-                            .image
-                                img(src="images/flag.png")
-                            .info
-                                .title Доставка до места
-                                .description Доставим машину в любое
-                                    br
-                                    | место в городе включая
-                                    br
-                                    | ЖД вокзал, Аэропорт, Автовокзал
-                                .cost + 600
-                                    .rouble.d-inline ₽
-                        .services-list--item
-                            .image
-                                img(src="images/canister.png")
-                            .info
-                                .title Бензин 10л.
-                                .description Наполним бак
-                                    br
-                                    | бензином к началу
-                                    br
-                                    | аренды автомобиля
-                                .cost + 500
-                                    .rouble.d-inline ₽
-                        .services-list--item
-                            .image
-                                img(src="images/baby-chair.png")
-                            .info
-                                .title Детское автокресло
-                                .description Для безопасной поездки
-                                    br
-                                    | с&nbsp;детьми предоставим
-                                    br
-                                    | детские автокресла
-                                .cost + 100
-                                    .rouble.d-inline ₽
-                                    span /сут.
-                        .services-list--item
-                            .image
-                                img(src="images/radar-detector.png")
-                            .info
-                                .title Радар-детектор
-                                .description Сокращает количество штрафов
-                                    br
-                                    | за превышение скорости,
-                                    br
-                                    | неправильную парковку,
-                                    br
-                                    | движение по автобусной полосе.
-                                .cost + 100
-                                    .rouble.d-inline ₽
-                                    span /сут.
-                        .services-list--item
-                            .image
-                                img(src="images/driver.png")
-                            .info
-                                .title Второй водитель
-                                .description Добавление второго
-                                    br
-                                    | водителя в право
-                                    br
-                                    | управления транспортным
-                                    br
-                                    | средством
-                                .cost + 500
-                                    .rouble.d-inline ₽
-                        .services-list--item
-                            .image
-                                img(src="images/clock.png")
-                            .info
-                                .title Ранний\поздний забор
-                                .description Ранний забор —
-                                    br
-                                    | раньше 09:00 утра
-                                    br
-                                    | Поздний забор —
-                                    br
-                                    | после 19:00 вечера
-                                .cost + 500
-                                    .rouble.d-inline ₽
-                        .services-list--item
-                            .image
-                                img(src="images/umbrella.png")
-                            .info
-                                .title КАСКО
-                                .description Позволяет застраховать
-                                    br
-                                    | ваш автомобиль от многих
-                                    br
-                                    | факторов, с которыми можно
-                                    br
-                                    | столкнуться во время эксплуатации
-                                .cost + 1000
-                                    .rouble.d-inline ₽
+                        .column.info-detail
+                            .text-block
+                                h2.title.semibold.text-uppercase Дополнительные услуги
+                                p «Росавтопрокат» предлагает вам гибкие цены на аренду и&nbsp;прокат легковых автомобилей.
+                                    | Вы можете выбрать необходимые для вас дополнительные опции и&nbsp;сформировать
+                                    | индивидуальный тариф на&nbsp;услуги аренды автомобилей.
+
+                            .services-list
+                                .services-list--item
+                                    .image
+                                        img(src="images/flag.png")
+                                    .info
+                                        .title Доставка до места
+                                        .description Доставим машину в любое
+                                            br
+                                            | место в городе включая
+                                            br
+                                            | ЖД вокзал, Аэропорт, Автовокзал
+                                        .cost + 600
+                                            .rouble.d-inline ₽
+                                .services-list--item
+                                    .image
+                                        img(src="images/canister.png")
+                                    .info
+                                        .title Бензин 10л.
+                                        .description Наполним бак
+                                            br
+                                            | бензином к началу
+                                            br
+                                            | аренды автомобиля
+                                        .cost + 500
+                                            .rouble.d-inline ₽
+                                .services-list--item
+                                    .image
+                                        img(src="images/baby-chair.png")
+                                    .info
+                                        .title Детское автокресло
+                                        .description Для безопасной поездки
+                                            br
+                                            | с&nbsp;детьми предоставим
+                                            br
+                                            | детские автокресла
+                                        .cost + 100
+                                            .rouble.d-inline ₽
+                                            span /сут.
+                                .services-list--item
+                                    .image
+                                        img(src="images/radar-detector.png")
+                                    .info
+                                        .title Радар-детектор
+                                        .description Сокращает количество штрафов
+                                            br
+                                            | за превышение скорости,
+                                            br
+                                            | неправильную парковку,
+                                            br
+                                            | движение по автобусной полосе.
+                                        .cost + 100
+                                            .rouble.d-inline ₽
+                                            span /сут.
+                                .services-list--item
+                                    .image
+                                        img(src="images/driver.png")
+                                    .info
+                                        .title Второй водитель
+                                        .description Добавление второго
+                                            br
+                                            | водителя в право
+                                            br
+                                            | управления транспортным
+                                            br
+                                            | средством
+                                        .cost + 500
+                                            .rouble.d-inline ₽
+                                .services-list--item
+                                    .image
+                                        img(src="images/clock.png")
+                                    .info
+                                        .title Ранний\поздний забор
+                                        .description Ранний забор —
+                                            br
+                                            | раньше 09:00 утра
+                                            br
+                                            | Поздний забор —
+                                            br
+                                            | после 19:00 вечера
+                                        .cost + 500
+                                            .rouble.d-inline ₽
+                                .services-list--item
+                                    .image
+                                        img(src="images/umbrella.png")
+                                    .info
+                                        .title КАСКО
+                                        .description Позволяет застраховать
+                                            br
+                                            | ваш автомобиль от многих
+                                            br
+                                            | факторов, с которыми можно
+                                            br
+                                            | столкнуться во время эксплуатации
+                                        .cost + 1000
+                                            .rouble.d-inline ₽
 
         include ./blocks/products-slider
         include ./blocks/about-block-small

@@ -2,14 +2,19 @@
 <form action="#" class="rent-form">
   <div class="d-block d-xl-flex align-items-baseline">
     <h2 class="text-uppercase">Выберите автомобиль</h2>
-    <div class="city-select ms-0 ms-xl-5 me-0 mt-2 mt-xl-0">
-      <div class="city-select--head">
-        <div class="text"><span>в Санкт-Петербурге</span></div>
+    <div class="city-select ms-0 ms-xl-5 me-0 mt-2 mt-xl-0 js-location-wrap">
+      <div class="city-select--head js-location-modal-btn">
+        <div class="text"><span class="js-location-name">в Санкт-Петербурге</span></div>
         <div class="arrow"><img src="images/icons/arrow-toggle-down.svg"/></div>
       </div>
-      <div class="city-select--body js-custom-scroll">
-        <div class="city-select--item">в Санкт-Петербурге</div>
-        <div class="city-select--item">в Москве</div>
+      <div class="location-search">
+        <div class="input-wrap">
+          <input type="text" class="input js-autocomplete-input"/>
+          <div class="autocomplete-list d-none js-autocomplete"></div>
+        </div>
+        <div class="mt-3">
+          <div class="btn btn-blue btn-extraSmall">Выбрать</div>
+        </div>
       </div>
     </div>
   </div>

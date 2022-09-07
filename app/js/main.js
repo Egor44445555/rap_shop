@@ -51,14 +51,6 @@ $(document).ready(function() {
         modalMenu.removeClass('open');
     });
 
-    $('.city-select').on('click', function () {
-        $(this).toggleClass('active');
-    });
-
-    $('.city-select--item').on('click', function () {
-        $(this).parents('.city-select').find('.city-select--head .text span').text($(this).text())
-    });
-
     tooltip.tooltip({
         html: true,
         placement: 'bottom',
@@ -95,10 +87,10 @@ $(document).ready(function() {
     $(document).on('click', function (event) {
         let $target = $(event.target);
 
-        if (!$target.closest('.location-wrap').length) {
-            $('.js-autocomplete-input')[0].value = '';
+        if (!$target.closest('.js-location-modal-btn').length && !$target.closest('.location-search').length) {
+            $('.js-autocomplete-input').val('');
             $('.js-autocomplete').addClass('d-none');
-            $('.location-wrap').removeClass('active');
+            $('.js-location-wrap').removeClass('active');
         }
 
         if (!$target.closest('.phones').length) {
@@ -126,40 +118,43 @@ $(document).ready(function() {
     let locationModalBtn = $('.js-location-modal-btn');
     let cities = ['Адлер', 'Ангарск', 'Альметьевск', 'Апрелевка', 'Архангельск', 'Белгород', 'Великий Новгород', 'Внуково', 'Воронеж', 'Воткинск', 'Глазов', 'Домодедово', 'Иваново', 'Ижевск', 'Кисловодск', 'Краснодар', 'Курск', 'Минеральные воды', 'Москва', 'Можга', 'Можайск', 'Молькино'];
 
-    $('.location').on('click', function () {
-        $(this).parent().toggleClass('active');
+    locationModalBtn.on('click', function () {
+        $(this).parent('.js-location-wrap').toggleClass('active');
     });
 
-    autocompleteInput.on('input', function () {
+    autocompleteInput.each(function () {
 
-        const checkInput = (wordTyped, cities) => {
-            return cities.filter(place => {
-                const REG_CHECK = new RegExp(wordTyped, "gi");
-                return place.match(REG_CHECK) || place.match(REG_CHECK);
+        $(this).on('input', function () {
+
+            const checkInput = (wordTyped, cities) => {
+                return cities.filter(place => {
+                    const reg = new RegExp(wordTyped, "gi");
+                    return place.match(reg) || place.match(reg);
+                });
+            };
+
+            const filtered = checkInput(this.value, cities);
+
+            const result = filtered.map(place => {
+                const reg = new RegExp(this.value, "gi");
+                const name = place.replace(
+                    reg,
+                    `<span class="text-primary">${this.value}</span>`
+                );
+
+                return `<div class="autocomplete-list--item">${name}</div>`;
+            }).join("");
+
+            autocompleteList.each(function () {
+                $(this)[0].innerHTML = result;
             });
-        };
 
-        const FILTERED = checkInput(this.value, cities);
-
-        const RENDER = FILTERED.map(place => {
-            const REG_CHECK = new RegExp(this.value, "gi");
-            const CITY_NAME = place.replace(
-                REG_CHECK,
-                `<span class="text-primary">${this.value}</span>`
-            );
-
-            return `<div class="autocomplete-list--item">${CITY_NAME}</div>`;
-        }).join("");
-
-        autocompleteList.each(function () {
-            $(this)[0].innerHTML = RENDER;
+            if ($(this)[0].value.length > 1) {
+                autocompleteList.removeClass('d-none');
+            } else {
+                autocompleteList.addClass('d-none');
+            }
         });
-
-        if ($(this)[0].value.length > 1) {
-            autocompleteList.removeClass('d-none');
-        } else {
-            autocompleteList.addClass('d-none');
-        }
     });
 
     $('.autocomplete-list').on('click', '.autocomplete-list--item', function (e) {
@@ -168,12 +163,15 @@ $(document).ready(function() {
     });
 
     $('.location-search').on('click', '.btn', function (e) {
-        let wrap = $(this).parents('.location-wrap');
+        e.preventDefault();
+        let wrap = $(this).parents('.js-location-wrap');
+        let input = wrap.find('.js-autocomplete-input');
 
-        if (autocompleteInput.val() !== '') {
-            locationModalBtn.find('.text').text(autocompleteInput.val());
+        if (input.val() !== '') {
+            $('.js-location-name').text(input.val());
         }
-        autocompleteInput.val('');
+
+        input.val('');
         wrap.removeClass('active');
     });
 

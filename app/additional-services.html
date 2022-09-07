@@ -31,10 +31,10 @@
     <header class="header">
       <div class="wrap">
         <div class="left-block"><a href="/index.html" class="logo"><img src="images/logo.png"/></a>
-          <div class="location-wrap d-none d-xxl-flex">
+          <div class="location-wrap d-none d-xxl-flex js-location-wrap">
             <div class="location js-location-modal-btn">
               <div class="icon"><img src="images/icons/cupola.svg"/></div>
-              <div class="text">Санкт- Петербург</div>
+              <div class="text js-location-name">Санкт- Петербург</div>
               <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
             </div>
             <div class="location-search">
@@ -43,7 +43,7 @@
                 <div class="autocomplete-list d-none js-autocomplete"></div>
               </div>
               <div class="mt-3">
-                <button type="submit" class="btn btn-blue btn-extraSmall">Выбрать</button>
+                <div class="btn btn-blue btn-extraSmall">Выбрать</div>
               </div>
             </div>
           </div>
@@ -72,8 +72,8 @@
                 <div class="icon"><img src="images/icons/arrow-toggle-down.svg"/></div>
               </div>
               <div class="dropdown"><a href="/about.html" class="dropdown--item">Компания</a><a href="/sublease.html" class="dropdown--item">Сдать авто в аренду</a><a href="/bonus-program.html" class="dropdown--item">Бонусная программа</a><a href="/additional-services.html" class="dropdown--item">Дополнительные услуги</a><a href="/news.html" class="dropdown--item">Новости</a><a href="/blog.html" class="dropdown--item">Блог</a>
-                <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram-blue.png" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk-blue.png" class="icon"/><span class="text">Вконтакте</span></a>
-                  <div class="social-list--item blue"><img src="images/icons/social-mobile-app-blue.png" class="icon"/>
+                <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram.svg" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk.svg" class="icon"/><span class="text">Вконтакте</span></a>
+                  <div class="social-list--item blue"><img src="images/icons/social-app.svg" class="icon"/>
                     <div class="text"><span>Мобильное приложение</span>
                       <div class="button-wrap"><a href="#">Для IOS</a><a href="#">Для Android</a></div>
                     </div>
@@ -97,10 +97,10 @@
             <div data-url="feedback" class="btn btn-blue btn-small modal-btn">Заказать звонок</div>
           </div>
         </div>
-        <div class="location-wrap">
+        <div class="location-wrap js-location-wrap">
           <div class="location js-location-modal-btn">
             <div class="icon"><img src="images/icons/cupola.svg"/></div>
-            <div class="text">Санкт- Петербург</div>
+            <div class="text js-location-name">Санкт- Петербург</div>
             <div class="arrow"><img src="images/icons/arrow-toggle-down.svg" alt=""/></div>
           </div>
           <div class="location-search">
@@ -109,13 +109,13 @@
               <div class="autocomplete-list d-none js-autocomplete"></div>
             </div>
             <div class="mt-3">
-              <button type="submit" class="btn btn-blue btn-extraSmall">Выбрать</button>
+              <div class="btn btn-blue btn-extraSmall">Выбрать</div>
             </div>
           </div>
         </div>
         <div class="modal-menu"><a href="/catalog.html" class="modal-menu--item">Каталог</a><a href="/sublease.html" class="modal-menu--item">Сдать авто в аренду</a><a href="/about.html" class="modal-menu--item">О нас</a><a href="/contacts.html" class="modal-menu--item">Контакты</a><a href="/bonus-program.html" class="modal-menu--item">Бонусная программа</a><a href="/additional-services.html" class="modal-menu--item">Дополнительные услуги</a><a href="https://franshiza.rosautoprokat.ru/" class="modal-menu--item">Франшиза</a><a href="/rent.html" class="modal-menu--item">Аренда CRM</a><a href="/news.html" class="modal-menu--item">Новости</a><a href="/blog.html" class="modal-menu--item">Блог</a><a href="/stocks.html" class="modal-menu--item">Акции</a></div>
-        <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram-blue.png" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk-blue.png" class="icon"/><span class="text">Вконтакте</span></a>
-          <div class="social-list--item blue"><img src="images/icons/social-mobile-app-blue.png" class="icon"/>
+        <div class="social-list small"><a href="#" class="social-list--item"><img src="images/icons/social-instagram.svg" class="icon"/><span class="text">Инстаграм</span></a><a href="#" class="social-list--item"><img src="images/icons/social-vk.svg" class="icon"/><span class="text">Вконтакте</span></a>
+          <div class="social-list--item blue"><img src="images/icons/social-app.svg" class="icon"/>
             <div class="text"><span>Мобильное приложение</span>
               <div class="button-wrap"><a href="#" class="btn btn-blue btn-small">IOS</a><a href="#" class="btn btn-blue btn-small">ANDROID</a></div>
             </div>
@@ -130,82 +130,90 @@
       </div>
       <div style="background-image: url(images/additional-services-bg.jpg);" class="additional-services">
         <div class="container-block">
-          <div class="text-block">
-            <h2 class="title semibold text-uppercase">Дополнительные услуги</h2>
-            <p>
-              «Росавтопрокат» предлагает вам гибкие цены на аренду и&nbsp;прокат легковых автомобилей.
-              Вы можете выбрать необходимые для вас дополнительные опции и&nbsp;сформировать
-              индивидуальный тариф на&nbsp;услуги аренды автомобилей.
-            </p>
-          </div>
-          <div class="services-list">
-            <div class="services-list--item">
-              <div class="image"><img src="images/flag.png"/></div>
-              <div class="info">
-                <div class="title">Доставка до места</div>
-                <div class="description">Доставим машину в любое<br/>место в городе включая<br/>ЖД вокзал, Аэропорт, Автовокзал</div>
-                <div class="cost">+ 600
-                  <div class="rouble d-inline">₽</div>
-                </div>
-              </div>
+          <div class="column-wrap">
+            <div class="column sidebar">
+              <div class="menu"><a href="/about.html" class="menu--item">О компании</a><a href="/rent.html" class="menu--item">Аренда CRM</a><a href="https://franshiza.rosautoprokat.ru/" class="menu--item">Франшиза</a><a href="/sublease.html" class="menu--item">Сдать в аренду</a><a href="/reviews.html" class="menu--item">Отзывы</a><a href="/faq.html" class="menu--item">Частые вопросы</a><a href="/additional-services.html" class="menu--item">Дополнительные услуги</a><a href="/bonus-program.html" class="menu--item">Бонусная программа</a><a href="/news.html" class="menu--item">Новости</a><a href="/blog.html" class="menu--item">Блог</a></div>
+              <div class="social-list"><a href="#" class="social-list--item"><img src="images/icons/social-phone.png" class="icon"/><span class="text">Звонок</span></a><a href="#" class="social-list--item"><img src="images/icons/social-whatsapp.png" class="icon"/><span class="text">Whats App</span></a><a href="#" class="social-list--item"><img src="images/icons/social-telegram.png" class="icon"/><span class="text">Тelegram</span></a></div>
             </div>
-            <div class="services-list--item">
-              <div class="image"><img src="images/canister.png"/></div>
-              <div class="info">
-                <div class="title">Бензин 10л.</div>
-                <div class="description">Наполним бак<br/>бензином к началу<br/>аренды автомобиля</div>
-                <div class="cost">+ 500
-                  <div class="rouble d-inline">₽</div>
-                </div>
+            <div class="column info-detail">
+              <div class="text-block">
+                <h2 class="title semibold text-uppercase">Дополнительные услуги</h2>
+                <p>
+                  «Росавтопрокат» предлагает вам гибкие цены на аренду и&nbsp;прокат легковых автомобилей.
+                  Вы можете выбрать необходимые для вас дополнительные опции и&nbsp;сформировать
+                  индивидуальный тариф на&nbsp;услуги аренды автомобилей.
+                </p>
               </div>
-            </div>
-            <div class="services-list--item">
-              <div class="image"><img src="images/baby-chair.png"/></div>
-              <div class="info">
-                <div class="title">Детское автокресло</div>
-                <div class="description">Для безопасной поездки<br/>с&nbsp;детьми предоставим<br/>детские автокресла</div>
-                <div class="cost">+ 100
-                  <div class="rouble d-inline">₽</div><span>/сут.</span>
+              <div class="services-list">
+                <div class="services-list--item">
+                  <div class="image"><img src="images/flag.png"/></div>
+                  <div class="info">
+                    <div class="title">Доставка до места</div>
+                    <div class="description">Доставим машину в любое<br/>место в городе включая<br/>ЖД вокзал, Аэропорт, Автовокзал</div>
+                    <div class="cost">+ 600
+                      <div class="rouble d-inline">₽</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="services-list--item">
-              <div class="image"><img src="images/radar-detector.png"/></div>
-              <div class="info">
-                <div class="title">Радар-детектор</div>
-                <div class="description">Сокращает количество штрафов<br/>за превышение скорости,<br/>неправильную парковку,<br/>движение по автобусной полосе.</div>
-                <div class="cost">+ 100
-                  <div class="rouble d-inline">₽</div><span>/сут.</span>
+                <div class="services-list--item">
+                  <div class="image"><img src="images/canister.png"/></div>
+                  <div class="info">
+                    <div class="title">Бензин 10л.</div>
+                    <div class="description">Наполним бак<br/>бензином к началу<br/>аренды автомобиля</div>
+                    <div class="cost">+ 500
+                      <div class="rouble d-inline">₽</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="services-list--item">
-              <div class="image"><img src="images/driver.png"/></div>
-              <div class="info">
-                <div class="title">Второй водитель</div>
-                <div class="description">Добавление второго<br/>водителя в право<br/>управления транспортным<br/>средством</div>
-                <div class="cost">+ 500
-                  <div class="rouble d-inline">₽</div>
+                <div class="services-list--item">
+                  <div class="image"><img src="images/baby-chair.png"/></div>
+                  <div class="info">
+                    <div class="title">Детское автокресло</div>
+                    <div class="description">Для безопасной поездки<br/>с&nbsp;детьми предоставим<br/>детские автокресла</div>
+                    <div class="cost">+ 100
+                      <div class="rouble d-inline">₽</div><span>/сут.</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="services-list--item">
-              <div class="image"><img src="images/clock.png"/></div>
-              <div class="info">
-                <div class="title">Ранний\поздний забор</div>
-                <div class="description">Ранний забор —<br/>раньше 09:00 утра<br/>Поздний забор —<br/>после 19:00 вечера</div>
-                <div class="cost">+ 500
-                  <div class="rouble d-inline">₽</div>
+                <div class="services-list--item">
+                  <div class="image"><img src="images/radar-detector.png"/></div>
+                  <div class="info">
+                    <div class="title">Радар-детектор</div>
+                    <div class="description">Сокращает количество штрафов<br/>за превышение скорости,<br/>неправильную парковку,<br/>движение по автобусной полосе.</div>
+                    <div class="cost">+ 100
+                      <div class="rouble d-inline">₽</div><span>/сут.</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="services-list--item">
-              <div class="image"><img src="images/umbrella.png"/></div>
-              <div class="info">
-                <div class="title">КАСКО</div>
-                <div class="description">Позволяет застраховать<br/>ваш автомобиль от многих<br/>факторов, с которыми можно<br/>столкнуться во время эксплуатации</div>
-                <div class="cost">+ 1000
-                  <div class="rouble d-inline">₽</div>
+                <div class="services-list--item">
+                  <div class="image"><img src="images/driver.png"/></div>
+                  <div class="info">
+                    <div class="title">Второй водитель</div>
+                    <div class="description">Добавление второго<br/>водителя в право<br/>управления транспортным<br/>средством</div>
+                    <div class="cost">+ 500
+                      <div class="rouble d-inline">₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-list--item">
+                  <div class="image"><img src="images/clock.png"/></div>
+                  <div class="info">
+                    <div class="title">Ранний\поздний забор</div>
+                    <div class="description">Ранний забор —<br/>раньше 09:00 утра<br/>Поздний забор —<br/>после 19:00 вечера</div>
+                    <div class="cost">+ 500
+                      <div class="rouble d-inline">₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-list--item">
+                  <div class="image"><img src="images/umbrella.png"/></div>
+                  <div class="info">
+                    <div class="title">КАСКО</div>
+                    <div class="description">Позволяет застраховать<br/>ваш автомобиль от многих<br/>факторов, с которыми можно<br/>столкнуться во время эксплуатации</div>
+                    <div class="cost">+ 1000
+                      <div class="rouble d-inline">₽</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

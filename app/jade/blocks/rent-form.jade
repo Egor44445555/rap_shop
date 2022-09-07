@@ -1,15 +1,13 @@
 form(action="#").rent-form
     .d-block.d-xl-flex.align-items-baseline
         h2.text-uppercase Выберите автомобиль
-        .city-select.ms-0.ms-xl-5.me-0.mt-2.mt-xl-0
-            .city-select--head
+        .city-select.ms-0.ms-xl-5.me-0.mt-2.mt-xl-0.js-location-wrap
+            .city-select--head.js-location-modal-btn
                 .text
-                    span в Санкт-Петербурге
+                    span.js-location-name в Санкт-Петербурге
                 .arrow
                     img(src="images/icons/arrow-toggle-down.svg")
-            .city-select--body.js-custom-scroll
-                .city-select--item в Санкт-Петербурге
-                .city-select--item в Москве
+            include search-form.jade
 
     .step.step-1.active(data-step="1")
         .step-body

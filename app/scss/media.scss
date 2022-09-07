@@ -173,6 +173,10 @@
 
 @media (max-width: 1441px) {
 
+    .column-wrap .column + .column {
+        padding-left: 40px;
+    }
+
     .about-block-wrap {
         background-position: 45% 0;
     }
@@ -217,8 +221,22 @@
     }
 
     .bonus-program-block {
+        display: block;
+
+        .info {
+            max-width: 100%;
+
+            p {
+                max-width: 100%;
+            }
+
+            br {
+                display: none;
+            }
+        }
 
         .card-list {
+            margin-top: 0;
 
             &--item {
                 max-width: calc(50% - 40px);
@@ -485,6 +503,17 @@
 
     .breadcrumbs {
         margin-top: 15px;
+    }
+
+    .column-wrap {
+
+        .column + .column {
+            padding-left: 0;
+        }
+
+        .sidebar {
+            display: none;
+        }
     }
 
     .rating--list {
@@ -1551,6 +1580,13 @@
                     margin-top: 0;
                 }
             }
+        }
+    }
+
+    .city-select {
+
+        .location-search {
+            left: 0;
         }
     }
 

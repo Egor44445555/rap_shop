@@ -122,7 +122,8 @@
             &:hover {
 
                 .text {
-                    opacity: .7;
+                    color: $textGray;
+                    opacity: 1;
                 }
             }
         }
@@ -208,7 +209,8 @@
         }
 
         &:hover {
-            opacity: .7;
+            color: $textGray;
+            opacity: 1;
         }
     }
 
@@ -322,6 +324,7 @@
     background: $white;
     box-shadow: $boxShadow;
     border-radius: 5px;
+    z-index: 99;
 
     .input {
         height: 50px;
@@ -664,5 +667,10 @@
         .location-wrap {
             margin-left: 20px;
         }
+    }
+
+    .location-search {
+        left: -10px;
+        max-width: 100%;
     }
 }

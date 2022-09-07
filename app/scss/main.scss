@@ -1414,6 +1414,7 @@ select {
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%;
     background: $white;
     border-radius: 30px;
 
@@ -1442,7 +1443,7 @@ select {
         top: 50%;
         right: 30px;
         transform: translateY(-50%);
-        height: 29px;
+        height: 25px;
         pointer-events: none;
 
         &:before {
@@ -1465,6 +1466,7 @@ select {
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%;
     background: $white;
     border-radius: 30px;
 

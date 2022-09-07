@@ -4,20 +4,14 @@ header.header
             a(href="/index.html").logo
                 img(src="images/logo.png")
 
-            .location-wrap.d-none.d-xxl-flex
+            .location-wrap.d-none.d-xxl-flex.js-location-wrap
                 .location.js-location-modal-btn
                     .icon
                         img(src="images/icons/cupola.svg")
-                    .text Санкт- Петербург
+                    .text.js-location-name Санкт- Петербург
                     .arrow
                         img(src="images/icons/arrow-toggle-down.svg" alt="")
-                .location-search
-                    .input-wrap
-                        input(type="text").input.js-autocomplete-input
-                        .autocomplete-list.d-none.js-autocomplete
-
-                    .mt-3
-                        button(type="submit").btn.btn-blue.btn-extraSmall Выбрать
+                include search-form.jade
 
 
             .phones-wrap.d-none.d-xxl-flex
@@ -57,13 +51,13 @@ header.header
 
                         .social-list.small
                             a(href='#').social-list--item
-                                img(src="images/icons/social-instagram-blue.png").icon
+                                img(src="images/icons/social-instagram.svg").icon
                                 span.text Инстаграм
                             a(href='#').social-list--item
-                                img(src="images/icons/social-vk-blue.png").icon
+                                img(src="images/icons/social-vk.svg").icon
                                 span.text Вконтакте
                             .social-list--item.blue
-                                img(src="images/icons/social-mobile-app-blue.png").icon
+                                img(src="images/icons/social-app.svg").icon
                                 .text
                                     span Мобильное приложение
                                     .button-wrap
@@ -107,20 +101,14 @@ header.header
             .social-list--item
                 .btn.btn-blue.btn-small.modal-btn(data-url="feedback") Заказать звонок
 
-        .location-wrap
+        .location-wrap.js-location-wrap
             .location.js-location-modal-btn
                 .icon
                     img(src="images/icons/cupola.svg")
-                .text Санкт- Петербург
+                .text.js-location-name Санкт- Петербург
                 .arrow
                     img(src="images/icons/arrow-toggle-down.svg" alt="")
-            .location-search
-                .input-wrap
-                    input(type="text").input.js-autocomplete-input
-                    .autocomplete-list.d-none.js-autocomplete
-
-                .mt-3
-                    button(type="submit").btn.btn-blue.btn-extraSmall Выбрать
+            include search-form.jade
 
         .modal-menu
             a(href="/catalog.html").modal-menu--item Каталог
@@ -137,13 +125,13 @@ header.header
 
         .social-list.small
             a(href='#').social-list--item
-                img(src="images/icons/social-instagram-blue.png").icon
+                img(src="images/icons/social-instagram.svg").icon
                 span.text Инстаграм
             a(href='#').social-list--item
-                img(src="images/icons/social-vk-blue.png").icon
+                img(src="images/icons/social-vk.svg").icon
                 span.text Вконтакте
             .social-list--item.blue
-                img(src="images/icons/social-mobile-app-blue.png").icon
+                img(src="images/icons/social-app.svg").icon
                 .text
                     span Мобильное приложение
                     .button-wrap
