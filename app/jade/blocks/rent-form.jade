@@ -3,10 +3,12 @@ form(action="#").rent-form
         h2.text-uppercase Выберите автомобиль
         .city-select.ms-0.ms-xl-5.me-0.mt-2.mt-xl-0.js-location-wrap
             .city-select--head.js-location-modal-btn
+                .icon.d-sm-none
+                    img(src="images/icons/cupola.svg")
                 .text
-                    span.js-location-name в Санкт-Петербурге
-                .arrow
-                    img(src="images/icons/arrow-toggle-down.svg")
+                    span.js-location-name Санкт- Петербург
+                .arrow.d-none.d-sm-block
+                    img(src="images/icons/arrow-toggle-down.svg" alt="")
             include search-form.jade
 
     .step.step-1.active(data-step="1")
@@ -28,7 +30,7 @@ form(action="#").rent-form
                     input(type="radio" name="type" id="type5")
                     span Внедорожники
 
-            select(placeholder="Класс машины").custom-select
+            //select(placeholder="Класс машины").custom-select
                 option(value="Эконом" data-tab="type1").tabs-head--item Эконом
                 option(value="Стандарт" data-tab="type2").tabs-head--item Стандарт
                 option(value="Комфорт" data-tab="type3").tabs-head--item Комфорт

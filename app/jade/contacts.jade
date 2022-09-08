@@ -19,15 +19,14 @@ html
                     .contact-list
                         .d-block.d-xl-flex
                             h1.h2.text-uppercase.semibold Контакты
-                            .city-select.ms-0.ms-xl-4.me-0.mt-3.mt-xl-0
-                                .city-select--head
-                                    .text
-                                        span в Санкт-Петербурге
-                                    .arrow
-                                        img(src="images/icons/arrow-toggle-down.svg")
-                                .city-select--body.js-custom-scroll
-                                    .city-select--item в Санкт-Петербурге
-                                    .city-select--item в Москве
+                            .city-select.ms-0.ms-xl-4.me-0.mt-3.mt-xl-0.js-location-wrap
+                                .city-select--head.js-location-modal-btn
+                                    .icon.d-sm-none
+                                        img(src="images/icons/cupola.svg")
+                                    .text.js-location-name Санкт- Петербург
+                                    .arrow.d-none.d-sm-block
+                                        img(src="images/icons/arrow-toggle-down.svg" alt="")
+                                include ./blocks/search-form.jade
 
                         .ms-md-5.ps-md-4
                             .row.mt-5.pt-3

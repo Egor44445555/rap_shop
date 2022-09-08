@@ -737,6 +737,11 @@ select {
             visibility: visible;
             pointer-events: all;
         }
+
+        .custom-select-trigger:before {
+            margin-top: -4px;
+            transform: rotate(-180deg);
+        }
     }
 
     .custom-option {

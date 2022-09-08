@@ -1256,6 +1256,10 @@
         width: 100%;
         padding: 29px 25px;
 
+        &.active .arrow {
+            transform: rotate(-180deg);
+        }
+
         .icon {
             width: 22px;
             height: 22px;
@@ -1791,10 +1795,6 @@
         .btn {
             width: 100%;
             max-width: 200px;
-            min-height: 45px;
-            padding: 12px 40px;
-            font-family: $font-base-semiBold;
-            font-size: 18px;
         }
     }
 
@@ -1811,6 +1811,10 @@
         width: 100%;
         font-family: $font-base-bold;
         font-size: 18px;
+
+        &.active .arrow {
+            transform: rotate(-180deg);
+        }
 
         .icon {
             width: 22px;

@@ -3,15 +3,15 @@
         .car-select-block
             .d-block.d-xl-flex.align-items-baseline
                 h2.text-uppercase Выберите автомобиль
-                .city-select
-                    .city-select--head
+                .city-select.js-location-wrap
+                    .city-select--head.js-location-modal-btn
+                        .icon.d-sm-none
+                            img(src="images/icons/cupola.svg")
                         .text
-                            span в Санкт-Петербурге
-                        .arrow
-                            img(src="images/icons/arrow-toggle-down.svg")
-                    .city-select--body.js-custom-scroll
-                        .city-select--item в Санкт-Петербурге
-                        .city-select--item в Москве
+                            span.js-location-name Санкт- Петербург
+                        .arrow.d-none.d-sm-block
+                            img(src="images/icons/arrow-toggle-down.svg" alt="")
+                    include search-form.jade
 
             .car-type-list.d-none
                 label(for="type1" data-tab="type1").car-type-list--item.tabs-head--item
@@ -29,13 +29,6 @@
                 label(for="type5" data-tab="type5").car-type-list--item.tabs-head--item
                     input(type="radio" name="type" id="type5")
                     span Внедорожники
-
-            select(placeholder="Класс машины").custom-select
-                option(value="Эконом" data-tab="type1").tabs-head--item Эконом
-                option(value="Стандарт" data-tab="type2").tabs-head--item Стандарт
-                option(value="Комфорт" data-tab="type3").tabs-head--item Комфорт
-                option(value="Бизнес-класс" data-tab="type4").tabs-head--item Бизнес-класс
-                option(value="Внедорожники" data-tab="type5").tabs-head--item Внедорожники
 
             .car-select-slider
                 .tabs-body--item.active(data-tab="type1")
