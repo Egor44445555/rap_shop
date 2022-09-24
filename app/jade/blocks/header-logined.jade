@@ -1,0 +1,142 @@
+header.header
+    .wrap
+        .left-block
+            a(href="/index.html").logo
+                img(src="images/logo.png")
+
+            .location-wrap.d-none.d-xxl-flex.js-location-wrap
+                .location.js-location-modal-btn
+                    .icon
+                        img(src="images/icons/cupola.svg")
+                    .text.js-location-name Санкт- Петербург
+                    .arrow
+                        img(src="images/icons/arrow-toggle-down.svg" alt="")
+                include search-form.jade
+
+
+            .phones-wrap.d-none.d-xxl-flex
+                .phones
+                    .phones--item
+                        .text 8 800 250 46 00
+                    .phones--item
+                        .text +7 (965) 25 58 16
+                        .arrow
+                            img(src="images/icons/arrow-toggle-down.svg")
+                .phones-list
+                    a(href="tel:8 800 250 46 00").phones-list--item
+                        span.icon
+                            img(src="images/icons/social-whatsapp.png")
+                        span.text Whats App
+                    a(href="tel:+7 (965) 25 58 16").phones-list--item
+                        span.icon
+                            img(src="images/icons/social-telegram.png")
+                        span.text Telegram
+                    .phones-list--item.mt-2
+                        .btn.btn-blue.btn-extraSmall.modal-btn(data-url="feedback") Заказать звонок
+
+        .right-block
+            .menu.d-none.d-xxl-flex
+                .menu--item.dropdown-wrap
+                    .label
+                        .text О нас
+                        .icon
+                            img(src="images/icons/arrow-toggle-down.svg")
+                    .dropdown
+                        a(href="/about.html").dropdown--item Компания
+                        a(href="/sublease.html").dropdown--item Сдать авто в аренду
+                        a(href="/bonus-program.html").dropdown--item Бонусная программа
+                        a(href="/additional-services.html").dropdown--item Дополнительные услуги
+                        a(href="/news.html").dropdown--item Новости
+                        a(href="/blog.html").dropdown--item Блог
+
+                        .social-list.small
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-instagram.svg").icon
+                                span.text Инстаграм
+                            a(href='#').social-list--item
+                                img(src="images/icons/social-vk.svg").icon
+                                span.text Вконтакте
+                            .social-list--item.blue
+                                img(src="images/icons/social-app.svg").icon
+                                .text
+                                    span Мобильное приложение
+                                    .button-wrap
+                                        a(href="#") Для IOS
+                                        a(href="#") Для Android
+
+                a(href="https://franshiza.rosautoprokat.ru/").menu--item
+                    span.text Франшиза
+                a(href="/rent.html").menu--item
+                    span.text Аренда CRM
+                a(href="/contacts.html").menu--item
+                    span.text Контакты
+                a(href="/stocks.html").menu--item
+                    span.text Акции
+
+            .button-wrap.d-none.d-xxl-flex
+                a(href="/catalog.html").btn.btn-blue Каталог
+                a(href="/sublease.html").btn.btn-blue.btn-empty Сдать в аренду
+                a(href="/login.html").ms-3.cabinet-btn
+                    img(src="images/assets/avatar.jpg")
+                    span.count
+
+            .d-block.d-xxl-none
+                .menu-btn.js-menu-btn
+                    span
+                    span
+                    span
+
+.modal-menu-wrap
+    .wrap.js-custom-scroll
+        .phones
+            a(href="tel:8 800 250 46 00").phones--item
+                span.text 8 800 250 46 00
+            a(href="tel:+7 (965) 25 58 16").phones--item
+                span.text +7 (965) 25 58 16
+
+        .social-list
+            a(href='#').social-list--item
+                img(src="images/icons/social-whatsapp.png").icon
+                span.text Whats App
+            a(href='#').social-list--item
+                img(src="images/icons/social-telegram.png").icon
+                span.text Тelegram
+            .social-list--item
+                .btn.btn-blue.btn-small.modal-btn(data-url="feedback") Заказать звонок
+
+        .location-wrap.js-location-wrap
+            .location.js-location-modal-btn
+                .icon
+                    img(src="images/icons/cupola.svg")
+                .text.js-location-name Санкт- Петербург
+            include search-form.jade
+
+        .modal-menu
+            a(href="/catalog.html").modal-menu--item Каталог
+            a(href="/sublease.html").modal-menu--item Сдать авто в аренду
+            a(href="/about.html").modal-menu--item О нас
+            a(href="/contacts.html").modal-menu--item Контакты
+            a(href="/bonus-program.html").modal-menu--item Бонусная программа
+            a(href="/additional-services.html").modal-menu--item Дополнительные услуги
+            a(href="https://franshiza.rosautoprokat.ru/").modal-menu--item Франшиза
+            a(href="/rent.html").modal-menu--item Аренда CRM
+            a(href="/news.html").modal-menu--item Новости
+            a(href="/blog.html").modal-menu--item Блог
+            a(href="/stocks.html").modal-menu--item Акции
+
+        .social-list.small
+            a(href='#').social-list--item
+                img(src="images/icons/social-instagram.svg").icon
+                span.text Инстаграм
+            a(href='#').social-list--item
+                img(src="images/icons/social-vk.svg").icon
+                span.text Вконтакте
+            .social-list--item.blue
+                img(src="images/icons/social-app.svg").icon
+                .text
+                    span Мобильное приложение
+                    .button-wrap
+                        a(href="#").btn.btn-blue.btn-small IOS
+                        a(href="#").btn.btn-blue.btn-small ANDROID
+
+.overflow

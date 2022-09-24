@@ -1,0 +1,199 @@
+@import '_var.scss';
+
+.account-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.account-name {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 530px;
+    padding-right: 20px;
+
+    .image {
+        margin-right: 45px;
+
+        img {
+            width: 130px;
+            height: 130px;
+            min-width: 130px;
+            border-radius: 50%;
+        }
+    }
+
+    .text {
+        font-family: $font-base-semiBold;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+.account-phone-wrap {
+    flex: 1;
+    max-width: 590px;
+    padding: 50px 44px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(214, 214, 214, 1);
+
+    .label {
+        font-family: $font-base-semiBold;
+        font-size: 16px;
+        color: $placeholderColor;
+    }
+
+    .phone {
+        font-family: $font-base-semiBold;
+        font-size: 35px;
+        color: $black;
+    }
+
+    .btn {
+        padding: 10px 25px;
+    }
+}
+
+.account-discount-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 320px;
+
+    .discount {
+        display: flex;
+        padding-right: 25px;
+        font-family: $font-base-semiBold;
+        font-size: 124px;
+        line-height: 126px;
+
+        span {
+            font-family: $font-base-bold;
+            font-size: 44px;
+            line-height: 44px;
+        }
+    }
+
+    .text {
+        max-width: 80px;
+
+        img {
+            width: 70px;
+            height: 53px;
+        }
+
+        span {
+            display: block;
+            margin-top: 13px;
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+            line-height: 18px;
+            color: $placeholderColor;
+        }
+    }
+}
+
+.cabinet-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--item {
+        margin-top: 26px;
+        font-family: $font-base-semiBold;
+        font-size: 23px;
+        line-height: 24px;
+        color: $black;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .text {
+        margin-right: 17px;
+    }
+
+    .count {
+        display: inline-block;
+        min-width: 35px;
+        min-height: 28px;
+        padding: 3px;
+        background: $blueOther;
+        font-family: $font-base-bold;
+        font-size: 18px;
+        color: $white;
+        text-align: center;
+        border-radius: 2px;
+    }
+}
+
+.account-card-list {
+    margin-top: 54px;
+
+    &--item {
+        display: flex;
+        align-items: center;
+        margin-top: 33px;
+        background-size: 30%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .shadow-wrap {
+        padding: 48px 63px;
+        box-shadow: 0 0 18px rgba(214, 214, 214, 1);
+        border-radius: 10px;
+    }
+
+    .image {
+        flex: 1;
+        max-width: 210px;
+        margin-right: 76px;
+    }
+
+    .info {
+        flex: 1;
+        max-width: 360px;
+    }
+
+    .title {
+        font-family: $font-base-semiBold;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .description {
+        margin-top: 3px;
+        font-size: 25px;
+        line-height: 27px;
+        color: $placeholderColor;
+    }
+
+    .discount {
+        margin-top: 19px;
+        font-family: $font-base-semiBold;
+        font-size: 40px;
+        color: $blue;
+
+        span {
+            padding-left: 12px;
+            font-size: 23px;
+        }
+    }
+}
+
+
+/*** Media ***/
+
+@media (max-width: 426px) {
+
+
+}

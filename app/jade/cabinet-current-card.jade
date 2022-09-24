@@ -1,0 +1,74 @@
+html
+    title Ваша текущая карта
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header-logined.jade
+
+        .wrapper
+            .container-block
+                .account-info.mt-5.pt-4
+                    .account-name
+                        .image
+                            img(src="images/assets/avatar.jpg")
+                        .text Станислав Александровский
+
+                    .account-phone-wrap
+                        .label Привязанный номер
+
+                        .d-flex.flex-wrap.align-items-center
+                            a(href="tel:+7 (912) 285 38 26").phone.mt-2.me-4 +7 (912) 285 38 26
+                            .btn.btn-small.btn-blue.mt-2 + ещё номер
+
+                    .account-discount-wrap
+                        .discount 5
+                            span %
+                        .text
+                            img(src="images/card.png")
+                            span Скида
+                                br
+                                | по карте
+
+                .row.mt-5.pt-5
+                    .col-12.col-lg-3
+                        .cabinet-menu
+                            a(href="#").cabinet-menu--item
+                                span.text Главная
+                            a(href="#").cabinet-menu--item
+                                span.text Мои заказы
+                                span.count 1
+                            a(href="#").cabinet-menu--item
+                                span.text Оповещения
+                                span.count 5
+                            a(href="#").cabinet-menu--item
+                                span.text Бонусная карта
+                            a(href="#").cabinet-menu--item
+                                span.text Сдаваемые автомобили
+                            a(href="#").cabinet-menu--item
+                                span.text Помощь и поддержка
+                            a(href="#").cabinet-menu--item
+                                span.text Мой профиль
+                            a(href="#").cabinet-menu--item
+                                span.text Изменить пароль
+                            a(href="#").cabinet-menu--item
+                                span.text Выйти
+
+                    .col-12.col-lg-9
+                        h1.h2.semibold Ваша текущая карта
+
+                        .account-card-list
+                            .account-card-list--item.shadow-wrap(style="background-image: url('images/card-bg.png')")
+                                .image
+                                    img(src="images/card.png")
+
+                                .info
+                                    .title Standart
+                                    .description Выдается при первом прокате автомобиля
+                                    .discount 5%
+                                        span скидка
+
+                .mt-5.pt-5
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade
