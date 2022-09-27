@@ -325,10 +325,159 @@
     }
 }
 
+.banner-list {
+    margin-top: 130px;
+
+    &--item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 63px;
+        padding: 60px 110px;
+        box-shadow: $boxShadow;
+
+        &:first-child {
+            margin-top: 0;
+            padding-left: 27%;
+        }
+    }
+
+    .image-bg,
+    .image-mobile-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .image-mobile-bg {
+        display: none;
+    }
+
+    .text {
+        position: relative;
+        max-width: 390px;
+        z-index: 5;
+    }
+
+    .title {
+        font-family: $font-base-semiBold;
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .description {
+        margin-top: 30px;
+        font-size: 26px;
+        line-height: 31px;
+    }
+}
+
 
 /*** Media ***/
 
-@media (max-width: 426px) {
+@media (max-width: 1601px) {
+
+    .account-name {
+        max-width: 400px;
+
+        .image {
+            margin-right: 23px;
+
+            img {
+                width: 96px;
+                height: 96px;
+                min-width: 96px;
+            }
+        }
+
+        .text {
+            max-width: 242px;
+            font-size: 22px;
+            line-height: 22px;
+        }
+    }
+
+    .account-phone-wrap {
+        padding: 25px;
+
+        .phone {
+            font-size: 31px;
+        }
+    }
+
+    .account-discount-wrap {
+
+        .discount {
+            font-size: 80px;
+            line-height: 80px;
+        }
+    }
 
 
+    .account-card-list {
+
+        .info-text {
+            font-size: 23px;
+            line-height: 27px;
+        }
+
+        .count {
+            font-size: 50px;
+        }
+
+        .small-card {
+            margin-right: 30px;
+        }
+    }
+
+    .banner-list {
+
+        &--item {
+            padding: 36px 80px;
+
+            &:first-child {
+                padding-left: 23%;
+            }
+        }
+
+        .text {
+            max-width: 288px;
+        }
+
+        .title {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+}
+
+@media (max-width: 1281px) {
+
+    .discount-list-wrap {
+
+        .info-text {
+            margin-top: 60px;
+            padding: 25px 0 0 42px;
+            font-size: 23px;
+            line-height: 27px;
+
+            &:before {
+                left: 17px;
+            }
+        }
+    }
+
+    .discount-list--item {
+        padding: 60px 0;
+    }
 }
