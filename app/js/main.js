@@ -83,6 +83,13 @@ $(document).ready(function() {
         $(this).parent().addClass('active');
     });
 
+    if (window.innerWidth < 1200) {
+
+        $('.account-name').on("click", function() {
+            $(this).parent().toggleClass('show-menu');
+        });
+    }
+
 
     $(document).on('click', function (event) {
         let $target = $(event.target);
