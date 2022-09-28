@@ -21,6 +21,7 @@
 
         &--item {
             display: block;
+            width: 100%;
             padding: 22px 0;
             font-family: $font-base-semiBold;
             font-size: 18px;
@@ -1217,7 +1218,7 @@
                 margin-top: 50px;
 
                 &--item {
-                    margin-top: 15px;
+                    //margin-top: 15px;
                     font-size: 18px;
                     color: $black;
 
