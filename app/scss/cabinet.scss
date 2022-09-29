@@ -428,6 +428,184 @@
     }
 }
 
+.rented-cars-block {
+
+    .info-text {
+        display: flex;
+        align-items: flex-end;
+
+        .text {
+            position: relative;
+            max-width: 60%;
+            padding: 30px 20px 0 55px;
+            font-size: 27px;
+            line-height: 32px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: 10px;
+                width: 10px;
+                height: 15px;
+                background: $redBright;
+                transform: skew(-40deg, 0);
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+.rented-cars-list {
+    margin-top: 100px;
+
+    &--item {
+        margin-top: 45px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &---item-head {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 60px;
+        background: $white;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 0 18px rgba(214, 214, 214, 1);
+        z-index: 5;
+
+        .title {
+            font-family: $font-base-semiBold;
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        .btn {
+            min-height: 35px;
+            padding: 9px 20px;
+        }
+    }
+
+    &---item-body {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 55px 60px;
+        background: $white;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 18px rgba(214, 214, 214, 1);
+        z-index: 1;
+    }
+
+    .image {
+        flex: 1;
+        max-width: 222px;
+        margin-right: 40px;
+    }
+
+    .properties-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+
+        &--item {
+            flex: 100%;
+            max-width: 33.333%;
+            padding: 20px 20px 0 0;
+            font-family: $font-base-semiBold;
+            font-size: 20px;
+        }
+
+        .label {
+            margin-bottom: 20px;
+            font-family: $font-base-semiBold;
+            font-size: 16px;
+            color: $textGray;
+        }
+
+        .number {
+            display: inline-block;
+            padding: 8px 15px;
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+            line-height: 24px;
+            background: $white;
+            border-radius: 3px;
+            box-shadow: 0 0 18px rgba(214, 214, 214, 1);
+
+            img {
+                margin-left: 10px;
+            }
+        }
+
+        .status {
+            padding: 1px 16px;
+            border-radius: 2px;
+
+            &.booked {
+                background: $yellowLight;
+            }
+
+            &.on-loan {
+                background: $greenLight;
+            }
+
+            &.in-garage {
+                background: $grayBg;
+            }
+        }
+
+        .gps {
+            display: flex;
+            align-items: center;
+            padding: 24px 0 0 20px;
+
+            &:hover .text span {
+                border-color: transparent;
+            }
+
+            img {
+                margin-right: 20px;
+            }
+
+            .text {
+                max-width: 75px;
+                font-family: $font-base-bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: $black;
+
+                span {
+                    border-bottom: 1px solid $borderColor;
+                }
+            }
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            font-family: $font-base;
+            font-size: 34px;
+            color: $blueDark;
+            white-space: nowrap;
+
+            .rouble {
+                font-size: 30px;
+            }
+
+            span {
+                font-family: $font-base-semiBold;
+                font-size: 21px;
+                color: $black;
+            }
+        }
+    }
+}
+
 
 /*** Media ***/
 
