@@ -376,6 +376,9 @@
 
         &:first-child {
             margin-top: 0;
+        }
+
+        &.banner-center-text {
             padding-left: 27%;
         }
 
@@ -454,6 +457,25 @@
             }
         }
     }
+
+    .empty-text {
+
+        .text {
+            max-width: 660px;
+            font-size: 26px;
+            line-height: 35px;
+        }
+
+        .button-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -16px 0 0 -16px;
+
+            .btn {
+                margin: 16px 0 0 16px;
+            }
+        }
+    }
 }
 
 .rented-cars-list {
@@ -467,7 +489,7 @@
         }
     }
 
-    &---item-head {
+    &--item-head {
         position: relative;
         display: flex;
         align-items: center;
@@ -490,15 +512,24 @@
         }
     }
 
-    &---item-body {
+    &--item-body {
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 50px 55px 60px;
-        background: $white;
+        background-color: $white;
+        background-image: url('../images/car-card-stripes.jpg');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 40px) bottom;
         border-radius: 0 0 10px 10px;
         box-shadow: 0 0 18px rgba(214, 214, 214, 1);
         z-index: 1;
+
+        .btn {
+            flex: 100%;
+            margin-top: 35px;
+        }
     }
 
     .image {
@@ -647,7 +678,6 @@
         }
     }
 
-
     .account-card-list {
 
         .info-text {
@@ -670,7 +700,7 @@
         &--item {
             padding: 36px 80px;
 
-            &:first-child {
+            &.banner-center-text {
                 padding-left: 23%;
             }
         }
@@ -682,6 +712,36 @@
         .title {
             font-size: 32px;
             line-height: 32px;
+        }
+    }
+
+
+    .rented-cars-list--item-head {
+        padding: 10px 24px;
+
+        .title {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    .rented-cars-list--item-body {
+        padding: 40px 24px 60px;
+    }
+}
+
+@media (max-width: 1441px) {
+
+    .rented-cars-list {
+
+        .image {
+            flex: 100%;
+            max-width: 100%;
+            margin: 0 0 15px;
+        }
+
+        .properties-list {
+            flex: 100%;
         }
     }
 }
@@ -774,6 +834,19 @@
             margin-top: 40px;
         }
     }
+
+    .rented-cars-block {
+
+        .info-text {
+
+            .text {
+                padding: 30px 20px 0 25px;
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+
+    }
 }
 
 @media (max-width: 769px) {
@@ -812,6 +885,83 @@
 
             .image {
                 max-width: 120px;
+            }
+        }
+    }
+
+    .rented-cars-block {
+
+        .info-text {
+            display: block;
+
+            .text {
+                max-width: 100%;
+            }
+
+            .btn {
+                margin-top: 50px;
+            }
+        }
+
+        .empty-text {
+
+            .text {
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .button-wrap {
+
+                .btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .rented-cars-list {
+        margin-top: 60px;
+
+        &--item-body {
+            background-image: none;
+        }
+
+        .image {
+            margin-bottom: 35px;
+        }
+
+        .properties-list {
+            margin-top: -40px;
+
+            &--item {
+                padding-top: 40px;
+            }
+
+            .label {
+                margin-bottom: 15px;
+                font-size: 15px;
+            }
+
+            &--item {
+                max-width: 50%;
+            }
+
+            .status {
+                font-size: 18px;
+            }
+
+            .number {
+                padding: 6px 10px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .price {
+                font-size: 30px;
+
+                span {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -866,7 +1016,7 @@
     .banner-list {
 
         &--item,
-        &--item:first-child {
+        &--item.banner-center-text{
             padding: 80px 42px 429px;
         }
 
@@ -973,7 +1123,7 @@
     .banner-list {
 
         &--item,
-        &--item:first-child {
+        &--item.banner-center-text {
             padding: 50px 30px 300px;
         }
 
@@ -986,6 +1136,18 @@
             margin-top: 15px;
             font-size: 20px;
             line-height: 26px;
+        }
+    }
+
+    .rented-cars-list .properties-list {
+
+        &--item {
+            max-width: 100%;
+            padding: 20px 0 0;
+        }
+
+        .gps {
+            padding: 0;
         }
     }
 }
