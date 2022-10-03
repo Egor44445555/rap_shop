@@ -488,6 +488,12 @@
 .characteristics-list-wrap {
     padding: 70px 0;
 
+    .title {
+        font-family: $font-base-semiBold;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
     &.open {
 
         .characteristics-list--item:nth-child(n+11) {

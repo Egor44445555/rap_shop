@@ -537,103 +537,209 @@
         max-width: 222px;
         margin-right: 40px;
     }
+}
 
-    .properties-list {
+.rented-car-properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+
+    &--item {
+        flex: 100%;
+        max-width: 33.333%;
+        padding: 20px 20px 0 0;
+        font-family: $font-base-semiBold;
+        font-size: 20px;
+
+        &.column-2 {
+            max-width: 66.666%;
+        }
+    }
+
+    .label {
+        margin-bottom: 20px;
+        font-family: $font-base-semiBold;
+        font-size: 16px;
+        color: $textGray;
+    }
+
+    .number {
+        display: inline-block;
+        padding: 8px 15px;
+        font-family: $font-base-semiBold;
+        font-size: 18px;
+        line-height: 24px;
+        background: $white;
+        border-radius: 3px;
+        box-shadow: 0 0 18px rgba(214, 214, 214, 1);
+
+        img {
+            margin-left: 10px;
+        }
+    }
+
+    .status {
+        padding: 1px 16px;
+        border-radius: 2px;
+
+        &.booked {
+            background: $yellowLight;
+        }
+
+        &.on-loan {
+            background: $greenLight;
+        }
+
+        &.in-garage {
+            background: $grayBg;
+        }
+    }
+
+    .gps {
         display: flex;
-        flex-wrap: wrap;
-        flex: 1;
+        align-items: center;
+        padding: 24px 0 0 20px;
 
-        &--item {
-            flex: 100%;
-            max-width: 33.333%;
-            padding: 20px 20px 0 0;
-            font-family: $font-base-semiBold;
-            font-size: 20px;
+        &:hover .text span {
+            border-color: transparent;
         }
 
-        .label {
-            margin-bottom: 20px;
-            font-family: $font-base-semiBold;
-            font-size: 16px;
-            color: $textGray;
+        img {
+            margin-right: 20px;
         }
 
-        .number {
-            display: inline-block;
-            padding: 8px 15px;
-            font-family: $font-base-semiBold;
-            font-size: 18px;
-            line-height: 24px;
-            background: $white;
-            border-radius: 3px;
-            box-shadow: 0 0 18px rgba(214, 214, 214, 1);
+        .text {
+            max-width: 75px;
+            font-family: $font-base-bold;
+            font-size: 14px;
+            line-height: 18px;
+            color: $black;
 
-            img {
-                margin-left: 10px;
+            span {
+                border-bottom: 1px solid $borderColor;
             }
         }
+    }
+
+    .price {
+        display: flex;
+        align-items: baseline;
+        font-family: $font-base;
+        font-size: 34px;
+        color: $blueDark;
+        white-space: nowrap;
+
+        .rouble {
+            font-size: 30px;
+        }
+
+        span {
+            font-family: $font-base-semiBold;
+            font-size: 21px;
+            color: $black;
+        }
+    }
+}
+
+.rented-car-info {
+    display: flex;
+
+    .image {
+        position: relative;
+        flex: 1;
+        max-width: 430px;
+        padding: 0 40px;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 16px;
+            height: 36px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 6px;
+                width: 2px;
+                height: 20px;
+                margin: 0;
+                background: $black;
+                border-radius: 4px;
+                transform: rotate(-35deg) translate(0, 0);
+            }
+
+            &:before {
+                top: auto;
+                bottom: 0;
+                transform: rotate(35deg);
+            }
+        }
+
+        .swiper-button-prev {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+
+    .rented-car-properties-list {
+        flex: 1;
+        padding-left: 40px;
 
         .status {
-            padding: 1px 16px;
-            border-radius: 2px;
-
-            &.booked {
-                background: $yellowLight;
-            }
-
-            &.on-loan {
-                background: $greenLight;
-            }
-
-            &.in-garage {
-                background: $grayBg;
-            }
+            padding: 1px 10px;
         }
 
         .gps {
-            display: flex;
-            align-items: center;
-            padding: 24px 0 0 20px;
-
-            &:hover .text span {
-                border-color: transparent;
-            }
-
-            img {
-                margin-right: 20px;
-            }
+            padding: 0;
 
             .text {
-                max-width: 75px;
-                font-family: $font-base-bold;
-                font-size: 14px;
-                line-height: 18px;
-                color: $black;
-
-                span {
-                    border-bottom: 1px solid $borderColor;
-                }
+                max-width: 100%;
+                font-size: 18px;
             }
         }
 
-        .price {
-            display: flex;
-            align-items: baseline;
-            font-family: $font-base;
-            font-size: 34px;
-            color: $blueDark;
-            white-space: nowrap;
-
-            .rouble {
-                font-size: 30px;
-            }
-
-            span {
-                font-family: $font-base-semiBold;
-                font-size: 21px;
-                color: $black;
-            }
+        .btn {
+            padding: 15px 20px;
         }
+    }
+}
+
+.product-gallery {
+    position: relative;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+.product-gallery-thumbnails {
+    margin-top: 27px;
+
+    &--item {
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $white;
+            opacity: 0;
+            z-index: 5;
+        }
+    }
+
+    &--item.swiper-slide-thumb-active:before {
+        opacity: .54;
+    }
+
+    img {
+        border-radius: 5px;
     }
 }
 
@@ -740,7 +846,7 @@
             margin: 0 0 15px;
         }
 
-        .properties-list {
+        .rented-car-properties-list {
             flex: 100%;
         }
     }
@@ -929,39 +1035,39 @@
         .image {
             margin-bottom: 35px;
         }
+    }
 
-        .properties-list {
-            margin-top: -40px;
+    .rented-car-properties-list {
+        margin-top: -40px;
 
-            &--item {
-                padding-top: 40px;
-            }
+        &--item {
+            padding-top: 40px;
+        }
 
-            .label {
-                margin-bottom: 15px;
-                font-size: 15px;
-            }
+        .label {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
 
-            &--item {
-                max-width: 50%;
-            }
+        &--item {
+            max-width: 50%;
+        }
 
-            .status {
-                font-size: 18px;
-            }
+        .status {
+            font-size: 18px;
+        }
 
-            .number {
-                padding: 6px 10px;
+        .number {
+            padding: 6px 10px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .price {
+            font-size: 30px;
+
+            span {
                 font-size: 16px;
-                line-height: 22px;
-            }
-
-            .price {
-                font-size: 30px;
-
-                span {
-                    font-size: 16px;
-                }
             }
         }
     }
@@ -1139,7 +1245,7 @@
         }
     }
 
-    .rented-cars-list .properties-list {
+    .properties-list {
 
         &--item {
             max-width: 100%;

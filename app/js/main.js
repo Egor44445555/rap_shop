@@ -457,6 +457,50 @@ $(document).ready(function() {
         }
     });
 
+    if ($('.js-product-gallery-slider')[0]) {
+
+        let productGalleryThumbnails;
+
+        if ($('.js-product-gallery-thumbnails-slider')[0]) {
+
+            productGalleryThumbnails = new Swiper(".js-product-gallery-thumbnails-slider", {
+                slidesPerView: 2,
+                spaceBetween: 14,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 3,
+                    },
+                    561: {
+                        slidesPerView: 4,
+                    },
+                    768: {
+                        slidesPerView: 5,
+                    },
+                },
+            });
+        }
+
+        new Swiper(".js-product-gallery-slider", {
+            spaceBetween: 14,
+            navigation: {
+                nextEl: ".image .swiper-button-next",
+                prevEl: ".image .swiper-button-prev",
+            },
+            thumbs: {
+                swiper: productGalleryThumbnails,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+
+        $('.product-gallery').on('click', '.product-gallery--item', function () {
+            $('.js-gallery-image-current')[0].setAttribute('src', $(this).data('src'))
+        });
+    }
+
     /*** Range slider ***/
 
     let $range = $(".js-range-slider"),
