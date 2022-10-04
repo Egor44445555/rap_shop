@@ -567,8 +567,8 @@
         display: inline-block;
         padding: 8px 15px;
         font-family: $font-base-semiBold;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 22px;
         background: $white;
         border-radius: 3px;
         box-shadow: 0 0 18px rgba(214, 214, 214, 1);
@@ -647,7 +647,7 @@
     .image {
         position: relative;
         flex: 1;
-        max-width: 430px;
+        max-width: 400px;
         padding: 0 40px;
 
         .swiper-button-prev,
@@ -678,7 +678,12 @@
             }
         }
 
+        .swiper-button-next {
+            right: 0;
+        }
+
         .swiper-button-prev {
+            left: 0;
             transform: translateY(-50%) rotate(180deg);
         }
     }
@@ -740,6 +745,39 @@
 
     img {
         border-radius: 5px;
+    }
+}
+
+.profile-form {
+
+    .input {
+        height: 70px;
+    }
+
+    .radio-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .radio {
+            padding: 24px 40px 0 24px;
+        }
+    }
+
+    .radio {
+        height: auto;
+        padding: 0;
+        border: 0;
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            box-shadow: inset 1px 0 4px rgba(0, 0, 0, .18);
+
+            &:before {
+                background: $blue;
+            }
+        }
     }
 }
 
@@ -821,7 +859,6 @@
         }
     }
 
-
     .rented-cars-list--item-head {
         padding: 10px 24px;
 
@@ -833,6 +870,18 @@
 
     .rented-cars-list--item-body {
         padding: 40px 24px 60px;
+    }
+
+    .rented-car-info {
+        display: block;
+
+        .image {
+            padding: 0 40px;
+        }
+
+        .rented-car-properties-list {
+            padding: 40px 0 0;
+        }
     }
 }
 
@@ -955,7 +1004,28 @@
     }
 }
 
+@media (max-width: 992px) {
+
+    .profile-form {
+
+        .radio-list {
+
+            .radio {
+                padding: 0 30px 20px 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 769px) {
+
+    .cabinet-page {
+
+        .characteristics-list-wrap {
+            padding-bottom: 100px;
+            border-bottom: 1px solid $borderColorLight;
+        }
+    }
 
     .account-card-list {
 
@@ -1069,6 +1139,50 @@
             span {
                 font-size: 16px;
             }
+        }
+    }
+
+    .rented-car-properties-list {
+
+        &--item.column-2 {
+            max-width: 50%;
+        }
+
+        &--item.column-mobile-wide {
+            max-width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    .rented-car-info {
+
+        .rented-car-properties-list {
+            margin-top: -30px;
+
+            &--item {
+                padding-top: 30px;
+            }
+
+            .number img {
+                display: none;
+            }
+
+            .gps .text {
+                max-width: 80px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+    .profile-form {
+
+        .input {
+            font-family: $font-base;
         }
     }
 }
@@ -1254,6 +1368,14 @@
 
         .gps {
             padding: 0;
+        }
+    }
+
+    .rented-car-info {
+
+        .image {
+            margin: 0 -15px;
+            padding: 0 30px;
         }
     }
 }

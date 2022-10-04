@@ -485,6 +485,38 @@ input[type="password"] {
     min-height: 146px;
 }
 
+.password {
+    position: relative;
+
+    &.active {
+
+        img {
+            opacity: .8;
+        }
+    }
+
+    input {
+        position: relative;
+        padding-right: 60px;
+        z-index: 1;
+    }
+
+    input[type="password"] {
+        font-size: 32px;
+        letter-spacing: 3px;
+        color: $blue;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        z-index: 5;
+        cursor: pointer;
+    }
+}
+
 .checkbox {
     display: flex;
     margin-top: 16px;
