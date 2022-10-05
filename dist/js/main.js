@@ -68,6 +68,37 @@ $(document).ready(function() {
         }
     });
 
+    /*** Uploader ***/
+
+    $('[name="uploader"]').on('change', function () {
+        let reader = new FileReader();
+
+        reader.onload = (el) => {
+
+            $('.js-uploader-list').html(`
+                    <div class="uploader-list--item">
+                        <img src="${el.target.result}" alt="">
+                        <div class="delete js-uploader-delete">
+                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44738 4.00086L0.598633 6.84961L1.15113 7.40211L3.99988 4.55336L6.84863 7.40211L7.40113 6.84961L4.55238 4.00086L7.40113 1.15211L6.84863 0.599609L3.99988 3.44836L1.15113 0.599609L0.598633 1.15211L3.44738 4.00086Z" fill="#1A1A1A"/>
+                            </svg>
+                        </div>
+                    </div>
+                `);
+        };
+
+        if ($(this)[0].files[0]) {
+            reader.readAsDataURL($(this)[0].files[0]);
+        }
+    });
+
+    $('.uploader-list').on('click', '.js-uploader-delete', function () {
+        $(this).parent().remove();
+        document.getElementById('uploader').value = '';
+    });
+
+    /*** End Uploader ***/
+
     customScroll.mCustomScrollbar();
 
     if (window.innerWidth < 769) {
