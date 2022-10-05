@@ -103,13 +103,13 @@
         display: flex;
         padding-right: 25px;
         font-family: $font-base-semiBold;
-        font-size: 124px;
-        line-height: 126px;
+        font-size: 90px;
+        line-height: 100px;
 
         span {
             font-family: $font-base-bold;
-            font-size: 44px;
-            line-height: 44px;
+            font-size: 35px;
+            line-height: 33px;
         }
     }
 
@@ -778,6 +778,11 @@
                 background: $blue;
             }
         }
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 364px;
     }
 }
 

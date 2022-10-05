@@ -1,5 +1,5 @@
 html
-    title Изменить пароль
+    title Помощь и поддержка
     include ./blocks/head.jade
 
     body
@@ -27,7 +27,7 @@ html
                             .btn.btn-small.btn-blue.mt-2 + ещё номер
 
                     .account-discount-wrap
-                        .discount 5
+                        .discount 20
                             span %
                         .text
                             img(src="images/card.png")
@@ -40,33 +40,35 @@ html
                         include ./blocks/cabinet-menu.jade
 
                     .col-12.col-xl-9
-                        h1.h2.semibold Изменить пароль
+                        h1.h2.semibold Помощь и поддержка
 
                         form(action="").profile-form
                             .row.mt-5.pt-1.pt-xl-3
                                 .col-12
                                     .input-wrap
-                                        .label.mb-3.mb-lg-4 Старый пароль
-                                        .password
-                                            input(type="password" value="password").input
-                                            img(src="images/icons/eye.png")
+                                        .label.mb-3.mb-lg-4 Тема сообщения
+                                        input(type="password" placeholder="Обозначьте тему").input
 
                             .row.mt-3.mt-lg-4.pt-1.pt-lg-3
-                                .col-12.col-lg-6
+                                .col-12
                                     .input-wrap
-                                        .label.mb-3.mb-lg-4 Новый пароль
-                                        .password
-                                            input(type="password" value="password").input
-                                            img(src="images/icons/eye.png")
-                                .col-12.col-lg-6.mt-3.pt-1.mt-lg-0.pt-0
+                                        .label.mb-3.mb-lg-4 Комментарий
+                                        textarea(placeholder="Напишите ваш вопрос").input
+
+                            .row.mt-3.mt-lg-4.pt-1.pt-lg-3
+                                .col-12
                                     .input-wrap
-                                        .label.mb-3.mb-lg-4 Повторите пароль
-                                        .password
-                                            input(type="password" value="password").input
-                                            img(src="images/icons/eye.png")
+                                        .label.mb-3.mb-lg-4 Прикрепить файлы
+
+                                        .uploader-wrap
+                                            .uploader-list.js-uploader-list
+
+                                            label(for="uploader").uploader-btn
+                                                input(type="file" id="uploader" name="uploader" multiple=).d-none
+                                                span.text +
 
                             .mt-3.mt-lg-4.pt-4
-                                button(type="submit").btn.btn-blue.btn-medium Сохранить изменения
+                                button(type="submit").btn.btn-blue.btn-medium Отправить сообщение
 
                 .mt-5.pt-5
 

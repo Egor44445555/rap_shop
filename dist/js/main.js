@@ -56,6 +56,18 @@ $(document).ready(function() {
         placement: 'bottom',
     });
 
+    $('.password').on('click', 'img', function (e) {
+        e.preventDefault();
+
+        if ($(this).siblings()[0].type === 'password') {
+            $(this).siblings()[0].type = 'text';
+            $(this).parent().addClass('active');
+        } else {
+            $(this).siblings()[0].type = 'password';
+            $(this).parent().removeClass('active');
+        }
+    });
+
     customScroll.mCustomScrollbar();
 
     if (window.innerWidth < 769) {
@@ -464,16 +476,13 @@ $(document).ready(function() {
         if ($('.js-product-gallery-thumbnails-slider')[0]) {
 
             productGalleryThumbnails = new Swiper(".js-product-gallery-thumbnails-slider", {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 14,
                 breakpoints: {
                     320: {
                         slidesPerView: 3,
                     },
-                    561: {
-                        slidesPerView: 4,
-                    },
-                    768: {
+                    460: {
                         slidesPerView: 5,
                     },
                 },

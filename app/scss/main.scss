@@ -1611,5 +1611,64 @@ a.ui-button:active, .ui-button:active,
 /*** End Datepicker ***/
 
 
+/*** Uploader ***/
+
+.uploader-wrap {
+
+    .uploader-btn {
+        margin-top: 24px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &.disabled {
+            pointer-events: none;
+        }
+    }
+}
+
+.uploader-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -24px 0 0 -24px;
+
+    &--item {
+        position: relative;
+        flex: 1;
+        max-width: 64px;
+        height: 64px;
+        margin: 24px 0 0 24px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .delete {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: $white;
+            border: 1px solid $black;
+            border-radius: 50%;
+            cursor: pointer;
+
+            svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+/*** End Uploader ***/
+
+
 @import '_header.scss',
         '_footer.scss';
