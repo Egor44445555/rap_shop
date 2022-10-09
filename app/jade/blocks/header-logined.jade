@@ -76,9 +76,23 @@ header.header
             .button-wrap.d-none.d-xxl-flex
                 a(href="/catalog.html").btn.btn-blue Каталог
                 a(href="/sublease.html").btn.btn-blue.btn-empty Сдать в аренду
-                a(href="/login.html").ms-3.cabinet-btn
-                    img(src="images/assets/avatar.jpg")
-                    span.count
+
+                .menu--item.dropdown-wrap.cabinet-btn
+                    .label
+                        .text
+                            img(src="images/assets/avatar.jpg")
+                            span.count
+                    .dropdown
+                        a(href="/cabinet-current-card.html").dropdown--item Мои заказы
+                            span.count-num 1
+                        a(href="/cabinet-current-card.html").dropdown--item Оповещения
+                            span.count-num 5
+                        a(href="/cabinet-current-card.html").dropdown--item Бонусная карта
+                        a(href="/cabinet-rented-cars.html").dropdown--item Сдаваемые автомобили
+                        a(href="/cabinet-support.html").dropdown--item Помощь и поддержка
+                        a(href="/cabinet-profile-credentials.html").dropdown--item Мой профиль
+                        a(href="/cabinet-change-password.html").dropdown--item Изменить пароль
+                        a(href="#").dropdown--item Выйти
 
             .d-block.d-xxl-none
                 .menu-btn.js-menu-btn

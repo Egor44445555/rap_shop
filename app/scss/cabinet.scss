@@ -811,6 +811,152 @@
         font-size: 17px;
         color: $black;
     }
+
+    .success-password-block {
+
+        .icon {
+            width: 125px;
+            height: 114px;
+            margin-bottom: 54px;
+        }
+
+        .title {
+            font-family: $font-base-semiBold;
+            font-size: 44px;
+            line-height: 48px;
+        }
+
+        .sub-title {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+
+    .error-password-block {
+
+        .icon {
+            width: auto;
+            height: auto;
+            margin-bottom: 68px;
+            font-family: $font-base-semiBold;
+            font-size: 174px;
+            line-height: 174px;
+            color: $blue;
+            opacity: .26;
+        }
+
+        .title {
+            font-family: $font-base-semiBold;
+            font-size: 44px;
+            line-height: 48px;
+        }
+
+        .sub-title {
+            max-width: 660px;
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+}
+
+
+.statistic-list-cabinet {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -40px;
+    z-index: 9;
+
+    &--item {
+        display: flex;
+        align-items: center;
+        flex: 100%;
+        max-width: calc(33.333% - 40px);
+        margin: 50px 0 0 40px;
+        padding: 47px 20px 47px 40px;
+        box-shadow: $boxShadow;
+        border-radius: 5px;
+
+        &.empty {
+            padding-right: 0;
+            padding-left: 0;
+            box-shadow: none;
+
+            .count {
+                font-size: 58px;
+                line-height: 58px;
+            }
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            height: 80px;
+            max-width: 80px;
+            min-width: 80px;
+            margin-right: 30px;
+            background-size: cover;
+            border-radius: 10px;
+
+            &:before,
+            div:before {
+                color: $white;
+            }
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .link {
+            font-family: $font-base-semiBold;
+            font-size: 28px;
+            line-height: 29px;
+
+            span {
+                border-bottom: 1px solid;
+            }
+        }
+
+        .count {
+            margin-top: 10px;
+            font-family: $font-base-semiBold;
+            font-size: 30px;
+            white-space: nowrap;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .title {
+            margin-top: 10px;
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+            line-height: 18px;
+            opacity: .5;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
 }
 
 
@@ -915,6 +1061,16 @@
             padding: 40px 0 0;
         }
     }
+
+    .statistic-list-cabinet {
+        margin: -20px 0 0 -20px;
+
+        &--item {
+            max-width: calc(33.333% - 20px);
+            margin: 20px 0 0 20px;
+            padding: 25px 20px;
+        }
+    }
 }
 
 @media (max-width: 1441px) {
@@ -929,6 +1085,13 @@
 
         .rented-car-properties-list {
             flex: 100%;
+        }
+    }
+
+    .statistic-list-cabinet {
+
+        &--item {
+            max-width: calc(50% - 20px);
         }
     }
 }
@@ -1227,6 +1390,31 @@
 
         .btn {
             width: 100%;
+        }
+
+        .success-password-block,
+        .error-password-block {
+
+            .icon {
+                margin-bottom: 40px;
+            }
+
+            .title {
+                font-size: 32px;
+                line-height: 35px;
+            }
+
+            .sub-title {
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .statistic-list-cabinet {
+
+        &--item {
+            max-width: calc(100% - 20px);
         }
     }
 }

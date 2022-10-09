@@ -169,6 +169,32 @@
             background: $redBright;
             border-radius: 50%;
         }
+
+        .dropdown {
+            right: 0;
+            left: auto;
+            padding: 25px 0;
+
+            &--item {
+                padding: 7px 40px;
+                font-size: 18px;
+            }
+        }
+
+        .count-num {
+            display: inline-block;
+            min-width: 26px;
+            min-height: 22px;
+            margin-left: 15px;
+            padding: 3px;
+            background: $blueOther;
+            font-family: $font-base-bold;
+            font-size: 14px;
+            line-height: 15px;
+            color: $white;
+            text-align: center;
+            border-radius: 2px;
+        }
     }
 }
 

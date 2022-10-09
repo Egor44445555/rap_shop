@@ -1,6 +1,6 @@
 
 <html>
-  <title>Изменить пароль</title>
+  <title>Статистика</title>
   <head>
     <meta charset="utf-8"/>
     <meta name="description" content=""/>
@@ -149,49 +149,54 @@
             </div>
           </div>
           <div class="account-discount-wrap">
-            <div class="discount">5<span>%</span></div>
+            <div class="discount">20<span>%</span></div>
             <div class="text"><img src="images/card.png"/><span>Скида<br/>по карте</span></div>
           </div>
         </div>
-        <div class="row mt-3 pt-5 mt-xl-5">
+        <div class="row mt-md-3 pt-5 mt-xl-5">
           <div class="col-3 d-none d-xl-block">
             <div class="cabinet-menu"><a href="/cabinet-current-card.html" class="cabinet-menu--item"><span class="text">Главная</span></a><a href="/cabinet-statistic.html" class="cabinet-menu--item"><span class="text">Мои заказы</span><span class="count">1</span></a><a href="/cabinet-statistic.html" class="cabinet-menu--item"><span class="text">Оповещения</span><span class="count">5</span></a><a href="#" class="cabinet-menu--item"><span class="text">Бонусная карта</span></a><a href="/cabinet-rented-cars.html" class="cabinet-menu--item"><span class="text">Сдаваемые автомобили</span></a><a href="/cabinet-support.html" class="cabinet-menu--item"><span class="text">Помощь и поддержка</span></a><a href="/cabinet-profile-credentials.html" class="cabinet-menu--item"><span class="text">Мой профиль</span></a><a href="/cabinet-change-password.html" class="cabinet-menu--item"><span class="text">Изменить пароль</span></a><a href="#" class="cabinet-menu--item"><span class="text">Выйти</span></a></div>
           </div>
           <div class="col-12 col-xl-9">
-            <h1 class="h2 semibold">Изменить пароль</h1>
-            <form action="" class="profile-form">
-              <div class="row mt-5 pt-1 pt-xl-3">
-                <div class="col-12">
-                  <div class="input-wrap">
-                    <div class="label mb-3 mb-lg-4">Старый пароль</div>
-                    <div class="password">
-                      <input type="password" value="password" class="input"/><img src="images/icons/eye.png"/>
-                    </div>
+            <div class="statistic-list-cabinet">
+              <div class="statistic-list-cabinet--item">
+                <div style="background-image: url('images/statistic-list-1.png')" class="icon"></div>
+                <div class="info">
+                  <div class="title">Заказов на аренду</div>
+                  <div class="count">35</div>
+                </div>
+              </div>
+              <div class="statistic-list-cabinet--item">
+                <div style="background-image: url('images/statistic-list-2.png')" class="icon"></div>
+                <div class="info">
+                  <div class="title">Общая сумма заказов</div>
+                  <div class="count">52 000&nbsp;<span class="rouble d-inline">₽</span></div>
+                </div>
+              </div>
+              <div class="statistic-list-cabinet--item">
+                <div class="info">
+                  <div class="title">Автомобилей заказано</div>
+                  <div class="d-flex align-items-baseline mt-2"><img src="images/car-stroke.png" class="me-2"/>
+                    <div class="count">12</div>
                   </div>
                 </div>
               </div>
-              <div class="row mt-3 mt-lg-4 pt-1 pt-lg-3">
-                <div class="col-12 col-lg-6">
-                  <div class="input-wrap">
-                    <div class="label mb-3 mb-lg-4">Новый пароль</div>
-                    <div class="password">
-                      <input type="password" value="password" class="input"/><img src="images/icons/eye.png"/>
-                    </div>
-                  </div>
+              <div class="statistic-list-cabinet--item">
+                <div style="background-image: url('images/statistic-list-3.png')" class="icon"></div>
+                <div class="info">
+                  <div class="title">Всего дней аренды</div>
+                  <div class="count">63</div>
                 </div>
-                <div class="col-12 col-lg-6 mt-3 pt-1 mt-lg-0 pt-0">
-                  <div class="input-wrap">
-                    <div class="label mb-3 mb-lg-4">Повторите пароль</div>
-                    <div class="password">
-                      <input type="password" value="password" class="input"/><img src="images/icons/eye.png"/>
-                    </div>
+              </div>
+              <div class="statistic-list-cabinet--item empty">
+                <div class="info">
+                  <div class="title">У вас</div>
+                  <div class="d-flex align-items-baseline mt-2">
+                    <div class="count me-3 pe-2">5</div><a href="#" class="link"><span>Новых оповещений</span></a>
                   </div>
                 </div>
               </div>
-              <div class="mt-3 mt-lg-4 pt-4">
-                <button type="submit" class="btn btn-blue btn-medium">Сохранить изменения</button>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="mt-5 pt-5"></div>
