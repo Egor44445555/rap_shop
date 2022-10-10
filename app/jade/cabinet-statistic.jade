@@ -19,12 +19,17 @@ html
 
                     include ./blocks/cabinet-menu.jade
 
-                    .account-phone-wrap
+                    .account-phone-wrap.js-toggle-wrap
                         .label Привязанный номер
 
-                        .d-flex.flex-wrap.align-items-center
-                            a(href="tel:+7 (912) 285 38 26").phone.mt-2.me-4 +7 (912) 285 38 26
-                            .btn.btn-small.btn-blue.mt-2 + ещё номер
+                        .d-flex.flex-wrap.align-items-center.justify-content-between
+                            .phone.w-100.d-flex.justify-content-between.align-items-center.mt-2
+                                a(href="tel:+7 (912) 285 38 26").text +7 (912) 285 38 26
+                                img(src="images/icons/arrow-toggle-down.svg").arrow.js-toggle-btn
+                            .dropdown
+                                .label Второй номер
+                                a(href="tel:+7 (912) 285 38 26").phone.w-100.d-flex.justify-content-between.align-items-center.mt-2
+                                    span.text +7 (912) 285 38 26
 
                     .account-discount-wrap
                         .discount 20

@@ -975,6 +975,10 @@ select {
         max-width: 800px;
     }
 
+    &.max-size {
+        max-width: 896px;
+    }
+
     .close {
         position: absolute;
         top: 25px;
@@ -1023,6 +1027,41 @@ select {
     .btn {
         width: 100%;
         max-width: 250px;
+    }
+
+
+    .bind-number-form {
+
+        .sub-title {
+            max-width: 445px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .code-wrap {
+        display: flex;
+
+        .input {
+            max-width: 57px;
+            margin-left: 16px;
+            padding: 10px;
+            font-family: $font-base-semiBold;
+            font-size: 29px;
+            line-height: 29px;
+            text-align: center;
+            border-radius: 2px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .time {
+        font-family: $font-base-semiBold;
+        font-size: 29px;
+        line-height: 29px;
     }
 }
 

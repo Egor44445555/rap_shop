@@ -16,6 +16,12 @@ $(document).ready(function() {
     let modalMenuClose = $('.modal-menu-wrap .close');
     let gridBtn = $('.grid-type--item');
 
+    $('.js-toggle-btn').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).parents('.js-toggle-wrap').toggleClass('active');
+    });
+
     burgerBtn.on('click', function (e) {
         e.preventDefault();
 
