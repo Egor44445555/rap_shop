@@ -702,9 +702,6 @@ select {
     color: $black;
     font-size: 18px;
     line-height: 20px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     border: 1px solid $borderColor;
     box-sizing: border-box;
     border-radius: 5px;
@@ -724,6 +721,12 @@ select {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &::-ms-expand {
@@ -830,6 +833,20 @@ select {
 
         .custom-options {
             border: 0;
+        }
+    }
+
+    &.medium {
+
+        .custom-select-trigger {
+            height: 48px;
+            font-size: 18px;
+        }
+
+        .custom-option {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 16px;
         }
     }
 }

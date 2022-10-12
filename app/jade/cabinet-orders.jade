@@ -1,0 +1,234 @@
+html
+    title Заказы
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header-logined.jade
+
+        .wrapper
+            .container-block
+                .account-info.mt-5.pt-sm-4
+                    .account-name
+                        .image
+                            img(src="images/assets/avatar.jpg")
+                        .text Станислав Александровский
+                        .arrow.d-block.d-xl-none
+                            svg(width="12" height="5" viewBox="0 0 12 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M0.412757 0.726379C0.640709 0.328531 1.14802 0.190803 1.54587 0.418755L6.23945 3.108C6.6373 3.33595 6.77503 3.84326 6.54708 4.24111V4.24111C6.31912 4.63896 5.81181 4.77669 5.41397 4.54873L0.720381 1.85949C0.322533 1.63154 0.184806 1.12423 0.412757 0.726379V0.726379Z" fill="black")
+                                path(d="M11.2779 0.713236C11.5053 1.10714 11.3704 1.61083 10.9765 1.83825L6.26493 4.55846C5.87102 4.78588 5.36733 4.65092 5.13991 4.25701V4.25701C4.91249 3.86311 5.04745 3.35942 5.44136 3.132L10.1529 0.411789C10.5468 0.184367 11.0505 0.319329 11.2779 0.713236V0.713236Z" fill="black")
+
+                    include ./blocks/cabinet-menu.jade
+
+                    .account-phone-wrap
+                        .label Привязанный номер
+
+                        .d-flex.flex-wrap.align-items-center
+                            a(href="tel:+7 (912) 285 38 26").phone.mt-2.me-4 +7 (912) 285 38 26
+                            .btn.btn-small.btn-blue.mt-2.modal-btn(data-url="bind-number") + ещё номер
+
+                    .account-discount-wrap
+                        .discount 20
+                            span %
+                        .text
+                            img(src="images/card.png")
+                            span Скида
+                                br
+                                | по карте
+
+                .row.mt-3.pt-5.mt-xl-5
+                    .col-3.d-none.d-xl-block
+                        include ./blocks/cabinet-menu.jade
+
+                    .col-12.col-xl-9
+                        .sort-block
+                            .row
+                                .col-12.col-md-4.col-lg-3
+                                    select.custom-select.medium(placeholder="Все")
+                                        option(value="Все") Все
+                                        option(value="Ожидает оплаты") Ожидает оплаты
+                                        option(value="Оплачен") Оплачен
+                                        option(value="Завершён") Завершён
+                                        option(value="Отменён") Отменён
+                                .col-12.col-md-4.col-lg-3.mt-3.mt-md-0
+                                    select.custom-select.medium(placeholder="за 2021")
+                                        option(value="за 2021") за 2021
+                                        option(value="за 2022") за 2022
+                                        option(value="за 2023") за 2023
+                                        option(value="за 2024") за 2024
+                                        option(value="за 2025") за 2025
+
+                        .orders-list
+                            a(href="#").orders-list--item
+                                span.orders-list--item-head
+                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                        span.title Заказ № 6258
+                                        span.date
+                                            span от&nbsp;
+                                            | 20.05.2022 18:59
+                                    span.btn.btn-small.btn-gray.btn-empty Отменить
+                                span.orders-list--item-body
+                                    span.orders-list-properties-list
+                                        span.orders-list-properties-list--item
+                                            span.label Модель автомобиля
+                                            span.image
+                                                img(src="images/assets/order-image.png")
+                                                span Hyundai Solaris 2021
+                                        span.orders-list-properties-list--item
+                                            span.label Начало
+                                            span.date 28.05.22
+                                            span.label Окочание
+                                            span.date 10.06.22
+                                        span.orders-list-properties-list--item
+                                            span.label Сумма заказа
+                                            span.price 5.285&nbsp;
+                                                .rouble.d-inline ₽
+                                        span.orders-list-properties-list--item
+                                            span.label Статус
+                                            span.status-wrap
+                                                span.status.awaiting-payment
+                                                    span Ожидает
+                                                    span оплаты
+                                        span.orders-list-properties-list--item
+                                            span.btn.btn-blue.btn-small Оплатить заказ
+
+                            a(href="#").orders-list--item
+                                span.orders-list--item-head
+                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                        span.title Заказ № 6258
+                                        span.date
+                                            span от&nbsp;
+                                            | 20.05.2022 18:59
+                                    span.btn.btn-small.btn-gray.btn-empty Отменить
+                                span.orders-list--item-body
+                                    span.orders-list-properties-list
+                                        span.orders-list-properties-list--item
+                                            span.label Модель автомобиля
+                                            span.image
+                                                img(src="images/assets/order-image.png")
+                                                span Hyundai Solaris 2021
+                                        span.orders-list-properties-list--item
+                                            span.label Начало
+                                            span.date 28.05.22
+                                            span.label Окочание
+                                            span.date 10.06.22
+                                        span.orders-list-properties-list--item
+                                            span.label Сумма заказа
+                                            span.price 5.285&nbsp;
+                                                .rouble.d-inline ₽
+                                        span.orders-list-properties-list--item
+                                            span.label Статус
+                                            span.status-wrap
+                                                span.status.paid
+                                                    span Оплачен
+                                        span.orders-list-properties-list--item
+                                            span.check
+                                                img(src="images/icons/doc-black.png")
+                                                span.text
+                                                    span.text-decoration-underline Электронный чек
+
+                            a(href="#").orders-list--item
+                                span.orders-list--item-head
+                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                        span.title Заказ № 6258
+                                        span.date
+                                            span от&nbsp;
+                                            | 20.05.2022 18:59
+                                    span.btn.btn-small.btn-gray.btn-empty Отменить
+                                span.orders-list--item-body
+                                    span.orders-list-properties-list
+                                        span.orders-list-properties-list--item
+                                            span.label Модель автомобиля
+                                            span.image
+                                                img(src="images/assets/order-image.png")
+                                                span Hyundai Solaris 2021
+                                        span.orders-list-properties-list--item
+                                            span.label Начало
+                                            span.date 28.05.22
+                                            span.label Окочание
+                                            span.date 10.06.22
+                                        span.orders-list-properties-list--item
+                                            span.label Сумма заказа
+                                            span.price 5.285&nbsp;
+                                                span.rouble.d-inline ₽
+                                        span.orders-list-properties-list--item
+                                            span.label Статус
+                                            span.status-wrap
+                                                span.status.completed
+                                                    span Завершён
+                                        span.orders-list-properties-list--item
+                                            span.check
+                                                img(src="images/icons/doc-black.png")
+                                                span.text
+                                                    span.text-decoration-underline Электронный чек
+
+                            a(href="#").orders-list--item
+                                span.orders-list--item-head
+                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                        span.title Заказ № 6258
+                                        span.date
+                                            span от&nbsp;
+                                            | 20.05.2022 18:59
+                                    span.btn.btn-small.btn-gray.btn-empty Отменить
+                                span.orders-list--item-body
+                                    span.orders-list-properties-list
+                                        span.orders-list-properties-list--item
+                                            span.label Модель автомобиля
+                                            span.image
+                                                img(src="images/assets/order-image.png")
+                                                span Hyundai Solaris 2021
+                                        span.orders-list-properties-list--item
+                                            span.label Начало
+                                            span.date 28.05.22
+                                            span.label Окочание
+                                            span.date 10.06.22
+                                        span.orders-list-properties-list--item
+                                            span.label Сумма заказа
+                                            span.price 5.285&nbsp;
+                                                span.rouble.d-inline ₽
+                                        span.orders-list-properties-list--item
+                                            span.label Статус
+                                            span.status-wrap
+                                                span.status.canceled
+                                                    span Отменён
+                                        span.orders-list-properties-list--item
+                                            span.check
+                                                img(src="images/icons/doc-black.png")
+                                                span.text
+                                                    span.text-decoration-underline Электронный чек
+
+                        .pagination
+                            a(href="#").pagination--item.prev
+                                img(src="images/icons/arrow-angle.png")
+                            a(href="#").pagination--item 1
+                            a(href="#").pagination--item 2
+                            span.pagination--item.active 3
+                            a(href="#").pagination--item 4
+                            a(href="#").pagination--item 5
+                            a(href="#").pagination--item 6
+                            a(href="#").pagination--item.next
+                                img(src="images/icons/arrow-angle.png")
+
+                        .banner-list
+                            a(href="#").banner-list--item.banner-center-text
+                                span.image-bg
+                                    img(src="images/banner-1.jpg")
+                                span.image-mobile-bg
+                                    img(src="images/banner-mobile-1.jpg")
+                                span.text
+                                    span.title ОТРОЙТЕ ОФИС РОСАВТОПРОКАТ В СВОЕМ ГОРОДЕ
+                                    span.description Мы поможем легко стартовать и принимать первые заказы
+
+                            a(href="#").banner-list--item
+                                span.image-bg
+                                    img(src="images/banner-2.jpg")
+                                span.image-mobile-bg
+                                    img(src="images/banner-mobile-2.jpg")
+                                span.text
+                                    span.title СДАЙТЕ СВОЙ АВТОМОБИЛЬ В АРЕНДУ
+                                    span.description И получайте ежемесячный доход от аренды автомобиля
+
+                .mt-5.pt-5
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

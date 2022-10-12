@@ -164,9 +164,15 @@
             position: absolute;
             top: -2px;
             right: -6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 15px;
             height: 15px;
             background: $redBright;
+            font-family: $font-base-bold;
+            color: $white;
+            font-size: 13px;
             border-radius: 50%;
         }
 
@@ -608,6 +614,44 @@
     .location-search {
         max-width: 100%;
     }
+
+    .cabinet-btn {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 5px 10px 48px 50px;
+        font-family: $font-base-semiBold;
+        font-size: 20px;
+        color: $black;
+        border-bottom: 1px solid $borderColor;
+
+        .image {
+            position: relative;
+            width: 52px;
+            height: 52px;
+            margin-right: 18px;
+
+            img {
+                border-radius: 50%;
+            }
+
+            .count {
+                position: absolute;
+                top: -2px;
+                right: -6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 19px;
+                height: 19px;
+                background: $redBright;
+                font-family: $font-base-bold;
+                color: $white;
+                font-size: 13px;
+                border-radius: 50%;
+            }
+        }
+    }
 }
 
 .overflow {
@@ -725,6 +769,11 @@
 
         .location-wrap {
             margin-left: 20px;
+        }
+
+        .cabinet-btn {
+            margin-bottom: 20px;
+            padding: 5px 20px 20px;
         }
     }
 
