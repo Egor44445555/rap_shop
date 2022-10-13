@@ -1,0 +1,224 @@
+html
+    title Заказы
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header-logined.jade
+
+        .wrapper
+            .container-block
+                .account-info.mt-5.pt-sm-4
+                    .account-name
+                        .image
+                            img(src="images/assets/avatar.jpg")
+                        .text Станислав Александровский
+                        .arrow.d-block.d-xl-none
+                            svg(width="12" height="5" viewBox="0 0 12 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M0.412757 0.726379C0.640709 0.328531 1.14802 0.190803 1.54587 0.418755L6.23945 3.108C6.6373 3.33595 6.77503 3.84326 6.54708 4.24111V4.24111C6.31912 4.63896 5.81181 4.77669 5.41397 4.54873L0.720381 1.85949C0.322533 1.63154 0.184806 1.12423 0.412757 0.726379V0.726379Z" fill="black")
+                                path(d="M11.2779 0.713236C11.5053 1.10714 11.3704 1.61083 10.9765 1.83825L6.26493 4.55846C5.87102 4.78588 5.36733 4.65092 5.13991 4.25701V4.25701C4.91249 3.86311 5.04745 3.35942 5.44136 3.132L10.1529 0.411789C10.5468 0.184367 11.0505 0.319329 11.2779 0.713236V0.713236Z" fill="black")
+
+                    include ./blocks/cabinet-menu.jade
+
+                    .account-phone-wrap
+                        .label Привязанный номер
+
+                        .d-flex.flex-wrap.align-items-center
+                            a(href="tel:+7 (912) 285 38 26").phone.mt-2.me-4 +7 (912) 285 38 26
+                            .btn.btn-small.btn-blue.mt-2.modal-btn(data-url="bind-number") + ещё номер
+
+                    .account-discount-wrap
+                        .discount 20
+                            span %
+                        .text
+                            img(src="images/card.png")
+                            span Скида
+                                br
+                                | по карте
+
+                .row.mt-3.pt-2.pt-md-5.mt-xl-5
+                    .col-3.d-none.d-xl-block
+                        include ./blocks/cabinet-menu.jade
+
+                    .col-12.col-xl-9
+                        .order-detail
+                            .order-title.d-flex.align-items-baseline
+                                h1.h2.semibold.me-4.pe-2 Заказ № 6258
+                                .date 20.05.2022 18:59
+
+                            .orders-list
+                                .orders-list--item
+                                    .orders-list--item-body
+                                        .orders-list-properties-list
+                                            .orders-list-properties-list--item
+                                                .label Заказчик
+                                                .name Станислав
+                                                    | Олегович
+                                                    | Александровский
+                                            .orders-list-properties-list--item
+                                                .date-list
+                                                    .date-list--item
+                                                        .label Начало
+                                                        .date 28.05.22
+                                                    .date-list--item
+                                                        .label Окочание
+                                                        .date 10.06.22
+                                            .orders-list-properties-list--item
+                                                .label Сумма заказа
+                                                .price 5.285&nbsp;
+                                                    .rouble.d-inline ₽
+                                            .orders-list-properties-list--item
+                                                .label Статус
+                                                .status-wrap
+                                                    .status.awaiting-payment
+                                                        span Ожидает
+                                                        span оплаты
+                                            .orders-list-properties-list--item
+                                                .button-wrap
+                                                    .btn.btn-gray.btn-empty.btn-small Отменить заказ
+                                                    .btn.btn-blue.btn-medium.mt-2 Оплатить заказ
+
+                            .mt-5
+                                .info-text Внимание! Если заказ не будет оплачен в течение 24 часов после создания — он автоматически будет отменён.
+
+                            .car-info-block-wrap
+                                .car-info-block--title Заказанный автомобиль
+
+                                .car-info-block
+                                    .image
+                                        img(src="images/assets/product-image.jpg")
+                                    .info
+                                        .title Hyundai Solaris 2021
+
+                                        .d-flex.align-items-baseline.mt-3.pt-1
+                                            .label Цена в сутки
+                                            .price.d-flex.align-items-baseline 5.285&nbsp;
+                                                .rouble.d-inline ₽
+                                                span / сутки
+
+                            .characteristics-list-wrap
+                                .characteristics-list
+                                    .characteristics-list--item
+                                        .label Места
+                                        .value 4
+                                    .characteristics-list--item
+                                        .label Двери
+                                        .value 5
+                                    .characteristics-list--item
+                                        .label Коробка передач
+                                        .value Автомат
+                                    .characteristics-list--item
+                                        .label Автомат
+                                        .value есть
+                                    .characteristics-list--item
+                                        .label Мощность двигателя
+                                        .value 123 л.с.
+                                    .characteristics-list--item
+                                        .label Расход бензина
+                                        .value 6-7 л/км.
+                                    .characteristics-list--item
+                                        .label Цвет
+                                        .value Серебро
+                                    .characteristics-list--item
+                                        .label Год выпуска
+                                        .value 2021
+                                    .characteristics-list--item
+                                        .label Тип кузова
+                                        .value Седан
+                                    .characteristics-list--item
+                                        .label Класс машины
+                                        .value Стандарт
+                                    .characteristics-list--item
+                                        .label Места
+                                        .value 4
+                                    .characteristics-list--item
+                                        .label Двери
+                                        .value 5
+                                    .characteristics-list--item
+                                        .label Коробка передач
+                                        .value Автомат
+                                    .characteristics-list--item
+                                        .label Автомат
+                                        .value есть
+                                    .characteristics-list--item
+                                        .label Мощность двигателя
+                                        .value 123 л.с.
+                                    .characteristics-list--item
+                                        .label Расход бензина
+                                        .value 6-7 л/км.
+                                    .characteristics-list--item
+                                        .label Цвет
+                                        .value Серебро
+                                    .characteristics-list--item
+                                        .label Год выпуска
+                                        .value 2021
+                                    .characteristics-list--item
+                                        .label Тип кузова
+                                        .value Седан
+                                    .characteristics-list--item
+                                        .label Класс машины
+                                        .value Стандарт
+
+                                .more-btn-wrap
+                                    .d-flex.justify-content-center.mt-5.pt-3
+                                        .more-btn
+                                            .text Развернуть характеристики
+                                            .icon
+                                                img(src="images/icons/arrow-toggle-down.svg")
+
+
+                            .additional-item-list-wrap
+                                .additional-item-list--title Дополнительные услуги
+
+                                .additional-item-list
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/flag.png")
+                                        .info
+                                            .title Доставка до места
+                                            .cost 600&nbsp;
+                                                b.rouble.d-inline ₽
+                                        .count 1
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/canister.png")
+                                        .info
+                                            .title Бензин 10л
+                                            .cost 600&nbsp;
+                                                b.rouble.d-inline ₽
+                                        .count 2
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/baby-chair.png")
+                                        .info
+                                            .title Детское автокресло
+                                            .cost 100&nbsp;
+                                                b.rouble.d-inline ₽
+                                                | /сут.
+                                        .count 2
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/radar-detector.png")
+                                        .info
+                                            .title Радар-детектор
+                                            .cost 100&nbsp;
+                                                b.rouble.d-inline ₽
+                                                | /сут.
+                                        .count 1
+                                    .additional-item-list--item
+                                        .image
+                                            img(src="images/umbrella.png")
+                                        .info
+                                            .title КАСКО
+                                            .cost 1000&nbsp;
+                                                b.rouble.d-inline.semibold ₽
+                                        .count 1
+
+                            .comment-block
+                                .title Комментарий к заказу
+                                textarea.textarea Доставьте машину по адресу: Тверская Ямская дом 26Б  к 10 утра
+
+                .mt-5.pt-5
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

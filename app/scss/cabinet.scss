@@ -1056,8 +1056,10 @@
         }
 
         .btn {
+            width: 100%;
+            max-width: 140px;
             min-height: 35px;
-            padding: 9px 20px;
+            padding: 8px 20px;
         }
     }
 
@@ -1078,7 +1080,7 @@
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    margin: -20px 0 0 -20px;
+    margin: -40px 0 0 -20px;
 
     &--item {
         display: flex;
@@ -1086,7 +1088,7 @@
         justify-content: flex-end;
         flex: 100%;
         max-width: calc(20% - 20px);
-        margin: 20px 0 0 20px;
+        margin: 40px 0 0 20px;
         font-family: $font-base-semiBold;
         font-size: 20px;
 
@@ -1104,6 +1106,7 @@
     }
 
     .label {
+        display: block;
         margin: 25px 0 10px;
         font-family: $font-base-semiBold;
         font-size: 15px;
@@ -1126,6 +1129,17 @@
 
         span {
             max-width: 138px;
+        }
+    }
+
+    .date-list {
+
+        &--item {
+            margin-top: 25px;
+
+            &:first-child {
+                margin-top: 0;
+            }
         }
     }
 
@@ -1200,12 +1214,146 @@
         }
     }
 
+    .name {
+        flex: 1;
+        max-width: 185px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .button-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+
     .btn {
         align-self: flex-end;
         min-height: 35px;
         padding: 9px 20px;
+
+        &.btn-medium {
+            padding: 11px 20px;
+        }
     }
 }
+
+.order-detail {
+
+    .order-title {
+
+        .date {
+            font-family: $font-base-semiBold;
+            font-size: 22px;
+            line-height: 22px;
+            color: $textGray;
+        }
+    }
+
+    .info-text {
+        position: relative;
+        max-width: 900px;
+        padding: 20px 0 0 90px;
+        font-size: 22px;
+        line-height: 28px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50px;
+            width: 10px;
+            height: 14px;
+            background: $redBright;
+            transform: skew(-40deg, 0);
+            border-radius: 2px;
+        }
+    }
+
+    .orders-list--item {
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        &-body {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    .orders-list-properties-list {
+
+        &--item:nth-child(1) {
+            max-width: calc(25% - 20px);
+        }
+
+        &--item:nth-child(2) {
+            max-width: calc(15% - 20px);
+        }
+
+        &--item:nth-child(3) {
+            max-width: calc(25% - 20px);
+        }
+
+        &--item:nth-child(4) {
+            max-width: calc(15% - 20px);
+        }
+    }
+}
+
+.car-info-block {
+    display: flex;
+    margin-top: 80px;
+    font-family: $font-base-semiBold;
+
+    &-wrap {
+        margin-top: 70px;
+        padding: 0 45px;
+    }
+
+    &--title {
+        font-family: $font-base-semiBold;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .image {
+        max-width: 235px;
+        margin-right: 70px;
+    }
+
+    .title {
+        font-size: 26px;
+        line-height: 37px;
+    }
+
+    .label {
+        margin-right: 20px;
+        font-size: 18px;
+        color: $textGray;
+    }
+
+    .price {
+        display: flex;
+        align-items: baseline;
+        font-family: $font-base;
+        font-size: 39px;
+        color: $blueDark;
+
+        .rouble {
+            font-size: 35px;
+        }
+
+        span {
+            font-family: $font-base-semiBold;
+            font-size: 24px;
+            color: $black;
+        }
+    }
+}
+
 
 /*** Media ***/
 
@@ -1322,6 +1470,18 @@
             padding: 25px 20px;
         }
     }
+
+    .orders-list-properties-list {
+
+        .price {
+            font-size: 30px;
+            line-height: 30px;
+
+            .rouble {
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1441px) {
@@ -1343,6 +1503,24 @@
 
         &--item {
             max-width: calc(50% - 20px);
+        }
+    }
+
+    .orders-list-properties-list {
+
+       &--item,
+       &--item:nth-child(2),
+       &--item:nth-child(3),
+       &--item:nth-child(4) {
+           max-width: calc(25% - 20px);
+       }
+
+        &--item:nth-child(1) {
+            max-width: calc(50% - 20px);
+        }
+
+        .btn {
+            width: 100%;
         }
     }
 }
@@ -1668,6 +1846,72 @@
             max-width: calc(100% - 20px);
         }
     }
+
+    .orders-list {
+        margin-top: 25px;
+
+        &--item-head {
+            padding: 25px 20px 30px;
+
+            .title {
+                display: block;
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            .date {
+                display: block;
+                font-size: 15px;
+            }
+        }
+
+        &--item-body {
+            padding: 40px 20px;
+        }
+    }
+
+    .orders-list-properties-list {
+
+        &--item,
+        &--item:nth-child(3),
+        &--item:nth-child(4) {
+            max-width: calc(50% - 20px);
+        }
+
+        &--item:nth-child(1),
+        &--item:nth-child(2),
+        &--item:nth-child(5) {
+            max-width: calc(100% - 20px);
+        }
+
+        .date-list {
+            display: flex;
+            margin: -20px 0 0 -20px;
+
+            &--item,
+            &--item:first-child {
+                flex: 100%;
+                max-width: calc(50% - 20px);
+                margin: 20px 0 0 20px;
+            }
+        }
+
+        .check {
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            margin: 0;
+
+            img {
+                margin: 0 15px 0 0;
+            }
+        }
+
+        .btn {
+            min-height: 40px;
+            padding: 15px 25px;
+        }
+    }
 }
 
 @media (max-width: 561px) {
@@ -1875,6 +2119,17 @@
 
         .gps {
             padding: 0;
+        }
+    }
+
+    .orders-list {
+
+        &--item-head {
+            flex-wrap: wrap;
+
+            .btn {
+                margin-top: 20px;
+            }
         }
     }
 }

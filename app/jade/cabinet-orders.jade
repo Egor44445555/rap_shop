@@ -35,7 +35,7 @@ html
                                 br
                                 | по карте
 
-                .row.mt-3.pt-5.mt-xl-5
+                .row.mt-3.pt-2.pt-md-5.mt-xl-5
                     .col-3.d-none.d-xl-block
                         include ./blocks/cabinet-menu.jade
 
@@ -58,11 +58,11 @@ html
                                         option(value="за 2025") за 2025
 
                         .orders-list
-                            a(href="#").orders-list--item
+                            a(href="/cabinet-order-detail.html").orders-list--item
                                 span.orders-list--item-head
-                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                    span.title-wrap.d-block.d-md-flex.flex-wrap.align-items-center
                                         span.title Заказ № 6258
-                                        span.date
+                                        span.date.mt-2.mt-md-0
                                             span от&nbsp;
                                             | 20.05.2022 18:59
                                     span.btn.btn-small.btn-gray.btn-empty Отменить
@@ -74,14 +74,17 @@ html
                                                 img(src="images/assets/order-image.png")
                                                 span Hyundai Solaris 2021
                                         span.orders-list-properties-list--item
-                                            span.label Начало
-                                            span.date 28.05.22
-                                            span.label Окочание
-                                            span.date 10.06.22
+                                            span.date-list
+                                                span.date-list--item
+                                                    span.label Начало
+                                                    span.date 28.05.22
+                                                span.date-list--item
+                                                    span.label Окочание
+                                                    span.date 10.06.22
                                         span.orders-list-properties-list--item
                                             span.label Сумма заказа
                                             span.price 5.285&nbsp;
-                                                .rouble.d-inline ₽
+                                                span.rouble.d-inline ₽
                                         span.orders-list-properties-list--item
                                             span.label Статус
                                             span.status-wrap
@@ -91,11 +94,11 @@ html
                                         span.orders-list-properties-list--item
                                             span.btn.btn-blue.btn-small Оплатить заказ
 
-                            a(href="#").orders-list--item
+                            a(href="/cabinet-order-detail.html").orders-list--item
                                 span.orders-list--item-head
-                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                    span.title-wrap.d-block.d-md-flex.flex-wrap.align-items-center
                                         span.title Заказ № 6258
-                                        span.date
+                                        span.date.mt-2.mt-md-0
                                             span от&nbsp;
                                             | 20.05.2022 18:59
                                     span.btn.btn-small.btn-gray.btn-empty Отменить
@@ -107,14 +110,17 @@ html
                                                 img(src="images/assets/order-image.png")
                                                 span Hyundai Solaris 2021
                                         span.orders-list-properties-list--item
-                                            span.label Начало
-                                            span.date 28.05.22
-                                            span.label Окочание
-                                            span.date 10.06.22
+                                            span.date-list
+                                                span.date-list--item
+                                                    span.label Начало
+                                                    span.date 28.05.22
+                                                span.date-list--item
+                                                    span.label Окочание
+                                                    span.date 10.06.22
                                         span.orders-list-properties-list--item
                                             span.label Сумма заказа
                                             span.price 5.285&nbsp;
-                                                .rouble.d-inline ₽
+                                                span.rouble.d-inline ₽
                                         span.orders-list-properties-list--item
                                             span.label Статус
                                             span.status-wrap
@@ -126,11 +132,11 @@ html
                                                 span.text
                                                     span.text-decoration-underline Электронный чек
 
-                            a(href="#").orders-list--item
+                            a(href="/cabinet-order-detail.html").orders-list--item
                                 span.orders-list--item-head
-                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                    span.title-wrap.d-block.d-md-flex.flex-wrap.align-items-center
                                         span.title Заказ № 6258
-                                        span.date
+                                        span.date.mt-2.mt-md-0
                                             span от&nbsp;
                                             | 20.05.2022 18:59
                                     span.btn.btn-small.btn-gray.btn-empty Отменить
@@ -142,10 +148,13 @@ html
                                                 img(src="images/assets/order-image.png")
                                                 span Hyundai Solaris 2021
                                         span.orders-list-properties-list--item
-                                            span.label Начало
-                                            span.date 28.05.22
-                                            span.label Окочание
-                                            span.date 10.06.22
+                                            span.date-list
+                                                span.date-list--item
+                                                    span.label Начало
+                                                    span.date 28.05.22
+                                                span.date-list--item
+                                                    span.label Окочание
+                                                    span.date 10.06.22
                                         span.orders-list-properties-list--item
                                             span.label Сумма заказа
                                             span.price 5.285&nbsp;
@@ -161,11 +170,11 @@ html
                                                 span.text
                                                     span.text-decoration-underline Электронный чек
 
-                            a(href="#").orders-list--item
+                            a(href="/cabinet-order-detail.html").orders-list--item
                                 span.orders-list--item-head
-                                    span.title-wrap.d-flex.flex-wrap.align-items-center
+                                    span.title-wrap.d-block.d-md-flex.flex-wrap.align-items-center
                                         span.title Заказ № 6258
-                                        span.date
+                                        span.date.mt-2.mt-md-0
                                             span от&nbsp;
                                             | 20.05.2022 18:59
                                     span.btn.btn-small.btn-gray.btn-empty Отменить
@@ -177,10 +186,13 @@ html
                                                 img(src="images/assets/order-image.png")
                                                 span Hyundai Solaris 2021
                                         span.orders-list-properties-list--item
-                                            span.label Начало
-                                            span.date 28.05.22
-                                            span.label Окочание
-                                            span.date 10.06.22
+                                            span.date-list
+                                                span.date-list--item
+                                                    span.label Начало
+                                                    span.date 28.05.22
+                                                span.date-list--item
+                                                    span.label Окочание
+                                                    span.date 10.06.22
                                         span.orders-list-properties-list--item
                                             span.label Сумма заказа
                                             span.price 5.285&nbsp;
