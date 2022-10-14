@@ -1147,6 +1147,7 @@
         display: flex;
         align-items: flex-end;
         flex: 1;
+        max-width: 120px;
     }
 
     .status {
@@ -1300,11 +1301,97 @@
         &--item:nth-child(4) {
             max-width: calc(15% - 20px);
         }
+
+        .button-wrap {
+            margin-top: -10px;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .check {
+            display: flex;
+            max-width: 125px;
+            margin: 10px 0 0 auto;
+
+            img {
+                min-width: 14px;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+
+    .characteristics-list-wrap {
+        padding: 0;
+
+        &.open .more-btn-wrap {
+            display: none;
+        }
+
+        .more-btn-wrap {
+            display: flex;
+            padding: 0 45px;
+            font-size: 20px;
+
+            .more-btn {
+                padding-bottom: 4px;
+                border-bottom: 1px solid $blueLighter;
+            }
+
+            .text {
+                color: $blueDark;
+                border: 0;
+            }
+        }
+    }
+
+    .additional-item-list {
+        margin: 16px 0 0 -40px;
+
+        &-wrap {
+            margin-top: 90px;
+        }
+
+        &--title {
+            padding: 0 45px;
+            font-family: $font-base-semiBold;
+            font-size: 32px;
+            line-height: 32px;
+            color: $black;
+        }
+
+        &--item {
+            max-width: calc(33.333% - 40px);
+            margin: 24px 0 0 40px;
+            cursor: default;
+        }
+    }
+
+    .comment-block {
+        margin-top: 70px;
+
+        .title {
+            padding: 0 45px;
+            font-family: $font-base-semiBold;
+            font-size: 32px;
+            line-height: 32px;
+            color: $black;
+        }
+
+        .textarea {
+            height: 215px;
+            margin-top: 50px;
+            font-size: 18px;
+            line-height: 20px;
+            color: $textGray;
+        }
     }
 }
 
 .car-info-block {
     display: flex;
+    align-items: center;
     margin-top: 80px;
     font-family: $font-base-semiBold;
 
@@ -1506,6 +1593,7 @@
         }
     }
 
+    .order-detail .orders-list-properties-list,
     .orders-list-properties-list {
 
        &--item,
@@ -1625,6 +1713,59 @@
             }
         }
 
+    }
+
+    .order-detail {
+
+        .orders-list--item-body {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .additional-item-list {
+            margin-left: -20px;
+
+            &--item {
+                max-width: calc(33.333% - 20px);
+                margin-left: 20px;
+            }
+        }
+
+        .additional-item-list-wrap {
+            margin-top: 60px;
+        }
+
+        .additional-item-list--title,
+        .comment-block .title {
+            padding: 0;
+            font-size: 26px;
+            line-height: 26px;
+        }
+
+        .comment-block {
+
+            .textarea {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .car-info-block-wrap {
+        margin-top: 60px;
+        padding: 0;
+    }
+
+    .car-info-block {
+        margin-top: 45px;
+
+        &--title {
+            font-size: 26px;
+            line-height: 26px;
+        }
+
+        .image {
+            margin-right: 40px;
+        }
     }
 }
 
@@ -1870,6 +2011,7 @@
         }
     }
 
+    .order-detail .orders-list-properties-list,
     .orders-list-properties-list {
 
         &--item,
@@ -1907,9 +2049,86 @@
             }
         }
 
+        .name {
+            max-width: 300px;
+        }
+
+        .button-wrap {
+            flex-direction: column-reverse;
+
+            .btn {
+                margin-top: 8px;
+            }
+        }
+
         .btn {
             min-height: 40px;
             padding: 15px 25px;
+        }
+    }
+
+    .order-detail {
+
+        .order-title {
+
+            .date {
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+
+        .orders-list-properties-list {
+
+            .check {
+                padding-bottom: 10px;
+            }
+        }
+
+        .info-text {
+            padding: 0 10px 0 50px;
+            font-size: 20px;
+            line-height: 25px;
+
+            &:before {
+                left: 25px;
+            }
+        }
+
+        .additional-item-list {
+
+            &--item {
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        .comment-block {
+
+            .textarea {
+                font-family: $font-base-semiBold;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .car-info-block {
+        display: block;
+
+        .image {
+            margin: 0 0 25px;
+        }
+
+        .title {
+            font-size: 22px;
+        }
+
+        .label {
+            flex: 100%;
+            margin: 0 0 10px;
+        }
+
+        .price {
+            flex-wrap: wrap;
         }
     }
 }
@@ -1973,6 +2192,16 @@
 
         .image-mobile-bg {
             display: block;
+        }
+    }
+
+    .order-detail {
+
+        .additional-item-list {
+
+            &--item {
+                max-width: calc(100% - 20px);
+            }
         }
     }
 }

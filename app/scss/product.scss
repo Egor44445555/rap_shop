@@ -483,6 +483,13 @@
             text-align: center;
         }
     }
+
+    .amount {
+        font-family: $font-base-semiBold;
+        font-size: 20px;
+        line-height: 20px;
+        color: $black;
+    }
 }
 
 .characteristics-list-wrap {

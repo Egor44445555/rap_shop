@@ -41,9 +41,9 @@ html
 
                     .col-12.col-xl-9
                         .order-detail
-                            .order-title.d-flex.align-items-baseline
+                            .order-title.d-sm-flex.align-items-baseline
                                 h1.h2.semibold.me-4.pe-2 Заказ № 6258
-                                .date 20.05.2022 18:59
+                                .date.mt-3.mt-sm-0 20.05.2022 18:59
 
                             .orders-list
                                 .orders-list--item
@@ -75,7 +75,7 @@ html
                                             .orders-list-properties-list--item
                                                 .button-wrap
                                                     .btn.btn-gray.btn-empty.btn-small Отменить заказ
-                                                    .btn.btn-blue.btn-medium.mt-2 Оплатить заказ
+                                                    .btn.btn-blue.btn-medium Оплатить заказ
 
                             .mt-5
                                 .info-text Внимание! Если заказ не будет оплачен в течение 24 часов после создания — он автоматически будет отменён.
@@ -89,7 +89,7 @@ html
                                     .info
                                         .title Hyundai Solaris 2021
 
-                                        .d-flex.align-items-baseline.mt-3.pt-1
+                                        .d-flex.flex-wrap.align-items-baseline.mt-3.pt-1
                                             .label Цена в сутки
                                             .price.d-flex.align-items-baseline 5.285&nbsp;
                                                 .rouble.d-inline ₽
@@ -158,12 +158,11 @@ html
                                         .label Класс машины
                                         .value Стандарт
 
-                                .more-btn-wrap
-                                    .d-flex.justify-content-center.mt-5.pt-3
-                                        .more-btn
-                                            .text Развернуть характеристики
-                                            .icon
-                                                img(src="images/icons/arrow-toggle-down.svg")
+                                .more-btn-wrap.mt-4.pt-4
+                                    .more-btn
+                                        .text Развернуть характеристики
+                                        .icon
+                                            img(src="images/icons/arrow-toggle-down.svg")
 
 
                             .additional-item-list-wrap
@@ -177,7 +176,7 @@ html
                                             .title Доставка до места
                                             .cost 600&nbsp;
                                                 b.rouble.d-inline ₽
-                                        .count 1
+                                        .amount 1
                                     .additional-item-list--item
                                         .image
                                             img(src="images/canister.png")
@@ -185,7 +184,7 @@ html
                                             .title Бензин 10л
                                             .cost 600&nbsp;
                                                 b.rouble.d-inline ₽
-                                        .count 2
+                                        .amount 2
                                     .additional-item-list--item
                                         .image
                                             img(src="images/baby-chair.png")
@@ -194,7 +193,7 @@ html
                                             .cost 100&nbsp;
                                                 b.rouble.d-inline ₽
                                                 | /сут.
-                                        .count 2
+                                        .amount 2
                                     .additional-item-list--item
                                         .image
                                             img(src="images/radar-detector.png")
@@ -203,7 +202,7 @@ html
                                             .cost 100&nbsp;
                                                 b.rouble.d-inline ₽
                                                 | /сут.
-                                        .count 1
+                                        .amount 1
                                     .additional-item-list--item
                                         .image
                                             img(src="images/umbrella.png")
@@ -211,7 +210,7 @@ html
                                             .title КАСКО
                                             .cost 1000&nbsp;
                                                 b.rouble.d-inline.semibold ₽
-                                        .count 1
+                                        .amount 1
 
                             .comment-block
                                 .title Комментарий к заказу
