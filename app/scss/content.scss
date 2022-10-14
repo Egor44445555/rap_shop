@@ -215,6 +215,24 @@
         color: $black;
         border-radius: 20px;
     }
+
+    &.medium-size {
+        margin-left: -20px;
+
+        .sort--item {
+            margin-left: 20px;
+        }
+
+        .text {
+            padding: 13px 25px;
+            font-size: 16px;
+            border-radius: 30px;
+        }
+    }
+
+    &.border-items .text {
+        border: 2px solid $blue;
+    }
 }
 
 /*** Car select ***/

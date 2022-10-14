@@ -840,6 +840,13 @@
     max-width: 740px;
     margin: 180px auto 0;
 
+    .title {
+
+        .border-bottom {
+            border-color: $blueLighter;
+        }
+    }
+
     .sub-title {
         max-width: 580px;
         margin-top: 30px;
@@ -855,6 +862,22 @@
         font-family: $font-base-semiBold;
         font-size: 17px;
         color: $black;
+
+        &.blue {
+            color: $blue;
+
+            span {
+                padding-bottom: 3px;
+                border-bottom: 1px solid $blueLighter;
+            }
+        }
+    }
+
+    .password {
+
+        input {
+            color: $black;
+        }
     }
 
     .success-password-block {
@@ -1003,7 +1026,6 @@
         }
     }
 }
-
 
 .orders-list {
     margin-top: 60px;
@@ -1437,6 +1459,100 @@
             font-family: $font-base-semiBold;
             font-size: 24px;
             color: $black;
+        }
+    }
+}
+
+.alerts-sort-block {
+    display: flex;
+
+    .sort-wrap {
+        margin-right: 35px;
+    }
+
+    .custom-select-wrapper {
+        max-width: 270px;
+    }
+
+    .custom-select-trigger {
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+.alerts-list {
+    margin-top: 65px;
+
+    &--item {
+        margin-top: 25px;
+        background: $white;
+        box-shadow: $boxShadow;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &--item-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 40px;
+        cursor: pointer;
+
+        .icon {
+            width: 19px;
+            height: 9px;
+            background: url('../images/icons/arrow-toggle-down.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .title-wrap {
+            display: block;
+        }
+
+        .date {
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+            opacity: .58;
+        }
+
+        .title {
+            position: relative;
+            margin-top: 20px;
+            padding-left: 45px;
+            font-family: $font-base-semiBold;
+            font-size: 22px;
+            line-height: 30px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 18px;
+                background: $redBright;
+                border-radius: 50%;
+                opacity: 0;
+            }
+
+            &.unread:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &--item-body {
+        padding: 0 85px 45px;
+
+        p {
+            font-size: 20px;
+            line-height: 22px;
+            color: $textGray;
         }
     }
 }

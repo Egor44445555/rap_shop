@@ -1,0 +1,118 @@
+html
+    title Оповещения
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header-logined.jade
+
+        .wrapper.cabinet-page
+            .container-block
+                .account-info.mt-5.pt-sm-4
+                    .account-name
+                        .image
+                            img(src="images/assets/avatar.jpg")
+                        .text Станислав Александровский
+                        .arrow.d-block.d-xl-none
+                            svg(width="12" height="5" viewBox="0 0 12 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M0.412757 0.726379C0.640709 0.328531 1.14802 0.190803 1.54587 0.418755L6.23945 3.108C6.6373 3.33595 6.77503 3.84326 6.54708 4.24111V4.24111C6.31912 4.63896 5.81181 4.77669 5.41397 4.54873L0.720381 1.85949C0.322533 1.63154 0.184806 1.12423 0.412757 0.726379V0.726379Z" fill="black")
+                                path(d="M11.2779 0.713236C11.5053 1.10714 11.3704 1.61083 10.9765 1.83825L6.26493 4.55846C5.87102 4.78588 5.36733 4.65092 5.13991 4.25701V4.25701C4.91249 3.86311 5.04745 3.35942 5.44136 3.132L10.1529 0.411789C10.5468 0.184367 11.0505 0.319329 11.2779 0.713236V0.713236Z" fill="black")
+
+                    include ./blocks/cabinet-menu.jade
+
+                    .account-phone-wrap.js-toggle-wrap
+                        .label Привязанный номер
+
+                        .d-flex.flex-wrap.align-items-center.justify-content-between
+                            .phone.w-100.d-flex.justify-content-between.align-items-center.mt-2
+                                a(href="tel:+7 (912) 285 38 26").text +7 (912) 285 38 26
+                                img(src="images/icons/arrow-toggle-down.svg").arrow.js-toggle-btn
+                            .dropdown
+                                .label Второй номер
+                                a(href="tel:+7 (912) 285 38 26").phone.w-100.d-flex.justify-content-between.align-items-center.mt-2
+                                    span.text +7 (912) 285 38 26
+
+                    .account-discount-wrap
+                        .discount 20
+                            span %
+                        .text
+                            img(src="images/card.png")
+                            span Скида
+                                br
+                                | по карте
+
+                .row.mt-md-3.pt-5.mt-xl-5
+                    .col-3.d-none.d-xl-block
+                        include ./blocks/cabinet-menu.jade
+
+                    .col-12.col-xl-9
+                        h2 Оповещения
+
+                        .alerts-sort-block
+                            .alerts-sort-block--item
+                                .sort-wrap
+                                    .sort.medium-size.border-items.mt-2
+                                        .sort--item
+                                            label(for="sort-1")
+                                                input(type="radio" value="Все" id="sort-1" name="sort" checked)
+                                                span.text Все
+                                        .sort--item
+                                            label(for="sort-2")
+                                                input(type="radio" value="Заказы" id="sort-2" name="sort")
+                                                span.text Заказы
+                                        .sort--item
+                                            label(for="sort-3")
+                                                input(type="radio" value="Акции" id="sort-3" name="sort")
+                                                span.text Акции
+                            .alerts-sort-block--item
+                                select.custom-select.medium.mt-3(placeholder="Непрочитанные")
+                                    option(value="Непрочитанные" selected) Непрочитанные
+                                    option(value="Непрочитанные") Непрочитанные
+
+                        .alerts-list
+                            .alerts-list--item.spoiler--item
+                                .alerts-list--item-head.spoiler--head
+                                    .title-wrap
+                                        .date 18.05.22 / 15:00
+                                        .title.unread Ваш заказ №6893502 подтверждён и ожидает оплаты
+                                    .icon
+
+                                .alerts-list--item-body.spoiler--body
+                                    .row
+                                        .col-12.col-lg-6
+                                            p Акция проводится с 15-18 июня включительно.
+                                                | Успейте приобрести бензин по скидочной цене.
+                                                | Удачной Вам аренды!
+
+                            .alerts-list--item.spoiler--item
+                                .alerts-list--item-head.spoiler--head
+                                    .title-wrap
+                                        .date 18.05.22 / 15:00
+                                        .title.unread Ваш заказ №6893502 подтверждён и ожидает оплаты
+                                    .icon
+
+                                .alerts-list--item-body.spoiler--body
+                                    .row
+                                        .col-12.col-lg-6
+                                            p Акция проводится с 15-18 июня включительно.
+                                                | Успейте приобрести бензин по скидочной цене.
+                                                | Удачной Вам аренды!
+
+                            .alerts-list--item.spoiler--item
+                                .alerts-list--item-head.spoiler--head
+                                    .title-wrap
+                                        .date 18.05.22 / 15:00
+                                        .title Ваш заказ №6893502 подтверждён и ожидает оплаты
+                                    .icon
+
+                                .alerts-list--item-body.spoiler--body
+                                    .row
+                                        .col-12.col-lg-6
+                                            p Акция проводится с 15-18 июня включительно.
+                                                | Успейте приобрести бензин по скидочной цене.
+                                                | Удачной Вам аренды!
+
+                .mt-5.pt-5
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

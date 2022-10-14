@@ -42,25 +42,41 @@
                         button(type="submit").btn.btn-blue Отправить
 
 .modal-wrap(id="bind-number" style="opacity: 0;")
-    .overflow
-    .modal.max-size
-        .close
-        .wrap
-            .bind-number-form.m-lg-5.mt-lg-4.ms-lg-4
-                h3 Привязать выбраный номер
-                .sub-title Теперь он станет основным и на него будут приходить все звонки и смс от Росавтопрокат
+    .overflow.tabs-head--item(data-tab="1")
+    .modal.max-size.tabs
+        .close.tabs-head--item(data-tab="1")
+        form.wrap
+            .tabs-body--item.active(data-tab="1")
+                .m-lg-5.mt-lg-4.ms-lg-4
+                    h3 Привязать ещё один телефонный номер
 
-                form.d-md-flex.align-items-end.mt-3.pt-3
-                    .input-wrap.me-md-3.pe-md-3
-                        .d-flex.align-items-baseline
-                            .label.gray.mb-3 Введите проверочный код
-                            .time.d-inline-block.d-md-none.ms-1.ms-md-3.ps-1 00:59
-                        .code-wrap
-                            input(type="text" maxlength="1").input
-                            input(type="text" maxlength="1").input
-                            input(type="text" maxlength="1").input
-                            input(type="text" maxlength="1").input
+                    .mt-3.pt-3
+                        .input-wrap.mt-4.pt-3
+                            .label.mb-3.mb-lg-4 Введите номер
+                            input(type="text" placeholder="+ 7").input
 
-                    .mt-4
-                        .time.d-none.d-md-block 00:59
-                        button(type="submit").btn.btn-blue.mt-md-1 Прислать код ещё раз
+                        .mt-4.pt-2
+                            .btn.btn-blue.mt-md-1.tabs-head--item(data-tab="2") Отправить
+
+                        .mt-4.pt-2
+                            strong На номер придёт СМС с кодом подтверждения
+
+            .tabs-body--item(data-tab="2")
+                .send-code-form.m-lg-5.mt-lg-4.ms-lg-4
+                    h3 Привязать выбраный номер
+                    .sub-title Теперь он станет основным и на него будут приходить все звонки и смс от Росавтопрокат
+
+                    .d-md-flex.align-items-end.mt-3.pt-3
+                        .input-wrap.me-md-3.pe-md-3
+                            .d-flex.align-items-baseline
+                                .label.gray.mb-3 Введите проверочный код
+                                .time.d-inline-block.d-md-none.ms-1.ms-md-3.ps-1 00:59
+                            .code-wrap
+                                input(type="text" maxlength="1").input
+                                input(type="text" maxlength="1").input
+                                input(type="text" maxlength="1").input
+                                input(type="text" maxlength="1").input
+
+                        .mt-4
+                            .time.d-none.d-md-block 00:59
+                            button(type="submit").btn.btn-blue.mt-md-1 Прислать код ещё раз
