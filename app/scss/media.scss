@@ -1154,6 +1154,19 @@
         }
     }
 
+    .sort.medium-size {
+        margin-left: -16px;
+
+        .sort--item {
+            margin-left: 16px;
+        }
+
+        .text {
+            padding: 8px 29px;
+            font-size: 13px;
+        }
+    }
+
     .pagination {
         margin: 60px -10px 0;
 
