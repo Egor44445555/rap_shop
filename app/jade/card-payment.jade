@@ -1,0 +1,79 @@
+html
+    title Оплата банковской картой
+    include ./blocks/head.jade
+
+    body
+        include ./blocks/header-logined.jade
+
+        .wrapper
+            .container-block
+                .card-payment
+                    h1.h2 Оплата банковской картой
+
+                    .row.mt-5
+                        .col-12.col-md-9
+                            .payment-cards-list
+                                .payment-cards-list--item
+                                    .number *8693
+                                    .date 05/25
+                                .add-btn
+                                    .icon
+                                    .text Добавить новую карту
+                        .col-12.col-md-3
+                            .total-price
+                                .label К оплате
+                                .price 5.285
+                                    .rouble.d-inline ₽
+
+                    .row.mt-5
+                        .col-12.col-md-9
+                            .new-payment-card
+                                .front-side
+                                    .payment-list
+                                        .payment-list--item
+                                            img(src="images/mir.svg")
+                                        .payment-list--item
+                                            img(src="images/visa.svg")
+                                        .payment-list--item
+                                            img(src="images/mastercard.svg")
+                                        .payment-list--item
+                                            img(src="images/maestro.svg")
+                                        .payment-list--item
+                                            img(src="images/unionpay.svg")
+
+                                    .input-wrap.mt-3.pt-1
+                                        .label Номер карты
+                                        input.input(type="text" placeholder="0000 0000 0000 0000" maxlength="16")
+
+                                    .row.mt-3.pt-1
+                                        .col-6
+                                            .d-flex
+                                                .input-wrap
+                                                    .label Месяц
+                                                    input.input(type="text" placeholder="мм" maxlength="2")
+                                                .separator /
+                                                .input-wrap
+                                                    .label Год
+                                                    input.input(type="text" placeholder="гг" maxlength="2")
+
+                                .backside
+                                    .input-wrap
+                                        .label CVV/CVC
+                                        input.input(type="text" placeholder="000" maxlength="3")
+                                        .info-text три цифры на обратной стороне карты
+
+                        .col-12.col-md-3
+                            label(for="save").checkbox
+                                input(type="checkbox" id="save")
+                                .icon
+                                .text Сохранить карту для следующей покупки. Это безопасно.
+
+                    .mt-5.mt-2
+                        button(type="submit").btn.btn-blue Оплатить  5.285&nbsp;
+                            span.rouble.d-inline ₽
+
+                .mt-5.pt-5
+
+        include ./blocks/footer.jade
+        include ./blocks/modals.jade
+        include ./blocks/scripts.jade

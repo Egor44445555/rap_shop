@@ -1,6 +1,6 @@
 
 <html>
-  <title>Оплата заказа № 6258</title>
+  <title>Оплата банковской картой</title>
   <head>
     <meta charset="utf-8"/>
     <meta name="description" content=""/>
@@ -132,181 +132,80 @@
     <div class="overflow"></div>
     <div class="wrapper">
       <div class="container-block">
-        <div class="account-info mt-5 pt-sm-4">
-          <div class="account-name">
-            <div class="image"><img src="images/assets/avatar.jpg"/></div>
-            <div class="text">Станислав Александровский</div>
-            <div class="arrow d-block d-xl-none">
-              <svg width="12" height="5" viewBox="0 0 12 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.412757 0.726379C0.640709 0.328531 1.14802 0.190803 1.54587 0.418755L6.23945 3.108C6.6373 3.33595 6.77503 3.84326 6.54708 4.24111V4.24111C6.31912 4.63896 5.81181 4.77669 5.41397 4.54873L0.720381 1.85949C0.322533 1.63154 0.184806 1.12423 0.412757 0.726379V0.726379Z" fill="black"></path>
-                <path d="M11.2779 0.713236C11.5053 1.10714 11.3704 1.61083 10.9765 1.83825L6.26493 4.55846C5.87102 4.78588 5.36733 4.65092 5.13991 4.25701V4.25701C4.91249 3.86311 5.04745 3.35942 5.44136 3.132L10.1529 0.411789C10.5468 0.184367 11.0505 0.319329 11.2779 0.713236V0.713236Z" fill="black"></path>
-              </svg>
+        <div class="card-payment">
+          <h1 class="h2">Оплата банковской картой</h1>
+          <div class="row mt-5">
+            <div class="col-12 col-md-9">
+              <div class="payment-cards-list">
+                <div class="payment-cards-list--item">
+                  <div class="number">*8693</div>
+                  <div class="date">05/25</div>
+                </div>
+                <div class="add-btn">
+                  <div class="icon"></div>
+                  <div class="text">Добавить новую карту</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="total-price">
+                <div class="label">К оплате</div>
+                <div class="price">5.285
+                  <div class="rouble d-inline">₽</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="cabinet-menu"><a href="/cabinet-current-card.html" class="cabinet-menu--item"><span class="text">Главная</span></a><a href="/cabinet-orders.html" class="cabinet-menu--item"><span class="text">Мои заказы</span><span class="count">1</span></a><a href="/cabinet-statistic.html" class="cabinet-menu--item"><span class="text">Оповещения</span><span class="count">5</span></a><a href="/cabinet-statistic.html" class="cabinet-menu--item"><span class="text">Бонусная карта</span></a><a href="/cabinet-rented-cars.html" class="cabinet-menu--item"><span class="text">Сдаваемые автомобили</span></a><a href="/cabinet-support.html" class="cabinet-menu--item"><span class="text">Помощь и поддержка</span></a><a href="/cabinet-profile-credentials.html" class="cabinet-menu--item"><span class="text">Мой профиль</span></a><a href="/cabinet-change-password.html" class="cabinet-menu--item"><span class="text">Изменить пароль</span></a><a href="#" class="cabinet-menu--item"><span class="text">Выйти</span></a></div>
-          <div class="account-phone-wrap">
-            <div class="label">Привязанный номер</div>
-            <div class="d-flex flex-wrap align-items-center"><a href="tel:+7 (912) 285 38 26" class="phone mt-2 me-4">+7 (912) 285 38 26</a>
-              <div data-url="bind-number" class="btn btn-small btn-blue mt-2 modal-btn">+ ещё номер</div>
+          <div class="row mt-5">
+            <div class="col-12 col-md-9">
+              <div class="new-payment-card">
+                <div class="front-side">
+                  <div class="payment-list">
+                    <div class="payment-list--item"><img src="images/mir.svg"/></div>
+                    <div class="payment-list--item"><img src="images/visa.svg"/></div>
+                    <div class="payment-list--item"><img src="images/mastercard.svg"/></div>
+                    <div class="payment-list--item"><img src="images/maestro.svg"/></div>
+                    <div class="payment-list--item"><img src="images/unionpay.svg"/></div>
+                  </div>
+                  <div class="input-wrap mt-3 pt-1">
+                    <div class="label">Номер карты</div>
+                    <input type="text" placeholder="0000 0000 0000 0000" maxlength="16" class="input"/>
+                  </div>
+                  <div class="row mt-3 pt-1">
+                    <div class="col-6">
+                      <div class="d-flex">
+                        <div class="input-wrap">
+                          <div class="label">Месяц</div>
+                          <input type="text" placeholder="мм" maxlength="2" class="input"/>
+                        </div>
+                        <div class="separator">/</div>
+                        <div class="input-wrap">
+                          <div class="label">Год</div>
+                          <input type="text" placeholder="гг" maxlength="2" class="input"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="input-wrap">
+                    <div class="label">CVV/CVC</div>
+                    <input type="text" placeholder="000" maxlength="3" class="input"/>
+                    <div class="info-text">три цифры на обратной стороне карты</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <label for="save" class="checkbox">
+                <input type="checkbox" id="save"/>
+                <div class="icon"></div>
+                <div class="text">Сохранить карту для следующей покупки. Это безопасно.</div>
+              </label>
             </div>
           </div>
-          <div class="account-discount-wrap">
-            <div class="discount">20<span>%</span></div>
-            <div class="text"><img src="images/card.png"/><span>Скида<br/>по карте</span></div>
-          </div>
-        </div>
-        <div class="row mt-3 pt-2 pt-md-5 mt-xl-5">
-          <div class="col-3 d-none d-xl-block">
-            <div class="cabinet-menu"><a href="/cabinet-current-card.html" class="cabinet-menu--item"><span class="text">Главная</span></a><a href="/cabinet-orders.html" class="cabinet-menu--item"><span class="text">Мои заказы</span><span class="count">1</span></a><a href="/cabinet-statistic.html" class="cabinet-menu--item"><span class="text">Оповещения</span><span class="count">5</span></a><a href="/cabinet-statistic.html" class="cabinet-menu--item"><span class="text">Бонусная карта</span></a><a href="/cabinet-rented-cars.html" class="cabinet-menu--item"><span class="text">Сдаваемые автомобили</span></a><a href="/cabinet-support.html" class="cabinet-menu--item"><span class="text">Помощь и поддержка</span></a><a href="/cabinet-profile-credentials.html" class="cabinet-menu--item"><span class="text">Мой профиль</span></a><a href="/cabinet-change-password.html" class="cabinet-menu--item"><span class="text">Изменить пароль</span></a><a href="#" class="cabinet-menu--item"><span class="text">Выйти</span></a></div>
-          </div>
-          <div class="col-12 col-xl-9">
-            <div class="order-detail">
-              <h1 class="h2 semibold me-4 pe-2">Оплата заказа № 6258</h1>
-              <div class="car-info-block-wrap mt-4 pt-3 mt-md-5 pt-md-5 ps-0 pe-0">
-                <div class="car-info-block--title small">Модель заказанного автомобиля</div>
-                <div class="car-info-block">
-                  <div class="image"><img src="images/assets/product-image.jpg"/></div>
-                  <div class="info mt-3 pt-1 mt-md-0 pt-md-0">
-                    <div class="title">Hyundai Solaris 2021</div>
-                    <div class="characteristics">
-                      <div class="characteristics--item"><img src="images/icons/characteristics-user.svg" class="icon"/>
-                        <div class="text">5 мест</div>
-                      </div>
-                      <div class="characteristics--item"><img src="images/icons/characteristics-square.svg" class="icon"/>
-                        <div class="text">4 двери</div>
-                      </div>
-                      <div class="characteristics--item"><img src="images/icons/characteristics-check.svg" class="icon"/>
-                        <div class="text">серебро</div>
-                      </div>
-                      <div class="characteristics--item"><img src="images/icons/characteristics-automatic.svg" class="icon"/>
-                        <div class="text">Автомат</div>
-                      </div>
-                      <div class="characteristics--item"><img src="images/icons/characteristics-conditioner.svg" class="icon"/>
-                        <div class="text">Кондиционер</div>
-                      </div>
-                      <div class="characteristics--item"><img src="images/icons/characteristics-clock.svg" class="icon"/>
-                        <div class="text">2019</div>
-                      </div>
-                      <div class="characteristics--item"><img src="images/icons/characteristics-graph.svg" class="icon"/>
-                        <div class="text">183 л.с</div>
-                      </div>
-                      <div class="characteristics--item"><img src="images/icons/characteristics-list.svg" class="icon"/>
-                        <div class="text">1-7 л.\км.</div>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-wrap align-items-baseline mt-4 pt-2">
-                      <div class="label">Цена в сутки</div>
-                      <div class="price d-flex align-items-baseline">5.285&nbsp;
-                        <div class="rouble d-inline">₽</div><span>/ сутки</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="additional-services-total-wrap">
-                <div class="additional-services-total--title">Дополнительные услуги</div>
-                <div class="additional-services-total">
-                  <div class="additional-services-total--item">
-                    <div class="name-wrap d-flex align-items-center">
-                      <div class="image"><img src="images/flag.png"/></div>
-                      <div class="title">Доставка до места
-                        <div class="price d-flex d-md-none">600&nbsp;<span class="rouble d-inline">₽</span></div>
-                      </div>
-                    </div>
-                    <div class="count text-end text-md-center">1</div>
-                    <div class="price d-none d-md-flex justify-content-end">600&nbsp;<span class="rouble d-inline">₽</span></div>
-                  </div>
-                  <div class="additional-services-total--item">
-                    <div class="name-wrap d-flex align-items-center">
-                      <div class="image"><img src="images/canister.png"/></div>
-                      <div class="title">Бензин 10л
-                        <div class="price d-flex d-md-none">1200&nbsp;<span class="rouble d-inline">₽</span></div>
-                      </div>
-                    </div>
-                    <div class="count text-end text-md-center">2</div>
-                    <div class="price d-none d-md-flex justify-content-end">1200&nbsp;<span class="rouble d-inline">₽</span></div>
-                  </div>
-                  <div class="additional-services-total--item">
-                    <div class="name-wrap d-flex align-items-center">
-                      <div class="image"><img src="images/baby-chair.png"/></div>
-                      <div class="title">Детское автокресло
-                        <div class="price d-flex d-md-none">600&nbsp;<span class="rouble d-inline">₽</span></div>
-                      </div>
-                    </div>
-                    <div class="count text-end text-md-center">2</div>
-                    <div class="price d-none d-md-flex justify-content-end">600&nbsp;<span class="rouble d-inline">₽</span>/сут.</div>
-                  </div>
-                  <div class="additional-services-total--item">
-                    <div class="name-wrap d-flex align-items-center">
-                      <div class="image"><img src="images/radar-detector.png"/></div>
-                      <div class="title">Радар-детектор
-                        <div class="price d-flex d-md-none">100&nbsp;<span class="rouble d-inline">₽</span></div>
-                      </div>
-                    </div>
-                    <div class="count text-end text-md-center">1</div>
-                    <div class="price d-none d-md-flex justify-content-end">100&nbsp;<span class="rouble d-inline">₽</span>/сут.</div>
-                  </div>
-                  <div class="additional-services-total--item">
-                    <div class="name-wrap d-flex align-items-center">
-                      <div class="image"><img src="images/umbrella.png"/></div>
-                      <div class="title">КАСКО
-                        <div class="price d-flex d-md-none">100&nbsp;<span class="rouble d-inline">₽</span></div>
-                      </div>
-                    </div>
-                    <div class="count text-end text-md-center">1</div>
-                    <div class="price d-none d-md-flex justify-content-end">1000&nbsp;<span class="rouble d-inline">₽</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="characteristics-list-wrap terms mt-5 pt-4">
-                <div class="characteristics-list--title">Сроки аренды</div>
-                <div class="characteristics-list mt-3 pt-1">
-                  <div class="characteristics-list--item">
-                    <div class="label">Начало аренды</div>
-                    <div class="value">28.05.22</div>
-                  </div>
-                  <div class="characteristics-list--item">
-                    <div class="label">Окончание аренды</div>
-                    <div class="value">10.06.22</div>
-                  </div>
-                </div>
-                <div class="total-days d-flex flex-wrap align-items-baseline mt-4 pt-2">
-                  <div class="label">Всего дней аренды</div>
-                  <div class="days d-flex align-items-baseline">12&nbsp;<span>суток</span></div>
-                </div>
-              </div>
-              <div class="comment-block">
-                <div class="title small">Комментарий к заказу</div>
-                <div class="mt-4 pt-3">
-                  <textarea class="textarea mt-0">Доставьте машину по адресу: Тверская Ямская дом 26Б  к 10 утра</textarea>
-                </div>
-              </div>
-              <div class="total-price pt-1 mt-5 pt-md-5">
-                <div class="label">Итого к оплате</div>
-                <div class="price">5.285&nbsp;<span class="rouble d-inline">₽</span></div>
-              </div>
-              <div class="payment-type-list-wrap">
-                <div class="payment-type-list--title">Выбрать способ оплаты</div>
-                <div class="payment-type-list">
-                  <label for="payment-1" class="payment-type-list--item">
-                    <input type="radio" name="payment" id="payment-1"/><span class="wrap d-flex align-items-center"><span class="me-3 pe-3"><img src="images/payment5.png"/></span><span class="text">Банковская карта</span></span>
-                  </label>
-                  <label for="payment-2" class="payment-type-list--item">
-                    <input type="radio" name="payment" id="payment-2"/><span class="wrap"><img src="images/payment4.png"/></span>
-                  </label>
-                  <label for="payment-3" class="payment-type-list--item">
-                    <input type="radio" name="payment" id="payment-3"/><span class="wrap"><img src="images/payment3.png"/></span>
-                  </label>
-                  <label for="payment-4" class="payment-type-list--item">
-                    <input type="radio" name="payment" id="payment-4"/><span class="wrap"><img src="images/payment2.png"/></span>
-                  </label>
-                  <label for="payment-5" class="payment-type-list--item">
-                    <input type="radio" name="payment" id="payment-5"/><span class="wrap"><img src="images/payment1.png"/></span>
-                  </label>
-                </div>
-              </div>
-              <div class="mt-5 pt-3 pt-md-5"><a href="#" class="btn btn-blue submit-btn">Перейти к оплате</a></div>
-            </div>
+          <div class="mt-5 mt-2">
+            <button type="submit" class="btn btn-blue">Оплатить  5.285&nbsp;<span class="rouble d-inline">₽</span></button>
           </div>
         </div>
         <div class="mt-5 pt-5"></div>

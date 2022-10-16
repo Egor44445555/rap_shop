@@ -1469,6 +1469,7 @@
 }
 
 .additional-services-total {
+    margin-top: 30px;
 
     &--title {
         font-family: $font-base-semiBold;
@@ -1704,6 +1705,239 @@
             line-height: 22px;
             color: $textGray;
         }
+    }
+}
+
+.payment-type-list-wrap {
+    margin-top: 95px;
+    padding-top: 80px;
+    border-top: 1px solid $borderColor;
+}
+
+.payment-type-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -40px;
+
+    &--title {
+        font-family: $font-base-semiBold;
+        font-size: 27px;
+        line-height: 28px;
+    }
+
+    &--item {
+        flex: 100%;
+        max-width: calc(33.333% - 40px);
+        min-height: 179px;
+        margin: 40px 0 0 40px;
+        font-family: $font-base-semiBold;
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+    input {
+        display: none;
+
+        &:checked + .wrap {
+            box-shadow: 0 0 27px rgba(225, 225, 225, 100%);
+        }
+    }
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background: $white;
+        box-shadow: $boxShadow;
+        border-radius: 5px;
+    }
+
+    .text {
+        max-width: 120px;
+    }
+}
+
+.card-payment {
+    max-width: 950px;
+    margin: 80px auto 0;
+}
+
+.card-payment {
+
+    .total-price {
+
+        .label {
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+        }
+
+        .price {
+            font-family: $font-base-semiBold;
+            font-size: 34px;
+
+            .rouble {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .checkbox {
+        display: block;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 424px;
+        font-size: 20px;
+
+        .rouble {
+            font-weight: 600;
+        }
+    }
+}
+
+.payment-cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px 0 0 -30px;
+
+    &--item {
+        width: 140px;
+        height: 85px;
+        margin: 30px 0 0 30px;
+        padding: 20px 30px;
+        box-shadow: $boxShadow;
+        text-align: right;
+        border-radius: 2px;
+    }
+
+    .number {
+        font-family: $font-base-semiBold;
+        font-size: 18px;
+    }
+
+    .date {
+        margin-top: 2px;
+        font-family: $font-base-semiBold;
+        font-size: 14px;
+        opacity: .50;
+    }
+
+    .add-btn {
+        display: flex;
+        align-items: center;
+        max-width: 200px;
+        margin: 30px 0 0 30px;
+        padding: 20px 10px 20px 20px;
+        font-family: $font-base-semiBold;
+        font-size: 18px;
+        box-shadow: $boxShadow;
+        border-radius: 2px;
+        cursor: pointer;
+
+        .icon {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            margin-right: 25px;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 24px;
+                height: 2px;
+                background: $blueLight;
+            }
+
+            &:after {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+        }
+    }
+}
+
+.new-payment-card {
+
+    .front-side {
+        position: relative;
+        width: 440px;
+        padding: 30px 30px;
+        background: $white;
+        box-shadow: $boxShadow;
+        border-radius: 10px;
+        z-index: 5;
+    }
+
+    .backside {
+        position: relative;
+        width: 440px;
+        min-height: 278px;
+        margin: -220px 0 0 auto;
+        padding: 115px 60px 0 287px;
+        background: $white;
+        box-shadow: $boxShadow;
+        border-radius: 10px;
+        z-index: 1;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: $grayOther;
+        }
+    }
+
+    .payment-list {
+        display: flex;
+        align-items: center;
+        margin: -13px 0 0 -13px;
+
+        &--item {
+            max-width: 55px;
+            margin: 13px 0 0 13px;
+
+            img {
+                max-height: 34px;
+            }
+        }
+    }
+
+    .input-wrap {
+
+        .label {
+            font-size: 13px;
+        }
+
+        .input {
+            height: 45px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 1px solid $borderColor;
+            box-shadow: none;
+
+            &::placeholder {
+                font-size: 16px;
+                color: $borderColor;
+            }
+        }
+    }
+
+    .separator {
+        align-self: flex-end;
+        padding: 0 10px 14px;
+        font-family: $font-base-semiBold;
+        font-size: 13px;
     }
 }
 
@@ -2375,6 +2609,19 @@
                 line-height: 28px;
             }
         }
+
+        .total-price {
+            display: block;
+
+            .label {
+                font-size: 28px;
+                line-height: 28px;
+            }
+        }
+
+        .submit-btn {
+            width: 100%;
+        }
     }
 
     .car-info-block {
@@ -2395,6 +2642,10 @@
 
         .price {
             flex-wrap: wrap;
+        }
+
+        .characteristics--item {
+            max-width: calc(50% - 20px);
         }
     }
 
@@ -2446,6 +2697,58 @@
                 min-height: 38px;
                 padding: 11px 40px;
             }
+        }
+    }
+
+    .additional-services-total-wrap {
+        margin-top: 50px;
+    }
+
+    .additional-services-total {
+        margin-top: 5px;
+
+        &--item {
+            padding: 30px 0;
+        }
+    }
+
+    .characteristics-list-wrap.terms {
+
+        .characteristics-list {
+            margin: 0;
+            box-shadow: $boxShadow;
+
+            &--item {
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+                border-top: 1px solid $borderColor;
+                border-radius: 0 0 2px 2px;
+
+                &:first-child {
+                    border: 0;
+                    border-radius: 2px 2px 0 0;
+                }
+            }
+        }
+    }
+
+    .payment-type-list-wrap {
+        margin-top: 60px;
+        padding-top: 70px;
+    }
+
+    .payment-type-list {
+        margin-top: 20px;
+
+        &--title {
+            font-size: 26px;
+        }
+
+        &--item {
+            max-width: calc(100% - 40px);
+            min-height: 125px;
+            margin-top: 20px;
         }
     }
 }
@@ -2683,6 +2986,13 @@
             .btn {
                 margin-top: 20px;
             }
+        }
+    }
+
+    .car-info-block {
+
+        .characteristics--item {
+            max-width: calc(100% - 20px);
         }
     }
 }

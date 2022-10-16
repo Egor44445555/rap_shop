@@ -444,6 +444,12 @@ a {
             color: $textGray;
         }
     }
+
+    .info-text {
+        margin-top: 15px;
+        font-family: $font-base-semiBold;
+        font-size: 13px;
+    }
 }
 
 .input,
