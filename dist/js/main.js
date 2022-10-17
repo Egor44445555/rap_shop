@@ -16,6 +16,12 @@ $(document).ready(function() {
     let modalMenuClose = $('.modal-menu-wrap .close');
     let gridBtn = $('.grid-type--item');
 
+    $('.mask-phone').mask('+7 (999) 999-99-99');
+    $('.mask-payment-card').mask('9999 9999 9999');
+    $('.mask-month-card').mask('99');
+    $('.mask-year-card').mask('99');
+    $('.mask-code-card').mask('999');
+
     $('.js-toggle-btn').on('click', function (e) {
         e.preventDefault();
 

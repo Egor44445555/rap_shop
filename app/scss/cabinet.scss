@@ -1763,9 +1763,6 @@
 .card-payment {
     max-width: 950px;
     margin: 80px auto 0;
-}
-
-.card-payment {
 
     .total-price {
 
@@ -1786,11 +1783,40 @@
 
     .checkbox {
         display: block;
+        max-width: 200px;
+
+        input:checked + .icon {
+            background: $blue;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 27px;
+            min-width: 27px;
+            height: 27px;
+            background: $white;
+            border: 1px solid $blue;
+            border-radius: 50%;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .text {
+            padding: 30px 0 0;
+            font-family: $font-base-semiBold;
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
 
     .btn {
         width: 100%;
         max-width: 424px;
+        font-family: $font-base-semiBold;
         font-size: 20px;
 
         .rouble {
@@ -1864,10 +1890,12 @@
 }
 
 .new-payment-card {
+    padding-right: 60px;
 
     .front-side {
         position: relative;
         width: 440px;
+        max-width: 100%;
         padding: 30px 30px;
         background: $white;
         box-shadow: $boxShadow;
@@ -1919,16 +1947,23 @@
         }
 
         .input {
+            max-width: 67px;
             height: 45px;
-            padding: 10px 20px;
+            padding: 10px 14px;
+            font-family: $font-base-semiBold;
             font-size: 16px;
             text-transform: uppercase;
+            letter-spacing: 2px;
             border: 1px solid $borderColor;
             box-shadow: none;
 
             &::placeholder {
                 font-size: 16px;
                 color: $borderColor;
+            }
+
+            &.wide {
+                max-width: 100%;
             }
         }
     }
@@ -2749,6 +2784,48 @@
             max-width: calc(100% - 40px);
             min-height: 125px;
             margin-top: 20px;
+        }
+    }
+
+    .card-payment {
+        margin-top: 60px;
+
+        .checkbox {
+            display: flex;
+            max-width: 365px;
+            margin: 50px 0 0 30px;
+
+            .icon {
+                margin-top: -2px;
+            }
+
+            .text {
+                padding: 0 0 0 16px;
+            }
+        }
+    }
+
+    .payment-cards-list {
+        margin: -20px 0 0 -20px;
+
+        &--item {
+            margin: 20px 0 0 20px;
+        }
+
+        .add-btn {
+            margin: 20px 0 0 20px;
+        }
+    }
+
+    .new-payment-card {
+        padding-right: 0;
+
+        .front-side {
+            padding: 30px 18px;
+        }
+
+        .input-wrap .input {
+            padding: 10px;
         }
     }
 }
