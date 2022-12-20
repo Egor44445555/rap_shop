@@ -141,12 +141,20 @@
         .btn {
             min-height: 0;
             margin-left: 15px;
-            padding: 7px 15px;
+            padding: 8px 15px;
             font-size: 14px;
             border-width: 1px;
 
             &:first-child {
                 margin: 0;
+            }
+        }
+
+        .login {
+
+            .icon {
+                width: 18px;
+                height: 18px;
             }
         }
     }
@@ -262,6 +270,7 @@
 
         &:hover {
             color: $textGray;
+            border-color: $linkColorHover;
             opacity: 1;
         }
     }
@@ -315,6 +324,10 @@
                 padding-bottom: 3px;
                 text-transform: none;
                 border-bottom: 1px solid $blueOtherLight;
+
+                &:hover {
+                    border-color: $linkColorHover;
+                }
             }
         }
     }

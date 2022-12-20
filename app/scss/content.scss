@@ -199,7 +199,7 @@
     }
 
     input:checked + .text {
-        background: $blue;
+        background: $linkColorHover;
         color: $white;
     }
 
@@ -252,16 +252,22 @@
 .car-select-slider {
     margin-top: 50px;
 
+    .swiper-slide {
+        height: auto;
+    }
+
     &--item {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        //height: 100%;
     }
 
     .characteristics {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+        align-content: flex-start;
         flex: 1;
         max-width: 360px;
         margin: -15px 0 0 -40px;
@@ -289,6 +295,10 @@
         max-width: 700px;
         padding: 0 40px;
         text-align: center;
+
+        img {
+            max-height: 100%;
+        }
 
         .title {
             margin-bottom: 30px;
@@ -1233,19 +1243,20 @@
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
-                margin-top: 50px;
+                margin-top: 20px;
 
                 &--item {
-                    //margin-top: 15px;
-                    font-size: 18px;
+                    padding: 12px 0;
+                    font-size: 16px;
                     color: $black;
+                    border: 0;
 
                     &:first-child {
                         margin-top: 0;
                     }
 
                     &:hover {
-                        color: $blue;
+                        color: $linkColorHover;
                     }
                 }
             }
@@ -1524,9 +1535,9 @@
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
-    background: url(../images/lines-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: top right;
+    //background: url(../images/lines-bg.jpg);
+    //background-repeat: no-repeat;
+    //background-position: top right;
 
     .info {
         flex: 1;
@@ -1542,7 +1553,14 @@
 
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
+    }
+
+    .slider--image {
+        display: block;
+        height: 100%;
     }
 
     .title {
@@ -1713,7 +1731,7 @@
             margin-right: 20px;
 
             img {
-                max-height: 120px;
+                max-height: 80px;
             }
         }
 
@@ -2367,14 +2385,22 @@
 
     .step {
         position: absolute;
-        top: 0;
+        top: 100%;
         left: 0;
+        width: 100%;
+        max-width: 100%;
         opacity: 0;
         pointer-events: none;
+        overflow: hidden;
         transition: 0s;
 
         &.active {
             position: relative;
+            top: 0;
+            width: auto;
+            max-width: none;
+            margin: 0 -25px;
+            padding: 0 25px;
             opacity: 1;
             pointer-events: all;
             transition: .8s;
@@ -2383,6 +2409,10 @@
         .step-body {
             min-height: 555px;
         }
+    }
+
+    .success-block.active {
+        margin: 40px auto 0;
     }
 
     .button-wrap {

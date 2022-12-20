@@ -3,6 +3,7 @@
 * {
     min-height: 0;
     min-width: 0;
+    -webkit-appearance: none;
     box-sizing: border-box;
     outline: none;
 }
@@ -326,7 +327,8 @@ a {
     transition: 0.3s;
 
     &:hover {
-        color: $linkColor;
+        color: $linkColorHover;
+        border-color: $linkColorHover;
     }
 }
 
@@ -1159,6 +1161,10 @@ select {
     height: auto;
 }
 
+.swiper-slide {
+    height: auto;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
 
@@ -1555,6 +1561,32 @@ select {
         }
     }
 }
+
+.ui-datepicker {
+
+    .ui_tpicker_unit_hide {
+        display: none;
+    }
+
+    dt {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .ui-state-default.ui-slider-handle,
+    .ui-widget-content .ui-state-default.ui-slider-handle {
+        top: -6px;
+        width: 15px;
+        height: 15px;
+        background: $themeColor;
+    }
+
+    .ui-widget.ui-widget-content {
+        height: 4px;
+        background: $themeColor;
+    }
+}
+
 
 /*** End Timepicker ***/
 

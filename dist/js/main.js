@@ -335,7 +335,6 @@ $(document).ready(function() {
 
         $('.tabs-head--item.active').removeClass('active');
         $(this).addClass('active');
-
         $('.tabs-body--item.active').removeClass('active');
 
         content.addClass('active');

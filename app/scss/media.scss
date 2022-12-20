@@ -526,6 +526,20 @@
         }
     }
 
+    .form {
+
+        .total-price {
+
+            .label {
+                font-size: 35px;
+            }
+
+            .price {
+                font-size: 50px;
+            }
+        }
+    }
+
 
     .hero-block {
         min-height: 0;
@@ -602,10 +616,12 @@
         }
 
         .image {
+            flex: auto;
             order: 1;
         }
 
         .characteristics {
+            flex: auto;
             order: 2;
             justify-content: center;
             max-width: 100%;
@@ -617,6 +633,7 @@
         }
 
         .price-list {
+            flex: auto;
             order: 3;
             display: flex;
             flex-direction: column;
@@ -1115,6 +1132,14 @@
             font-family: $font-base-bold;
             font-size: 18px;
             color: $black;
+        }
+    }
+
+    .password {
+
+        input[type="password"] {
+            font-family: 'Verdana', sans-serif;
+            font-size: 20px;
         }
     }
 

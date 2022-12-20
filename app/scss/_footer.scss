@@ -99,6 +99,10 @@
         &:first-child {
             margin-top: 0;
         }
+
+        &:hover {
+            color: $textGray;
+        }
     }
 }
 
