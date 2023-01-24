@@ -167,6 +167,14 @@
             }
         }
     }
+
+
+    .about-block-small {
+
+        .info {
+            padding-left: 470px;
+        }
+    }
 }
 
 /******************************************************************/
@@ -989,7 +997,8 @@
 
         .image {
             justify-content: flex-end;
-            margin-bottom: 0;
+            min-width: 0;
+            margin: 0;
         }
 
         .info {
