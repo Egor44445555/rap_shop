@@ -5,13 +5,13 @@ header.header
                 img(src="images/logo.png")
 
             .location-wrap.d-none.d-xxl-flex.js-location-wrap
-                .location.js-location-modal-btn
+                .location.js-location-modal-btn.modal-btn(data-url="select-city")
                     .icon
                         img(src="images/icons/cupola.svg")
                     .text.js-location-name Санкт- Петербург
                     .arrow
                         img(src="images/icons/arrow-toggle-down.svg" alt="")
-                include search-form.jade
+                //include search-form.jade
 
 
             .phones-wrap.d-none.d-xxl-flex
@@ -125,11 +125,11 @@ header.header
                 .btn.btn-blue.btn-small.modal-btn(data-url="feedback") Заказать звонок
 
         .location-wrap.js-location-wrap
-            .location.js-location-modal-btn
+            .location.js-location-modal-btn.modal-btn(data-url="select-city")
                 .icon
                     img(src="images/icons/cupola.svg")
                 .text.js-location-name Санкт- Петербург
-            include search-form.jade
+            //include search-form.jade
 
         .modal-menu
             a(href="/catalog.html").modal-menu--item Каталог

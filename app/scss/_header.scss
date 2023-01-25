@@ -414,6 +414,7 @@
     overflow: auto;
     border: 1px solid $borderColor;
     border-top: none;
+    z-index: 99;
 
     &--item {
         padding: 10px 20px;

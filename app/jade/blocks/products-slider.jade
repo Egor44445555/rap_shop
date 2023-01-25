@@ -3,14 +3,14 @@
         .d-block.d-xl-flex
             h2.text-uppercase.semibold Автомобили для аренды
             .city-select.has-icon.ms-0.ms-xl-4.me-0.mt-3.mt-xl-0.js-location-wrap
-                .city-select--head.js-location-modal-btn
+                .city-select--head.js-location-modal-btn.modal-btn(data-url="select-city")
                     .icon.d-sm-none
                         img(src="images/icons/cupola.svg")
                     .text
                         span.js-location-name Санкт- Петербург
                     .arrow.d-none.d-sm-block
                         img(src="images/icons/arrow-toggle-down.svg" alt="")
-                include search-form.jade
+                //include search-form.jade
 
         .product-slider.js-products-slider
             .swiper-button-prev.big

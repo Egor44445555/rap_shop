@@ -4,14 +4,14 @@
             .d-block.d-xl-flex.align-items-baseline
                 h2.text-uppercase Выберите автомобиль
                 .city-select.js-location-wrap
-                    .city-select--head.js-location-modal-btn
+                    .city-select--head.js-location-modal-btn.modal-btn(data-url="select-city")
                         .icon.d-sm-none
                             img(src="images/icons/cupola.svg")
                         .text
                             span.js-location-name Санкт- Петербург
                         .arrow.d-none.d-sm-block
                             img(src="images/icons/arrow-toggle-down.svg" alt="")
-                    include search-form.jade
+                    //include search-form.jade
 
             .car-type-list.d-none
                 label(for="type1" data-tab="type1").car-type-list--item.tabs-head--item

@@ -1000,6 +1000,10 @@ select {
         max-width: 800px;
     }
 
+    &.large-size {
+        max-width: 1125px;
+    }
+
     &.max-size {
         max-width: 896px;
     }
@@ -1088,18 +1092,100 @@ select {
         font-size: 29px;
         line-height: 29px;
     }
+
+
+    /*** City select modal ***/
+
+    .city-select-modal {
+        padding: 80px 80px 70px 100px;
+
+        .mCSB_scrollTools {
+
+            .mCSB_dragger .mCSB_dragger_bar {
+                width: 8px;
+            }
+
+            .mCSB_draggerRail {
+                width: 4px;
+            }
+        }
+    }
+
+    .cities-wrap {
+        max-height: 500px;
+    }
+
+    /*** End City select modal ***/
+}
+
+.search-city-input-wrap {
+    position: relative;
+    margin: 0 0 35px;
+
+    .input {
+        height: 54px;
+        padding: 10px 60px 10px 30px;
+        border: 1px solid $borderColor;
+        box-shadow: none;
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 23px;
+        height: 23px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .cities {
     display: flex;
     flex-wrap: wrap;
-    margin: 15px 0 0;
+
+    .column {
+        flex: 1;
+    }
+
+    &--item {
+        position: relative;
+        margin: 0 0 35px;
+        padding-right: 30px;
+        font-family: $font-base-semiBold;
+        font-size: 16px;
+        list-style: none;
+    }
 
     li {
-        flex: 100%;
-        max-width: 25%;
-        margin: 15px 0 0;
-        padding-right: 10px;
+        position: relative;
+        margin-top: 20px;
+        cursor: pointer;
+
+        &.letter {
+            margin: 0 0 5px;
+            font-family: $font-base-bold;
+            font-size: 18px;
+            color: $blue;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 4px;
+        left: -28px;
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 

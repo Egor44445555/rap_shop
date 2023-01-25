@@ -2,14 +2,14 @@ form(action="#").rent-form
     .d-block.d-xl-flex.align-items-baseline
         h2.text-uppercase Выберите автомобиль
         .city-select.ms-0.ms-xl-5.me-0.mt-2.mt-xl-0.js-location-wrap
-            .city-select--head.js-location-modal-btn
+            .city-select--head.js-location-modal-btn.modal-btn(data-url="select-city")
                 .icon.d-sm-none
                     img(src="images/icons/cupola.svg")
                 .text
                     span.js-location-name Санкт- Петербург
                 .arrow.d-none.d-sm-block
                     img(src="images/icons/arrow-toggle-down.svg" alt="")
-            include search-form.jade
+            //include search-form.jade
 
     .step.step-1.active(data-step="1")
         .step-body

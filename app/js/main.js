@@ -142,7 +142,6 @@ $(document).ready(function() {
         let $target = $(event.target);
 
         if (!$target.closest('.js-location-modal-btn').length && !$target.closest('.location-search').length) {
-            $('.js-autocomplete-input').val('');
             $('.js-autocomplete').addClass('d-none');
             $('.js-location-wrap').removeClass('active');
         }
@@ -165,7 +164,7 @@ $(document).ready(function() {
     /*** End Dropdown header ***/
 
 
-    /*** Location header ***/
+    /*** Location ***/
 
     let autocompleteInput = $('.js-autocomplete-input');
     let autocompleteList = $('.js-autocomplete');
@@ -211,25 +210,27 @@ $(document).ready(function() {
         });
     });
 
-    $('.autocomplete-list').on('click', '.autocomplete-list--item', function (e) {
+    $('.autocomplete-list').on('click', '.autocomplete-list--item', function () {
+        let wrap = $('.js-location-wrap');
+        let value = $(this).text();
+
         $(this).parent().addClass('d-none');
         autocompleteInput.val($(this).text());
+
+        wrap.each(function () {
+            let input = $(this).find('.js-autocomplete-input');
+
+            $(this).find('.js-location-name').text(value);
+            $(this).removeClass('active');
+        });
     });
 
-    $('.location-search').on('click', '.btn', function (e) {
+    $('.city-select').on('click', '.btn', function (e) {
         e.preventDefault();
-        let wrap = $(this).parents('.js-location-wrap');
-        let input = wrap.find('.js-autocomplete-input');
 
-        if (input.val() !== '') {
-            $('.js-location-name').text(input.val());
-        }
-
-        input.val('');
-        wrap.removeClass('active');
     });
 
-    /*** End Location header ***/
+    /*** End Location ***/
 
 
     /*** Phone header ***/
