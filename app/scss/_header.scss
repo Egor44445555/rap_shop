@@ -522,12 +522,18 @@
     }
 
     .phones {
+        margin-top: 40px;
         padding: 0 10px 0 50px;
-        font-family: $font-base-semiBold;
         font-size: 32px;
 
-        &.small {
+        .label {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: .64;
 
+            &:first-child {
+                margin-top: 0;
+            }
         }
 
         &--item {
@@ -540,12 +546,12 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin: 0 0 0 -30px;
+        margin: -10px 0 0 -30px;
         padding: 0 50px;
 
         &.small {
             flex-direction: column;
-            margin-top: 25px;
+            margin-top: 20px;
 
             .social-list--item {
                 align-items: flex-start;
@@ -565,6 +571,7 @@
 
         &--item {
             padding: 30px 0 0 30px;
+            font-family: $font-base;
             font-size: 20px;
         }
 
@@ -594,13 +601,13 @@
     }
 
     .modal-menu {
-        margin: 30px 0 0;
+        margin: 40px 0 0;
 
         &--item {
             display: block;
             padding: 18px 50px;
             font-family: $font-base-semiBold;
-            font-size: 18px;
+            font-size: 20px;
             color: $black;
             border-bottom: 1px solid $borderColor;
 
@@ -610,29 +617,9 @@
         }
     }
 
-    .location-wrap {
-        margin: 30px 0 0 50px;
-
-        .text {
-            max-width: 150px;
-            font-family: $font-base-semiBold;
-            font-size: 18px;
-        }
-
-        .autocomplete-list--item {
-            padding: 15px 20px;
-            font-size: 18px;
-        }
-    }
-
-    .location-search {
-        max-width: 100%;
-    }
-
     .cabinet-btn {
         display: flex;
         align-items: center;
-        margin-bottom: 50px;
         padding: 5px 10px 48px 50px;
         font-family: $font-base-semiBold;
         font-size: 20px;
@@ -665,6 +652,44 @@
                 border-radius: 50%;
             }
         }
+    }
+
+    .location-wrap {
+        margin: 0;
+        padding: 35px 0 35px 50px;
+        border-bottom: 1px solid $borderColor;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        .location {
+            width: 100%;
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                margin-top: -10px;
+            }
+        }
+
+        .text {
+            max-width: 100%;
+            padding: 5px 0 10px;
+            font-family: $font-base;
+            font-size: 28px;
+            color: $blueText;
+            border-bottom: 1px solid $blueTextLight;
+        }
+
+        .autocomplete-list--item {
+            padding: 15px 20px;
+            font-size: 18px;
+        }
+    }
+
+    .location-search {
+        max-width: 100%;
     }
 }
 
@@ -782,11 +807,19 @@
         }
 
         .location-wrap {
-            margin-left: 20px;
+            padding: 25px 20px;
+
+            &:first-child {
+                padding-top: 20px;
+            }
+
+            .text {
+                padding-bottom: 5px;
+                font-size: 20px;
+            }
         }
 
         .cabinet-btn {
-            margin-bottom: 20px;
             padding: 5px 20px 20px;
         }
     }

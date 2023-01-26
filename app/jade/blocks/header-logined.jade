@@ -9,10 +9,8 @@ header.header
                     .icon
                         img(src="images/icons/cupola.svg")
                     .text.js-location-name Санкт- Петербург
-                    .arrow
+                    .arrow.d-none.d-sm-block
                         img(src="images/icons/arrow-toggle-down.svg" alt="")
-                //include search-form.jade
-
 
             .phones-wrap.d-none.d-xxl-flex
                 .phones
@@ -108,28 +106,30 @@ header.header
                 span.count 5
             .text Личный кабинет
 
+        .location-wrap.js-location-wrap
+            .location.js-location-modal-btn.modal-btn(data-url="select-city")
+                .icon
+                    img(src="images/icons/cupola.svg")
+                .text.js-location-name Санкт- Петербург
+
         .phones
+            .label Единый номер
             a(href="tel:8 800 250 46 00").phones--item
                 span.text 8 800 250 46 00
+
+            .label Офис в вашем городе
             a(href="tel:+7 (965) 25 58 16").phones--item
                 span.text +7 (965) 25 58 16
 
         .social-list
             a(href='#').social-list--item
-                img(src="images/icons/social-whatsapp.png").icon
+                img(src="images/icons/social-whatsapp-2.png").icon
                 span.text Whats App
             a(href='#').social-list--item
                 img(src="images/icons/social-telegram.png").icon
                 span.text Тelegram
             .social-list--item
                 .btn.btn-blue.btn-small.modal-btn(data-url="feedback") Заказать звонок
-
-        .location-wrap.js-location-wrap
-            .location.js-location-modal-btn.modal-btn(data-url="select-city")
-                .icon
-                    img(src="images/icons/cupola.svg")
-                .text.js-location-name Санкт- Петербург
-            //include search-form.jade
 
         .modal-menu
             a(href="/catalog.html").modal-menu--item Каталог

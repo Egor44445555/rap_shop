@@ -419,10 +419,7 @@
         .text {
             font-size: 30px;
             color: $blueText;
-
-            span {
-                border-bottom: 1px solid $blueTextLight;
-            }
+            border-bottom: 1px solid $blueTextLight;
         }
 
         .arrow {

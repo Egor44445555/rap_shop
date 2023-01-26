@@ -1109,6 +1109,24 @@ select {
                 width: 4px;
             }
         }
+
+        .link {
+            display: block;
+            margin-top: 55px;
+            font-family: $font-base-light;
+            color: $black;
+            font-size: 22px;
+            text-align: center;
+
+            &:hover span {
+                border-color: transparent;
+            }
+
+            span {
+                transition: .3s;
+                border-bottom: 1px solid $borderColor;
+            }
+        }
     }
 
     .cities-wrap {
@@ -1125,8 +1143,15 @@ select {
     .input {
         height: 54px;
         padding: 10px 60px 10px 30px;
+        font-family: $font-base-semiBold;
+        font-size: 16px;
         border: 1px solid $borderColor;
         box-shadow: none;
+
+        &::placeholder {
+            font-family: $font-base-semiBold;
+            font-size: 16px;
+        }
     }
 
     .icon {
@@ -1144,12 +1169,24 @@ select {
     }
 }
 
+.cities-wrap {
+    margin-left: -100px;
+}
+
 .cities {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 0 55px 100px;
 
     .column {
         flex: 1;
+
+        &:first-child {
+
+            .tooltip {
+                left: calc(50% + 28px);
+            }
+        }
     }
 
     &--item {
@@ -1159,6 +1196,10 @@ select {
         font-family: $font-base-semiBold;
         font-size: 16px;
         list-style: none;
+    }
+
+    .text:hover {
+        opacity: .56;
     }
 
     li {
@@ -1185,6 +1226,34 @@ select {
         img {
             width: 100%;
             height: 100%;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 180px;
+            padding: 18px;
+            transform: translateX(-50%);
+            background: $white;
+            color: $black;
+            font-family: $font-base;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 27px rgba(229, 229, 229, .75);
+            pointer-events: none;
+
+            span {
+                opacity: .60;
+            }
+        }
+
+        &:hover {
+
+            .tooltip {
+                opacity: 1;
+            }
         }
     }
 }

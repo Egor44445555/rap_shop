@@ -1201,6 +1201,63 @@
         }
     }
 
+    .modal {
+
+        .city-select-modal {
+            display: flex;
+            flex-direction: column;
+            padding: 70px 32px 32px 32px;
+
+            .link {
+                max-width: 273px;
+                order: 1;
+                margin: 0 auto;
+                font-family: $font-base-light;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .search-city-input-wrap {
+                order: 2;
+                margin-top: 25px;
+
+                .input {
+                    height: 75px;
+                    font-family: $font-base;
+                    font-size: 18px;
+                }
+            }
+
+            .cities-wrap {
+                order: 3;
+            }
+        }
+    }
+
+    .cities-wrap {
+        margin-left: -12px;
+    }
+
+    .cities {
+        padding-left: 44px;
+
+        .column {
+            flex: 50%;
+
+            &:first-child {
+
+                .tooltip {
+                    left: 0;
+                }
+            }
+        }
+
+        .icon .tooltip {
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+
     .pagination {
         margin: 60px -10px 0;
 
@@ -1590,19 +1647,23 @@
         }
     }
 
+    .cities {
+
+        .column {
+            flex: 100%;
+        }
+
+        li {
+            max-width: 50%;
+        }
+    }
+
     .hero-block {
 
         .btn {
             height: 50px;
             padding: 15px 20px;
             font-size: 16px;
-        }
-    }
-
-    .cities {
-
-        li {
-            max-width: 50%;
         }
     }
 
@@ -2207,7 +2268,7 @@
     }
 
     .city-select--head .text {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .car-select-slider {
