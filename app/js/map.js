@@ -46,12 +46,69 @@ function init() {
             }
         ],
         clusterIconContentLayout: MyIconContentLayout,
-
         groupByCoordinates: false,
         clusterDisableClickZoom: false,
         clusterHideIconOnBalloonOpen: true,
         geoObjectHideIconOnBalloonOpen: true
-    });
+    }),
+    MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+        `<div class="balloon-wrap">
+            <a class="close" href="#"></a>
+            $[[options.contentLayout observeSize minWidth=540 maxWidth=540 maxHeight=450]]
+        </div>
+        `,
+        {
+            build: function () {
+                this.constructor.superclass.build.call(this);
+                this._$element = $('.balloon-wrap', this.getParentElement());
+                this._$element.find('.close').on('click', $.proxy(this.onCloseClick, this));
+                this.applyElementOffset();
+            },
+            clear: function () {
+                this._$element.find('.close').off('click');
+                this.constructor.superclass.clear.call(this);
+            },
+            onSublayoutSizeChange: function () {
+                MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+
+                if(!this._isElement(this._$element)) {
+                    return;
+                }
+
+                this.applyElementOffset();
+                this.events.fire('shapechange');
+            },
+            onCloseClick: function (e) {
+                e.preventDefault();
+
+                this.events.fire('userclose');
+            },
+            applyElementOffset: function () {
+
+                // this._$element.css({
+                //     left: -(this._$element[0].offsetWidth / 2 + 200),
+                //     top: -(this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight)
+                // });
+            },
+            getShape: function () {
+
+                if(!this._isElement(this._$element)) {
+                    return MyBalloonLayout.superclass.getShape.call(this);
+                }
+
+                let position = this._$element.position();
+
+                return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+                    [position.left, position.top], [
+                        position.left + this._$element[0].offsetWidth,
+                        position.top + this._$element[0].offsetHeight
+                    ]
+                ]));
+            },
+            _isElement: function (element) {
+                return element && element[0];
+            }
+        });
  
     for (let i = 0; i < shopList.length; i++) {
 
@@ -64,13 +121,18 @@ function init() {
             shopPlacemark = new ymaps.Placemark(
                 shopInfo.coordinates,
                 {
-                    hintContent: shopInfo.name_tooltip,
-                    balloonContent: shopInfo.name_tooltip,
-                    balloonContentHeader: shopInfo.title_baloon,
-                    balloonContentBody: shopInfo.text_baloon,
-                    balloonContentFooter: shopInfo.footer_baloon
+                    balloonContent: `
+                        <div class="balloon-custom">
+                            <div class="wrap">
+                                <div class="logo"><img src="images/logo.png" alt=""></div>
+                                <div class="title">${shopInfo.title_baloon}</div>
+                                <div class="text">${shopInfo.text_baloon}</div>
+                            </div>
+                            <div class="arrow"><img src="images/icons/arrow-balloon.png" alt=""></div>
+                        </div>`,
                 },
                 {
+                    balloonLayout: MyBalloonLayout,
                     iconLayout: 'default#image',
                     iconImageHref: '../images/icons/marker.svg',
                     iconImageSize: [44, 44],

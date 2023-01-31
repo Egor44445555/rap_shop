@@ -169,10 +169,27 @@ $(document).ready(function() {
     let autocompleteInput = $('.js-autocomplete-input');
     let autocompleteList = $('.js-autocomplete');
     let locationModalBtn = $('.js-location-modal-btn');
+    let cityItem = $('[data-city]');
     let cities = ['Адлер', 'Ангарск', 'Альметьевск', 'Апрелевка', 'Архангельск', 'Белгород', 'Великий Новгород', 'Внуково', 'Воронеж', 'Воткинск', 'Глазов', 'Домодедово', 'Иваново', 'Ижевск', 'Кисловодск', 'Краснодар', 'Курск', 'Минеральные воды', 'Москва', 'Можга', 'Можайск', 'Молькино'];
 
     locationModalBtn.on('click', function () {
         $(this).parent('.js-location-wrap').toggleClass('active');
+    });
+
+    cityItem.on('click', '.text', function () {
+        let wrap = $('.js-location-wrap');
+        let value = $(this).parent().data('city');
+
+        autocompleteInput.val(value);
+
+        wrap.each(function () {
+            $(this).find('.js-location-name').text(value);
+        });
+
+        $('.modal-wrap').each(function () {
+            $(this).removeClass('open');
+            body.removeClass('noscroll').css('padding-right', 0);
+        });
     });
 
     autocompleteInput.each(function () {
@@ -218,16 +235,9 @@ $(document).ready(function() {
         autocompleteInput.val($(this).text());
 
         wrap.each(function () {
-            let input = $(this).find('.js-autocomplete-input');
-
             $(this).find('.js-location-name').text(value);
             $(this).removeClass('active');
         });
-    });
-
-    $('.city-select').on('click', '.btn', function (e) {
-        e.preventDefault();
-
     });
 
     /*** End Location ***/

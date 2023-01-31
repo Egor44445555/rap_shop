@@ -2302,6 +2302,105 @@
     width: 100%;
     height: 711px;
     margin-top: 100px;
+
+    .gm-style {
+
+        .gm-style-iw-t {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .gm-style-iw-c {
+            background: none;
+            padding: 0 !important;
+            border: 2px solid $themeColor;
+            border-radius: 0;
+        }
+
+        .gm-style-iw-d {
+            padding: 0 !important;
+            overflow: auto !important;
+        }
+
+        .gm-style-iw-c {
+            transform: translate3d(29px, -90%, 0);
+        }
+
+        .gm-style-iw-t::after {
+            display: none;
+        }
+
+        button {
+            top: 10px !important;
+            right: 10px !important;
+            z-index: 99;
+        }
+    }
+
+    .balloon-wrap {
+
+        .close {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 50px;
+            left: 470px;
+            z-index: 9;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                width: 25px;
+                height: 2px;
+                background: $black;
+            }
+
+            &:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
+    .balloon-custom {
+        position: relative;
+        padding: 32px;
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 70px 60px 60px;
+            background: $white;
+            font-size: 18px;
+            line-height: 24px;
+            border-radius: 10px;
+            box-shadow: 0 0 32px rgba(0, 0, 1, .22%);
+        }
+
+        .logo {
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .title {
+            margin-bottom: 15px;
+            font-size: 22px;
+            text-transform: none;
+        }
+
+        .arrow {
+            position: absolute;
+            top: calc(100% - 32px);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 /*** End Contacts ***/
@@ -2549,3 +2648,105 @@
 }
 
 /*** End Rent form ***/
+
+
+/*** Contact map block ***/
+
+.contact-map-block-wrap {
+    padding: 70px 0 190px;
+}
+
+.contact-map-block {
+    display: flex;
+    flex-wrap: wrap;
+
+    .info {
+        flex: 1;
+        max-width: 560px;
+        padding-right: 60px;
+    }
+
+    .map {
+        flex: 1;
+        height: 784px;
+        margin: 0;
+    }
+
+    .title {
+        font-family: $font-base-semiBold;
+        font-size: 70px;
+        text-transform: uppercase;
+    }
+
+    .city-select--head {
+
+        .text {
+            font-size: 37px;
+        }
+    }
+
+    .contact-list {
+        max-width: 370px;
+
+        &--item {
+            margin-top: 30px;
+            font-size: 22px;
+            line-height: 33px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .label {
+            margin-bottom: 5px;
+            font-family: $font-base-semiBold;
+            font-size: 28px;
+        }
+    }
+
+    .phone {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 36px;
+        color: $textColor;
+        white-space: nowrap;
+
+        .text {
+            padding-right: 15px;
+        }
+
+        .label {
+            max-width: 160px;
+            font-size: 14px;
+            white-space: normal;
+            opacity: .80;
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -25px 0 0 -25px;
+
+        &--item {
+            display: flex;
+            margin: 25px 0 0 25px;
+            font-size: 20px;
+        }
+
+        .icon {
+            width: 21px;
+            height: 21px;
+            margin-right: 15px;
+        }
+
+        .text {
+            padding-bottom: 3px;
+            border-bottom: 1px solid $blueTextLight;
+        }
+    }
+}
+
+/*** End Contact map block ***/

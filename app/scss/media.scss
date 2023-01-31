@@ -353,7 +353,7 @@
 @media (max-width: 1281px) {
 
     .container-block {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     .pagination {
@@ -1095,6 +1095,29 @@
             }
         }
     }
+
+
+    .contact-map-block {
+
+        .info {
+            flex: 100%;
+            max-width: 100%;
+            padding: 0 0 40px;
+        }
+
+        .map {
+            flex: 100%;
+            height: 670px;
+        }
+
+        .title {
+            font-size: 36px;
+        }
+
+        .city-select--head .text {
+            font-size: 34px;
+        }
+    }
 }
 
 /******************************************************************/
@@ -1546,6 +1569,15 @@
                 }
             }
         }
+    }
+
+
+    .contact-block-wrap {
+        padding-bottom: 50px;
+    }
+
+    .contact-map-block-wrap {
+        padding: 50px 0 60px;
     }
 }
 
@@ -2399,6 +2431,9 @@
         padding-bottom: 50px;
     }
 
+    .rent-form .step.active {
+        margin: 0 -20px;
+    }
 
     .rent-info-block {
 
@@ -2570,6 +2605,30 @@
 
         .sort .text {
             min-width: 100px;
+        }
+    }
+
+
+    .contact-map-block {
+
+        .map {
+            height: 350px;
+        }
+
+        .contact-list {
+
+            &--item {
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            .label {
+                font-size: 22px;
+            }
+        }
+
+        .phone {
+            font-size: 26px;
         }
     }
 }

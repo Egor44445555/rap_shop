@@ -351,11 +351,54 @@ html
                                 img(src="images/icons/social-phone.png").icon
                                 span.text Звонок
                             a(href='#').social-list--item
-                                img(src="images/icons/social-whatsapp.png").icon
+                                img(src="images/icons/social-whatsapp-2.svg").icon
                                 span.text Whats App
                             a(href='#').social-list--item
-                                img(src="images/icons/social-telegram.png").icon
+                                img(src="images/icons/social-telegram-2.svg").icon
                                 span.text Тelegram
+
+
+            .contact-map-block-wrap
+                .container-block
+                    .contact-map-block
+                        .info
+                            .title контакты
+                            .city-select.js-location-wrap
+                                .city-select--head.js-location-modal-btn.modal-btn(data-url="select-city")
+                                    .text.js-location-name Санкт- Петербург
+
+                            .contact-list.mt-3.mt-lg-5.pt-4
+                                .contact-list--item
+                                    .label Офис
+                                    .text ул. Большая Конюшенная,
+                                        | дом 52, вход справа около
+                                        | торгового центра «Невский центр»
+
+                                .contact-list--item
+                                    .label Режим работы
+                                    .text Понедельник - Пятница  9:00-18:00
+                                        | Суббота. 9:00-16:00
+
+                            .mt-3.mt-lg-5.pt-4
+                                a(href="tel:+7 (3412) 476 475").phone
+                                    span.text +7 (3412) 476 475
+
+                            .mt-3
+                                .social
+                                    a(href='#').social--item
+                                        img(src="images/icons/social-whatsapp-2.svg").icon
+                                        span.text Whats App
+                                    a(href='#').social--item
+                                        img(src="images/icons/social-telegram-2.svg").icon
+                                        span.text Тelegram
+
+                            .mt-3.mt-lg-5.pt-3
+                                a(href="tel:8 800 250 46 00").phone
+                                    span.text 8 800 250 46 00
+                                    span.label Единый номер Бесплатно по Росcии
+
+                        .map#map
+
 
         include ./blocks/footer.jade
         include ./blocks/modals.jade
