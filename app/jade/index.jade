@@ -362,7 +362,7 @@ html
                 .container-block
                     .contact-map-block
                         .info
-                            .title контакты
+                            .title Контакты
                             .city-select.js-location-wrap
                                 .city-select--head.js-location-modal-btn.modal-btn(data-url="select-city")
                                     .text.js-location-name Санкт- Петербург
@@ -376,8 +376,13 @@ html
 
                                 .contact-list--item
                                     .label Режим работы
-                                    .text Понедельник - Пятница  9:00-18:00
-                                        | Суббота. 9:00-16:00
+                                    .text
+                                        div
+                                            span Понедельник - Пятница&nbsp;
+                                            | 9:00-18:00
+                                        div
+                                            span Суббота&nbsp;
+                                            | 9:00-16:00
 
                             .mt-3.mt-lg-5.pt-4
                                 a(href="tel:+7 (3412) 476 475").phone
@@ -398,7 +403,6 @@ html
                                     span.label Единый номер Бесплатно по Росcии
 
                         .map#map
-
 
         include ./blocks/footer.jade
         include ./blocks/modals.jade

@@ -10,6 +10,10 @@
         line-height: 45px;
     }
 
+    .modal-wrap.under-header-modal {
+        padding-top: 70px;
+    }
+
     .range-slider-controls {
 
         &--item {
@@ -1097,6 +1101,23 @@
     }
 
 
+    .contact-map-block-wrap.inner {
+        padding-top: 50px;
+
+        .title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        .info {
+            padding-bottom: 60px;
+        }
+
+        .map {
+            height: 470px;
+        }
+    }
+
     .contact-map-block {
 
         .info {
@@ -1578,6 +1599,26 @@
 
     .contact-map-block-wrap {
         padding: 50px 0 60px;
+    }
+
+    .contact-map-block {
+
+        .contact-list {
+
+            .label {
+                display: none;
+            }
+
+            &--item {
+                margin-top: 0;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .text span {
+                font-family: $font-base-bold;
+            }
+        }
     }
 }
 
@@ -2277,6 +2318,32 @@
         }
     }
 
+    .map {
+
+        .balloon-wrap {
+
+            .close {
+                top: 20px;
+                left: 500px;
+            }
+        }
+
+        .balloon-custom {
+            padding: 0;
+
+            .wrap {
+                padding: 40px 20px 20px;
+                font-size: 14px;
+                line-height: 20px;
+                box-shadow: none;
+            }
+
+            .logo {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     .hero-block {
 
         .title {
@@ -2453,6 +2520,8 @@
 
 
     .advantages-list--item {
+        min-height: 200px;
+        padding-right: 20px;
         font-size: 20px;
         line-height: 28px;
     }
@@ -2501,12 +2570,6 @@
         .description {
             margin-top: 30px;
         }
-    }
-
-
-    .advantages-list--item {
-        min-height: 200px;
-        padding-right: 20px;
     }
 
 
@@ -2605,6 +2668,30 @@
 
         .sort .text {
             min-width: 100px;
+        }
+    }
+
+
+    .contact-map-block-wrap.inner {
+
+        .contact-list {
+
+            &--item {
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            .label {
+                font-size: 22px;
+            }
+        }
+
+        .phone {
+            font-size: 26px;
+        }
+
+        .map {
+            height: 350px;
         }
     }
 

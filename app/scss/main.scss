@@ -33,7 +33,8 @@ body {
 
 .container-block {
     width: 100%;
-    max-width: 1755px;
+    //max-width: 1755px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 0 150px;
 }
@@ -982,6 +983,29 @@ select {
         cursor: pointer;
         opacity: .4;
         pointer-events: none;
+    }
+
+    &.under-header-modal {
+        position: absolute;
+        padding-top: 100px;
+
+        .overflow {
+            opacity: 0;
+        }
+
+        .close {
+            display: none;
+        }
+
+        .wrap {
+            padding: 40px 80px 65px;
+            box-shadow: $boxShadow;
+            border-radius: 10px;
+        }
+
+        .modal {
+            margin: 0 auto;
+        }
     }
 }
 

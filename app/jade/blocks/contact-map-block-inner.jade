@@ -1,0 +1,41 @@
+.contact-map-block-wrap.inner
+    .container-block
+        .contact-map-block
+            .info
+                .title Контакты
+
+                .city-select.js-location-wrap.mt-2.mt-lg-4.pt-4
+                    .city-select--head.js-location-modal-btn.modal-btn(data-url="select-city")
+                        .icon
+                            img(src="images/icons/cupola.svg")
+                        .text.js-location-name Санкт- Петербург
+
+                .contact-list.mt-2
+                    .contact-list--item
+                        .text ул. Большая Конюшенная,
+                            | дом 52, вход справа около
+                            | торгового центра «Невский центр»
+
+                    .contact-list--item
+                        .text
+                            div
+                                strong Понедельник - Пятница&nbsp;
+                                | 9:00-18:00
+                            div
+                                strong Суббота.&nbsp;
+                                | 9:00-16:00
+
+                .mt-4.mt-lg-5.pt-3
+                    a(href="tel:+7 (3412) 476 475").phone
+                        span.text +7 (3412) 476 475
+
+                .mt-3
+                    .social
+                        a(href='#').social--item
+                            img(src="images/icons/social-whatsapp-2.svg").icon
+                            span.text Whats App
+                        a(href='#').social--item
+                            img(src="images/icons/social-telegram-2.svg").icon
+                            span.text Тelegram
+
+            .map#map
