@@ -54,9 +54,8 @@ function init() {
     MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
         `<div class="balloon-wrap">
             <a class="close" href="#"></a>
-            $[[options.contentLayout observeSize minWidth=540 maxWidth=540 maxHeight=450]]
-        </div>
-        `,
+            $[[options.contentLayout observeSize maxWidth=540 maxHeight=450]]
+        </div>`,
         {
             build: function () {
                 this.constructor.superclass.build.call(this);
@@ -84,32 +83,30 @@ function init() {
                 this.events.fire('userclose');
             },
             applyElementOffset: function () {
-
                 // this._$element.css({
-                //     left: -(this._$element[0].offsetWidth / 2 + 200),
-                //     top: -(this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight)
+                //     left: -(this._$element[0].offsetWidth / 2),
+                //     top: -(this._$element[0].offsetHeight + this._$element.find('.arrow-balloon')[0].offsetHeight)
                 // });
             },
             getShape: function () {
-
                 if(!this._isElement(this._$element)) {
                     return MyBalloonLayout.superclass.getShape.call(this);
                 }
 
-                let position = this._$element.position();
+                var position = this._$element.position();
 
                 return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
                     [position.left, position.top], [
                         position.left + this._$element[0].offsetWidth,
-                        position.top + this._$element[0].offsetHeight
+                        position.top + this._$element[0].offsetHeight + this._$element.find('.arrow-balloon')[0].offsetHeight
                     ]
                 ]));
             },
             _isElement: function (element) {
-                return element && element[0];
+                return element && element[0] && element.find('.arrow-balloon')[0];
             }
         });
- 
+
     for (let i = 0; i < shopList.length; i++) {
 
         let cityCollection = new ymaps.GeoObjectCollection();
@@ -128,16 +125,21 @@ function init() {
                                 <div class="title">${shopInfo.title_baloon}</div>
                                 <div class="text">${shopInfo.text_baloon}</div>
                             </div>
-                            <div class="arrow"><img src="images/icons/arrow-balloon.png" alt=""></div>
+                            <div class="arrow-balloon"><img src="images/icons/arrow-balloon.png" alt=""></div>
                         </div>`,
                 },
                 {
                     balloonLayout: MyBalloonLayout,
+                    balloonPanelMaxMapArea: 0,
                     iconLayout: 'default#image',
                     iconImageHref: '../images/icons/marker.svg',
                     iconImageSize: [44, 44],
+                    hideIconOnBalloonOpen: false,
+                    balloonOffset: [-260, -400]
                 }
             );
+
+            myMap.geoObjects.add(shopPlacemark);
 
             if (!placemarkList[i]) {
                 placemarkList[i] = {};

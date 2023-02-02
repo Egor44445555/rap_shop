@@ -653,6 +653,11 @@ $(document).ready(function() {
     let idModal = null;
 
     $('.modal-btn').on("click", function() {
+        let underHeaderModal = '';
+
+        if ($(this).hasClass('under-header-modal-btn')) {
+            underHeaderModal = 'under-header-modal';
+        }
 
         if ($(this).attr('href')) {
             idModal = $(this).attr('href');
@@ -665,9 +670,12 @@ $(document).ready(function() {
 
             if (idModal === $(this).attr('id')) {
                 $(this).addClass('open');
+                $(this).addClass(underHeaderModal);
 
-                body.css('padding-right', (window.innerWidth - document.documentElement.clientWidth));
-                body.addClass('noscroll');
+                if (underHeaderModal === '') {
+                    body.css('padding-right', (window.innerWidth - document.documentElement.clientWidth));
+                    body.addClass('noscroll');
+                }
             }
         });
     });
@@ -675,8 +683,11 @@ $(document).ready(function() {
     $('.modal-wrap .overflow').css('left', -(window.innerWidth - document.documentElement.clientWidth));
 
     $('.modal-wrap .overflow, .modal-wrap .close').on("click", function() {
+        let modalWrap = $('.modal-wrap');
+
         body.removeClass('noscroll').css('padding-right', 0);
-        $('.modal-wrap').removeClass('open');
+        modalWrap.removeClass('open');
+        modalWrap.removeClass('under-header-modal');
         idModal = null;
     });
 

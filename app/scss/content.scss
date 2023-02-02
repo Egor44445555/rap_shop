@@ -2342,6 +2342,9 @@
     }
 
     .balloon-wrap {
+        max-width: 540px;
+        background: none;
+        border: 0;
 
         .close {
             position: absolute;
@@ -2366,6 +2369,14 @@
             &:after {
                 transform: translate(-50%, -50%) rotate(-45deg);
             }
+        }
+
+        .arrow-balloon {
+            position: absolute;
+            top: calc(100% - 32px);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9;
         }
     }
 
@@ -2394,13 +2405,6 @@
             margin-bottom: 15px;
             font-size: 22px;
             text-transform: none;
-        }
-
-        .arrow-balloon {
-            position: absolute;
-            top: calc(100% - 32px);
-            left: 50%;
-            transform: translateX(-50%);
         }
     }
 }

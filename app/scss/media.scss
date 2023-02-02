@@ -2321,10 +2321,15 @@
     .map {
 
         .balloon-wrap {
+            max-width: 300px;
 
             .close {
                 top: 20px;
-                left: 500px;
+                left: 370px;
+            }
+
+            .arrow-balloon {
+                top: 100%;
             }
         }
 
