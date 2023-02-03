@@ -4,7 +4,8 @@ let myMap,
     placemarkList = {},
     geoObjects = [],
     shopList,
-    jsonPath = '../js/shops.json';
+    jsonPath = '../js/shops.json',
+    MyBalloonContentLayout;
 
 function getJson() {
     return $.getJSON(jsonPath).done(new Promise(resolve => { resolve(); }));
@@ -15,21 +16,18 @@ async function currentArr() {
     shopList = data.shops;
 }
 currentArr();
- 
-ymaps.ready(init);
- 
-function init() {
 
-    myMap = new ymaps.Map("map", {
+ymaps.ready(function () {
+
+    myMap = new ymaps.Map('map', {
         center: [59.938536, 30.323324],
         zoom: 10,
         controls: [
             'zoomControl'
-        ],
-        zoomMargin: [20]
+        ]
     });
 
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+    let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         '<div style="color: #FFFFFF; font-size: 16px;">{{ properties.geoObjects.length }}</div>'
     ),
     clusterer = new ymaps.Clusterer({
@@ -50,21 +48,31 @@ function init() {
         clusterDisableClickZoom: false,
         clusterHideIconOnBalloonOpen: true,
         geoObjectHideIconOnBalloonOpen: true
-    }),
-    MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
-        `<div class="balloon-wrap">
-            <a class="close" href="#"></a>
-            $[[options.contentLayout observeSize maxWidth=540 maxHeight=450]]
-        </div>`,
+    });
+
+    let MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+        '<div class="popover top balloon-wrap">' +
+            '<a class="close" href="#"></a>' +
+            '<div class="arrow-balloon"><img src="images/icons/arrow-balloon.png" alt=""></div>' +
+            '<div class="popover-inner">' +
+                '$[[options.contentLayout observeSize maxWidth=540 maxHeight=450]]' +
+            '</div>' +
+        '</div>',
         {
             build: function () {
                 this.constructor.superclass.build.call(this);
-                this._$element = $('.balloon-wrap', this.getParentElement());
-                this._$element.find('.close').on('click', $.proxy(this.onCloseClick, this));
+
+                this._$element = $('.popover', this.getParentElement());
+
                 this.applyElementOffset();
+
+                this._$element.find('.close')
+                    .on('click', $.proxy(this.onCloseClick, this));
             },
             clear: function () {
-                this._$element.find('.close').off('click');
+                this._$element.find('.close')
+                    .off('click');
+
                 this.constructor.superclass.clear.call(this);
             },
             onSublayoutSizeChange: function () {
@@ -75,18 +83,19 @@ function init() {
                 }
 
                 this.applyElementOffset();
+
                 this.events.fire('shapechange');
+            },
+            applyElementOffset: function () {
+                this._$element.css({
+                    left: -(this._$element[0].offsetWidth / 2),
+                    top: -(this._$element[0].offsetHeight + this._$element.find('.arrow-balloon')[0].offsetHeight)
+                });
             },
             onCloseClick: function (e) {
                 e.preventDefault();
 
                 this.events.fire('userclose');
-            },
-            applyElementOffset: function () {
-                // this._$element.css({
-                //     left: -(this._$element[0].offsetWidth / 2),
-                //     top: -(this._$element[0].offsetHeight + this._$element.find('.arrow-balloon')[0].offsetHeight)
-                // });
             },
             getShape: function () {
                 if(!this._isElement(this._$element)) {
@@ -105,50 +114,48 @@ function init() {
             _isElement: function (element) {
                 return element && element[0] && element.find('.arrow-balloon')[0];
             }
-        });
+        }
+    );
 
     for (let i = 0; i < shopList.length; i++) {
-
         let cityCollection = new ymaps.GeoObjectCollection();
-        let shopPlacemark = '';
- 
+        let myPlacemark = '';
+
         for (let c = 0; c < shopList[i].shops.length; c++) {
             let shopInfo = shopList[i].shops[c];
- 
-            shopPlacemark = new ymaps.Placemark(
-                shopInfo.coordinates,
-                {
-                    balloonContent: `
-                        <div class="balloon-custom">
-                            <div class="wrap">
-                                <div class="logo"><img src="images/logo.png" alt=""></div>
-                                <div class="title">${shopInfo.title_baloon}</div>
-                                <div class="text">${shopInfo.text_baloon}</div>
-                            </div>
-                            <div class="arrow-balloon"><img src="images/icons/arrow-balloon.png" alt=""></div>
-                        </div>`,
-                },
-                {
-                    balloonLayout: MyBalloonLayout,
-                    balloonPanelMaxMapArea: 0,
-                    iconLayout: 'default#image',
-                    iconImageHref: '../images/icons/marker.svg',
-                    iconImageSize: [44, 44],
-                    hideIconOnBalloonOpen: false,
-                    balloonOffset: [-260, -400]
-                }
+
+            MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                `<div class="balloon-custom">
+                    <div class="wrap">
+                        <div class="logo"><img src="images/logo.png" alt=""></div>
+                        <div class="title">${shopInfo.title_baloon}</div>
+                        <div class="text">${shopInfo.text_baloon}</div>
+                    </div>
+                </div>`
             );
 
-            myMap.geoObjects.add(shopPlacemark);
+            myPlacemark = window.myPlacemark = new ymaps.Placemark(shopInfo.coordinates, {}, {
+                balloonShadow: false,
+                balloonLayout: MyBalloonLayout,
+                balloonContentLayout: MyBalloonContentLayout,
+                balloonPanelMaxMapArea: 0,
+                iconLayout: 'default#image',
+                iconImageHref: '../images/icons/marker.svg',
+                hideIconOnBalloonOpen: false,
+                iconImageSize: [44, 44],
+                balloonOffset: [10, -12]
+            });
+
+            myMap.geoObjects.add(myPlacemark);
 
             if (!placemarkList[i]) {
                 placemarkList[i] = {};
             }
 
-            geoObjects.push(shopPlacemark);
+            geoObjects.push(myPlacemark);
         }
 
-        cityCollection.add(shopPlacemark);
+        cityCollection.add(myPlacemark);
         placemarkCollections[i] = cityCollection;
     }
 
@@ -161,11 +168,8 @@ function init() {
     myMap.geoObjects.add(clusterer);
 
     // myMap.setBounds(clusterer.getBounds(), {
-    //     checkZoomRange: false
+    //     checkZoomRange: true,
     // });
-
-
-    /***/
 
     objectManager = new ymaps.ObjectManager({
         clusterize: true,
@@ -176,4 +180,4 @@ function init() {
     objectManager.objects.options.set('preset', 'islands#greenDotIcon');
     objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
     myMap.geoObjects.add(objectManager);
-}
+});
